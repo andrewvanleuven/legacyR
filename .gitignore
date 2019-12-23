@@ -1,3 +1,6 @@
+# Files to big to upload to GitHub
+hidden/
+
 # History files
 .Rhistory
 .Rapp.history

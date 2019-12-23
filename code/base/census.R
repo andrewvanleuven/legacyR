@@ -96,4 +96,72 @@ ages <- inner_join(m,f) %>%
   write_csv("data/base/generated/ages.csv")
 
 
+# Poverty Rate ------------------------------------------------------------
+poverty <- get_decennial(year = 2000,
+                         variables = paste0("P0",87001:87017), 
+                         state = us, 
+                         geography = "county") %>% 
+  pivot_wider(names_from = variable) %>% 
+  rename(cty_fips = GEOID) %>% 
+  left_join(.,xw) %>% 
+  group_by(cbsa_fips) %>% 
+  summarize(total_in_poverty = sum(P087002),
+            total = sum(P087001)) %>% 
+  inner_join(.,msaxw) %>% 
+  mutate(poverty_rate = total_in_poverty/total) %>% 
+  select(cbsa_fips,cbsa,total_in_poverty,total,poverty_rate) %>% 
+  write_csv("data/base/generated/poverty.csv")
+
+
+
+# Educational Attainment --------------------------------------------------
+education <- get_decennial(year = 2000,
+                         variables = paste0("P0",37001:37035), 
+                         state = us, 
+                         geography = "county") %>% 
+  pivot_wider(names_from = variable) %>% 
+  mutate(total = P037002+P037019,
+         no_hs = P037003 + P037004 + P037005 + P037006 + P037007 + 
+           P037008 + P037009 + P037010 + P037020 + P037021 + P037022 + 
+           P037023 + P037024 + P037025 + P037026 + P037027,
+         bachelors = P037015+P037032,
+         masters = P037016+P037033,
+         prof = P037017+P037034,
+         phd = P037018+P037035,
+         college_degree = bachelors + masters + prof + phd) %>% 
+  rename(cty_fips = GEOID) %>% 
+  left_join(.,xw) %>% 
+  group_by(cbsa_fips) %>% 
+  summarize(total_bach = sum(bachelors),
+            total_mast = sum(masters),
+            total_prof = sum(prof),
+            total_doct = sum(phd),
+            total_nohs = sum(no_hs),
+            total_degr = sum(college_degree),
+            total_ov25 = sum(total)) %>% 
+  inner_join(.,msaxw) %>% 
+  mutate(bachelors_plus = total_degr/total_ov25,
+         no_hs_diploma = total_nohs/total_ov25) %>% 
+  select(cbsa_fips,cbsa,no_hs_diploma,bachelors_plus,everything()) %>% 
+  write_csv("data/base/generated/education.csv")
+
+
+# Nativity ----------------------------------------------------------------
+nativity <- get_decennial(year = 2000,
+                         variables = paste0("P0",21001:21015), 
+                         state = us, 
+                         geography = "county") %>% 
+  pivot_wider(names_from = variable) %>% 
+  rename(cty_fips = GEOID) %>% 
+  left_join(.,xw) %>% 
+  group_by(cbsa_fips) %>% 
+  summarize(foreign_born = sum(P021013),
+            native = sum(P021002),
+            total = sum(P021001)) %>% 
+  inner_join(.,msaxw) %>% 
+  mutate(not_foreign_born = total-foreign_born,
+         nativity = not_foreign_born/total) %>% 
+  select(cbsa_fips,cbsa,total,foreign_born,not_foreign_born,native,nativity) %>% 
+  write_csv("data/base/generated/nativity.csv")
+
 

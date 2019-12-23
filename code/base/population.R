@@ -1,4 +1,12 @@
 library(tidyverse)
+library(tidycensus)
+library(sf)
+library(tigris)
+library(rleuven)
+library(ggpubr)
+options(tigris_class = "sf")
+options(tigris_use_cache = TRUE)
+options(scipen = 999,"digits"=3)
 
 ### SOURCE: https://seer.cancer.gov/popdata/
 df <- read_fwf("hidden/too_big/pop.txt", 
@@ -92,3 +100,24 @@ pop_05 <- df %>% filter(year == 2005) %>%
   inner_join(.,msaxw) %>% 
   select(1,3,2) %>% 
   write_csv("data/base/generated/pop_2005.csv")
+
+
+# Density Calculation -----------------------------------------------------
+univ <- read_csv("data/clustrdata.csv") %>% 
+  select(1:2) %>% rename_all(tolower) %>% 
+  rename(cbsa_fips = id)
+densities <- core_based_statistical_areas(cb = T) %>% 
+  select(GEOID:geometry) %>% st_transform(crs = 2163) %>% 
+  mutate(cbsa_fips = as.numeric(GEOID)) %>% 
+  select(cbsa_fips,geometry) %>% 
+  inner_join(.,univ) %>% 
+  arrange(cbsa_fips) %>% 
+  mutate(area = st_area(.),
+         sqmi = as.numeric(str_replace_all(area," [m^2]",""))*0.0000003861) %>% 
+  st_drop_geometry() %>% 
+  left_join(.,populations) %>% 
+  select(1,2,4,population_2005) %>% 
+  mutate(density = population_2005/sqmi) %>% 
+  write_csv("data/base/generated/density_2005.csv")
+
+

@@ -78,6 +78,7 @@ populations <- inner_join(pop90,pop95) %>%
   inner_join(.,pop05) %>% 
   inner_join(.,pop10) %>% 
   inner_join(.,pop15) %>% 
+  mutate(pctchg_95_05 = (population_2005-population_1995)/population_1995)
   write_csv("data/base/generated/populations.csv")
 
 pop_05 <- df %>% filter(year == 2005) %>% 

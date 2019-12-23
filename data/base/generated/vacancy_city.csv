@@ -1,0 +1,382 @@
+cbsa_fips,cbsa,city_fips,city,vacancy
+10180,"Abilene, TX",4801000,Abilene city,0.08873690210004823
+10420,"Akron, OH",3901000,Akron city,0.07397626265221188
+10500,"Albany, GA",1301052,Albany city,0.10735450065498098
+10540,"Albany, OR",4101000,Albany city,0.07286750316564983
+10580,"Albany-Schenectady-Troy, NY",3601000,Albany city,0.10110846140257905
+10740,"Albuquerque, NM",3502000,Albuquerque city,0.07673393293527826
+10780,"Alexandria, LA",2200975,Alexandria city,0.10047460365545795
+10900,"Allentown-Bethlehem-Easton, PA-NJ",4202000,Allentown city,0.0854656222802437
+11020,"Altoona, PA",4202184,Altoona city,0.07481204741478714
+11100,"Amarillo, TX",4803000,Amarillo city,0.06503425035907634
+11180,"Ames, IA",1901855,Ames city,0.035826624726768674
+11260,"Anchorage, AK",0203000,Anchorage municipality,0.055256655507731546
+11460,"Ann Arbor, MI",2603000,Ann Arbor city,0.0322970053793045
+11500,"Anniston-Oxford-Jacksonville, AL",0101852,Anniston city,0.18299835770704623
+11540,"Appleton, WI",5502375,Appleton city,0.031439284684164986
+11700,"Asheville, NC",3702140,Asheville city,0.08570917865761016
+12020,"Athens-Clarke County, GA",1303440,Athens-Clarke County (balance),0.057502461989287344
+12060,"Atlanta-Sandy Springs-Roswell, GA",1304000,Atlanta city,0.10045740270161829
+12100,"Atlantic City-Hammonton, NJ",3402080,Atlantic City city,0.21618279835798013
+12220,"Auburn-Opelika, AL",0103076,Auburn city,0.08092600908047698
+12260,"Augusta-Richmond County, GA-SC",1304204,Augusta-Richmond County (balance),0.10156434437941875
+12420,"Austin-Round Rock, TX",4805000,Austin city,0.04043100396616121
+12540,"Bakersfield, CA",0603526,Bakersfield city,0.054621467902381544
+12580,"Baltimore-Columbia-Towson, MD",2404000,Baltimore city,0.14137854145242398
+12620,"Bangor, ME",2302795,Bangor city,0.05991636388565161
+12700,"Barnstable Town, MA",2503600,Barnstable Town city,0.21552482212806778
+12940,"Baton Rouge, LA",2205000,Baton Rouge city,0.08640694952150162
+12980,"Battle Creek, MI",2605920,Battle Creek city,0.09253985122210415
+13020,"Bay City, MI",2606020,Bay City city,0.06464112184021158
+13140,"Beaumont-Port Arthur, TX",4807000,Beaumont city,0.0912424459694766
+13220,"Beckley, WV",5405332,Beckley city,0.12369717099988546
+13380,"Bellingham, WA",5305280,Bellingham city,0.05004410667028567
+13460,"Bend-Redmond, OR",4105800,Bend city,0.06420224818945217
+13740,"Billings, MT",3006550,Billings city,0.04499529178225129
+13780,"Binghamton, NY",3606607,Binghamton city,0.12022860956989696
+13820,"Birmingham-Hoover, AL",0107000,Birmingham city,0.11744261884978602
+13900,"Bismarck, ND",3807200,Bismarck city,0.04261469215840112
+13980,"Blacksburg-Christiansburg-Radford, VA",5107784,Blacksburg town,0.04150888435770463
+14010,"Bloomington, IL",1706613,Bloomington city,0.06292427280081601
+14020,"Bloomington, IN",1805860,Bloomington city,0.06802816901408451
+14100,"Bloomsburg-Berwick, PA",4207128,Bloomsburg town,0.07251648101841328
+14260,"Boise City, ID",1608830,Boise City city,0.04382787411689146
+14460,"Boston-Cambridge-Newton, MA-NH",2507000,Boston city,0.049246829539365315
+14500,"Boulder, CO",0807850,Boulder city,0.027746402789372883
+14540,"Bowling Green, KY",2108902,Bowling Green city,0.0945514325974636
+14740,"Bremerton-Silverdale, WA",5307695,Bremerton city,0.09229751668570742
+14860,"Bridgeport-Stamford-Norwalk, CT",0908000,Bridgeport city,0.07467765372376625
+15180,"Brownsville-Harlingen, TX",4810768,Brownsville city,0.09803180303853697
+15260,"Brunswick, GA",1311560,Brunswick city,0.12471231300345224
+15380,"Buffalo-Cheektowaga-Niagara Falls, NY",3611000,Buffalo city,0.15699232005715305
+15500,"Burlington, NC",3709060,Burlington city,0.06577400725711657
+15540,"Burlington-South Burlington, VT",5010675,Burlington city,0.03110704483074108
+15680,"California-Lexington Park, MD",2446725,Lexington Park CDP,0.15269978401727863
+15940,"Canton-Massillon, OH",3912000,Canton city,0.08486845811503577
+15980,"Cape Coral-Fort Myers, FL",1210275,Cape Coral city,0.10700282566315467
+16020,"Cape Girardeau, MO-IL",2911242,Cape Girardeau city,0.09142604410185126
+16060,"Carbondale-Marion, IL",1711163,Carbondale city,0.0899890590809628
+16180,"Carson City, NV",3209700,Carson City,0.05224827326974581
+16220,"Casper, WY",5613150,Casper city,0.0699067300658376
+16300,"Cedar Rapids, IA",1912000,Cedar Rapids city,0.04632465543644717
+16540,"Chambersburg-Waynesboro, PA",4212536,Chambersburg borough,0.07019867549668875
+16580,"Champaign-Urbana, IL",1712385,Champaign city,0.052003081664098616
+16620,"Charleston, WV",5414600,Charleston city,0.09678965021562051
+16700,"Charleston-North Charleston, SC",4513330,Charleston city,0.08464421156564864
+16740,"Charlotte-Concord-Gastonia, NC-SC",3712000,Charlotte city,0.06502946613780952
+16820,"Charlottesville, VA",5114968,Charlottesville city,0.042066966062190896
+16860,"Chattanooga, TN-GA",4714000,Chattanooga city,0.09165418538858379
+16940,"Cheyenne, WY",5613900,Cheyenne city,0.06130687074257842
+16980,"Chicago-Naperville-Elgin, IL-IN-WI",1714000,Chicago city,0.07888153717511458
+17020,"Chico, CA",0613014,Chico city,0.03731649306979414
+17140,"Cincinnati, OH-KY-IN",3915000,Cincinnati city,0.10792593306507964
+17300,"Clarksville, TN-KY",4715160,Clarksville city,0.07672136060537948
+17420,"Cleveland, TN",4715400,Cleveland city,0.08483963240216663
+17460,"Cleveland-Elyria, OH",3916000,Cleveland city,0.11682788525683789
+17660,"Coeur d'Alene, ID",1616750,Coeur d'Alene city,0.06323263446982383
+17780,"College Station-Bryan, TX",4815976,College Station city,0.052314423888846245
+17820,"Colorado Springs, CO",0816000,Colorado Springs city,0.04824803281996099
+17860,"Columbia, MO",2915670,Columbia city,0.06200579129078962
+17900,"Columbia, SC",4516000,Columbia city,0.08445667721381821
+17980,"Columbus, GA-AL",1319007,Columbus city (balance),0.08350013168290756
+18020,"Columbus, IN",1814734,Columbus city,0.06858175037874374
+18140,"Columbus, OH",3918000,Columbus city,0.07837090242225109
+18580,"Corpus Christi, TX",4817000,Corpus Christi city,0.08383488978123174
+18700,"Corvallis, OR",4115800,Corvallis city,0.061169831173179014
+18880,"Crestview-Fort Walton Beach-Destin, FL",1224475,Fort Walton Beach city,0.06073054291106917
+19060,"Cumberland, MD-WV",2421325,Cumberland city,0.1440366149151934
+19100,"Dallas-Fort Worth-Arlington, TX",4819000,Dallas city,0.06668635887605683
+19140,"Dalton, GA",1321380,Dalton city,0.052791084172450875
+19180,"Danville, IL",1718563,Danville city,0.10472927582963859
+19300,"Daphne-Fairhope-Foley, AL",0119648,Daphne city,0.0912489615065079
+19340,"Davenport-Moline-Rock Island, IA-IL",1919000,Davenport city,0.053833131801692864
+19380,"Dayton, OH",3921000,Dayton city,0.12819285834378757
+19460,"Decatur, AL",0120104,Decatur city,0.08876826722338205
+19500,"Decatur, IL",1718823,Decatur city,0.08466929831628132
+19660,"Deltona-Daytona Beach-Ormond Beach, FL",1217200,Deltona city,0.057576560548131886
+19740,"Denver-Aurora-Lakewood, CO",0820000,Denver city,0.048521486666534094
+19780,"Des Moines-West Des Moines, IA",1921000,Des Moines city,0.05364007194329176
+19820,"Detroit-Warren-Dearborn, MI",2622000,Detroit city,0.10308827606799326
+20020,"Dothan, AL",0121184,Dothan city,0.08622685185185185
+20100,"Dover, DE",1021200,Dover city,0.06479727169382342
+20220,"Dubuque, IA",1922395,Dubuque city,0.05285696292875436
+20260,"Duluth, MN-WI",2717000,Duluth city,0.04038492728550576
+20500,"Durham-Chapel Hill, NC",3719000,Durham city,0.07198287065113804
+20700,"East Stroudsburg, PA",4221872,East Stroudsburg borough,0.055839087361152805
+20740,"Eau Claire, WI",5522300,Eau Claire city,0.03530829483832095
+20940,"El Centro, CA",0621782,El Centro city,0.06719399820598548
+21060,"Elizabethtown-Fort Knox, KY",2124274,Elizabethtown city,0.07338444687842278
+21140,"Elkhart-Goshen, IN",1820728,Elkhart city,0.07451125046108448
+21300,"Elmira, NY",3624229,Elmira city,0.1101202016285382
+21340,"El Paso, TX",4824000,El Paso city,0.05989786381497757
+21500,"Erie, PA",4224000,Erie city,0.08968001601031776
+21660,"Eugene, OR",4123850,Eugene city,0.05426079031313066
+21780,"Evansville, IN-KY",1822000,Evansville city,0.0839744151406291
+21820,"Fairbanks, AK",0224230,Fairbanks city,0.10374686412559683
+22020,"Fargo, ND-MN",3825700,Fargo city,0.046893203883495146
+22140,"Farmington, NM",3525800,Farmington city,0.07262718047356902
+22180,"Fayetteville, NC",3722920,Fayetteville city,0.09616353962475498
+22220,"Fayetteville-Springdale-Rogers, AR-MO",0523290,Fayetteville city,0.06553579141634272
+22380,"Flagstaff, AZ",0423620,Flagstaff city,0.0976818096840531
+22420,"Flint, MI",2629000,Flint city,0.12115967113803548
+22500,"Florence, SC",4525810,Florence city,0.0889992360580596
+22520,"Florence-Muscle Shoals, AL",0126896,Florence city,0.10656802394533235
+22540,"Fond du Lac, WI",5526275,Fond du Lac city,0.050288258462241
+22660,"Fort Collins, CO",0827425,Fort Collins city,0.039221023976546955
+22900,"Fort Smith, AR-OK",0524550,Fort Smith city,0.08327438386010583
+23060,"Fort Wayne, IN",1825000,Fort Wayne city,0.08339657922235055
+23420,"Fresno, CA",0627000,Fresno city,0.060030196275792654
+23460,"Gadsden, AL",0128696,Gadsden city,0.12454115018353992
+23540,"Gainesville, FL",1225175,Gainesville city,0.07046502929809251
+23580,"Gainesville, GA",1331908,Gainesville city,0.05938739532833848
+23900,"Gettysburg, PA",4228960,Gettysburg borough,0.079014135556361
+24020,"Glens Falls, NY",3629333,Glens Falls city,0.07987079723975922
+24140,"Goldsboro, NC",3726880,Goldsboro city,0.10640117273393598
+24220,"Grand Forks, ND-MN",3832060,Grand Forks city,0.055715519723581915
+24260,"Grand Island, NE",3119595,Grand Island city,0.057114976178175764
+24300,"Grand Junction, CO",0831660,Grand Junction city,0.048924616695059625
+24340,"Grand Rapids-Wyoming, MI",2634000,Grand Rapids city,0.060838891739353515
+24420,"Grants Pass, OR",4130550,Grants Pass city,0.051492159838138596
+24500,"Great Falls, MT",3032800,Great Falls city,0.05607920792079208
+24540,"Greeley, CO",0832155,Greeley city,0.04573381195637167
+24580,"Green Bay, WI",5531000,Green Bay city,0.03552628527699835
+24660,"Greensboro-High Point, NC",3728000,Greensboro city,0.06959367604853733
+24780,"Greenville, NC",3728080,Greenville city,0.10449458163084029
+24860,"Greenville-Anderson-Mauldin, SC",4530850,Greenville city,0.10672284301154057
+25060,"Gulfport-Biloxi-Pascagoula, MS",2829700,Gulfport city,0.08850096417334821
+25180,"Hagerstown-Martinsburg, MD-WV",2436075,Hagerstown city,0.07256129674059336
+25220,"Hammond, LA",2232755,Hammond city,0.10878243512974052
+25260,"Hanford-Corcoran, CA",0631960,Hanford city,0.0536648325521364
+25420,"Harrisburg-Carlisle, PA",4232800,Harrisburg city,0.15435551534095582
+25500,"Harrisonburg, VA",5135624,Harrisonburg city,0.04061655343706626
+25540,"Hartford-West Hartford-East Hartford, CT",0937000,Hartford city,0.11172103309375246
+25620,"Hattiesburg, MS",2831020,Hattiesburg city,0.10193166476269602
+25860,"Hickory-Lenoir-Morganton, NC",3731060,Hickory city,0.07235531953412588
+25940,"Hilton Head Island-Bluffton-Beaufort, SC",4534045,Hilton Head Island town,0.41542581247210614
+25980,"Hinesville, GA",1338964,Hinesville city,0.10338954181570431
+26140,"Homosassa Springs, FL",1232400,Homosassa Springs CDP,0.13904982618771727
+26300,"Hot Springs, AR",0533400,Hot Springs city,0.1444214107266252
+26380,"Houma-Thibodaux, LA",2236255,Houma city,0.07032124021096373
+26420,"Houston-The Woodlands-Sugar Land, TX",4835000,Houston city,0.0819223308171645
+26580,"Huntington-Ashland, WV-KY-OH",5439460,Huntington city,0.11329573547589616
+26620,"Huntsville, AL",0137000,Huntsville city,0.09404099362019819
+26820,"Idaho Falls, ID",1639700,Idaho Falls city,0.049466390167416927
+26900,"Indianapolis-Carmel-Anderson, IN",1836003,Indianapolis city (balance),0.0917120895272523
+26980,"Iowa City, IA",1938595,Iowa City city,0.03377678947973776
+27060,"Ithaca, NY",3638077,Ithaca city,0.04182190760059613
+27100,"Jackson, MI",2641420,Jackson city,0.06764647988977102
+27140,"Jackson, MS",2836000,Jackson city,0.10355717645815164
+27180,"Jackson, TN",4737640,Jackson city,0.07834986863260264
+27260,"Jacksonville, FL",1235000,Jacksonville city,0.07877251267704144
+27340,"Jacksonville, NC",3734200,Jacksonville city,0.06209043250327654
+27500,"Janesville-Beloit, WI",5537825,Janesville city,0.04740262329067496
+27620,"Jefferson City, MO",2937000,Jefferson City city,0.07023017601695414
+27740,"Johnson City, TN",4738320,Johnson City city,0.078118927322192
+27780,"Johnstown, PA",4238288,Johnstown city,0.1302921418528355
+27860,"Jonesboro, AR",0535710,Jonesboro city,0.08424349833079174
+27900,"Joplin, MO",2937592,Joplin city,0.10441672918229557
+27980,"Kahului-Wailuku-Lahaina, HI",1522700,Kahului CDP,0.032735647310412896
+28020,"Kalamazoo-Portage, MI",2642160,Kalamazoo city,0.07500471727781621
+28100,"Kankakee, IL",1738934,Kankakee city,0.08618331053351573
+28140,"Kansas City, MO-KS",2938000,Kansas City city,0.09070645566241957
+28420,"Kennewick-Richland, WA",5335275,Kennewick city,0.05702490586580774
+28660,"Killeen-Temple, TX",4839148,Killeen city,0.081939846645729
+28700,"Kingsport-Bristol-Bristol, TN-VA",4739560,Kingsport city,0.09790787300422096
+28740,"Kingston, NY",3639727,Kingston city,0.0720127855598383
+28940,"Knoxville, TN",4740000,Knoxville city,0.09803367811628481
+29020,"Kokomo, IN",1840392,Kokomo city,0.09057060828996949
+29100,"La Crosse-Onalaska, WI-MN",5540775,La Crosse city,0.05051050240633293
+29180,"Lafayette, LA",2240735,Lafayette city,0.07167395711085031
+29200,"Lafayette-West Lafayette, IN",1840788,Lafayette city,0.06022966955706585
+29340,"Lake Charles, LA",2241155,Lake Charles city,0.10993031913201183
+29420,"Lake Havasu City-Kingman, AZ",0439370,Lake Havasu City city,0.2218698409940047
+29460,"Lakeland-Winter Haven, FL",1238250,Lakeland city,0.14035402770651617
+29540,"Lancaster, PA",4241216,Lancaster city,0.09081827658095899
+29620,"Lansing-East Lansing, MI",2646000,Lansing city,0.0687371846723979
+29700,"Laredo, TX",4841464,Laredo city,0.06890041535006658
+29740,"Las Cruces, NM",3539380,Las Cruces city,0.07884603244744649
+29820,"Las Vegas-Henderson-Paradise, NV",3240000,Las Vegas city,0.07326817810029151
+29940,"Lawrence, KS",2038900,Lawrence city,0.04190958761942554
+30020,"Lawton, OK",4041850,Lawton city,0.12776878105014686
+30140,"Lebanon, PA",4242168,Lebanon city,0.08502673796791443
+30300,"Lewiston, ID-WA",1646540,Lewiston city,0.0447215170972077
+30340,"Lewiston-Auburn, ME",2338740,Lewiston city,0.071645415907711
+30460,"Lexington-Fayette, KY",2146027,Lexington-Fayette,0.06782476951285649
+30620,"Lima, OH",3943554,Lima city,0.1259713005501673
+30700,"Lincoln, NE",3128000,Lincoln city,0.04951732686267713
+30780,"Little Rock-North Little Rock-Conway, AR",0541000,Little Rock city,0.08775488542686306
+30860,"Logan, UT-ID",4945860,Logan city,0.053770759597059625
+30980,"Longview, TX",4843888,Longview city,0.07690555230098288
+31020,"Longview, WA",5340245,Longview city,0.0761247947454844
+31080,"Los Angeles-Long Beach-Anaheim, CA",0644000,Los Angeles city,0.04656778096233403
+31140,"Louisville/Jefferson County, KY-IN",2148000,Louisville city,0.08131106988249845
+31180,"Lubbock, TX",4845000,Lubbock city,0.07778412199938144
+31340,"Lynchburg, VA",5147672,Lynchburg city,0.0782561505065123
+31420,"Macon, GA",1349000,Macon city,0.1329920389707043
+31460,"Madera, CA",0645022,Madera city,0.043367143199424966
+31540,"Madison, WI",5548000,Madison city,0.03652834599649328
+31700,"Manchester-Nashua, NH",3345140,Manchester city,0.03584502745576571
+31740,"Manhattan, KS",2044250,Manhattan city,0.04188807235726399
+31860,"Mankato-North Mankato, MN",2739878,Mankato city,0.03072341092562113
+31900,"Mansfield, OH",3947138,Mansfield city,0.09363632280953878
+32580,"McAllen-Edinburg-Mission, TX",4845384,McAllen city,0.12581087495385265
+32780,"Medford, OR",4147000,Medford city,0.04578469026885196
+32820,"Memphis, TN-MS-AR",4748000,Memphis city,0.07671090619844449
+32900,"Merced, CA",0646898,Merced city,0.050947427085268435
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",1245000,Miami city,0.09562767878804215
+33140,"Michigan City-La Porte, IN",1848798,Michigan City city,0.11750228535264749
+33220,"Midland, MI",2653780,Midland city,0.05795307488887638
+33260,"Midland, TX",4848072,Midland city,0.10490528164596663
+33340,"Milwaukee-Waukesha-West Allis, WI",5553000,Milwaukee city,0.06835991573879024
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",2743000,Minneapolis city,0.03709239291602909
+33540,"Missoula, MT",3050200,Missoula city,0.042973240832507434
+33660,"Mobile, AL",0150000,Mobile city,0.08942183856033972
+33700,"Modesto, CA",0648354,Modesto city,0.03304604117358103
+33740,"Monroe, LA",2251410,Monroe city,0.08727323996616224
+33780,"Monroe, MI",2655020,Monroe city,0.056330295377182385
+33860,"Montgomery, AL",0151000,Montgomery city,0.09682325693940337
+34060,"Morgantown, WV",5455756,Morgantown city,0.08011261837727156
+34100,"Morristown, TN",4750280,Morristown city,0.0694092062341428
+34580,"Mount Vernon-Anacortes, WA",5347560,Mount Vernon city,0.042329134833780716
+34620,"Muncie, IN",1851876,Muncie city,0.09544777354742592
+34740,"Muskegon, MI",2656320,Muskegon city,0.08938058628664292
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",4549075,Myrtle Beach city,0.2896029471960704
+34900,"Napa, CA",0650258,Napa city,0.028729838709677418
+34940,"Naples-Immokalee-Marco Island, FL",1247625,Naples city,0.3628803963198868
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",4752006,Nashville-Davidson (balance),0.0620661494487546
+35100,"New Bern, NC",3746340,New Bern city,0.09807102938525329
+35300,"New Haven-Milford, CT",0952000,New Haven city,0.11044370147900492
+35380,"New Orleans-Metairie, LA",2255000,New Orleans city,0.12478439358225123
+35620,"New York-Newark-Jersey City, NY-NJ-PA",3651000,New York city,0.05602278350670059
+35660,"Niles-Benton Harbor, MI",2657760,Niles city,0.07864762249141204
+35840,"North Port-Sarasota-Bradenton, FL",1264175,Sarasota city,0.12904305152799464
+35980,"Norwich-New London, CT",0956200,Norwich city,0.09090361445783132
+36100,"Ocala, FL",1250750,Ocala city,0.09048339105409492
+36140,"Ocean City, NJ",3454360,Ocean City city,0.6322790422701744
+36220,"Odessa, TX",4853388,Odessa city,0.11339092872570194
+36260,"Ogden-Clearfield, UT",4955980,Ogden city,0.07993145852232637
+36420,"Oklahoma City, OK",4055000,Oklahoma City city,0.10394522877593151
+36500,"Olympia-Tumwater, WA",5351300,Olympia city,0.054108825615563884
+36540,"Omaha-Council Bluffs, NE-IA",3137000,Omaha city,0.05426263040710549
+36740,"Orlando-Kissimmee-Sanford, FL",1253000,Orlando city,0.08592319688990349
+36780,"Oshkosh-Neenah, WI",5560500,Oshkosh city,0.05263571990558615
+36980,"Owensboro, KY",2158620,Owensboro city,0.06760760431240227
+37100,"Oxnard-Thousand Oaks-Ventura, CA",0654652,Oxnard city,0.035203471637957756
+37340,"Palm Bay-Melbourne-Titusville, FL",1254000,Palm Bay city,0.07798917998905841
+37460,"Panama City, FL",1254700,Panama City city,0.1044839255499154
+37620,"Parkersburg-Vienna, WV",5462140,Parkersburg city,0.10142857142857142
+37860,"Pensacola-Ferry Pass-Brent, FL",1255925,Pensacola city,0.0915354695313947
+37900,"Peoria, IL",1759000,Peoria city,0.07991857506361323
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",4260000,Philadelphia city,0.10859752431423142
+38060,"Phoenix-Mesa-Scottsdale, AZ",0455000,Phoenix city,0.06050033075719195
+38220,"Pine Bluff, AR",0555310,Pine Bluff city,0.11243550969578367
+38300,"Pittsburgh, PA",4261000,Pittsburgh city,0.1201412778668756
+38340,"Pittsfield, MA",2553960,Pittsfield city,0.07778713844425723
+38540,"Pocatello, ID",1664090,Pocatello city,0.06268483056188491
+38860,"Portland-South Portland, ME",2360545,Portland city,0.06741573033707865
+38900,"Portland-Vancouver-Hillsboro, OR-WA",4159000,Portland city,0.05718331106962711
+38940,"Port St. Lucie, FL",1258715,Port St. Lucie city,0.07818404240859046
+39140,"Prescott, AZ",0457380,Prescott city,0.11934204386374242
+39300,"Providence-Warwick, RI-MA",4459000,Providence city,0.0813664138997276
+39340,"Provo-Orem, UT",4962470,Provo city,0.038914861394613816
+39380,"Pueblo, CO",0862000,Pueblo city,0.06525822685002666
+39460,"Punta Gorda, FL",1259200,Punta Gorda city,0.1955765128550578
+39540,"Racine, WI",5566000,Racine city,0.05880768540132878
+39580,"Raleigh, NC",3755000,Raleigh city,0.06703452389829245
+39660,"Rapid City, SD",4652980,Rapid City city,0.04490755498884284
+39740,"Reading, PA",4263624,Reading city,0.12242816343183541
+39820,"Redding, CA",0659920,Redding city,0.050263298029702384
+39900,"Reno, NV",3260600,Reno city,0.06984003121342178
+40060,"Richmond, VA",5167000,Richmond city,0.08379749030146724
+40140,"Riverside-San Bernardino-Ontario, CA",0662000,Riverside city,0.046165119687347336
+40220,"Roanoke, VA",5168000,Roanoke city,0.07190047948383675
+40340,"Rochester, MN",2754880,Rochester city,0.03479884569682567
+40380,"Rochester, NY",3663000,Rochester city,0.10812815039733839
+40420,"Rockford, IL",1765000,Rockford city,0.0694038068271197
+40580,"Rocky Mount, NC",3757500,Rocky Mount city,0.11304671659701246
+40660,"Rome, GA",1366668,Rome city,0.08188585607940446
+40900,"Sacramento--Roseville--Arden-Arcade, CA",0664000,Sacramento city,0.05718572552559512
+40980,"Saginaw, MI",2670520,Saginaw city,0.09583057061507859
+41060,"St. Cloud, MN",2756896,St. Cloud city,0.02567852380747559
+41100,"St. George, UT",4965330,St. George city,0.17625575107906843
+41140,"St. Joseph, MO-KS",2964550,St. Joseph city,0.08585285966238347
+41180,"St. Louis, MO-IL",2965000,St. Louis city,0.16601834945620741
+41420,"Salem, OR",4164900,Salem city,0.05836445732761023
+41500,"Salinas, CA",0664224,Salinas city,0.03431755717491616
+41540,"Salisbury, MD-DE",2469925,Salisbury city,0.057324178110694964
+41620,"Salt Lake City, UT",4967000,Salt Lake City city,0.07258545954784956
+41660,"San Angelo, TX",4864472,San Angelo city,0.09796015809437916
+41700,"San Antonio-New Braunfels, TX",4865000,San Antonio city,0.06383420837546927
+41740,"San Diego-Carlsbad, CA",0666000,San Diego city,0.04044804115063372
+41860,"San Francisco-Oakland-Hayward, CA",0667000,San Francisco city,0.048558986745621556
+41940,"San Jose-Sunnyvale-Santa Clara, CA",0668000,San Jose city,0.01860268733079999
+42020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA",0668154,San Luis Obispo city,0.03454884491867813
+42100,"Santa Cruz-Watsonville, CA",0669112,Santa Cruz city,0.04938616071428571
+42140,"Santa Fe, NM",3570500,Santa Fe city,0.0970752955818295
+42200,"Santa Maria-Santa Barbara, CA",0669070,Santa Barbara city,0.03967526162477074
+42220,"Santa Rosa, CA",0670098,Santa Rosa city,0.026781062211261246
+42340,"Savannah, GA",1369000,Savannah city,0.10554172397583439
+42540,"Scranton--Wilkes-Barre--Hazleton, PA",4269000,Scranton city,0.11413289563051845
+42660,"Seattle-Tacoma-Bellevue, WA",5363000,Seattle city,0.04445076961748311
+42680,"Sebastian-Vero Beach, FL",1274150,Vero Beach city,0.1720785533735174
+42700,"Sebring, FL",1264875,Sebring city,0.2099920382165605
+43100,"Sheboygan, WI",5572975,Sheboygan city,0.04517048065435162
+43300,"Sherman-Denison, TX",4867496,Sherman city,0.07952565992228326
+43340,"Shreveport-Bossier City, LA",2270000,Shreveport city,0.0937766410912191
+43420,"Sierra Vista-Douglas, AZ",0466820,Sierra Vista city,0.09493146318138349
+43580,"Sioux City, IA-NE-SD",1973335,Sioux City city,0.05210551218358174
+43620,"Sioux Falls, SD",4659020,Sioux Falls city,0.03771284829721362
+43780,"South Bend-Mishawaka, IN-MI",1871000,South Bend city,0.07424108395003129
+43900,"Spartanburg, SC",4568290,Spartanburg city,0.0964624773960217
+44060,"Spokane-Spokane Valley, WA",5367000,Spokane city,0.07310583231939596
+44100,"Springfield, IL",1772000,Springfield city,0.09513706660711295
+44140,"Springfield, MA",2567000,Springfield city,0.06607598247564245
+44180,"Springfield, MO",2970000,Springfield city,0.07119885139985642
+44220,"Springfield, OH",3974118,Springfield city,0.10423419427479613
+44300,"State College, PA",4273808,State College borough,0.037155669442664956
+44420,"Staunton-Waynesboro, VA",5175216,Staunton city,0.07202455164476838
+44700,"Stockton-Lodi, CA",0675000,Stockton city,0.04249043173008946
+44940,"Sumter, SC",4570405,Sumter city,0.09156686626746507
+45060,"Syracuse, NY",3673000,Syracuse city,0.12772759267949318
+45220,"Tallahassee, FL",1270600,Tallahassee city,0.07600450180510691
+45300,"Tampa-St. Petersburg-Clearwater, FL",1271000,Tampa city,0.0811483620080132
+45460,"Terre Haute, IN",1875428,Terre Haute city,0.10789514744889998
+45500,"Texarkana, TX-AR",4872368,Texarkana city,0.10168818272095333
+45540,"The Villages, FL",1271625,The Villages CDP,0.13287265547877591
+45780,"Toledo, OH",3977000,Toledo city,0.0782578232800223
+45820,"Topeka, KS",2071000,Topeka city,0.07521927881633737
+45940,"Trenton, NJ",3474000,Trenton city,0.13018940401264664
+46060,"Tucson, AZ",0477000,Tucson city,0.07975802565729526
+46140,"Tulsa, OK",4075000,Tulsa city,0.07615172375351857
+46220,"Tuscaloosa, AL",0177256,Tuscaloosa city,0.09972172017098431
+46340,"Tyler, TX",4874144,Tyler city,0.07957664770637009
+46520,"Urban Honolulu, HI",1517000,Honolulu CDP,0.11550266917932978
+46540,"Utica-Rome, NY",3676540,Utica city,0.13999862947988762
+46660,"Valdosta, GA",1378800,Valdosta city,0.11715237742635003
+46700,"Vallejo-Fairfield, CA",0681666,Vallejo city,0.039253742206264104
+47020,"Victoria, TX",4875428,Victoria city,0.08527612433862433
+47220,"Vineland-Bridgeton, NJ",3476070,Vineland city,0.049050481916213376
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC",5182000,Virginia Beach city,0.0482015319484585
+47300,"Visalia-Porterville, CA",0682954,Visalia city,0.05423531573467263
+47380,"Waco, TX",4876000,Waco city,0.07726052510967066
+47460,"Walla Walla, WA",5375775,Walla Walla city,0.07052631578947369
+47580,"Warner Robins, GA",1380508,Warner Robins city,0.09857985983032092
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",1150000,Washington city,0.09644344994451418
+47940,"Waterloo-Cedar Falls, IA",1982425,Waterloo city,0.04508627411098681
+48060,"Watertown-Fort Drum, NY",3678608,Watertown city,0.11357429718875502
+48140,"Wausau, WI",5584475,Wausau city,0.05939524838012959
+48260,"Weirton-Steubenville, WV-OH",5485156,Weirton city,0.061596480201131364
+48300,"Wenatchee, WA",5377105,Wenatchee city,0.06486157060769633
+48540,"Wheeling, WV-OH",5486452,Wheeling city,0.12651216095759582
+48620,"Wichita, KS",2079000,Wichita city,0.0856697716918991
+48660,"Wichita Falls, TX",4879000,Wichita Falls city,0.09414066227693482
+48700,"Williamsport, PA",4285312,Williamsport city,0.09649511978704525
+48900,"Wilmington, NC",3774440,Wilmington city,0.11166554630539324
+49020,"Winchester, VA-WV",5186720,Winchester city,0.05535090204968358
+49180,"Winston-Salem, NC",3775000,Winston-Salem city,0.07683459857372901
+49340,"Worcester, MA-CT",2582000,Worcester city,0.05224608684586344
+49420,"Yakima, WA",5380010,Yakima city,0.07488740704535139
+49620,"York-Hanover, PA",4287048,York city,0.12932988022013597
+49660,"Youngstown-Warren-Boardman, OH-PA",3988000,Youngstown city,0.13407249925993703
+49700,"Yuba City, CA",0686972,Yuba City city,0.04470960322024152
+49740,"Yuma, AZ",0485540,Yuma city,0.22700507614213197

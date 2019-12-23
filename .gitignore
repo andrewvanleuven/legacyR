@@ -1,6 +1,7 @@
 # Files to big to upload to GitHub
 hidden/
 
+.DS_Store
 # History files
 .Rhistory
 .Rapp.history

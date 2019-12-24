@@ -1,4 +1,4 @@
-[x] -> AGE
+[x] -> AGE (CITY)
 [x] -> LAND_USE_MIX (NOW CALLED "ACCESS")
 [x] -> ST_CAP
 [x] -> GMP_MFG_LQ
@@ -6,9 +6,9 @@
 [x] -> FLIGHTS
 [x] -> HIST_PROP      
 [x] -> VACAN_C         ... [x] MSA | [x] CITY       
-[x] -> POP_MMNTM
-[x] -> DECDS_SNC_PEAK 
-[x] -> DECL_SNC_PEAK
+[x] -> POP_MMNTM (MSA)
+[x] -> DECDS_SNC_PEAK (CITY)
+[x] -> DECL_SNC_PEAK (CITY)
 [x] -> POVERTY
 [x] -> GINI           
 [x] -> BAD_BRIDGE
@@ -24,10 +24,10 @@
 [x] -> TRANSP
 [x] -> MED_VALUE_C     ... [x] MSA | [x] CITY
 [x] -> HOME_OLDR1940_C ... [x] MSA | [x] CITY
-[ ] -> PROP_CRP1K
-[ ] -> INF_MR
-[ ] -> PCT_SMOKE      
-[ ] -> PCT_OBESE
-[ ] -> H2O_VIOL       
-[ ] -> CIV_LFPR       
+[x] -> CIV_LFPR       
+[x] -> PROP_CRP1K
+[x] -> INF_MR (REPLACED WITH % INFANTS W/LOW BIRTH WEIGHT)
+[x] -> PCT_SMOKE (REPLACED WITH % ADULTS UNINSURED)    
+[x] -> PCT_OBESE
+[-] -> H2O_VIOL       
 [-] -> HSNG_STOCK_AGE

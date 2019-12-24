@@ -44,8 +44,8 @@ age <- df %>%
   select(cbsa,age,census_yr,pop)
 
 age_data <- df %>% select(1:4) %>% 
-  inner_join(.,age,by = "cbsa") %>% 
   inner_join(.,peak,by = "cbsa") %>% 
+  left_join(.,age,by = "cbsa") %>% 
   write_csv("data/base/generated/peak_pop.csv")
 
 

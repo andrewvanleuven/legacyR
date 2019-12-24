@@ -20,7 +20,7 @@
 [x] -> LOW_INC_HSING  
 [x] -> DENSITY
 [x] -> IMMIGRANT
-[ ] -> R1             
+[x] -> R1             
 [ ] -> TRANSP
 [ ] -> MED_VALUE_C
 [ ] -> HOME_OLDR1940_C

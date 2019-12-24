@@ -1,0 +1,355 @@
+cbsa_fips,cbsa,city_fips,city,med_val_cbsa,med_val_city
+10180,"Abilene, TX",4801000,Abilene city,102000,60000
+10420,"Akron, OH",3901000,Akron city,140800,76800
+10500,"Albany, GA",1301052,Albany city,111700,69200
+10580,"Albany-Schenectady-Troy, NY",3601000,Albany city,203300,97000
+10740,"Albuquerque, NM",3502000,Albuquerque city,181300,123700
+10780,"Alexandria, LA",2200975,Alexandria city,128700,70700
+10900,"Allentown-Bethlehem-Easton, PA-NJ",4202000,Allentown city,202800,77000
+11020,"Altoona, PA",4202184,Altoona city,117300,57600
+11100,"Amarillo, TX",4803000,Amarillo city,129900,71600
+11180,"Ames, IA",1901855,Ames city,172900,125300
+11260,"Anchorage, AK",0203000,Anchorage municipality,284300,152300
+11460,"Ann Arbor, MI",2603000,Ann Arbor city,231500,178500
+11500,"Anniston-Oxford-Jacksonville, AL",0101852,Anniston city,110100,67200
+11540,"Appleton, WI",5502375,Appleton city,161800,97600
+11700,"Asheville, NC",3702140,Asheville city,198100,105200
+12020,"Athens-Clarke County, GA",1303440,Athens-Clarke County (balance),162600,103000
+12060,"Atlanta-Sandy Springs-Roswell, GA",1304000,Atlanta city,184200,144100
+12100,"Atlantic City-Hammonton, NJ",3402080,Atlantic City city,219000,88700
+12220,"Auburn-Opelika, AL",0103076,Auburn city,157100,116100
+12260,"Augusta-Richmond County, GA-SC",1304204,Augusta-Richmond County (balance),133500,73700
+12420,"Austin-Round Rock, TX",4805000,Austin city,240500,120800
+12540,"Bakersfield, CA",0603526,Bakersfield city,190600,103500
+12580,"Baltimore-Columbia-Towson, MD",2404000,Baltimore city,285700,69900
+12620,"Bangor, ME",2302795,Bangor city,137900,83800
+12700,"Barnstable Town, MA",2503600,Barnstable Town city,375000,170600
+12940,"Baton Rouge, LA",2205000,Baton Rouge city,168200,93100
+12980,"Battle Creek, MI",2605920,Battle Creek city,102600,70800
+13020,"Bay City, MI",2606020,Bay City city,96800,65800
+13140,"Beaumont-Port Arthur, TX",4807000,Beaumont city,102900,62000
+13380,"Bellingham, WA",5305280,Bellingham city,299800,148900
+13460,"Bend-Redmond, OR",4105800,Bend city,298200,138100
+13740,"Billings, MT",3006550,Billings city,211200,96700
+13780,"Binghamton, NY",3606607,Binghamton city,113100,66100
+13820,"Birmingham-Hoover, AL",0107000,Birmingham city,152200,62200
+13900,"Bismarck, ND",3807200,Bismarck city,223600,90300
+13980,"Blacksburg-Christiansburg-Radford, VA",5107784,Blacksburg town,168700,136200
+14010,"Bloomington, IL",1706613,Bloomington city,158700,108200
+14020,"Bloomington, IN",1805860,Bloomington city,155300,119300
+14260,"Boise City, ID",1608830,Boise City city,192600,118100
+14460,"Boston-Cambridge-Newton, MA-NH",2507000,Boston city,393500,210100
+14500,"Boulder, CO",0807850,Boulder city,423500,272200
+14540,"Bowling Green, KY",2108902,Bowling Green city,134200,97000
+14740,"Bremerton-Silverdale, WA",5307695,Bremerton city,277500,101500
+14860,"Bridgeport-Stamford-Norwalk, CT",0908000,Bridgeport city,417800,107700
+15180,"Brownsville-Harlingen, TX",4810768,Brownsville city,82500,49400
+15260,"Brunswick, GA",1311560,Brunswick city,136300,61500
+15380,"Buffalo-Cheektowaga-Niagara Falls, NY",3611000,Buffalo city,135000,58800
+15500,"Burlington, NC",3709060,Burlington city,145500,94600
+15540,"Burlington-South Burlington, VT",5010675,Burlington city,261700,127600
+15940,"Canton-Massillon, OH",3912000,Canton city,126300,66400
+15980,"Cape Coral-Fort Myers, FL",1210275,Cape Coral city,190200,106500
+16180,"Carson City, NV",3209700,Carson City,217400,136300
+16220,"Casper, WY",5613150,Casper city,198600,83100
+16300,"Cedar Rapids, IA",1912000,Cedar Rapids city,149400,92900
+16580,"Champaign-Urbana, IL",1712385,Champaign city,148600,89500
+16620,"Charleston, WV",5414600,Charleston city,105100,100800
+16700,"Charleston-North Charleston, SC",4513330,Charleston city,207500,137800
+16740,"Charlotte-Concord-Gastonia, NC-SC",3712000,Charlotte city,177000,131500
+16820,"Charlottesville, VA",5114968,Charlottesville city,267800,117800
+16860,"Chattanooga, TN-GA",4714000,Chattanooga city,152600,83300
+16940,"Cheyenne, WY",5613900,Cheyenne city,202800,100400
+16980,"Chicago-Naperville-Elgin, IL-IN-WI",1714000,Chicago city,222600,144300
+17020,"Chico, CA",0613014,Chico city,238200,138600
+17140,"Cincinnati, OH-KY-IN",3915000,Cincinnati city,158800,93200
+17300,"Clarksville, TN-KY",4715160,Clarksville city,144300,83500
+17420,"Cleveland, TN",4715400,Cleveland city,146100,96400
+17460,"Cleveland-Elyria, OH",3916000,Cleveland city,142400,71100
+17660,"Coeur d'Alene, ID",1616750,Coeur d'Alene city,212900,105300
+17780,"College Station-Bryan, TX",4815976,College Station city,159300,114000
+17820,"Colorado Springs, CO",0816000,Colorado Springs city,239100,143300
+17860,"Columbia, MO",2915670,Columbia city,177800,110700
+17900,"Columbia, SC",4516000,Columbia city,145900,96800
+17980,"Columbus, GA-AL",1319007,Columbus city (balance),140800,83200
+18020,"Columbus, IN",1814734,Columbus city,139400,104000
+18140,"Columbus, OH",3918000,Columbus city,166600,99100
+18580,"Corpus Christi, TX",4817000,Corpus Christi city,121600,70500
+18700,"Corvallis, OR",4115800,Corvallis city,288700,154700
+18880,"Crestview-Fort Walton Beach-Destin, FL",1224475,Fort Walton Beach city,199500,87300
+19060,"Cumberland, MD-WV",2421325,Cumberland city,122400,60500
+19100,"Dallas-Fort Worth-Arlington, TX",4819000,Dallas city,174500,87400
+19140,"Dalton, GA",1321380,Dalton city,116300,99600
+19180,"Danville, IL",1718563,Danville city,75900,51800
+19340,"Davenport-Moline-Rock Island, IA-IL",1919000,Davenport city,129500,78900
+19380,"Dayton, OH",3921000,Dayton city,125800,66700
+19460,"Decatur, AL",0120104,Decatur city,121000,88700
+19500,"Decatur, IL",1718823,Decatur city,95900,60600
+19660,"Deltona-Daytona Beach-Ormond Beach, FL",1217200,Deltona city,156900,82000
+19740,"Denver-Aurora-Lakewood, CO",0820000,Denver city,317100,160100
+19780,"Des Moines-West Des Moines, IA",1921000,Des Moines city,169400,79900
+19820,"Detroit-Warren-Dearborn, MI",2622000,Detroit city,149900,62800
+20020,"Dothan, AL",0121184,Dothan city,117000,83600
+20100,"Dover, DE",1021200,Dover city,205800,107700
+20220,"Dubuque, IA",1922395,Dubuque city,157200,86400
+20260,"Duluth, MN-WI",2717000,Duluth city,148500,80700
+20500,"Durham-Chapel Hill, NC",3719000,Durham city,212400,125600
+20740,"Eau Claire, WI",5522300,Eau Claire city,155600,91700
+20940,"El Centro, CA",0621782,El Centro city,167700,97700
+21060,"Elizabethtown-Fort Knox, KY",2124274,Elizabethtown city,142800,95900
+21140,"Elkhart-Goshen, IN",1820728,Elkhart city,130800,74200
+21300,"Elmira, NY",3624229,Elmira city,105500,52500
+21340,"El Paso, TX",4824000,El Paso city,116300,69900
+21500,"Erie, PA",4224000,Erie city,124100,64700
+21660,"Eugene, OR",4123850,Eugene city,232800,145000
+21780,"Evansville, IN-KY",1822000,Evansville city,131400,69300
+21820,"Fairbanks, AK",0224230,Fairbanks city,230600,127000
+22020,"Fargo, ND-MN",3825700,Fargo city,190300,94100
+22140,"Farmington, NM",3525800,Farmington city,143300,92200
+22180,"Fayetteville, NC",3722920,Fayetteville city,132300,87200
+22220,"Fayetteville-Springdale-Rogers, AR-MO",0523290,Fayetteville city,158800,97700
+22380,"Flagstaff, AZ",0423620,Flagstaff city,241400,149000
+22420,"Flint, MI",2629000,Flint city,96500,49100
+22500,"Florence, SC",4525810,Florence city,112600,89500
+22520,"Florence-Muscle Shoals, AL",0126896,Florence city,120400,82700
+22540,"Fond du Lac, WI",5526275,Fond du Lac city,149400,89900
+22660,"Fort Collins, CO",0827425,Fort Collins city,306600,164000
+22900,"Fort Smith, AR-OK",0524550,Fort Smith city,107000,72900
+23060,"Fort Wayne, IN",1825000,Fort Wayne city,120500,73100
+23420,"Fresno, CA",0627000,Fresno city,220600,94900
+23460,"Gadsden, AL",0128696,Gadsden city,105100,49000
+23540,"Gainesville, FL",1225175,Gainesville city,162000,83700
+23580,"Gainesville, GA",1331908,Gainesville city,171900,129500
+24020,"Glens Falls, NY",3629333,Glens Falls city,166800,81800
+24140,"Goldsboro, NC",3726880,Goldsboro city,117000,83400
+24220,"Grand Forks, ND-MN",3832060,Grand Forks city,170200,90100
+24300,"Grand Junction, CO",0831660,Grand Junction city,207900,114000
+24340,"Grand Rapids-Wyoming, MI",2634000,Grand Rapids city,154700,91100
+24500,"Great Falls, MT",3032800,Great Falls city,168100,89700
+24540,"Greeley, CO",0832155,Greeley city,245000,129600
+24580,"Green Bay, WI",5531000,Green Bay city,161900,96300
+24660,"Greensboro-High Point, NC",3728000,Greensboro city,143800,104700
+24780,"Greenville, NC",3728080,Greenville city,138700,92100
+24860,"Greenville-Anderson-Mauldin, SC",4530850,Greenville city,148700,112500
+25060,"Gulfport-Biloxi-Pascagoula, MS",2829700,Gulfport city,135300,77900
+25180,"Hagerstown-Martinsburg, MD-WV",2436075,Hagerstown city,186000,89100
+25260,"Hanford-Corcoran, CA",0631960,Hanford city,185600,100800
+25420,"Harrisburg-Carlisle, PA",4232800,Harrisburg city,175600,56900
+25500,"Harrisonburg, VA",5135624,Harrisonburg city,203100,119300
+25540,"Hartford-West Hartford-East Hartford, CT",0937000,Hartford city,244300,95300
+25620,"Hattiesburg, MS",2831020,Hattiesburg city,137100,65400
+25860,"Hickory-Lenoir-Morganton, NC",3731060,Hickory city,126000,116600
+25980,"Hinesville, GA",1338964,Hinesville city,120100,76300
+26300,"Hot Springs, AR",0533400,Hot Springs city,131500,69200
+26380,"Houma-Thibodaux, LA",2236255,Houma city,144000,79300
+26420,"Houston-The Woodlands-Sugar Land, TX",4835000,Houston city,166500,77500
+26580,"Huntington-Ashland, WV-KY-OH",5439460,Huntington city,112000,65600
+26620,"Huntsville, AL",0137000,Huntsville city,168000,95600
+26820,"Idaho Falls, ID",1639700,Idaho Falls city,160900,88700
+26900,"Indianapolis-Carmel-Anderson, IN",1836003,Indianapolis city (balance),148500,96600
+26980,"Iowa City, IA",1938595,Iowa City city,198500,121400
+27060,"Ithaca, NY",3638077,Ithaca city,190100,96300
+27100,"Jackson, MI",2641420,Jackson city,120100,64400
+27140,"Jackson, MS",2836000,Jackson city,139600,64200
+27180,"Jackson, TN",4737640,Jackson city,120300,80500
+27260,"Jacksonville, FL",1235000,Jacksonville city,174000,84100
+27340,"Jacksonville, NC",3734200,Jacksonville city,154400,82800
+27500,"Janesville-Beloit, WI",5537825,Janesville city,135000,98900
+27620,"Jefferson City, MO",2937000,Jefferson City city,143900,97700
+27740,"Johnson City, TN",4738320,Johnson City city,137100,95300
+27780,"Johnstown, PA",4238288,Johnstown city,88900,36500
+27860,"Jonesboro, AR",0535710,Jonesboro city,120200,85000
+27900,"Joplin, MO",2937592,Joplin city,114500,67300
+28020,"Kalamazoo-Portage, MI",2642160,Kalamazoo city,141100,80700
+28100,"Kankakee, IL",1738934,Kankakee city,140100,72300
+28140,"Kansas City, MO-KS",2938000,Kansas City city,166800,83300
+28420,"Kennewick-Richland, WA",5335275,Kennewick city,192800,106300
+28660,"Killeen-Temple, TX",4839148,Killeen city,132300,72500
+28700,"Kingsport-Bristol-Bristol, TN-VA",4739560,Kingsport city,124000,85400
+28740,"Kingston, NY",3639727,Kingston city,221600,86500
+28940,"Knoxville, TN",4740000,Knoxville city,158700,77800
+29020,"Kokomo, IN",1840392,Kokomo city,101300,72800
+29100,"La Crosse-Onalaska, WI-MN",5540775,La Crosse city,161800,83200
+29180,"Lafayette, LA",2240735,Lafayette city,143400,99800
+29200,"Lafayette-West Lafayette, IN",1840788,Lafayette city,138400,89300
+29340,"Lake Charles, LA",2241155,Lake Charles city,136700,70800
+29460,"Lakeland-Winter Haven, FL",1238250,Lakeland city,121100,71500
+29540,"Lancaster, PA",4241216,Lancaster city,193200,71900
+29620,"Lansing-East Lansing, MI",2646000,Lansing city,138900,73000
+29700,"Laredo, TX",4841464,Laredo city,115500,70400
+29740,"Las Cruces, NM",3539380,Las Cruces city,140700,83700
+29820,"Las Vegas-Henderson-Paradise, NV",3240000,Las Vegas city,212300,133100
+29940,"Lawrence, KS",2038900,Lawrence city,188100,112800
+30020,"Lawton, OK",4041850,Lawton city,121900,69700
+30140,"Lebanon, PA",4242168,Lebanon city,166600,65700
+30300,"Lewiston, ID-WA",1646540,Lewiston city,173500,103100
+30340,"Lewiston-Auburn, ME",2338740,Lewiston city,152000,85800
+30460,"Lexington-Fayette, KY",2146027,Lexington-Fayette,170200,109700
+30620,"Lima, OH",3943554,Lima city,110900,54700
+30700,"Lincoln, NE",3128000,Lincoln city,162700,101600
+30780,"Little Rock-North Little Rock-Conway, AR",0541000,Little Rock city,146000,87300
+30860,"Logan, UT-ID",4945860,Logan city,199100,115300
+30980,"Longview, TX",4843888,Longview city,121100,74300
+31020,"Longview, WA",5340245,Longview city,186600,118800
+31080,"Los Angeles-Long Beach-Anaheim, CA",0644000,Los Angeles city,537000,215600
+31140,"Louisville/Jefferson County, KY-IN",2148000,Louisville city,155700,81900
+31180,"Lubbock, TX",4845000,Lubbock city,119900,67900
+31340,"Lynchburg, VA",5147672,Lynchburg city,165700,84900
+31420,"Macon, GA",1349000,Macon city,118400,68000
+31460,"Madera, CA",0645022,Madera city,220400,92300
+31540,"Madison, WI",5548000,Madison city,230200,137700
+31700,"Manchester-Nashua, NH",3345140,Manchester city,256300,114600
+31900,"Mansfield, OH",3947138,Mansfield city,103700,71700
+32580,"McAllen-Edinburg-Mission, TX",4845384,McAllen city,82400,69800
+32780,"Medford, OR",4147000,Medford city,240900,128500
+32820,"Memphis, TN-MS-AR",4748000,Memphis city,138200,72300
+32900,"Merced, CA",0646898,Merced city,196200,103200
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",1245000,Miami city,236500,116400
+33140,"Michigan City-La Porte, IN",1848798,Michigan City city,126700,75600
+33260,"Midland, TX",4848072,Midland city,185000,71400
+33340,"Milwaukee-Waukesha-West Allis, WI",5553000,Milwaukee city,197800,79600
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",2743000,Minneapolis city,230700,113700
+33540,"Missoula, MT",3050200,Missoula city,259600,127900
+33660,"Mobile, AL",0150000,Mobile city,124500,80400
+33700,"Modesto, CA",0648354,Modesto city,244100,123800
+33740,"Monroe, LA",2251410,Monroe city,126600,71000
+33780,"Monroe, MI",2655020,Monroe city,149500,115400
+33860,"Montgomery, AL",0151000,Montgomery city,132800,84600
+34060,"Morgantown, WV",5455756,Morgantown city,157300,92900
+34100,"Morristown, TN",4750280,Morristown city,133200,70000
+34580,"Mount Vernon-Anacortes, WA",5347560,Mount Vernon city,269100,136100
+34620,"Muncie, IN",1851876,Muncie city,88600,57100
+34740,"Muskegon, MI",2656320,Muskegon city,105300,60200
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",4549075,Myrtle Beach city,172200,103700
+34900,"Napa, CA",0650258,Napa city,560500,230500
+34940,"Naples-Immokalee-Marco Island, FL",1247625,Naples city,316200,363400
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",4752006,Nashville-Davidson (balance),197000,111800
+35300,"New Haven-Milford, CT",0952000,New Haven city,244400,104300
+35380,"New Orleans-Metairie, LA",2255000,New Orleans city,184100,88100
+35620,"New York-Newark-Jersey City, NY-NJ-PA",3651000,New York city,413200,221200
+35660,"Niles-Benton Harbor, MI",2657760,Niles city,140900,70300
+35840,"North Port-Sarasota-Bradenton, FL",1264175,Sarasota city,207600,95600
+35980,"Norwich-New London, CT",0956200,Norwich city,238900,106200
+36100,"Ocala, FL",1250750,Ocala city,119200,71700
+36140,"Ocean City, NJ",3454360,Ocean City city,295500,215200
+36220,"Odessa, TX",4853388,Odessa city,120800,46500
+36260,"Ogden-Clearfield, UT",4955980,Ogden city,220600,99200
+36420,"Oklahoma City, OK",4055000,Oklahoma City city,146800,78100
+36500,"Olympia-Tumwater, WA",5351300,Olympia city,255500,140700
+36540,"Omaha-Council Bluffs, NE-IA",3137000,Omaha city,157500,93300
+36740,"Orlando-Kissimmee-Sanford, FL",1253000,Orlando city,180100,97400
+36780,"Oshkosh-Neenah, WI",5560500,Oshkosh city,147300,85500
+36980,"Owensboro, KY",2158620,Owensboro city,119700,76000
+37100,"Oxnard-Thousand Oaks-Ventura, CA",0654652,Oxnard city,520300,183200
+37340,"Palm Bay-Melbourne-Titusville, FL",1254000,Palm Bay city,162400,76200
+37460,"Panama City, FL",1254700,Panama City city,165200,75200
+37620,"Parkersburg-Vienna, WV",5462140,Parkersburg city,112300,63900
+37860,"Pensacola-Ferry Pass-Brent, FL",1255925,Pensacola city,145500,91300
+37900,"Peoria, IL",1759000,Peoria city,133300,84000
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",4260000,Philadelphia city,240700,61000
+38060,"Phoenix-Mesa-Scottsdale, AZ",0455000,Phoenix city,216600,107000
+38220,"Pine Bluff, AR",0555310,Pine Bluff city,79900,50000
+38300,"Pittsburgh, PA",4261000,Pittsburgh city,142100,60700
+38340,"Pittsfield, MA",2553960,Pittsfield city,203300,98200
+38540,"Pocatello, ID",1664090,Pocatello city,148300,83100
+38860,"Portland-South Portland, ME",2360545,Portland city,243800,125200
+38900,"Portland-Vancouver-Hillsboro, OR-WA",4159000,Portland city,312500,154700
+38940,"Port St. Lucie, FL",1258715,Port St. Lucie city,167200,87700
+39140,"Prescott, AZ",0457380,Prescott city,215000,148600
+39300,"Providence-Warwick, RI-MA",4459000,Providence city,257300,101700
+39340,"Provo-Orem, UT",4962470,Provo city,255100,144900
+39380,"Pueblo, CO",0862000,Pueblo city,148000,85800
+39460,"Punta Gorda, FL",1259200,Punta Gorda city,165200,185000
+39540,"Racine, WI",5566000,Racine city,165200,83400
+39580,"Raleigh, NC",3755000,Raleigh city,224800,152400
+39660,"Rapid City, SD",4652980,Rapid City city,172600,85500
+39740,"Reading, PA",4263624,Reading city,170900,45000
+39820,"Redding, CA",0659920,Redding city,233500,116300
+39900,"Reno, NV",3260600,Reno city,267200,147900
+40060,"Richmond, VA",5167000,Richmond city,220400,87400
+40140,"Riverside-San Bernardino-Ontario, CA",0662000,Riverside city,293800,136000
+40220,"Roanoke, VA",5168000,Roanoke city,173100,80100
+40340,"Rochester, MN",2754880,Rochester city,179700,110900
+40380,"Rochester, NY",3663000,Rochester city,138300,62100
+40420,"Rockford, IL",1765000,Rockford city,119700,79400
+40580,"Rocky Mount, NC",3757500,Rocky Mount city,104500,85400
+40660,"Rome, GA",1366668,Rome city,126600,86600
+40900,"Sacramento--Roseville--Arden-Arcade, CA",0664000,Sacramento city,339500,126000
+40980,"Saginaw, MI",2670520,Saginaw city,94900,47000
+41060,"St. Cloud, MN",2756896,St. Cloud city,169300,93400
+41100,"St. George, UT",4965330,St. George city,240300,135100
+41140,"St. Joseph, MO-KS",2964550,St. Joseph city,116600,68800
+41180,"St. Louis, MO-IL",2965000,St. Louis city,162600,63500
+41420,"Salem, OR",4164900,Salem city,210100,126300
+41500,"Salinas, CA",0664224,Salinas city,441000,189500
+41540,"Salisbury, MD-DE",2469925,Salisbury city,220900,81800
+41620,"Salt Lake City, UT",4967000,Salt Lake City city,255100,152400
+41660,"San Angelo, TX",4864472,San Angelo city,122700,61000
+41700,"San Antonio-New Braunfels, TX",4865000,San Antonio city,152400,67500
+41740,"San Diego-Carlsbad, CA",0666000,San Diego city,484900,220000
+41860,"San Francisco-Oakland-Hayward, CA",0667000,San Francisco city,716500,422700
+41940,"San Jose-Sunnyvale-Santa Clara, CA",0668000,San Jose city,815000,375500
+42020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA",0668154,San Luis Obispo city,499800,252900
+42100,"Santa Cruz-Watsonville, CA",0669112,Santa Cruz city,659900,397100
+42140,"Santa Fe, NM",3570500,Santa Fe city,277700,177200
+42200,"Santa Maria-Santa Barbara, CA",0669070,Santa Barbara city,509400,469300
+42220,"Santa Rosa, CA",0670098,Santa Rosa city,513300,236000
+42340,"Savannah, GA",1369000,Savannah city,173300,78300
+42540,"Scranton--Wilkes-Barre--Hazleton, PA",4269000,Scranton city,136300,78400
+42660,"Seattle-Tacoma-Bellevue, WA",5363000,Seattle city,365400,252100
+42680,"Sebastian-Vero Beach, FL",1274150,Vero Beach city,172600,121300
+43100,"Sheboygan, WI",5572975,Sheboygan city,149800,87500
+43300,"Sherman-Denison, TX",4867496,Sherman city,116600,67500
+43340,"Shreveport-Bossier City, LA",2270000,Shreveport city,138700,70700
+43580,"Sioux City, IA-NE-SD",1973335,Sioux City city,119900,73100
+43620,"Sioux Falls, SD",4659020,Sioux Falls city,171000,97300
+43780,"South Bend-Mishawaka, IN-MI",1871000,South Bend city,120200,66200
+43900,"Spartanburg, SC",4568290,Spartanburg city,122300,84100
+44060,"Spokane-Spokane Valley, WA",5367000,Spokane city,194400,96100
+44100,"Springfield, IL",1772000,Springfield city,135900,84300
+44140,"Springfield, MA",2567000,Springfield city,217500,86500
+44180,"Springfield, MO",2970000,Springfield city,137000,78700
+44220,"Springfield, OH",3974118,Springfield city,107300,69300
+44300,"State College, PA",4273808,State College borough,212300,147600
+44700,"Stockton-Lodi, CA",0675000,Stockton city,281100,117500
+44940,"Sumter, SC",4570405,Sumter city,113200,76600
+45060,"Syracuse, NY",3673000,Syracuse city,131100,67900
+45220,"Tallahassee, FL",1270600,Tallahassee city,167600,98100
+45300,"Tampa-St. Petersburg-Clearwater, FL",1271000,Tampa city,162600,80700
+45460,"Terre Haute, IN",1875428,Terre Haute city,88400,60100
+45500,"Texarkana, TX-AR",4872368,Texarkana city,104200,64300
+45780,"Toledo, OH",3977000,Toledo city,120500,73700
+45820,"Topeka, KS",2071000,Topeka city,126500,65700
+45940,"Trenton, NJ",3474000,Trenton city,281900,66200
+46060,"Tucson, AZ",0477000,Tucson city,166300,91200
+46140,"Tulsa, OK",4075000,Tulsa city,139100,81900
+46220,"Tuscaloosa, AL",0177256,Tuscaloosa city,152300,97400
+46340,"Tyler, TX",4874144,Tyler city,144800,80100
+46520,"Urban Honolulu, HI",1517000,Honolulu CDP,626400,317300
+46540,"Utica-Rome, NY",3676540,Utica city,114600,57800
+46660,"Valdosta, GA",1378800,Valdosta city,120200,81600
+46700,"Vallejo-Fairfield, CA",0681666,Vallejo city,342000,162600
+47020,"Victoria, TX",4875428,Victoria city,129200,69400
+47220,"Vineland-Bridgeton, NJ",3476070,Vineland city,160500,94000
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC",5182000,Virginia Beach city,236600,121500
+47300,"Visalia-Porterville, CA",0682954,Visalia city,180200,112200
+47380,"Waco, TX",4876000,Waco city,120700,53200
+47580,"Warner Robins, GA",1380508,Warner Robins city,133600,73900
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",1150000,Washington city,397900,153500
+47940,"Waterloo-Cedar Falls, IA",1982425,Waterloo city,141300,63800
+48140,"Wausau, WI",5584475,Wausau city,147600,84700
+48260,"Weirton-Steubenville, WV-OH",5485156,Weirton city,89400,71800
+48300,"Wenatchee, WA",5377105,Wenatchee city,245800,129000
+48540,"Wheeling, WV-OH",5486452,Wheeling city,101400,67300
+48620,"Wichita, KS",2079000,Wichita city,129300,75000
+48660,"Wichita Falls, TX",4879000,Wichita Falls city,94500,60900
+48700,"Williamsport, PA",4285312,Williamsport city,147400,67900
+48900,"Wilmington, NC",3774440,Wilmington city,213500,121600
+49020,"Winchester, VA-WV",5186720,Winchester city,216500,109800
+49180,"Winston-Salem, NC",3775000,Winston-Salem city,145000,99000
+49340,"Worcester, MA-CT",2582000,Worcester city,250400,118400
+49420,"Yakima, WA",5380010,Yakima city,163500,100100
+49620,"York-Hanover, PA",4287048,York city,170300,56500
+49660,"Youngstown-Warren-Boardman, OH-PA",3988000,Youngstown city,103100,40700
+49700,"Yuba City, CA",0686972,Yuba City city,223700,112300
+49740,"Yuma, AZ",0485540,Yuma city,117000,78100

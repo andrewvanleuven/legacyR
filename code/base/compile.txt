@@ -5,7 +5,7 @@
 [x] -> CHRASTS        
 [x] -> FLIGHTS
 [x] -> HIST_PROP      
-[x] -> VACAN_C        
+[x] -> VACAN_C         ... [x] MSA | [x] CITY       
 [x] -> POP_MMNTM
 [x] -> DECDS_SNC_PEAK 
 [x] -> DECL_SNC_PEAK
@@ -21,13 +21,13 @@
 [x] -> DENSITY
 [x] -> IMMIGRANT
 [x] -> R1             
-[ ] -> TRANSP
-[ ] -> MED_VALUE_C
-[ ] -> HOME_OLDR1940_C
+[x] -> TRANSP
+[x] -> MED_VALUE_C     ... [x] MSA | [x] CITY
+[x] -> HOME_OLDR1940_C ... [x] MSA | [x] CITY
 [ ] -> PROP_CRP1K
 [ ] -> INF_MR
 [ ] -> PCT_SMOKE      
 [ ] -> PCT_OBESE
 [ ] -> H2O_VIOL       
 [ ] -> CIV_LFPR       
-[ ] -> HSNG_STOCK_AGE
+[-] -> HSNG_STOCK_AGE

@@ -1,33 +1,35 @@
-[x] -> AGE (CITY)
-[x] -> LAND_USE_MIX (NOW CALLED "ACCESS")
-[x] -> ST_CAP
-[x] -> GMP_MFG_LQ
-[x] -> CHRASTS        
-[x] -> FLIGHTS
-[x] -> HIST_PROP      
-[x] -> VACAN_C         ... [x] MSA | [x] CITY       
-[x] -> POP_MMNTM (MSA)
-[x] -> DECDS_SNC_PEAK (CITY)
-[x] -> DECL_SNC_PEAK (CITY)
-[x] -> POVERTY
-[x] -> GINI           
-[x] -> BAD_BRIDGE
-[x] -> SFUND
-[x] -> BELOW_DIPL
-[x] -> BACH_PLUS
-[x] -> PCT_UNDR18
-[x] -> PCT_65OVR
-[x] -> LOW_INC_HSING  
-[x] -> DENSITY
-[x] -> IMMIGRANT
-[x] -> R1             
-[x] -> TRANSP
-[x] -> MED_VALUE_C     ... [x] MSA | [x] CITY
-[x] -> HOME_OLDR1940_C ... [x] MSA | [x] CITY
-[x] -> CIV_LFPR       
-[x] -> PROP_CRP1K
-[x] -> INF_MR (REPLACED WITH % INFANTS W/LOW BIRTH WEIGHT)
-[x] -> PCT_SMOKE (REPLACED WITH % ADULTS UNINSURED)    
-[x] -> PCT_OBESE
-[-] -> H2O_VIOL       
-[-] -> HSNG_STOCK_AGE
+[C] [M] -> Cleaned? Merged?
+---|---|-------------------------------------------
+[x] [x] -> LAND_USE_MIX (NOW CALLED "ACCESS")
+[x] [x] -> INF_MR (REPLACED WITH % INFANTS W/LOW BIRTH WEIGHT)
+[x] [x] -> PCT_SMOKE (REPLACED WITH % ADULTS UNINSURED)    
+[x] [x] -> PCT_OBESE
+[x] [x] -> CHRASTS        
+[x] [x] -> FLIGHTS
+[x] [x] -> HIST_PROP      
+[x] [x] -> AGE (CITY)
+[x] [x] -> DECDS_SNC_PEAK (CITY)
+[x] [x] -> DECL_SNC_PEAK (CITY)
+[x] [x] -> POP_MMNTM (MSA, 2000-05)
+[x] [x] -> POVERTY
+[x] [x] -> GINI           
+[x] [x] -> BAD_BRIDGE
+[x] [x] -> SFUND
+[x] [x] -> BELOW_DIPL
+[x] [x] -> BACH_PLUS
+[x] [x] -> PCT_UNDR18
+[x] [x] -> PCT_65OVR
+[x] [x] -> LOW_INC_HSING  
+[x] [x] -> DENSITY
+[x] [x] -> IMMIGRANT
+[x] [x] -> VACAN_C         ... [x] MSA | [x] CITY       
+[x] [x] -> MED_VALUE_C     ... [x] MSA | [x] CITY
+[x] [x] -> HOME_OLDR1940_C ... [x] MSA | [x] CITY
+[x] [x] -> R1             
+[x] [x] -> CIV_LFPR       
+[x] [x] -> PROP_CRP1K
+[x] [x] -> TRANSP
+[x] [x] -> ST_CAP
+[x] [x] -> GMP_MFG_LQ
+[-] [-] -> H2O_VIOL (removed)
+[-] [-] -> HSNG_STOCK_AGE (removed)

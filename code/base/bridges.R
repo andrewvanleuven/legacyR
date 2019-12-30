@@ -24,7 +24,7 @@ msaxw <- xw %>% select(cbsa_fips,cbsa,cbsa_type) %>%
 # DATA DICTIONARY: http://nationalbridges.com/nbiDesc.html
 # NOTE -> the status field definition of bridge deficiencies is limited only to
 # those bridges which are 10 years or older and are more than 20 feet in length
-df <- read_delim(file = "data/hidden/too_big/bridge.txt", delim = ",")
+df <- read_delim(file = "hidden/too_big/bridge.txt", delim = ",")
 
 bridge <- df %>% select(STATE_CODE_001,COUNTY_CODE_003,STATUS_WITH_10YR_RULE,SUFFICIENCY_RATING) %>% 
   rename_all(tolower) %>% 
@@ -40,11 +40,8 @@ bridge <- df %>% select(STATE_CODE_001,COUNTY_CODE_003,STATUS_WITH_10YR_RULE,SUF
   group_by(cbsa_fips) %>% 
   summarize(total_bridges_2005 = sum(bridges),
             bad_bridges_2005 = sum(bad_bridges)) %>% 
-  inner_join(.,msaxw) %>% 
+  right_join(.,univ) %>% 
+  replace_na(list(bad_bridges_2005 = 0,total_bridges_2005 = 0)) %>% 
   select(1,4,2,3) %>% 
   mutate(pct_deficient = bad_bridges_2005/total_bridges_2005) %>% 
   write_csv("data/base/generated/bridges.csv")
-
-
-
-

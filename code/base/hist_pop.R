@@ -41,11 +41,12 @@ age <- df %>%
   mutate(first = ifelse(year == min(year), 1, 0)) %>% 
   filter(first == 1) %>% 
   mutate(age = 2010-as.numeric(year)) %>% 
-  select(cbsa,age,census_yr,pop)
+  select(cbsa,age)
 
 age_data <- df %>% select(1:4) %>% 
   inner_join(.,peak,by = "cbsa") %>% 
   left_join(.,age,by = "cbsa") %>% 
+  replace_na(list(age = 0)) %>% 
   write_csv("data/base/generated/peak_pop.csv")
 
 

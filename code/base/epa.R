@@ -33,10 +33,17 @@ epa_sf <- st_as_sf(df, coords = c("longitude", "latitude"), crs = 4326) %>%
   st_transform(crs = 2163) %>% 
   st_centroid_xy() 
 
+area <- read_csv("data/base/generated/density_2005.csv") %>% select(1:3)
+
+
 superfunds <- st_intersection((epa_sf %>% select(site_name,date_of,count)),
                               (cbsa %>% select(cbsa_fips,name))) %>% 
   select(date_of:name) %>% 
   st_drop_geometry() %>%
   group_by(cbsa_fips) %>% 
-  summarise(npl_sites = sum(count)) %>% 
+  summarise(npl_sites = sum(count)) %>%
+  left_join(univ,.) %>% 
+  replace_na(list(npl_sites = 0)) %>% 
+  left_join(.,area) %>% 
+  mutate(sfund_per_sqmi = npl_sites/sqmi) %>% 
   write_csv("data/base/generated/npl.csv")

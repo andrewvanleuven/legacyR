@@ -8,6 +8,10 @@ options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
+univ <- read_csv("data/clustrdata.csv") %>% 
+  select(1:2) %>% rename_all(tolower) %>% 
+  rename(cbsa_fips = id)
+
 ### SOURCE: https://seer.cancer.gov/popdata/
 df <- read_fwf("hidden/too_big/pop.txt", 
                fwf_widths(c(4,2,2,3,2,1,1,1,2,8),
@@ -40,14 +44,12 @@ pop95 <- df %>% filter(year == 1995) %>%
   summarize(population_1995 = sum(pop)) %>% 
   inner_join(.,msaxw) %>% 
   select(1,2) 
-pop00 <- df %>% filter(year == 2000) %>% 
-  mutate(cty_fips = paste0(st_fips,cty_fips),
-         population = as.numeric(population)) %>% 
-  group_by(cty_fips) %>% 
-  summarize(pop = sum(population)) %>% 
+pop00 <- get_decennial(year = 2000, variables = "P001001", state = us, geography = "county") %>% 
+  mutate(cty_fips = GEOID,
+         population = value) %>% 
   left_join(.,xw) %>% 
   group_by(cbsa_fips) %>% 
-  summarize(population_2000 = sum(pop)) %>% 
+  summarize(population_2000 = sum(population)) %>% 
   inner_join(.,msaxw) %>% 
   select(1,2) 
 pop05 <- df %>% filter(year == 2005) %>% 
@@ -81,12 +83,13 @@ pop15 <- df %>% filter(year == 2015) %>%
   inner_join(.,msaxw) %>% 
   select(1,2) 
 
-populations <- inner_join(pop90,pop95) %>% 
-  inner_join(.,pop00) %>% 
+populations <- pop00 %>% 
+  #inner_join(.,pop00) %>% 
   inner_join(.,pop05) %>% 
-  inner_join(.,pop10) %>% 
-  inner_join(.,pop15) %>% 
-  mutate(pctchg_95_05 = (population_2005-population_1995)/population_1995)
+  #inner_join(.,pop10) %>% 
+  #inner_join(.,pop15) %>% 
+  left_join(univ,.) %>% 
+  mutate(pctchg_00_05 = (population_2005-population_2000)/population_2000) %>% 
   write_csv("data/base/generated/populations.csv")
 
 pop_05 <- df %>% filter(year == 2005) %>% 
@@ -103,9 +106,7 @@ pop_05 <- df %>% filter(year == 2005) %>%
 
 
 # Density Calculation -----------------------------------------------------
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+
 densities <- core_based_statistical_areas(cb = T) %>% 
   select(GEOID:geometry) %>% st_transform(crs = 2163) %>% 
   mutate(cbsa_fips = as.numeric(GEOID)) %>% 

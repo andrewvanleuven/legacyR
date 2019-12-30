@@ -17,7 +17,8 @@ access <- df %>%
   rename(cbsa = 1,
          transit_score = 2,
          walk_score = 3) %>% 
-  mutate(access = (as.numeric(transit_score)+as.numeric(walk_score))/2) %>% 
+  mutate(access = (as.numeric(transit_score)+as.numeric(walk_score))/2,
+         cbsa = str_replace(cbsa,"Macon, GA","Macon-Bibb County, GA")) %>% 
   filter(access > 0) %>% 
   arrange(desc(access)) %>% 
   select(cbsa,access) %>% 

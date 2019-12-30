@@ -1,4 +1,4 @@
-cbsa_fips,cbsa,total_vacant_2000,total_units_2000,vacancy
+cbsa_fips,cbsa,total_vacant_2000,total_units_2000,vacancy_msa
 10180,"Abilene, TX",6742,65217,0.10337795360105494
 10420,"Akron, OH",16739,290976,0.0575270812713076
 10500,"Albany, GA",6352,63755,0.09963140145870912

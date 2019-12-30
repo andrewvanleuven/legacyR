@@ -44,7 +44,17 @@ freight <- read_csv("data/base/source/freight.csv") %>% rename_all(tolower) %>%
             n_air_truck = sum(air_truck),
             n_truck_truck = sum(truck_truck),
             n_truck_air_rail = sum(truck_air_rail)) %>% 
-  left_join(.,univ) %>% 
+  left_join(univ,.) %>% 
+  replace_na(list(intermodal_freight = 0,
+                  n_rail_truck = 0,
+                  n_truck_port_rail = 0,
+                  n_port_truck = 0,
+                  n_truck_port_rail_air = 0,
+                  n_rail_port = 0,
+                  n_truck_port_air = 0,
+                  n_air_truck = 0,
+                  n_truck_truck = 0,
+                  n_truck_air_rail = 0,)) %>% 
   select(cbsa_fips,name,intermodal_freight,everything()) %>% 
   write_csv("data/base/generated/freight.csv")
 

@@ -8,10 +8,10 @@ options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
+# Load Data ---------------------------------------------------------------
 vsf1 <- load_variables(2000, "sf1", cache = T)
 vsf3 <- load_variables(2000, "sf3", cache = T)
-us <- states(cb = TRUE, resolution = "20m") %>%
-  filter(!STUSPS %in% c("PR")) %>% pull(STUSPS)
+us <- states(cb = TRUE, resolution = "20m") %>% filter(!STUSPS %in% c("PR")) %>% pull(STUSPS)
 xw <- read_csv("data/xw.csv") 
 msaxw <- xw %>% select(cbsa_fips,cbsa,cbsa_type) %>% 
   filter(cbsa_type == "Metropolitan Statistical Area") %>% 
@@ -40,8 +40,8 @@ vacant <- get_decennial(year = 2000, variables = c("H001001","H005001"), state =
   summarize(total_units_2000 = sum(H001001),
             total_vacant_2000 = sum(H005001)) %>% 
   inner_join(.,msaxw) %>% 
-  mutate(vacancy = total_vacant_2000/total_units_2000) %>% 
-  select(cbsa_fips,cbsa,total_vacant_2000,total_units_2000,vacancy) %>% 
+  mutate(vacancy_msa = total_vacant_2000/total_units_2000) %>% 
+  select(cbsa_fips,cbsa,total_vacant_2000,total_units_2000,vacancy_msa) %>% 
   write_csv("data/base/generated/vacancy_msa.csv")
 
 vacanc <- get_decennial(year = 2000, variables = c("H001001","H005001"), state = us, geography = "place") %>% 
@@ -51,9 +51,11 @@ vacanc <- get_decennial(year = 2000, variables = c("H001001","H005001"), state =
 vacant_city <- inner_join(cxw,vacanc, by = "city_fips") %>% 
   inner_join(.,msaxw, by = "cbsa_fips") %>% 
   select(cbsa_fips,cbsa,city_fips,city,H005001,H001001) %>% 
-  mutate(vacancy = H005001/H001001) %>% 
-  select(-H005001,-H001001) %>% 
-  write_csv("data/base/generated/vacancy_city.csv")
+  mutate(vacancy_city = H005001/H001001) %>% 
+  select(-H005001,-H001001,-cbsa) %>% 
+  left_join(.,vacant, by = "cbsa_fips") %>% 
+  select(cbsa_fips,cbsa,vacancy_msa,vacancy_city) %>% 
+  write_csv("data/base/generated/vacancy_city_msa.csv")
 
 
 # Under 18 and Over 65 ----------------------------------------------------

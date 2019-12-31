@@ -64,46 +64,47 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 ## Liability Variables
 
-Variable	Description	Source	Geography
-city_peak_yr	--	Census	City
-city_peak_pop	--	Census	City
-city_decades_since_peak	--	Census	City
-city_pop_2010	--	Census	City
-city_decline_since_peak	--	Census	City
-pctchg_00_05	--	Census/NIH SEER	MSA
-vacancy_msa	--	Census	MSA
-vacancy_city	--	Census	City
-pct_prewar_city	--	Census	City
-pct_prewar_msa	--	Census	MSA
-total_units_2005	--	HUD	MSA
-hud_units_2005	--	HUD	MSA
-pct_ph	--	HUD	MSA
-med_val_cbsa	--	ACS	MSA
-med_val_city	--	Census	City
-prop_crimes_per100k	--	FBI UCR	MSA
-prop_crimes_burglary	--	FBI UCR	MSA
-prop_crimes_larceny	--	FBI UCR	MSA
-prop_crimes_moto_theft	--	FBI UCR	MSA
-pct_low_inf_bw	--	UW PHI	MSA
-pct_obese_adult	--	UW PHI	MSA
-pct_uninsured_adult	--	UW PHI	MSA
-pov_total_in_poverty	--	Census	MSA
-pov_total	--	Census	MSA
-pov_poverty_rate	--	Census	MSA
-gini	--	ACS	MSA
-total_bridges_2005	--	FHWA	MSA
-bad_bridges_2005	--	FHWA	MSA
-pct_deficient	--	FHWA	MSA
-npl_sites	--	EPA	MSA
-sfund_per_sqmi	--	EPA	MSA
-edu_no_hs_diploma	--	Census	MSA
-edu_bachelors_plus	--	Census	MSA
-edu_total_bach	--	Census	MSA
-edu_total_mast	--	Census	MSA
-edu_total_prof	--	Census	MSA
-edu_total_doct	--	Census	MSA
-edu_total_nohs	--	Census	MSA
-edu_total_degr	--	Census	MSA
-edu_total_ov25	--	Census	MSA
+| Variable                | Description |      Source     | Geography |
+|-------------------------|-------------|:---------------:|:---------:|
+| city_peak_yr            | --          |      Census     |    City   |
+| city_peak_pop           | --          |      Census     |    City   |
+| city_decades_since_peak | --          |      Census     |    City   |
+| city_pop_2010           | --          |      Census     |    City   |
+| city_decline_since_peak | --          |      Census     |    City   |
+| pctchg_00_05            | --          | Census/NIH SEER |    MSA    |
+| vacancy_msa             | --          |      Census     |    MSA    |
+| vacancy_city            | --          |      Census     |    City   |
+| pct_prewar_city         | --          |      Census     |    City   |
+| pct_prewar_msa          | --          |      Census     |    MSA    |
+| total_units_2005        | --          |       HUD       |    MSA    |
+| hud_units_2005          | --          |       HUD       |    MSA    |
+| pct_ph                  | --          |       HUD       |    MSA    |
+| med_val_cbsa            | --          |       ACS       |    MSA    |
+| med_val_city            | --          |      Census     |    City   |
+| prop_crimes_per100k     | --          |     FBI UCR     |    MSA    |
+| prop_crimes_burglary    | --          |     FBI UCR     |    MSA    |
+| prop_crimes_larceny     | --          |     FBI UCR     |    MSA    |
+| prop_crimes_moto_theft  | --          |     FBI UCR     |    MSA    |
+| pct_low_inf_bw          | --          |      UW PHI     |    MSA    |
+| pct_obese_adult         | --          |      UW PHI     |    MSA    |
+| pct_uninsured_adult     | --          |      UW PHI     |    MSA    |
+| pov_total_in_poverty    | --          |      Census     |    MSA    |
+| pov_total               | --          |      Census     |    MSA    |
+| pov_poverty_rate        | --          |      Census     |    MSA    |
+| gini                    | --          |       ACS       |    MSA    |
+| total_bridges_2005      | --          |       FHWA      |    MSA    |
+| bad_bridges_2005        | --          |       FHWA      |    MSA    |
+| pct_deficient           | --          |       FHWA      |    MSA    |
+| npl_sites               | --          |       EPA       |    MSA    |
+| sfund_per_sqmi          | --          |       EPA       |    MSA    |
+| edu_no_hs_diploma       | --          |      Census     |    MSA    |
+| edu_bachelors_plus      | --          |      Census     |    MSA    |
+| edu_total_bach          | --          |      Census     |    MSA    |
+| edu_total_mast          | --          |      Census     |    MSA    |
+| edu_total_prof          | --          |      Census     |    MSA    |
+| edu_total_doct          | --          |      Census     |    MSA    |
+| edu_total_nohs          | --          |      Census     |    MSA    |
+| edu_total_degr          | --          |      Census     |    MSA    |
+| edu_total_ov25          | --          |      Census     |    MSA    |
 
 * Any descriptions with "--" are still *in progress*

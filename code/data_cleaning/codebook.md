@@ -8,6 +8,14 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 ## Control Variables
 
+| **Variable**    | **Description**                   | **Source     | **Geography** |
+|-----------------|-----------------------------------|--------------|-----------|
+| cbsa_fips       | Unique ID for each MSA            | --           | MSA       |
+| cbsa            | Name of each MSA                  | --           | MSA       |
+| sqmi            | Square mileage of each MSA        | Census TIGER | MSA       |
+| population_2005 | Population of each MSA in 2005    |              | MSA       |
+| density         | Number of persons per square-mile |              | MSA       |
+
 ## Asset Variables
 
 ## Liability Variables

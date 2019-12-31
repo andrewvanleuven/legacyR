@@ -13,5 +13,7 @@ univ <- read_csv("data/clustrdata.csv") %>%
   rename(cbsa_fips = id)
 
 mfg <- read_csv("data/base/source/moodys.csv")%>% 
-  left_join(univ,.) %>% 
+  left_join(univ,.) %>% select(-cbsa) %>% 
+  rename(gmp2007_sector = 4,
+         emp2007_sector = 6) %>% 
   write_csv("data/base/generated/mfg.csv")

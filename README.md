@@ -6,7 +6,7 @@ This repository contains code, data, and analysis related to our research (condu
   <img width="750" src="plot/cluster_map.png">
 </p>
 
-The core of this research is an analysis that combines cluster *and* discriminant analyses—which subsets a universe into distinct groupings and tests the statistical validity of those groupings (see [Hill et al., 1998](https://journals.sagepub.com/doi/10.1080/0042098983962))—to group every U.S. metropolitan area into clusters according to their profile of legacy assets and liabilities within their central city and overall regional economy. 
+The core of this research is an analysis that combines cluster *and* discriminant analyses—which subsets a universe into distinct groupings and tests the statistical validity of those groupings (see [Hill et al., 1998](https://journals.sagepub.com/doi/10.1080/0042098983962))—to group every U.S. metropolitan area into clusters, each according to its profile of legacy assets and liabilities within their central city and overall regional economy. 
 
 We use a mixture of asset variables and liability variables (as well as a few control variables) in our analysis. Our base dataset was constructed from a wide variety of sources, most of which are publicly available. The code used to clean and merge all of the variables in the dataset can be found within this repository:
 

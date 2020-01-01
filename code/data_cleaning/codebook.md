@@ -12,7 +12,7 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 |----------------------|-------------------------------------------------|:------------:|:----:|:---------:|
 | cbsa_fips            | Unique ID for each MSA                          |      --      |  --  |    MSA    |
 | cbsa                 | Name of each MSA                                |      --      |  --  |    MSA    |
-| sqmi                 | Square mileage of each MSA                      | Census TIGER | 2010 |    MSA    |
+| sqmi                 | Square mileage of each MSA                      | [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) | 2010 |    MSA    |
 | population_2005      | Population of each MSA in 2005                  |   NIH SEER   | 2005 |    MSA    |
 | density              | Number of persons per square-mile               | Census TIGER | 2005 |    MSA    |
 | age_total_young      | Number of persons younger than age 18           |   US Census  | 2000 |    MSA    |
@@ -25,8 +25,8 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 | nat_not_foreign_born | Number of persons not foreign-born              |   US Census  | 2000 |    MSA    |
 | nat_native           | Number of persons native-born                   |   US Census  | 2000 |    MSA    |
 | nat_nativity         | Percentage of persons not foreign-born          |   US Census  | 2000 |    MSA    |
-| laus_lfpr            | Civilian labor force participation rate         |      BLS     | 2005 |    MSA    |
-| laus_pop             | Population of each MSA in 2005                  |   NIH SEER   | 2005 |    MSA    |
+| laus_lfpr            | Civilian labor force participation rate         |      [BLS](https://www.bls.gov/lau/)     | 2005 |    MSA    |
+| laus_pop             | Population of each MSA in 2005                  |   [NIH SEER](https://seer.cancer.gov/popdata/)   | 2005 |    MSA    |
 | laus_lf              | Number of persons in the labor force            |      BLS     | 2005 |    MSA    |
 | laus_emp             | Number of employed persons in the labor force   |      BLS     | 2005 |    MSA    |
 | laus_unemp           | Number of unemployed persons in the labor force |      BLS     | 2005 |    MSA    |
@@ -34,7 +34,10 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 ### Notes
 
 * The square mileage was calculated with the `sf` GIS package in R and used Census [TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) shapefiles downloaded using the `tigris` package developed by [Kyle Walker](https://github.com/walkerke).
-* Population estimates (for non-decennial years) was collected from the [NIH SEER research data site](https://seer.cancer.gov/popdata/download.html).
+* All variables constructed from Census and/or ACS data were downloaded with the help of the `tidycensus` package (also developed by [Kyle Walker](https://github.com/walkerke)).
+* The difference between the "foreign-born" and "non-native" population is not intuitive. See [this FAQ](https://www.census.gov/topics/population/foreign-born/about/faq.html) from the U.S. Census for more about this distinction. For the purpose of our analysis, we calculate a "nativity" variable as *total-population-minus-foreign-born divided by total population*.
+
+***
 
 ## Asset Variables
 
@@ -64,6 +67,8 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 ### Notes
 
 * The
+
+***
 
 ## Liability Variables
 

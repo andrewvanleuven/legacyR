@@ -8,32 +8,31 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 ## Control Variables
 
-| Variable             | Description                       |    Source    | Geography |
-|----------------------|-----------------------------------|:------------:|:---------:|
-| cbsa_fips            | Unique ID for each MSA            |      --      |    MSA    |
-| cbsa                 | Name of each MSA                  |      --      |    MSA    |
-| sqmi                 | Square mileage of each MSA        | Census TIGER |    MSA    |
-| population_2005      | Population of each MSA in 2005    |      --      |    MSA    |
-| density              | Number of persons per square-mile |      --      |    MSA    |
-| age_total_young      | --                                |   US Census  |    MSA    |
-| age_total_old        | --                                |   US Census  |    MSA    |
-| age_total            | --                                |   US Census  |    MSA    |
-| age_pct_u18          | --                                |   US Census  |    MSA    |
-| age_pct_o64          | --                                |   US Census  |    MSA    |
-| nat_total            | --                                |   US Census  |    MSA    |
-| nat_foreign_born     | --                                |   US Census  |    MSA    |
-| nat_not_foreign_born | --                                |   US Census  |    MSA    |
-| nat_native           | --                                |   US Census  |    MSA    |
-| nat_nativity         | --                                |   US Census  |    MSA    |
-| laus_lfpr            | --                                |      BLS     |    MSA    |
-| laus_pop             | --                                |      BLS     |    MSA    |
-| laus_lf              | --                                |      BLS     |    MSA    |
-| laus_emp             | --                                |      BLS     |    MSA    |
-| laus_unemp           | --                                |      BLS     |    MSA    |
+| Variable             | Description                                     |    Source    | Year | Geography |
+|----------------------|-------------------------------------------------|:------------:|:----:|:---------:|
+| cbsa_fips            | Unique ID for each MSA                          |      --      |  --  |    MSA    |
+| cbsa                 | Name of each MSA                                |      --      |  --  |    MSA    |
+| sqmi                 | Square mileage of each MSA                      | Census TIGER | 2010 |    MSA    |
+| population_2005      | Population of each MSA in 2005                  |   NIH SEER   | 2005 |    MSA    |
+| density              | Number of persons per square-mile               | Census TIGER | 2005 |    MSA    |
+| age_total_young      | Number of persons younger than age 18           |   US Census  | 2000 |    MSA    |
+| age_total_old        | Number of persons older than age 64             |   US Census  | 2000 |    MSA    |
+| age_total            | Number of persons                               |   US Census  | 2000 |    MSA    |
+| age_pct_u18          | Percentage of persons younger than age 18       |   US Census  | 2000 |    MSA    |
+| age_pct_o64          | Percentage of persons older than age 64         |   US Census  | 2000 |    MSA    |
+| nat_total            | Number of persons                               |   US Census  | 2000 |    MSA    |
+| nat_foreign_born     | Number of persons  foreign-born                 |   US Census  | 2000 |    MSA    |
+| nat_not_foreign_born | Number of persons not foreign-born              |   US Census  | 2000 |    MSA    |
+| nat_native           | Number of persons native-born                   |   US Census  | 2000 |    MSA    |
+| nat_nativity         | Percentage of persons not foreign-born          |   US Census  | 2000 |    MSA    |
+| laus_lfpr            | Civilian labor force participation rate         |      BLS     | 2005 |    MSA    |
+| laus_pop             | Population of each MSA in 2005                  |   NIH SEER   | 2005 |    MSA    |
+| laus_lf              | Number of persons in the labor force            |      BLS     | 2005 |    MSA    |
+| laus_emp             | Number of employed persons in the labor force   |      BLS     | 2005 |    MSA    |
+| laus_unemp           | Number of unemployed persons in the labor force |      BLS     | 2005 |    MSA    |
 
 * The square mileage was calculated with the `sf` GIS package in R and used Census [TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) shapefiles downloaded using the `tigris` package developed by [Kyle Walker](https://github.com/walkerke).
 * Population estimates (for non-decennial years) was collected from the [NIH SEER research data site](https://seer.cancer.gov/popdata/download.html).
-* Any descriptions with "--" are still *in progress*
 
 ## Asset Variables
 
@@ -106,4 +105,5 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 | edu_total_nohs          | Number of persons 25 years and over with less than a high-school diploma                                  |      Census     | 2000 |    MSA    |
 | edu_total_degr          | Number of persons 25 years and over                                                                       |      Census     | 2000 |    MSA    |
 | edu_total_ov25          | Number of persons 25 years and over with a bachelor's degree or higher                                    |      Census     | 2000 |    MSA    |
-* Any descriptions with "--" are still *in progress*
+
+* 

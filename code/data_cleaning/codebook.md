@@ -31,35 +31,39 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 | laus_emp             | Number of employed persons in the labor force   |      BLS     | 2005 |    MSA    |
 | laus_unemp           | Number of unemployed persons in the labor force |      BLS     | 2005 |    MSA    |
 
+### Notes
+
 * The square mileage was calculated with the `sf` GIS package in R and used Census [TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) shapefiles downloaded using the `tigris` package developed by [Kyle Walker](https://github.com/walkerke).
 * Population estimates (for non-decennial years) was collected from the [NIH SEER research data site](https://seer.cancer.gov/popdata/download.html).
 
 ## Asset Variables
 
-| Variable            | Description |        Source       | Geography |
-|---------------------|-------------|:-------------------:|:---------:|
-| access              | --          |        US DOT       |    MSA    |
-| city_age            | --          |      US Census      |    City   |
-| r_1                 | --          |        IPEDS        |    MSA    |
-| r_2                 | --          |        IPEDS        |    MSA    |
-| st_cap              | --          |          --         |    MSA    |
-| mfg_gmp2007         | --          | Moody's Economy.com |    MSA    |
-| mfg_gmp2007_sector  | --          | Moody's Economy.com |    MSA    |
-| mfg_emp2007         | --          | Moody's Economy.com |    MSA    |
-| mfg_emp2007_sector  | --          | Moody's Economy.com |    MSA    |
-| mfg_lq_gmp          | --          | Moody's Economy.com |    MSA    |
-| mfg_lq_emp          | --          | Moody's Economy.com |    MSA    |
-| charitable_assets   | --          |         NCCS        |    MSA    |
-| intermodal_freight  | --          |      US DOT BTS     |    MSA    |
-| enplanements        | --          |         FAA         |    MSA    |
-| hist_bldgs          | --          |         NPS         |    MSA    |
-| hist_strct          | --          |         NPS         |    MSA    |
-| hist_sites          | --          |         NPS         |    MSA    |
-| hist_objct          | --          |         NPS         |    MSA    |
-| hist_dists          | --          |         NPS         |    MSA    |
-| hist_registry_total | --          |         NPS         |    MSA    |
+| Variable            | Description                                                                                                             |        Source       | Year | Geography |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------|:-------------------:|:----:|:---------:|
+| access              | An index constructed from US DOT's Transportation and Health Tool data on walkability and access to transit             |        US DOT       | 2015 |    MSA    |
+| city_age            | Number of decades since the decennial census year in which an MSA's principal city first reached a population of 50,000 |      US Census      | 2010 |    City   |
+| r_1                 | Number of universities in an MSA classified as "high research activity"                                                 |        IPEDS        | 2005 |    MSA    |
+| r_2                 | Number of universities in an MSA classified as "very high research activity"                                            |        IPEDS        | 2005 |    MSA    |
+| st_cap              | Indicates the presence of a state capital within the MSA                                                                |          --         |  --  |    MSA    |
+| mfg_gmp2007         | The gross metropolitan product (GMP) of the MSA in 2007                                                                 | Moody's Economy.com | 2007 |    MSA    |
+| mfg_gmp2007_sector  | The gross metropolitan product (GMP) of the MSA's manufacturing sector in 2007                                          | Moody's Economy.com | 2007 |    MSA    |
+| mfg_emp2007         | Total employment in the MSA in 2007                                                                                     | Moody's Economy.com | 2007 |    MSA    |
+| mfg_emp2007_sector  | Total employment in the MSA's manufacturing sector in 2007                                                              | Moody's Economy.com | 2007 |    MSA    |
+| mfg_lq_gmp          | The location quotient of the MSA's manufacturing GMP in 2007                                                            | Moody's Economy.com | 2007 |    MSA    |
+| mfg_lq_emp          | The location quotient of the MSA's manufacturing employment in 2007                                                     | Moody's Economy.com | 2007 |    MSA    |
+| charitable_assets   | Total assets of all private tax-exempt charitable organizations in 2005                                                 |         NCCS        | 2005 |    MSA    |
+| intermodal_freight  | Number of all intermodal freight facilities in an MSA                                                                   |      US DOT BTS     | 2015 |    MSA    |
+| enplanements        | Number of passenger enplanements at all commercial service airports within an MSA                                       |         FAA         | 2005 |    MSA    |
+| hist_bldgs          | Number of buildings in an MSA listed on the National Historic Register                                                  |         NPS         | 2005 |    MSA    |
+| hist_strct          | Number of structures in an MSA listed on the National Historic Register                                                 |         NPS         | 2005 |    MSA    |
+| hist_sites          | Number of sites in an MSA listed on the National Historic Register                                                      |         NPS         | 2005 |    MSA    |
+| hist_objct          | Number of objects in an MSA listed on the National Historic Register                                                    |         NPS         | 2005 |    MSA    |
+| hist_dists          | Number of districts in an MSA listed on the National Historic Register                                                  |         NPS         | 2005 |    MSA    |
+| hist_registry_total | Total number of items in an MSA listed on the National Historic Register                                                |         NPS         | 2005 |    MSA    |
 
-* Any descriptions with "--" are still *in progress*
+### Notes
+
+* The
 
 ## Liability Variables
 
@@ -106,4 +110,6 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 | edu_total_degr          | Number of persons 25 years and over                                                                       |      Census     | 2000 |    MSA    |
 | edu_total_ov25          | Number of persons 25 years and over with a bachelor's degree or higher                                    |      Census     | 2000 |    MSA    |
 
-* 
+### Notes
+
+* The

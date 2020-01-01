@@ -34,8 +34,8 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 ### Notes
 
 * The square mileage was calculated with the `sf` GIS package in R and used Census [TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) shapefiles downloaded using the `tigris` package developed by [Kyle Walker](https://github.com/walkerke).
-* All variables constructed from Census and/or ACS data were downloaded with the help of the `tidycensus` package (also developed by [Kyle Walker](https://github.com/walkerke)).
-* The difference between the "foreign-born" and "non-native" population is not intuitive. See [this FAQ](https://www.census.gov/topics/population/foreign-born/about/faq.html) from the U.S. Census for more about this distinction. For the purpose of our analysis, we calculate a "nativity" variable as *total-population-minus-foreign-born divided by total population*.
+* All variables constructed from Census and/or ACS data were downloaded with the help of the `tidycensus` package (also developed by Walker).
+* The difference between the "foreign-born" and "non-native" population is not intuitive. See [this FAQ](https://www.census.gov/topics/population/foreign-born/about/faq.html) from the U.S. Census for more about this distinction. For the purpose of our analysis, we calculate a "nativity" variable as *total-population-minus-foreign-born* divided by *total population*.
 
 ***
 
@@ -43,21 +43,21 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 | Variable            | Description                                                                                                             |        Source       | Year | Geography |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------|:-------------------:|:----:|:---------:|
-| access              | An index constructed from US DOT's Transportation and Health Tool data on walkability and access to transit             |        US DOT       | 2015 |    MSA    |
+| access              | An index constructed from US DOT's Transportation and Health Tool data on walkability and access to transit             |        [US DOT](https://www.transportation.gov/transportation-health-tool)       | 2015 |    MSA    |
 | city_age            | Number of decades since the decennial census year in which an MSA's principal city first reached a population of 50,000 |      US Census      | 2010 |    City   |
-| r_1                 | Number of universities in an MSA classified as "high research activity"                                                 |        IPEDS        | 2005 |    MSA    |
+| r_1                 | Number of universities in an MSA classified as "high research activity"                                                 |        [IPEDS](https://nces.ed.gov/ipeds/use-the-data)        | 2005 |    MSA    |
 | r_2                 | Number of universities in an MSA classified as "very high research activity"                                            |        IPEDS        | 2005 |    MSA    |
 | st_cap              | Indicates the presence of a state capital within the MSA                                                                |          --         |  --  |    MSA    |
-| mfg_gmp2007         | The gross metropolitan product (GMP) of the MSA in 2007                                                                 | Moody's Economy.com | 2007 |    MSA    |
-| mfg_gmp2007_sector  | The gross metropolitan product (GMP) of the MSA's manufacturing sector in 2007                                          | Moody's Economy.com | 2007 |    MSA    |
-| mfg_emp2007         | Total employment in the MSA in 2007                                                                                     | Moody's Economy.com | 2007 |    MSA    |
-| mfg_emp2007_sector  | Total employment in the MSA's manufacturing sector in 2007                                                              | Moody's Economy.com | 2007 |    MSA    |
-| mfg_lq_gmp          | The location quotient of the MSA's manufacturing GMP in 2007                                                            | Moody's Economy.com | 2007 |    MSA    |
-| mfg_lq_emp          | The location quotient of the MSA's manufacturing employment in 2007                                                     | Moody's Economy.com | 2007 |    MSA    |
-| charitable_assets   | Total assets of all private tax-exempt charitable organizations in 2005                                                 |         NCCS        | 2005 |    MSA    |
-| intermodal_freight  | Number of all intermodal freight facilities in an MSA                                                                   |      US DOT BTS     | 2015 |    MSA    |
-| enplanements        | Number of passenger enplanements at all commercial service airports within an MSA                                       |         FAA         | 2005 |    MSA    |
-| hist_bldgs          | Number of buildings in an MSA listed on the National Historic Register                                                  |         NPS         | 2005 |    MSA    |
+| mfg_gmp2007         | The gross metropolitan product (GMP) of the MSA in 2007                                                                 | [Moody's Analytics](https://www.economy.com/) | 2007 |    MSA    |
+| mfg_gmp2007_sector  | The gross metropolitan product (GMP) of the MSA's manufacturing sector in 2007                                          | Moody's Analytics | 2007 |    MSA    |
+| mfg_emp2007         | Total employment in the MSA in 2007                                                                                     | Moody's Analytics | 2007 |    MSA    |
+| mfg_emp2007_sector  | Total employment in the MSA's manufacturing sector in 2007                                                              | Moody's Analytics | 2007 |    MSA    |
+| mfg_lq_gmp          | The location quotient of the MSA's manufacturing GMP in 2007                                                            | Moody's Analytics | 2007 |    MSA    |
+| mfg_lq_emp          | The location quotient of the MSA's manufacturing employment in 2007                                                     | Moody's Analytics | 2007 |    MSA    |
+| charitable_assets   | Total assets of all private tax-exempt charitable organizations in 2005                                                 |         [NCCS](https://nccs-data.urban.org/index.php)        | 2005 |    MSA    |
+| intermodal_freight  | Number of all intermodal freight facilities in an MSA                                                                   |      [US DOT BTS](http://osav-usdot.opendata.arcgis.com/datasets/c7ee724adff84056a9ec7ec0a8dc83ca_0)     | 2015 |    MSA    |
+| enplanements        | Number of passenger enplanements at all commercial service airports within an MSA                                       |         [FAA](https://www.faa.gov/airports/planning_capacity/passenger_allcargo_stats/passenger/)         | 2005 |    MSA    |
+| hist_bldgs          | Number of buildings in an MSA listed on the National Historic Register                                                  |         [NPS](https://www.nps.gov/subjects/nationalregister/data-downloads.htm)         | 2005 |    MSA    |
 | hist_strct          | Number of structures in an MSA listed on the National Historic Register                                                 |         NPS         | 2005 |    MSA    |
 | hist_sites          | Number of sites in an MSA listed on the National Historic Register                                                      |         NPS         | 2005 |    MSA    |
 | hist_objct          | Number of objects in an MSA listed on the National Historic Register                                                    |         NPS         | 2005 |    MSA    |
@@ -84,26 +84,26 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 | vacancy_city            | Percent of total housing units in MSA's principal city that are vacant                                    |      Census     | 2000 |    City   |
 | pct_prewar_city         | Percent of total housing units in MSA's principal city built before 1940                                  |      Census     | 2000 |    City   |
 | pct_prewar_msa          | Percent of total housing units in MSA built before 1940                                                   |      Census     | 2000 |    MSA    |
-| total_units_2005        | Total number of housing units in MSA                                                                      |       HUD       | 2005 |    MSA    |
+| total_units_2005        | Total number of housing units in MSA                                                                      |       [HUD]( https://www.huduser.gov/portal/picture/query.html)       | 2005 |    MSA    |
 | hud_units_2005          | Total number of public housing units in MSA                                                               |       HUD       | 2005 |    MSA    |
 | pct_ph                  | Percent of total housing units in MSA deemed by hud as public housing                                     |       HUD       | 2005 |    MSA    |
 | med_val_cbsa            | Median value (dollars) for all owner-occupied housing units in MSA                                        |       ACS       | 2005 |    MSA    |
 | med_val_city            | Median value (dollars) for all owner-occupied housing units in MSA's principal city                       |      Census     | 2000 |    City   |
-| prop_crimes_per100k     | Property crimes in MSA per 100,000 residents                                                              |     FBI UCR     | 2005 |    MSA    |
+| prop_crimes_per100k     | Property crimes in MSA per 100,000 residents                                                              |     [FBI UCR](https://ucr.fbi.gov/crime-in-the-u.s/2005)     | 2005 |    MSA    |
 | prop_crimes_burglary    | Number of burglaries in MSA                                                                               |     FBI UCR     | 2005 |    MSA    |
 | prop_crimes_larceny     | Number of larceny crimes in MSA                                                                           |     FBI UCR     | 2005 |    MSA    |
 | prop_crimes_moto_theft  | Number of motor vehicle thefts in MSA                                                                     |     FBI UCR     | 2005 |    MSA    |
-| pct_low_inf_bw          | Percent of infants born with low birth weight                                                             |      UW PHI     | 2005 |    MSA    |
+| pct_low_inf_bw          | Percent of infants born with low birth weight                                                             |      [UW PHI](https://www.countyhealthrankings.org/)     | 2005 |    MSA    |
 | pct_obese_adult         | Percent of adults classified as obese                                                                     |      UW PHI     | 2005 |    MSA    |
 | pct_uninsured_adult     | Percent of adults without health insurance                                                                |      UW PHI     | 2005 |    MSA    |
 | pov_total_in_poverty    | Number of persons whose income in 1999 was below the poverty level                                        |      Census     | 2000 |    MSA    |
 | pov_total               | Number of persons                                                                                         |      Census     | 2000 |    MSA    |
 | pov_poverty_rate        | Percentage of persons whose income in 1999 was below the poverty level                                    |      Census     | 2000 |    MSA    |
 | gini                    | Gini index of income inequality                                                                           |       ACS       | 2005 |    MSA    |
-| total_bridges_2005      | Number of bridges in an MSA which are 10 years or older and are more than 20 feet in length               |       FHWA      | 2005 |    MSA    |
+| total_bridges_2005      | Number of bridges in an MSA which are 10 years or older and are more than 20 feet in length               |       [FHWA](https://www.fhwa.dot.gov/bridge/nbi.cfm)      | 2005 |    MSA    |
 | bad_bridges_2005        | Number of bridges in an MSA deemed structurally deficient                                                 |       FHWA      | 2005 |    MSA    |
 | pct_deficient           | Percentage of bridges in an MSA deemed structurally deficient                                             |       FHWA      | 2005 |    MSA    |
-| npl_sites               | Number of sites in an MSA on the National Priorities List                                                 |       EPA       | 2005 |    MSA    |
+| npl_sites               | Number of sites in an MSA on the National Priorities List                                                 |       [EPA](https://www.epa.gov/superfund/npl-site-status-information)       | 2005 |    MSA    |
 | sfund_per_sqmi          | Number of NPL sites per square-mile of an MSA                                                             |       EPA       | 2005 |    MSA    |
 | edu_no_hs_diploma       | Percent of the population 25 years and over with less than a high-school diploma                          |      Census     | 2000 |    MSA    |
 | edu_bachelors_plus      | Percent of the population 25 years and over with a bachelor's degree or higher                            |      Census     | 2000 |    MSA    |

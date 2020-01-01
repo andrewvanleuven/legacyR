@@ -20,6 +20,7 @@ msaxw <- xw %>% select(cbsa_fips,cbsa,cbsa_type) %>%
   filter(!str_detect(cbsa, ', PR'))
 
 ### SOURCE: https://www.huduser.gov/portal/picture/query.html
+### https://www.huduser.gov/portal/picture2000/dictionary.pdf
 ### HUD's PICTURE OF SUBSIDIZED HOUSEHOLDS FOR 2004-2008
 df <- read_csv("data/base/source/hud.csv") %>% 
   rename_all(tolower) %>% 

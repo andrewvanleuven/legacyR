@@ -8,9 +8,7 @@ options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 
 ### SOURCE: https://seer.cancer.gov/popdata/
 df <- read_fwf("hidden/too_big/pop.txt", 

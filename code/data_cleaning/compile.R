@@ -1,10 +1,7 @@
 library(tidyverse)
 
 # Specify the universe ----------------------------------------------------
-universe <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id,
-         cbsa = name)
+universe <- read_csv("data/base/univ.csv") 
 univ <- universe %>% select(1)
 
 # Read in all variables ---------------------------------------------------

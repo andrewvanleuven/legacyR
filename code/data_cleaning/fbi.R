@@ -1,8 +1,6 @@
 library(tidyverse)
 
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 
 df <- read_csv("data/base/source/fbi_ucr.csv") %>% 
   rename(cbsa_fips = cbsa05,

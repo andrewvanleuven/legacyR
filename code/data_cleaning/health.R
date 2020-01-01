@@ -9,9 +9,7 @@ options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
 xw <- read_csv("data/xw.csv") 
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 
 ### SOURCE: https://www.countyhealthrankings.org/sites/default/files/
 df <- read_csv("data/base/source/health.csv") %>% 

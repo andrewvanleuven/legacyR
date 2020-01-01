@@ -12,9 +12,7 @@ acs05 <- load_variables(2009, "acs5", cache = T)
 
 us <- states(cb = TRUE, resolution = "20m") %>%
   filter(!STUSPS %in% c("PR")) %>% pull(STUSPS)
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 
 
 # GINI --------------------------------------------------------------------

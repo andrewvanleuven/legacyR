@@ -7,9 +7,7 @@ library(ggpubr)
 options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 xw <- read_csv("data/xw.csv") 
 msaxw <- xw %>% select(cbsa_fips,cbsa,cbsa_type) %>% 
   filter(cbsa_type == "Metropolitan Statistical Area") %>% 

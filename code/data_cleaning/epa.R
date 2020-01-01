@@ -10,9 +10,7 @@ options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
 # Setup the Universe ------------------------------------------------------
-univ <- read_csv("data/clustrdata.csv") %>% 
-  select(1:2) %>% rename_all(tolower) %>% 
-  rename(cbsa_fips = id)
+univ <- read_csv("data/base/univ.csv") 
 cbsa <- core_based_statistical_areas(cb = T) %>% 
   select(GEOID:geometry) %>% st_transform(crs = 2163) %>% 
   mutate(cbsa_fips = as.numeric(GEOID)) %>% 

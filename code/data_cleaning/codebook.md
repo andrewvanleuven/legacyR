@@ -11,6 +11,7 @@ Jump to:
 * [*Control Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#control-variables)
 * [*Asset Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#asset-variables)
 * [*Liability Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#liability-variables)
+* [*Transformed Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#transformed-variables)
 
 ***
 
@@ -79,7 +80,6 @@ Jump to:
 * Source data for manufacturing GMP and employment are not publicly available and remain the property of Moody's analytics. The derived location quotients (LQs) are hosted in this public repository, while the source file is not.
 * The "charitable assets" variable was constructed with help from the Urban Institute's invaluable `R` function, found [here](https://nccs.urban.org/code/prep-nccs-core-file-data). Furthermore, we used our judgement to pick from the [NTEE Codes](https://nccs.urban.org/publication/irs-activity-codes) that fit the description of the charitable foundations "asset" described in the legacy cities literature. Our selection criteria can be found in the code of the `nccs.R' script [here](code/data_cleaning/nccs.R).
 * The definitions for items listed on the National Historic Registry—buildings, structures, sites, objects, and districts—can be found on the National Park Service's [website](https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0). The dataset includes a variable for each category, but we only use *historic buildings* in our analysis.
-* ENPLANE AND CHRASTS need to be per-capita
 
 ***
 

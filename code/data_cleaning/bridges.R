@@ -42,4 +42,5 @@ bridge <- df %>% select(STATE_CODE_001,COUNTY_CODE_003,STATUS_WITH_10YR_RULE,SUF
   replace_na(list(bad_bridges_2005 = 0,total_bridges_2005 = 0)) %>% 
   select(1,4,2,3) %>% 
   mutate(pct_deficient = bad_bridges_2005/total_bridges_2005) %>% 
+  replace_na(list(pct_deficient = 0)) %>% 
   write_csv("data/base/generated/bridges.csv")

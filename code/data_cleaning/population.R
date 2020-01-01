@@ -9,6 +9,7 @@ options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
 univ <- read_csv("data/base/univ.csv") 
+us <- states(cb = TRUE, resolution = "20m") %>% filter(!STUSPS %in% c("PR")) %>% pull(STUSPS)
 
 ### SOURCE: https://seer.cancer.gov/popdata/
 df <- read_fwf("hidden/too_big/pop.txt", 
@@ -90,17 +91,17 @@ populations <- pop00 %>%
   mutate(pctchg_00_05 = (population_2005-population_2000)/population_2000) %>% 
   write_csv("data/base/generated/populations.csv")
 
-pop_05 <- df %>% filter(year == 2005) %>% 
-  mutate(cty_fips = paste0(st_fips,cty_fips),
-         population = as.numeric(population)) %>% 
-  group_by(cty_fips) %>% 
-  summarize(pop = sum(population)) %>% 
-  left_join(.,xw) %>% 
-  group_by(cbsa_fips) %>% 
-  summarize(population_2005 = sum(pop)) %>% 
-  inner_join(.,msaxw) %>% 
-  select(1,3,2) %>% 
-  write_csv("data/base/generated/pop_2005.csv")
+#pop_05 <- df %>% filter(year == 2005) %>% 
+#  mutate(cty_fips = paste0(st_fips,cty_fips),
+#         population = as.numeric(population)) %>% 
+#  group_by(cty_fips) %>% 
+#  summarize(pop = sum(population)) %>% 
+#  left_join(.,xw) %>% 
+#  group_by(cbsa_fips) %>% 
+#  summarize(population_2005 = sum(pop)) %>% 
+#  inner_join(.,msaxw) %>% 
+#  select(1,3,2) %>% 
+#  write_csv("data/base/generated/pop_2005.csv")
 
 
 # Density Calculation -----------------------------------------------------

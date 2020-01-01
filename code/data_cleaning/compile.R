@@ -116,9 +116,9 @@ master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>%
   distinct() %>% 
   mutate(enplane_per_cap = enplanements/population_2005,
          chartbl_per_cap =charitable_assets/population_2005,
-         r1_per_cap = r_1/population_2005,
-         r2_per_cap = r_2/population_2005,
-         r_univ_per_cap = (r_1+r_2)/population_2005,
+         r1_per_100k = r_1/(population_2005/100000),
+         r2_per_100k = r_2/(population_2005/100000),
+         r_univ_per_100k = (r_1+r_2)/(population_2005/100000),
          freight_sqmi = intermodal_freight/sqmi,
          ln_hist_bldg = log(hist_bldgs),
          ln_hist_registry = log(hist_registry_total)) %>% 

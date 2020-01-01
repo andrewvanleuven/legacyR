@@ -50,7 +50,7 @@ cbsa_fips,name,total_bridges_2005,bad_bridges_2005,pct_deficient
 15540,"Burlington-South Burlington, VT",323,4,0.01238390092879257
 15940,"Canton-Massillon, OH",602,0,0
 15980,"Cape Coral-Fort Myers, FL",346,0,0
-16180,"Carson City, NV",0,0,NaN
+16180,"Carson City, NV",0,0,0
 16220,"Casper, WY",138,0,0
 16300,"Cedar Rapids, IA",1078,0,0
 16580,"Champaign-Urbana, IL",1239,0,0

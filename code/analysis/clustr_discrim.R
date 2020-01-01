@@ -11,6 +11,7 @@ options(scipen = 999,"digits"=3)
 # Read in data ------------------------------------------------------------
 df <- read_csv("data/master.csv") %>% select(read_csv("data/analysis/vars.csv") %>% pull()) 
 id <- df %>% select(1:2)
+
 # Functions ---------------------------------------------------------------
 clustr <- function(scaled_data) {
   d <- dist(scaled_data, method = "euclidean")
@@ -109,10 +110,10 @@ clustr_z1 <- clustr.assign(z,zsols[1,3],method = "z")
 clustr_z2 <- clustr.assign(z,zsols[2,3],method = "z") %>% select(3)
 clustr_z3 <- clustr.assign(z,zsols[3,3],method = "z") %>% select(3)
 clustr_z4 <- clustr.assign(z,zsols[4,3],method = "z") %>% select(3)
-clustr_m1 <- clustr.assign(m,zsols[1,3],method = "m") %>% select(3)
-clustr_m2 <- clustr.assign(m,zsols[2,3],method = "m") %>% select(3)
-clustr_m3 <- clustr.assign(m,zsols[3,3],method = "m") %>% select(3)
-clustr_m4 <- clustr.assign(m,zsols[4,3],method = "m") %>% select(3)
+clustr_m1 <- clustr.assign(m,msols[1,3],method = "m") %>% select(3)
+clustr_m2 <- clustr.assign(m,msols[2,3],method = "m") %>% select(3)
+clustr_m3 <- clustr.assign(m,msols[3,3],method = "m") %>% select(3)
+clustr_m4 <- clustr.assign(m,msols[4,3],method = "m") %>% select(3)
 
 cluster_assignments <- cbind(clustr_z1,clustr_z2,clustr_z3,clustr_z4,clustr_m1,clustr_m2,clustr_m3,clustr_m4) %>% 
   write_csv("data/analysis/cluster_assignments.csv")
@@ -170,3 +171,56 @@ hit.ratios <- data.frame(clst_names,hit_ratios,k_solution) %>%
 rm(hit_ratios,clst_names,id,m,z,hr_cluster_z1,hr_cluster_z2,hr_cluster_z3,hr_cluster_z4,
    hr_cluster_m1,hr_cluster_m2,hr_cluster_m3,hr_cluster_m4,df_z1,df_z2,df_z3,df_z4,df_m1,
    df_m2,df_m3,df_m4,disc_z1,disc_z2,disc_z3,disc_z4,disc_m1,disc_m2,disc_m3,disc_m4,k_solution)
+
+# Map cluster assignments -------------------------------------------------
+cbsa <- core_based_statistical_areas(cb = T) %>% 
+  select(GEOID:geometry) %>% st_transform(crs = 2163) %>% 
+  mutate(cbsa_fips = as.numeric(GEOID)) %>% 
+  select(cbsa_fips,geometry) %>% 
+  inner_join(.,cluster_assignments) %>% 
+  arrange(cbsa_fips) %>% 
+  st_centroid_xy()
+cbsa48 <- cbsa %>% filter(!cbsa_fips %in% c(11260,21820,46520))
+us <- states(cb = TRUE, resolution = "20m") %>%
+  filter(!STUSPS %in% c("AK","PR","HI")) %>% st_transform(crs = 2163)
+clrsz <- rand_ncolors(cbsa48 %>% st_drop_geometry() %>% select(3) %>% distinct())
+for (i in 01:length(clrsz)) {
+  title <- sprintf("Cluster %s",i)
+  ii <- str_pad(i,width=2, side="left", pad="0")
+  plt <- ggplot() + 
+    geom_sf(data = us, color = "gray60", fill = "gray90") +
+    geom_point(data = cbsa48 %>% filter(.[[3]] == i), 
+               aes(x,y), size = 2, color = clrsz[i]) +
+    theme_void() +
+    ggtitle(title) +
+    theme(plot.title = element_text(face = "bold", hjust = 0.5), 
+          text = element_text(family = "IBM Plex Mono")) 
+  nam <- paste0("clustr_map_z",ii)
+  assign(nam, plt)
+}
+zlist_df = lapply(sprintf("clustr_map_z%s", str_pad(01:length(clrsz), 2, pad = "0")) , get)
+
+clrsm <- rand_ncolors(cbsa48 %>% st_drop_geometry() %>% select(7) %>% distinct())
+for (i in 01:length(clrsm)) {
+  title <- sprintf("Cluster %s",i)
+  ii <- str_pad(i,width=2, side="left", pad="0")
+  plt <- ggplot() + 
+    geom_sf(data = us, color = "gray60", fill = "gray90") +
+    geom_point(data = cbsa48 %>% filter(.[[7]] == i), 
+               aes(x,y), size = 2, color = clrsm[i]) +
+    theme_void() +
+    ggtitle(title) +
+    theme(plot.title = element_text(face = "bold", hjust = 0.5), 
+          text = element_text(family = "IBM Plex Mono")) 
+  nam <- paste0("clustr_map_m",ii)
+  assign(nam, plt)
+}
+mlist_df = lapply(sprintf("clustr_map_m%s", str_pad(01:length(clrsm), 2, pad = "0")) , get)
+
+z_best <- ggarrange(plotlist = zlist_df) +
+  ggsave("plot/clustr_array_z.png", height = 10, width = 20)
+m_best <- ggarrange(plotlist = mlist_df) +
+  ggsave("plot/clustr_array_m.png", height = 10, width = 20)
+
+rm(i,ii,nam,title,clrsz,clrsm,cbsa,us,cbsa48,plt,zlist_df,mlist_df,z_best,m_best,
+   list = ls(pattern = "clustr_map_"))

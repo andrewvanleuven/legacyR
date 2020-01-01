@@ -25,7 +25,7 @@ msaxw <- xw %>% select(cbsa_fips,cbsa,cbsa_type) %>%
 df <- read_csv("data/base/source/hud.csv") %>% 
   rename_all(tolower) %>% 
   mutate(cty_fips = str_pad(code, 5, pad = "0")) %>% 
-  filter(!program_label %in% c("VO","S236")) %>% 
+  #filter(!program_label %in% c("VO","S236")) %>% 
   group_by(cty_fips) %>% 
   summarise(hud_units = sum(total_units)) %>% 
   mutate(hud_units = replace(hud_units, which(hud_units<0), 0))

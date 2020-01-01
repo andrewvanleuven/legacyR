@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Specify the universe ----------------------------------------------------
-universe <- read_csv("data/base/univ.csv") 
+universe <- read_csv("data/base/univ.csv") %>% rename(cbsa = 2)
 univ <- universe %>% select(1)
 
 # Read in all variables ---------------------------------------------------
@@ -27,7 +27,7 @@ health <- read_csv("data/base/generated/health.csv") %>% inner_join(.,univ, by =
 gini <- read_csv("data/base/generated/gini.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
 mfg <- read_csv("data/base/generated/mfg.csv") %>% inner_join(.,univ, by = "cbsa_fips") %>% 
   setNames(paste0('mfg_', names(.))) %>% 
-  rename(cbsa_fips = 1, cbsa = 2)
+  rename(cbsa_fips = 1)
 capital <- read_csv("data/base/source/st_cap.csv") %>%  inner_join(.,univ, by = "cbsa_fips") 
 intermodal <- read_csv("data/base/generated/freight.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
 housing_value <- read_csv("data/base/generated/housing_value.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
@@ -66,7 +66,7 @@ merge1 <- inner_join(bridge,hud, by = "cbsa_fips") %>%
 merge2 <- inner_join(nativity,housing_stock, by = "cbsa_fips") %>% 
   inner_join(.,health %>% select(-name), by = "cbsa_fips") %>% 
   inner_join(.,gini %>% select(-name), by = "cbsa_fips") %>% 
-  inner_join(.,mfg %>% select(-cbsa), by = "cbsa_fips") %>% 
+  inner_join(.,mfg, by = "cbsa_fips") %>% 
   inner_join(.,capital %>% select(-cbsa), by = "cbsa_fips") %>% 
   inner_join(.,intermodal %>% select(1,3), by = "cbsa_fips") %>% 
   inner_join(.,housing_value %>% select(1,5,6), by = "cbsa_fips") %>% 
@@ -86,26 +86,26 @@ master_merge <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>
 master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>% 
   inner_join(.,merge3 %>% select(-cbsa), by = "cbsa_fips") %>% 
   select(1:2,            # IDs
-         70:72,          # Density
+         66:68,          # Density
          13:17,          # U18/O65
          30:34,          # Nativity
-         61:65,          # LFPR
-         58,             # Access Index
-         80,             # City Age
-         59:60,          # R1/R2 Universities
-         47,             # State Capital
-         41:46,          # MFG Base
-         51,             # Nonprofit Assets
-         48,             # Intermodal Freight
-         74,             # Enplanements
-         52:57,          # Hist. Registry
-         75:79,          # Decline/Peak
-         73,             # 2000-05 % Chg.
+         57:61,          # LFPR
+         54,             # Access Index
+         76,             # City Age
+         55:56,          # R1/R2 Universities
+         43,             # State Capital
+         41:42,          # MFG Base
+         47,             # Nonprofit Assets
+         44,             # Intermodal Freight
+         70,             # Enplanements
+         48:53,          # Hist. Registry
+         71:75,          # Decline/Peak
+         69,             # 2000-05 % Chg.
          9:10,           # Vacancy
          35:36,          # Pre-war Housing
          6:8,            # Public Housing
-         49:50,          # Housing Value
-         66:69,          # Prop. Crimes
+         45:46,          # Housing Value
+         62:65,          # Prop. Crimes
          37:39,          # Health Measures
          18:20,          # Poverty
          40,             # Gini Coeff.
@@ -114,5 +114,13 @@ master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>%
          21:29,          # Education Stock
          ) %>% 
   distinct() %>% 
+  mutate(enplane_per_cap = enplanements/population_2005,
+         chartbl_per_cap =charitable_assets/population_2005,
+         r1_per_cap = r_1/population_2005,
+         r2_per_cap = r_2/population_2005,
+         r_univ_per_cap = (r_1+r_2)/population_2005,
+         freight_sqmi = intermodal_freight/sqmi,
+         ln_hist_bldg = log(hist_bldgs),
+         ln_hist_registry = log(hist_registry_total)) %>% 
   mutate_if(is.numeric, round, 4) %>% 
   write_csv("data/master.csv")

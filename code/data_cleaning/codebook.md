@@ -2,9 +2,17 @@
 
 Welcome to the online codebook for the legacy regions research dataset. The data are comprised of three groups of variables: controls, assets, and liabilities. This codebook describes each set of variables in terms of:
 
-* *meaning* — how exactly the variable is to be interpreted
-* *source* — where the variable was collected from 
-* *geographic extent* — whether the variable is measured at the MSA level or at the level of the MSA's principal city
+* **meaning** — how exactly the variable is to be interpreted
+* **source** — where the variable was collected from 
+* **geographic extent** — whether the variable is measured at the MSA level or at the level of the MSA's principal city
+
+Jump to:
+
+* [*Control Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#control-variables)
+* [*Asset Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#asset-variables)
+* [*Liability Variables*](https://github.com/andrewvanleuven/legacyR/blob/master/code/data_cleaning/codebook.md#liability-variables)
+
+***
 
 ## Control Variables
 
@@ -67,6 +75,7 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 ### Notes
 
 * All variables which were constructed from historic decennial census data (e.g., city age, peak population) relied heavily on the [Historical Populations Data Repository](https://github.com/CreatingData/Historical-Populations) assembled by various data scientists (see more info [here](http://creatingdata.us/datasets/US-cities/)).
+* In the "city age" variable, any MSA whose principal city has *yet to reach* a population of 50,000 was assigned an age of zero.
 * Source data for manufacturing GMP and employment are not publicly available and remain the property of Moody's analytics. The derived location quotients (LQs) are hosted in this public repository, while the source file is not.
 * The "charitable assets" variable was constructed with help from the Urban Institute's invaluable `R` function, found [here](https://nccs.urban.org/code/prep-nccs-core-file-data). Furthermore, we used our judgement to pick from the [NTEE Codes](https://nccs.urban.org/publication/irs-activity-codes) that fit the description of the charitable foundations "asset" described in the legacy cities literature. Our selection criteria can be found in the code of the `nccs.R' script [here](code/data_cleaning/nccs.R).
 * The definitions for items listed on the National Historic Registry—buildings, structures, sites, objects, and districts—can be found on the National Park Service's [website](https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0). The dataset includes a variable for each category, but we only use *historic buildings* in our analysis.
@@ -121,4 +130,23 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 ### Notes
 
-* The
+* Any MSA whose principal city was at its population peak as of the 2010 census was assigned a "decades since peak" of zero and a "decline since peak" of zero. Furthermore, the "decline since peak" variable is an absolute value measure of decline; thus, while measured as a positive number, *any nonzero value* is considered to be a liability for the pertaining MSA.
+* The "hud_units_2005" variable included all housing units participating in HUD low-income housing programs (as classified by the 'program_label' descriptor in [this](https://www.huduser.gov/portal/picture2000/dictionary.pdf) data dictionary).
+* The University of Wisconsin's Population Health Institute collected county-wide data for a number of health measures. The years of data collection for the three variables used in our analysis—infant birthweight, adult obesity, adult uninsured rate—are specified in [this](https://www.countyhealthrankings.org/sites/default/files/2010%20Analytic%20Documentation.pdf) data dictionary.
+
+***
+
+## Transformed Variables
+
+The following is a list of variables that were transformed to account for non-normality.
+
+| Variable         | Original             | Transformation Method    |  Type |
+|------------------|----------------------|--------------------------|:-----:|
+| enplane_per_cap  | enplanements         | per-capita (2005)        | Asset |
+| chartbl_per_cap  | charitable_assets    | per-capita (2005)        | Asset |
+| r1_per_cap       | r_1                  | per-capita (2005)        | Asset |
+| r2_per_cap       | r_2                  | per-capita (2005)        | Asset |
+| r_univ_per_cap   | r_1 and r_2 combined | per-capita (2005)        | Asset |
+| freight_sqmi     | intermodal_freight   | per square mile (in MSA) | Asset |
+| ln_hist_bldg     | hist_bldgs           | natural log              | Asset |
+| ln_hist_registry | hist_registry_total  | natural log              | Asset |

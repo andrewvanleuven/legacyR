@@ -143,9 +143,9 @@ The following is a list of variables that were transformed to account for non-no
 |------------------|----------------------|--------------------------|:-----:|
 | enplane_per_cap  | enplanements         | per-capita (2005)        | Asset |
 | chartbl_per_cap  | charitable_assets    | per-capita (2005)        | Asset |
-| r1_per_cap       | r_1                  | per-capita (2005)        | Asset |
-| r2_per_cap       | r_2                  | per-capita (2005)        | Asset |
-| r_univ_per_cap   | r_1 and r_2 combined | per-capita (2005)        | Asset |
+| r1_per_100k      | r_1                  | per 100,000 residents (2005) | Asset |
+| r2_per_100k      | r_2                  | per 100,000 residents (2005) | Asset |
+| r_univ_per_100k  | r_1 and r_2 combined | per 100,000 residents (2005) | Asset |
 | freight_sqmi     | intermodal_freight   | per square mile (in MSA) | Asset |
 | ln_hist_bldg     | hist_bldgs           | natural log              | Asset |
 | ln_hist_registry | hist_registry_total  | natural log              | Asset |

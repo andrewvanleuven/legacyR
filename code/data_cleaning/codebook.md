@@ -64,47 +64,46 @@ Welcome to the online codebook for the legacy regions research dataset. The data
 
 ## Liability Variables
 
-| Variable                | Description |      Source     | Geography |
-|-------------------------|-------------|:---------------:|:---------:|
-| city_peak_yr            | --          |      Census     |    City   |
-| city_peak_pop           | --          |      Census     |    City   |
-| city_decades_since_peak | --          |      Census     |    City   |
-| city_pop_2010           | --          |      Census     |    City   |
-| city_decline_since_peak | --          |      Census     |    City   |
-| pctchg_00_05            | --          | Census/NIH SEER |    MSA    |
-| vacancy_msa             | --          |      Census     |    MSA    |
-| vacancy_city            | --          |      Census     |    City   |
-| pct_prewar_city         | --          |      Census     |    City   |
-| pct_prewar_msa          | --          |      Census     |    MSA    |
-| total_units_2005        | --          |       HUD       |    MSA    |
-| hud_units_2005          | --          |       HUD       |    MSA    |
-| pct_ph                  | --          |       HUD       |    MSA    |
-| med_val_cbsa            | --          |       ACS       |    MSA    |
-| med_val_city            | --          |      Census     |    City   |
-| prop_crimes_per100k     | --          |     FBI UCR     |    MSA    |
-| prop_crimes_burglary    | --          |     FBI UCR     |    MSA    |
-| prop_crimes_larceny     | --          |     FBI UCR     |    MSA    |
-| prop_crimes_moto_theft  | --          |     FBI UCR     |    MSA    |
-| pct_low_inf_bw          | --          |      UW PHI     |    MSA    |
-| pct_obese_adult         | --          |      UW PHI     |    MSA    |
-| pct_uninsured_adult     | --          |      UW PHI     |    MSA    |
-| pov_total_in_poverty    | --          |      Census     |    MSA    |
-| pov_total               | --          |      Census     |    MSA    |
-| pov_poverty_rate        | --          |      Census     |    MSA    |
-| gini                    | --          |       ACS       |    MSA    |
-| total_bridges_2005      | --          |       FHWA      |    MSA    |
-| bad_bridges_2005        | --          |       FHWA      |    MSA    |
-| pct_deficient           | --          |       FHWA      |    MSA    |
-| npl_sites               | --          |       EPA       |    MSA    |
-| sfund_per_sqmi          | --          |       EPA       |    MSA    |
-| edu_no_hs_diploma       | --          |      Census     |    MSA    |
-| edu_bachelors_plus      | --          |      Census     |    MSA    |
-| edu_total_bach          | --          |      Census     |    MSA    |
-| edu_total_mast          | --          |      Census     |    MSA    |
-| edu_total_prof          | --          |      Census     |    MSA    |
-| edu_total_doct          | --          |      Census     |    MSA    |
-| edu_total_nohs          | --          |      Census     |    MSA    |
-| edu_total_degr          | --          |      Census     |    MSA    |
-| edu_total_ov25          | --          |      Census     |    MSA    |
-
+| Variable                | Description                                                                                               |      Source     | Year | Geography |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|:---------------:|:----:|:---------:|
+| city_peak_yr            | Year in which MSA's principal city reached its peak                                                       |      Census     | 2010 |    City   |
+| city_peak_pop           | Population of MSA's principal city during its peak                                                        |      Census     | 2010 |    City   |
+| city_decades_since_peak | Number of decades between 2010 and population peak of MSA's principal city                                |      Census     | 2010 |    City   |
+| city_pop_2010           | Population of MSA's principal city in 2010                                                                |      Census     | 2010 |    City   |
+| city_decline_since_peak | Percent-change of decline since population peak of MSA's principal city (until 2010)                      |      Census     | 2010 |    City   |
+| pctchg_00_05            | Percent-change of MSA population from 2000 to 2005                                                        | Census/NIH SEER | 2005 |    MSA    |
+| vacancy_msa             | Percent of total housing units in MSA that are vacant                                                     |      Census     | 2000 |    MSA    |
+| vacancy_city            | Percent of total housing units in MSA's principal city that are vacant                                    |      Census     | 2000 |    City   |
+| pct_prewar_city         | Percent of total housing units in MSA's principal city built before 1940                                  |      Census     | 2000 |    City   |
+| pct_prewar_msa          | Percent of total housing units in MSA built before 1940                                                   |      Census     | 2000 |    MSA    |
+| total_units_2005        | Total number of housing units in MSA                                                                      |       HUD       | 2005 |    MSA    |
+| hud_units_2005          | Total number of public housing units in MSA                                                               |       HUD       | 2005 |    MSA    |
+| pct_ph                  | Percent of total housing units in MSA deemed by hud as public housing                                     |       HUD       | 2005 |    MSA    |
+| med_val_cbsa            | Median value (dollars) for all owner-occupied housing units in MSA                                        |       ACS       | 2005 |    MSA    |
+| med_val_city            | Median value (dollars) for all owner-occupied housing units in MSA's principal city                       |      Census     | 2000 |    City   |
+| prop_crimes_per100k     | Property crimes in MSA per 100,000 residents                                                              |     FBI UCR     | 2005 |    MSA    |
+| prop_crimes_burglary    | Number of burglaries in MSA                                                                               |     FBI UCR     | 2005 |    MSA    |
+| prop_crimes_larceny     | Number of larceny crimes in MSA                                                                           |     FBI UCR     | 2005 |    MSA    |
+| prop_crimes_moto_theft  | Number of motor vehicle thefts in MSA                                                                     |     FBI UCR     | 2005 |    MSA    |
+| pct_low_inf_bw          | Percent of infants born with low birth weight                                                             |      UW PHI     | 2005 |    MSA    |
+| pct_obese_adult         | Percent of adults classified as obese                                                                     |      UW PHI     | 2005 |    MSA    |
+| pct_uninsured_adult     | Percent of adults without health insurance                                                                |      UW PHI     | 2005 |    MSA    |
+| pov_total_in_poverty    | Number of persons whose income in 1999 was below the poverty level                                        |      Census     | 2000 |    MSA    |
+| pov_total               | Number of persons                                                                                         |      Census     | 2000 |    MSA    |
+| pov_poverty_rate        | Percentage of persons whose income in 1999 was below the poverty level                                    |      Census     | 2000 |    MSA    |
+| gini                    | Gini index of income inequality                                                                           |       ACS       | 2005 |    MSA    |
+| total_bridges_2005      | Number of bridges in an MSA which are 10 years or older and are more than 20 feet in length               |       FHWA      | 2005 |    MSA    |
+| bad_bridges_2005        | Number of bridges in an MSA deemed structurally deficient                                                 |       FHWA      | 2005 |    MSA    |
+| pct_deficient           | Percentage of bridges in an MSA deemed structurally deficient                                             |       FHWA      | 2005 |    MSA    |
+| npl_sites               | Number of sites in an MSA on the National Priorities List                                                 |       EPA       | 2005 |    MSA    |
+| sfund_per_sqmi          | Number of NPL sites per square-mile of an MSA                                                             |       EPA       | 2005 |    MSA    |
+| edu_no_hs_diploma       | Percent of the population 25 years and over with less than a high-school diploma                          |      Census     | 2000 |    MSA    |
+| edu_bachelors_plus      | Percent of the population 25 years and over with a bachelor's degree or higher                            |      Census     | 2000 |    MSA    |
+| edu_total_bach          | Number of persons 25 years and over with a bachelor's degree as the highest level of education attained   |      Census     | 2000 |    MSA    |
+| edu_total_mast          | Number of persons 25 years and over with a master's degree as the highest level of education attained     |      Census     | 2000 |    MSA    |
+| edu_total_prof          | Number of persons 25 years and over with a professional degree as the highest level of education attained |      Census     | 2000 |    MSA    |
+| edu_total_doct          | Number of persons 25 years and over with a doctorate degree as the highest level of education attained    |      Census     | 2000 |    MSA    |
+| edu_total_nohs          | Number of persons 25 years and over with less than a high-school diploma                                  |      Census     | 2000 |    MSA    |
+| edu_total_degr          | Number of persons 25 years and over                                                                       |      Census     | 2000 |    MSA    |
+| edu_total_ov25          | Number of persons 25 years and over with a bachelor's degree or higher                                    |      Census     | 2000 |    MSA    |
 * Any descriptions with "--" are still *in progress*

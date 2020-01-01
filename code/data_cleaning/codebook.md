@@ -132,8 +132,7 @@ Jump to:
 
 * Any MSA whose principal city was at its population peak as of the 2010 census was assigned a "decades since peak" of zero and a "decline since peak" of zero. Furthermore, the "decline since peak" variable is an absolute value measure of decline; thus, while measured as a positive number, *any nonzero value* is considered to be a liability for the pertaining MSA.
 * The "hud_units_2005" variable included all housing units participating in HUD low-income housing programs (as classified by the 'program_label' descriptor in [this](https://www.huduser.gov/portal/picture2000/dictionary.pdf) data dictionary).
-* The University of Wisconsin's Population Health Institute collected county-wide data for a number of health measures. The years of data collection for the three variables used in our analysis—infant birthweight, adult obesity, adult uninsured rate—are specified in [this](https://www.countyhealthrankings.org/sites/default/files/2010%20Analytic%20Documentation.pdf) data dictionary.
-
+* The University of Wisconsin's [Population Health Institute](https://uwphi.pophealth.wisc.edu/) collected county-wide data for a number of health measures. The years of data collection for the three variables used in our analysis—infant birthweight, adult obesity, adult uninsured rate—are specified in [this](https://www.countyhealthrankings.org/sites/default/files/2010%20Analytic%20Documentation.pdf) data dictionary.
 ***
 
 ## Transformed Variables

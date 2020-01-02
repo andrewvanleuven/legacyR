@@ -25,7 +25,7 @@ c(
 #"laus_emp",
 #"laus_unemp",
 "access",
-"city_age",
+#"city_age",
 #"r_1",
 #"r_2",
 "r1_per_100k",
@@ -35,7 +35,7 @@ c(
 "mfg_lq_gmp",
 #"mfg_lq_emp",
 #"charitable_assets",
-#"chartbl_per_cap",
+"chartbl_per_cap",
 #"char_assets_percap_csa",
 #"intermodal_freight",
 "freight_sqmi",
@@ -53,16 +53,16 @@ c(
 #"city_peak_pop",
 "city_decades_since_peak",
 #"city_pop_2010",
-"city_decline_since_peak",
+#"city_decline_since_peak", # NOT IN MODEL BECAUSE OF VERY HIGH COLINEARITY W/"DECADES SINCE" VARIABLE
 "pctchg_00_05",
-"vacancy_msa", ### NOT CLEAR WHETHER THIS VARIABLE SHOULD BE AT THE MSA OR CITY LEVEL
-#"vacancy_city",
-"pct_prewar_city", ### NOT CLEAR WHETHER THIS VARIABLE SHOULD BE AT THE MSA OR CITY LEVEL
-#"pct_prewar_msa",
+#"vacancy_msa",
+"vacancy_city",
+#"pct_prewar_city", 
+"pct_prewar_msa",
 #"total_units_2005",
 #"hud_units_2005",
 "pct_ph",
-"med_val_cbsa", ### NOT CLEAR WHETHER THIS VARIABLE SHOULD BE AT THE MSA OR CITY LEVEL
+"med_val_cbsa",
 #"med_val_city", 
 "prop_crimes_per100k",
 #"prop_crimes_burglary",
@@ -80,7 +80,7 @@ c(
 "pct_deficient",
 #"npl_sites",
 "sfund_per_sqmi",
-"edu_no_hs_diploma",
+"edu_no_hs_diploma", #candidate for removal
 "edu_bachelors_plus"
 #"edu_total_bach",
 #"edu_total_mast",

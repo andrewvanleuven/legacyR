@@ -90,6 +90,7 @@ mscore <- function(x, na.rm = F) (x-median(x, na.rm = na.rm))/(IQR(x, na.rm = na
 
 # Clustering --------------------------------------------------------------
 dfs <- df %>% select(-(1:2))
+cor <- as.data.frame(cor(dfs)) %>% write_csv("data/corrs.csv")
 adj_vars <- df %>% select(st_cap) #%>% mutate(r1 = r1/7)
 z <- dfs %>% select(-st_cap) %>% 
   mutate_all(.,zscore) %>% 
@@ -150,24 +151,6 @@ eig_m2 <- disc_m2$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*
 eig_m3 <- disc_m3$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
 eig_m4 <- disc_m4$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
 
-eig_z1
-eig_z2
-eig_z3
-eig_z4
-eig_m1
-eig_m2
-eig_m3
-eig_m4
-
-disc_z1$counts
-disc_z2$counts
-disc_z3$counts
-disc_z4$counts
-disc_m1$counts
-disc_m2$counts
-disc_m3$counts
-disc_m4$counts
-
 hr_cluster_z1 <- hit.ratio(disc_z1,df_z1)
 hr_cluster_z2 <- hit.ratio(disc_z2,df_z2)
 hr_cluster_z3 <- hit.ratio(disc_z3,df_z3)
@@ -186,6 +169,24 @@ k_solution <- c(tail(disc_z1$lev,n=1),tail(disc_z2$lev,n=1),tail(disc_z3$lev,n=1
 hit.ratios <- data.frame(clst_names,hit_ratios,k_solution) %>% 
   write_csv("data/analysis/hit_ratios.csv")
 
+disc_z1$counts
+disc_z2$counts
+disc_z3$counts
+disc_z4$counts
+disc_m1$counts
+disc_m2$counts
+disc_m3$counts
+disc_m4$counts
+
+eig_z1
+eig_z2
+eig_z3
+eig_z4
+eig_m1
+eig_m2
+eig_m3
+eig_m4
+
 rm(hit_ratios,clst_names,id,m,z,hr_cluster_z1,hr_cluster_z2,hr_cluster_z3,hr_cluster_z4,
    hr_cluster_m1,hr_cluster_m2,hr_cluster_m3,hr_cluster_m4,df_z1,df_z2,df_z3,df_z4,df_m1,
    df_m2,df_m3,df_m4,disc_z1,disc_z2,disc_z3,disc_z4,disc_m1,disc_m2,disc_m3,disc_m4,k_solution,
@@ -202,14 +203,14 @@ cbsa <- core_based_statistical_areas(cb = T) %>%
 cbsa48 <- cbsa %>% filter(!cbsa_fips %in% c(11260,21820,46520))
 us <- states(cb = TRUE, resolution = "20m") %>%
   filter(!STUSPS %in% c("AK","PR","HI")) %>% st_transform(crs = 2163)
-clrsz <- rand_ncolors(cbsa48 %>% st_drop_geometry() %>% select(3) %>% distinct())
+clrsz <- rand_ncolors(cbsa48 %>% st_drop_geometry() %>% select(4) %>% distinct())
 for (i in 01:length(clrsz)) {
   title <- sprintf("Cluster %s",i)
   ii <- str_pad(i,width=2, side="left", pad="0")
   plt <- ggplot() + 
     geom_sf(data = us, color = "gray60", fill = "gray90") +
-    geom_point(data = cbsa48 %>% filter(.[[3]] == i), 
-               aes(x,y), size = 2, color = clrsz[i]) +
+    geom_point(data = cbsa48 %>% filter(.[[4]] == i), 
+               aes(x,y), size = 2, color = "black")+#clrsz[i]) +
     theme_void() +
     ggtitle(title) +
     theme(plot.title = element_text(face = "bold", hjust = 0.5), 
@@ -226,7 +227,7 @@ for (i in 01:length(clrsm)) {
   plt <- ggplot() + 
     geom_sf(data = us, color = "gray60", fill = "gray90") +
     geom_point(data = cbsa48 %>% filter(.[[7]] == i), 
-               aes(x,y), size = 2, color = clrsm[i]) +
+               aes(x,y), size = 2, color = "black")+#clrsm[i]) +
     theme_void() +
     ggtitle(title) +
     theme(plot.title = element_text(face = "bold", hjust = 0.5), 

@@ -141,6 +141,24 @@ disc_m2 <- MASS::lda(cluster~., data = df_m2)
 disc_m3 <- MASS::lda(cluster~., data = df_m3)
 disc_m4 <- MASS::lda(cluster~., data = df_m4)
 
+eig_z1 <- disc_z1$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_z2 <- disc_z2$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_z3 <- disc_z3$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_z4 <- disc_z4$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_m1 <- disc_m1$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_m2 <- disc_m2$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_m3 <- disc_m3$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+eig_m4 <- disc_m4$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
+
+eig_z1
+eig_z2
+eig_z3
+eig_z4
+eig_m1
+eig_m2
+eig_m3
+eig_m4
+
 disc_z1$counts
 disc_z2$counts
 disc_z3$counts
@@ -170,7 +188,8 @@ hit.ratios <- data.frame(clst_names,hit_ratios,k_solution) %>%
 
 rm(hit_ratios,clst_names,id,m,z,hr_cluster_z1,hr_cluster_z2,hr_cluster_z3,hr_cluster_z4,
    hr_cluster_m1,hr_cluster_m2,hr_cluster_m3,hr_cluster_m4,df_z1,df_z2,df_z3,df_z4,df_m1,
-   df_m2,df_m3,df_m4,disc_z1,disc_z2,disc_z3,disc_z4,disc_m1,disc_m2,disc_m3,disc_m4,k_solution)
+   df_m2,df_m3,df_m4,disc_z1,disc_z2,disc_z3,disc_z4,disc_m1,disc_m2,disc_m3,disc_m4,k_solution,
+   eig_z1,eig_z2,eig_z3,eig_z4,eig_m1,eig_m2,eig_m3,eig_m4)
 
 # Map cluster assignments -------------------------------------------------
 cbsa <- core_based_statistical_areas(cb = T) %>% 

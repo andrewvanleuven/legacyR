@@ -31,7 +31,7 @@ mfg <- read_csv("data/base/generated/mfg.csv") %>% inner_join(.,univ, by = "cbsa
 capital <- read_csv("data/base/source/st_cap.csv") %>%  inner_join(.,univ, by = "cbsa_fips") 
 intermodal <- read_csv("data/base/generated/freight.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
 housing_value <- read_csv("data/base/generated/housing_value.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
-nccs <- read_csv("data/base/generated/charitable.csv") %>% inner_join(.,univ, by = "cbsa_fips") 
+nccs <- read_csv("data/base/generated/charitable.csv") %>% inner_join(.,univ, by = "cbsa_fips")
 hist_register <- read_csv("data/base/generated/hist_register.csv") %>% left_join(univ,., by = "cbsa_fips") %>% 
   rename(registry_total = hist_reg) %>% 
   setNames(paste0('hist_', names(.))) %>% 
@@ -70,7 +70,7 @@ merge2 <- inner_join(nativity,housing_stock, by = "cbsa_fips") %>%
   inner_join(.,capital %>% select(-cbsa), by = "cbsa_fips") %>% 
   inner_join(.,intermodal %>% select(1,3), by = "cbsa_fips") %>% 
   inner_join(.,housing_value %>% select(1,5,6), by = "cbsa_fips") %>% 
-  inner_join(.,nccs %>% select(-cbsa), by = "cbsa_fips")
+  inner_join(.,nccs %>% select(-cbsa,-char_assets_percap_csa), by = "cbsa_fips")
 merge3 <- inner_join(hist_register,access %>% select(-cbsa), by = "cbsa_fips") %>% 
   inner_join(.,univs %>% select(-name), by = "cbsa_fips") %>% 
   inner_join(.,lfpr %>% select(-cbsa), by = "cbsa_fips") %>% 
@@ -81,10 +81,10 @@ merge3 <- inner_join(hist_register,access %>% select(-cbsa), by = "cbsa_fips") %
   inner_join(.,hist_pop, by = "cbsa_fips") 
 
 master_merge <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>% 
-  inner_join(.,merge3 %>% select(-cbsa), by = "cbsa_fips")
-
-master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>% 
   inner_join(.,merge3 %>% select(-cbsa), by = "cbsa_fips") %>% 
+  inner_join(.,nccs %>% select(cbsa_fips,char_assets_percap_csa), by = "cbsa_fips")
+
+master <- master_merge %>% 
   select(1:2,            # IDs
          66:68,          # Density
          13:17,          # U18/O65
@@ -95,7 +95,7 @@ master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>%
          55:56,          # R1/R2 Universities
          43,             # State Capital
          41:42,          # MFG Base
-         47,             # Nonprofit Assets
+         47,77,             # Nonprofit Assets
          44,             # Intermodal Freight
          70,             # Enplanements
          48:53,          # Hist. Registry
@@ -115,7 +115,7 @@ master <- inner_join(merge1,merge2 %>% select(-cbsa), by = "cbsa_fips") %>%
          ) %>% 
   distinct() %>% 
   mutate(enplane_per_cap = enplanements/population_2005,
-         chartbl_per_cap =charitable_assets/population_2005,
+         chartbl_per_cap = charitable_assets/population_2005,
          r1_per_100k = r_1/(population_2005/100000),
          r2_per_100k = r_2/(population_2005/100000),
          r_univ_per_100k = (r_1+r_2)/(population_2005/100000),

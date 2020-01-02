@@ -106,8 +106,8 @@ Jump to:
 | prop_crimes_burglary    | Number of burglaries in MSA                                                                               |     FBI UCR     | 2005 |    MSA    |
 | prop_crimes_larceny     | Number of larceny crimes in MSA                                                                           |     FBI UCR     | 2005 |    MSA    |
 | prop_crimes_moto_theft  | Number of motor vehicle thefts in MSA                                                                     |     FBI UCR     | 2005 |    MSA    |
-| pct_low_inf_bw          | Percent of infants born with low birth weight                                                             |      [UW PHI](https://www.countyhealthrankings.org/)     | 2005 |    MSA    |
-| pct_obese_adult         | Percent of adults classified as obese                                                                     |      UW PHI     | 2005 |    MSA    |
+| pct_low_inf_bw          | Percent of infants born with low birth weight                                                             |      [UW PHI](https://www.countyhealthrankings.org/)     | 2000-2006 |    MSA    |
+| pct_obese_adult         | Percent of adults classified as obese                                                                     |      UW PHI     | 2007 |    MSA    |
 | pct_uninsured_adult     | Percent of adults without health insurance                                                                |      UW PHI     | 2005 |    MSA    |
 | pov_total_in_poverty    | Number of persons whose income in 1999 was below the poverty level                                        |      Census     | 2000 |    MSA    |
 | pov_total               | Number of persons                                                                                         |      Census     | 2000 |    MSA    |

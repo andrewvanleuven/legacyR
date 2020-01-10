@@ -10,11 +10,8 @@ options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
 # Read in data ------------------------------------------------------------
-df <- read_csv("data/master.csv")
+df <- read_csv("data/master.csv") 
 id <- df %>% select(1:2)
-
-df_00 <- df %>% select(read_csv("data/analysis/specifications/vars_00.csv") %>% pull()) 
-df_01 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull()) 
 
 clustr_assign <- function(data){
   is.binary <- function(j) {
@@ -199,5 +196,20 @@ clustr_assign <- function(data){
        counts = counts)
 }
 
-write_xlsx(clustr_assign(df_00), "data/analysis/base_specify.xlsx")
-write_xlsx(clustr_assign(df_01), "data/analysis/specify_01.xlsx")
+df_00 <- df %>% select(read_csv("data/analysis/specifications/vars_00.csv") %>% pull()) 
+df_01 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
+write_xlsx(clustr_assign(df_00), "data/analysis/results/base_specify.xlsx")
+write_xlsx(clustr_assign(df_01), "data/analysis/results/specify_01.xlsx")
+
+# Subset data to be only lower 48 -----------------------------------------
+df <- read_csv("data/master.csv") %>% 
+  filter(!cbsa_fips %in% c(11260,21820,46520)) 
+id <- df %>% select(1:2)
+
+df_02 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
+df_03 <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
+df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
+
+write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
+write_xlsx(clustr_assign(df_03), "data/analysis/results/specify_03.xlsx")
+write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx")

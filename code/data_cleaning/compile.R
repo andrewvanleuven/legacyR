@@ -53,7 +53,8 @@ hist_pop <- read_csv("data/base/generated/peak_pop.csv") %>%
   left_join(univ,., by = "cbsa_fips") %>% 
   select(-city_fips,-city) %>% 
   setNames(paste0('city_', names(.))) %>% 
-  rename(cbsa_fips = 1) %>% select(-city_cbsa)
+  rename(cbsa_fips = 1) %>% select(-city_cbsa) %>% 
+  select(1:5,8,7)
 
 # Merge everything into one DF --------------------------------------------
 merge1 <- inner_join(bridge,hud, by = "cbsa_fips") %>% 

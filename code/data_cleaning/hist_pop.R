@@ -47,6 +47,7 @@ age_data <- df %>% select(1:4) %>%
   inner_join(.,peak,by = "cbsa") %>% 
   left_join(.,age,by = "cbsa") %>% 
   replace_na(list(age = 0)) %>% 
+  mutate(dec_since_peak_nonzero = replace(decline_since_peak, decline_since_peak == 0, -0.0001)) %>% 
   write_csv("data/base/generated/peak_pop.csv")
 
 

@@ -10,10 +10,11 @@ options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
 
 # Read in data ------------------------------------------------------------
-df <- read_csv("data/master.csv") 
-id <- df %>% select(1:2)
+#df <- read_csv("data/master.csv") 
+#id <- df %>% select(1:2)
 
-clustr_assign <- function(data){
+# Cluster-Discriminant Function -------------------------------------------
+clustr_assign <- function(data,clust_solution=NULL){
   is.binary <- function(j) {
     x <- unique(j)
     length(x) - sum(is.na(x)) == 2L && all(x[1:2] == 0:1)
@@ -71,14 +72,14 @@ clustr_assign <- function(data){
       (preds/n)*100
     }
     cdf <- cbind(cluster_assignments,data)
-    df_z1 <- cdf %>% select(03,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z2 <- cdf %>% select(04,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z3 <- cdf %>% select(05,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z4 <- cdf %>% select(06,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m1 <- cdf %>% select(07,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m2 <- cdf %>% select(08,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m3 <- cdf %>% select(09,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m4 <- cdf %>% select(10,density:edu_bachelors_plus) %>% rename(cluster = 1)
+    df_z1 <- cdf %>% select(everything(),-(1:10), 03) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z2 <- cdf %>% select(everything(),-(1:10), 04) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z3 <- cdf %>% select(everything(),-(1:10), 05) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z4 <- cdf %>% select(everything(),-(1:10), 06) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m1 <- cdf %>% select(everything(),-(1:10), 07) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m2 <- cdf %>% select(everything(),-(1:10), 08) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m3 <- cdf %>% select(everything(),-(1:10), 09) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m4 <- cdf %>% select(everything(),-(1:10), 10) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
     disc_z1 <- MASS::lda(cluster~., data = df_z1)
     disc_z2 <- MASS::lda(cluster~., data = df_z2)
     disc_z3 <- MASS::lda(cluster~., data = df_z3)
@@ -109,14 +110,14 @@ clustr_assign <- function(data){
   }
   pct_var <- function(data,cluster_assignments){
     cdf <- cbind(cluster_assignments,data)
-    df_z1 <- cdf %>% select(03,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z2 <- cdf %>% select(04,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z3 <- cdf %>% select(05,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_z4 <- cdf %>% select(06,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m1 <- cdf %>% select(07,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m2 <- cdf %>% select(08,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m3 <- cdf %>% select(09,density:edu_bachelors_plus) %>% rename(cluster = 1)
-    df_m4 <- cdf %>% select(10,density:edu_bachelors_plus) %>% rename(cluster = 1)
+    df_z1 <- cdf %>% select(everything(),-(1:10), 03) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z2 <- cdf %>% select(everything(),-(1:10), 04) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z3 <- cdf %>% select(everything(),-(1:10), 05) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_z4 <- cdf %>% select(everything(),-(1:10), 06) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m1 <- cdf %>% select(everything(),-(1:10), 07) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m2 <- cdf %>% select(everything(),-(1:10), 08) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m3 <- cdf %>% select(everything(),-(1:10), 09) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    df_m4 <- cdf %>% select(everything(),-(1:10), 10) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
     disc_z1 <- MASS::lda(cluster~., data = df_z1)
     disc_z2 <- MASS::lda(cluster~., data = df_z2)
     disc_z3 <- MASS::lda(cluster~., data = df_z3)
@@ -183,33 +184,154 @@ clustr_assign <- function(data){
   hrs <- hit_ratios(data,cluster_assignments)
   p_var <- pct_var(data,cluster_assignments)
   counts <- counts(data,cluster_assignments)
+  if(is.null(clust_solution)) {
+    output <- list(vars = colnames(data) %>% enframe(name = NULL) %>% rename(specified_vars = value),
+                   agg_sched = agg_sched %>% select(-rank), 
+                   corr = corr, 
+                   corr_pairs = corr_pairs,
+                   cluster_assignments = cluster_assignments,
+                   hit_ratios = hrs,
+                   pct_of_var = p_var,
+                   counts = counts,
+                   combined = cbind(cluster_assignments,data))
+  } 
+  else {
+    cdf <- cbind(cluster_assignments,data)
+    df_disc <- cdf %>% select(everything(),-(1:10), (clust_solution+2)) %>% 
+      select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+    discrim <- MASS::lda(cluster~., data = df_disc)
+    scores <- predict(discrim)$x %>% as_tibble() %>% 
+      cbind(df_disc[1],.) %>% 
+      group_by(cluster) %>%
+      summarise_all(mean)
+    output <- list(vars = colnames(data) %>% enframe(name = NULL) %>% rename(specified_vars = value),
+                   agg_sched = agg_sched %>% select(-rank), 
+                   corr = corr, 
+                   corr_pairs = corr_pairs,
+                   cluster_assignments = cluster_assignments,
+                   hit_ratios = hrs,
+                   pct_of_var = p_var,
+                   counts = counts,
+                   centroids = scores,
+                   combined = cbind(cluster_assignments,data))
+  }
   print(zsols)
   print(msols)
   print(hrs)
-  list(vars = colnames(data) %>% enframe(name = NULL) %>% rename(specified_vars = value),
-       agg_sched = agg_sched %>% select(-rank), 
-       corr = corr, 
-       corr_pairs = corr_pairs,
-       cluster_assignments = cluster_assignments,
-       hit_ratios = hrs,
-       pct_of_var = p_var,
-       counts = counts)
+  output
 }
 
-df_00 <- df %>% select(read_csv("data/analysis/specifications/vars_00.csv") %>% pull()) 
-df_01 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
-write_xlsx(clustr_assign(df_00), "data/analysis/results/base_specify.xlsx")
-write_xlsx(clustr_assign(df_01), "data/analysis/results/specify_01.xlsx")
+# Base specification and others -------------------------------------------
+#df_00 <- df %>% select(read_csv("data/analysis/specifications/vars_00.csv") %>% pull()) 
+#df_01 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
+#write_xlsx(clustr_assign(df_00), "data/analysis/results/base_specify.xlsx")
+#write_xlsx(clustr_assign(df_01), "data/analysis/results/specify_01.xlsx")
 
 # Subset data to be only lower 48 -----------------------------------------
 df <- read_csv("data/master.csv") %>% 
   filter(!cbsa_fips %in% c(11260,21820,46520)) 
 id <- df %>% select(1:2)
 
-df_02 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
+#df_02 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
 df_03 <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
-df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
+#df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
 
-write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
-write_xlsx(clustr_assign(df_03), "data/analysis/results/specify_03.xlsx")
-write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx")
+#write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
+write_xlsx(clustr_assign(df_03,clust_solution = 5), "data/analysis/results/specify_03.xlsx")
+#write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx") #superfund var. as raw value
+spss <- clustr_assign(df_03,clust_solution = 5)
+write_csv(spss$combined,"/Users/andrew/SPSS/spss_input.csv")
+
+# Significance of Centroid Scores -----------------------------------------
+tstat <- function(x, na.rm = F) mean(x)/sd(x)#/(sqrt(n()))
+cdf <- spss$combined
+df_disc <- cdf %>% select(everything(),-(1:10), 7) %>% 
+  select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+discrim <- MASS::lda(cluster~., data = df_disc)
+scores <- predict(discrim)$x %>% as_tibble() %>% 
+  cbind(df_disc[1],.) %>% 
+  group_by(cluster) %>%
+  summarise_all(mean)
+
+freq <- freqTab(df_disc,"cluster",Inf) %>% 
+  arrange(CLUSTER) %>% 
+  mutate(cluster = as.integer(CLUSTER)) %>% 
+  select(cluster,N)
+
+score_bugs <- predict(discrim)$x %>% as_tibble() %>% 
+  cbind(df_disc[1],.) %>% 
+  group_by(cluster) %>%
+  summarise_all(tstat) %>% 
+  left_join(.,freq) %>% 
+  mutate(sig90 = qt(.1,N),
+         sig95 = qt(.05,N),
+         sig99 = qt(.01,N),
+         sig1_01 = if_else(((abs(LD1)>=abs(sig90))&(abs(LD1)<abs(sig95))),"*",""),
+         sig1_02 = if_else(((abs(LD2)>=abs(sig90))&(abs(LD2)<abs(sig95))),"*",""),
+         sig1_03 = if_else(((abs(LD3)>=abs(sig90))&(abs(LD3)<abs(sig95))),"*",""),
+         sig1_04 = if_else(((abs(LD4)>=abs(sig90))&(abs(LD4)<abs(sig95))),"*",""),
+         sig1_05 = if_else(((abs(LD5)>=abs(sig90))&(abs(LD5)<abs(sig95))),"*",""),
+         sig1_06 = if_else(((abs(LD6)>=abs(sig90))&(abs(LD6)<abs(sig95))),"*",""),
+         sig1_07 = if_else(((abs(LD7)>=abs(sig90))&(abs(LD7)<abs(sig95))),"*",""),
+         sig1_08 = if_else(((abs(LD8)>=abs(sig90))&(abs(LD8)<abs(sig95))),"*",""),
+         sig1_09 = if_else(((abs(LD9)>=abs(sig90))&(abs(LD9)<abs(sig95))),"*",""),
+         sig2_01 = if_else(((abs(LD1)>=abs(sig95))&(abs(LD1)<abs(sig99))),"*",""),
+         sig2_02 = if_else(((abs(LD2)>=abs(sig95))&(abs(LD2)<abs(sig99))),"*",""),
+         sig2_03 = if_else(((abs(LD3)>=abs(sig95))&(abs(LD3)<abs(sig99))),"*",""),
+         sig2_04 = if_else(((abs(LD4)>=abs(sig95))&(abs(LD4)<abs(sig99))),"*",""),
+         sig2_05 = if_else(((abs(LD5)>=abs(sig95))&(abs(LD5)<abs(sig99))),"*",""),
+         sig2_06 = if_else(((abs(LD6)>=abs(sig95))&(abs(LD6)<abs(sig99))),"*",""),
+         sig2_07 = if_else(((abs(LD7)>=abs(sig95))&(abs(LD7)<abs(sig99))),"*",""),
+         sig2_08 = if_else(((abs(LD8)>=abs(sig95))&(abs(LD8)<abs(sig99))),"*",""),
+         sig2_09 = if_else(((abs(LD9)>=abs(sig95))&(abs(LD9)<abs(sig99))),"*",""),
+         sig3_01 = if_else(((abs(LD1)>=abs(sig90))),"*",""),
+         sig3_02 = if_else(((abs(LD2)>=abs(sig90))),"*",""),
+         sig3_03 = if_else(((abs(LD3)>=abs(sig90))),"*",""),
+         sig3_04 = if_else(((abs(LD4)>=abs(sig90))),"*",""),
+         sig3_05 = if_else(((abs(LD5)>=abs(sig90))),"*",""),
+         sig3_06 = if_else(((abs(LD6)>=abs(sig90))),"*",""),
+         sig3_07 = if_else(((abs(LD7)>=abs(sig90))),"*",""),
+         sig3_08 = if_else(((abs(LD8)>=abs(sig90))),"*",""),
+         sig3_09 = if_else(((abs(LD9)>=abs(sig90))),"*",""),
+         bug1 = paste0(sig1_01,sig2_01,sig3_01),
+         bug2 = paste0(sig1_02,sig2_02,sig3_02),
+         bug3 = paste0(sig1_03,sig2_03,sig3_03),
+         bug4 = paste0(sig1_04,sig2_04,sig3_04),
+         bug5 = paste0(sig1_05,sig2_05,sig3_05),
+         bug6 = paste0(sig1_06,sig2_06,sig3_06),
+         bug7 = paste0(sig1_07,sig2_07,sig3_07),
+         bug8 = paste0(sig1_08,sig2_08,sig3_08),
+         bug9 = paste0(sig1_09,sig2_09,sig3_09)) %>% 
+  select(bug1,
+         bug2,
+         bug3,
+         bug4,
+         bug5,
+         bug6,
+         bug7,
+         bug8,
+         bug9)
+
+centroids <- scores %>% 
+  mutate_at(vars(-cluster), list(~ round(., 3))) %>% 
+  cbind(.,score_bugs) %>% 
+  mutate(centroid_01 = paste0(LD1,bug1),
+         centroid_02 = paste0(LD2,bug2),
+         centroid_03 = paste0(LD3,bug3),
+         centroid_04 = paste0(LD4,bug4),
+         centroid_05 = paste0(LD5,bug5),
+         centroid_06 = paste0(LD6,bug6),
+         centroid_07 = paste0(LD7,bug7),
+         centroid_08 = paste0(LD8,bug8),
+         centroid_09 = paste0(LD9,bug9)) %>% 
+  select(cluster,
+         centroid_01,
+         centroid_02,
+         centroid_03,
+         centroid_04,
+         centroid_05,
+         centroid_06,
+         centroid_07,
+         centroid_08,
+         centroid_09) %>% 
+  write_csv("data/analysis/results/centroids.csv")

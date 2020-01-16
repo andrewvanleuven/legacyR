@@ -14,212 +14,7 @@ options(scipen = 999,"digits"=3)
 #id <- df %>% select(1:2)
 
 # Cluster-Discriminant Function -------------------------------------------
-clustr_assign <- function(data,clust_solution=NULL){
-  is.binary <- function(j) {
-    x <- unique(j)
-    length(x) - sum(is.na(x)) == 2L && all(x[1:2] == 0:1)
-  }
-  clustr <- function(scaled_data) {
-    d <- dist(scaled_data, method = "euclidean")
-    hclust(d, method = "ward.D2")
-  }
-  agg_sched <- function(clustr){  
-    as.data.frame(table(clustr$height)) %>% 
-      mutate(stage = as.numeric(rownames(.)),
-             clusters = (nrow(.)+1)-stage,
-             aggcoeff = as.numeric(levels(Var1))[Var1],
-             lag = as.numeric(lag(aggcoeff)),
-             slope = (aggcoeff - lag) / lag,
-             lag2 = as.numeric(lag(slope)),
-             accel = (slope - lag2) / lag2,) %>% 
-      select(stage,clusters,aggcoeff,slope,accel) %>% 
-      filter(clusters <= 20)
-  }
-  solutions <- function(agg_schedule){
-    agg_schedule %>% 
-      mutate(rank = rank(-(abs(accel))),
-             solution = clusters + 1,
-             accel = round(accel,2)) %>% 
-      arrange(rank) %>% 
-      filter(rank <= 5) %>% 
-      select(rank,accel,solution)
-  }
-  clustassign <- function(scaled_data,num_k,id_cols,method = NULL,needs_id = NULL){
-    if(is.null(method)) {
-      clust <- paste0("cluster_",num_k)
-    } else {
-      clust <- paste0("cluster",method,"_",num_k)
-    }
-    c <- clustr(scaled_data)
-    cluster <- cutree(c, k = num_k)
-    standalone <- cbind(id_cols,cluster) %>% rename(., !!clust := cluster)
-    if(is.null(needs_id)) {
-      assignment <- standalone %>% select(3)
-    } else {
-      assignment <- standalone
-    }
-    assignment
-  }
-  zscore <- function(x, na.rm = F) (x - mean(x, na.rm = na.rm)) / sd(x, na.rm = na.rm)
-  mscore <- function(x, na.rm = F) (x-median(x, na.rm = na.rm))/(IQR(x, na.rm = na.rm)/1.349)
-  hit_ratios <- function(data,cluster_assignments){
-    h_rat <- function(discriminant,data){
-      pred <- predict(discriminant)
-      data$lda <- pred$class
-      mtx <- table(data$cluster,data$lda)
-      n <- sum(rowSums(mtx))
-      preds <- sum(diag(mtx))
-      (preds/n)*100
-    }
-    cdf <- cbind(cluster_assignments,data)
-    df_z1 <- cdf %>% select(everything(),-(1:10), 03) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z2 <- cdf %>% select(everything(),-(1:10), 04) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z3 <- cdf %>% select(everything(),-(1:10), 05) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z4 <- cdf %>% select(everything(),-(1:10), 06) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m1 <- cdf %>% select(everything(),-(1:10), 07) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m2 <- cdf %>% select(everything(),-(1:10), 08) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m3 <- cdf %>% select(everything(),-(1:10), 09) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m4 <- cdf %>% select(everything(),-(1:10), 10) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    disc_z1 <- MASS::lda(cluster~., data = df_z1)
-    disc_z2 <- MASS::lda(cluster~., data = df_z2)
-    disc_z3 <- MASS::lda(cluster~., data = df_z3)
-    disc_z4 <- MASS::lda(cluster~., data = df_z4)
-    disc_m1 <- MASS::lda(cluster~., data = df_m1)
-    disc_m2 <- MASS::lda(cluster~., data = df_m2)
-    disc_m3 <- MASS::lda(cluster~., data = df_m3)
-    disc_m4 <- MASS::lda(cluster~., data = df_m4)
-    eig_z1 <- disc_z1$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_z2 <- disc_z2$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_z3 <- disc_z3$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_z4 <- disc_z4$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_m1 <- disc_m1$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_m2 <- disc_m2$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_m3 <- disc_m3$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    eig_m4 <- disc_m4$svd %>% enframe(name = NULL) %>% mutate(pct_of_variance = 100*(value^2/sum(value^2)))
-    hit_ratios <- c(h_rat(disc_z1,df_z1),h_rat(disc_z2,df_z2),h_rat(disc_z3,df_z3),
-                    h_rat(disc_z4,df_z4),h_rat(disc_m1,df_m1),h_rat(disc_m2,df_m2),
-                    h_rat(disc_m3,df_m3),h_rat(disc_m4,df_m4))
-    clustr_type <- c(
-      "z1","z2","z3","z4","m1","m2","m3","m4"
-    )
-    k_solution <- c(tail(disc_z1$lev,n=1),tail(disc_z2$lev,n=1),tail(disc_z3$lev,n=1),tail(disc_z4$lev,n=1),
-                    tail(disc_m1$lev,n=1),tail(disc_m2$lev,n=1),tail(disc_m3$lev,n=1),tail(disc_m4$lev,n=1))
-    data.frame(clustr_type,as.numeric(k_solution),hit_ratios) %>% 
-      rename(k = as.numeric.k_solution.) %>% 
-      mutate(hit_ratios = round(hit_ratios,1))
-  }
-  pct_var <- function(data,cluster_assignments){
-    cdf <- cbind(cluster_assignments,data)
-    df_z1 <- cdf %>% select(everything(),-(1:10), 03) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z2 <- cdf %>% select(everything(),-(1:10), 04) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z3 <- cdf %>% select(everything(),-(1:10), 05) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_z4 <- cdf %>% select(everything(),-(1:10), 06) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m1 <- cdf %>% select(everything(),-(1:10), 07) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m2 <- cdf %>% select(everything(),-(1:10), 08) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m3 <- cdf %>% select(everything(),-(1:10), 09) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    df_m4 <- cdf %>% select(everything(),-(1:10), 10) %>% select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    disc_z1 <- MASS::lda(cluster~., data = df_z1)
-    disc_z2 <- MASS::lda(cluster~., data = df_z2)
-    disc_z3 <- MASS::lda(cluster~., data = df_z3)
-    disc_z4 <- MASS::lda(cluster~., data = df_z4)
-    disc_m1 <- MASS::lda(cluster~., data = df_m1)
-    disc_m2 <- MASS::lda(cluster~., data = df_m2)
-    disc_m3 <- MASS::lda(cluster~., data = df_m3)
-    disc_m4 <- MASS::lda(cluster~., data = df_m4)
-    pct_o_var <- function(eigen,type){
-      eigen %>% enframe(name = NULL) %>% 
-        mutate(pov = 100*(value^2/sum(value^2)),
-               func = row_number(),
-               clustr_type = type,
-               eigenvalue = round(value,1),
-               pct_of_variance = round(pov,2)) %>% 
-        select(clustr_type,func,eigenvalue,pct_of_variance)
-    }
-    eig_z1 <- disc_z1$svd %>% pct_o_var(.,type = "z1")
-    eig_z2 <- disc_z2$svd %>% pct_o_var(.,type = "z2")
-    eig_z3 <- disc_z3$svd %>% pct_o_var(.,type = "z3")
-    eig_z4 <- disc_z4$svd %>% pct_o_var(.,type = "z4")
-    eig_m1 <- disc_m1$svd %>% pct_o_var(.,type = "m1")
-    eig_m2 <- disc_m2$svd %>% pct_o_var(.,type = "m2")
-    eig_m3 <- disc_m3$svd %>% pct_o_var(.,type = "m3")
-    eig_m4 <- disc_m4$svd %>% pct_o_var(.,type = "m4")
-    rbind(eig_z1,eig_z2,eig_z3,eig_z4,eig_m1,eig_m2,eig_m3,eig_m4)
-  }
-  counts <- function(data,cluster_assignments){
-    cdf <- cbind(cluster_assignments,data)
-    rbind(cdf %>% group_by_at(03) %>% summarise(N=n()) %>% mutate(clustr_type = "z1") %>% rename(cluster = 1),
-          cdf %>% group_by_at(04) %>% summarise(N=n()) %>% mutate(clustr_type = "z2") %>% rename(cluster = 1),
-          cdf %>% group_by_at(05) %>% summarise(N=n()) %>% mutate(clustr_type = "z3") %>% rename(cluster = 1),
-          cdf %>% group_by_at(06) %>% summarise(N=n()) %>% mutate(clustr_type = "z4") %>% rename(cluster = 1),
-          cdf %>% group_by_at(07) %>% summarise(N=n()) %>% mutate(clustr_type = "m1") %>% rename(cluster = 1),
-          cdf %>% group_by_at(08) %>% summarise(N=n()) %>% mutate(clustr_type = "m2") %>% rename(cluster = 1),
-          cdf %>% group_by_at(09) %>% summarise(N=n()) %>% mutate(clustr_type = "m3") %>% rename(cluster = 1),
-          cdf %>% group_by_at(10) %>% summarise(N=n()) %>% mutate(clustr_type = "m4") %>% rename(cluster = 1)) %>% 
-      select(clustr_type,cluster,N)
-  }
-  corr <- as.data.frame(cor(data, use="pairwise.complete.obs")) %>% 
-    mutate_if(is.numeric, round, 2) %>% 
-    rownames_to_column(.,"variable")
-  corr.tri <- cor(data)
-  corr.tri[lower.tri(cor(data), diag=TRUE)]<-""
-  corr_pairs <- as.data.frame(corr.tri) %>% 
-    rownames_to_column(.,"variable") %>% 
-    pivot_longer(-variable,names_to = "variable2",values_to = "correlation") %>% 
-    filter(correlation != "") %>% 
-    mutate(correlation = round(as.numeric(as.character(correlation)),3)) %>% 
-    arrange(desc(abs(correlation)))
-  z <- data %>% mutate_if(Negate(is.binary),zscore)
-  m <- data %>% mutate_if(Negate(is.binary),mscore)
-  zsols <- solutions(agg_sched(clustr(z))) %>% mutate(method = "z") 
-  msols <- solutions(agg_sched(clustr(m))) %>% mutate(method = "m") 
-  agg_sched <- rbind(zsols,msols)
-  cluster_assignments <- cbind(clustassign(z,zsols[1,3],id_cols = id,needs_id = T,method = "z"),
-                               clustassign(z,zsols[2,3],id_cols = id,method = "z"),
-                               clustassign(z,zsols[3,3],id_cols = id,method = "z"),
-                               clustassign(z,zsols[4,3],id_cols = id,method = "z"),
-                               clustassign(m,msols[1,3],id_cols = id,method = "m"),
-                               clustassign(m,msols[2,3],id_cols = id,method = "m"),
-                               clustassign(m,msols[3,3],id_cols = id,method = "m"),
-                               clustassign(m,msols[4,3],id_cols = id,method = "m"))
-  hrs <- hit_ratios(data,cluster_assignments)
-  p_var <- pct_var(data,cluster_assignments)
-  counts <- counts(data,cluster_assignments)
-  if(is.null(clust_solution)) {
-    output <- list(vars = colnames(data) %>% enframe(name = NULL) %>% rename(specified_vars = value),
-                   agg_sched = agg_sched %>% select(-rank), 
-                   corr = corr, 
-                   corr_pairs = corr_pairs,
-                   cluster_assignments = cluster_assignments,
-                   hit_ratios = hrs,
-                   pct_of_var = p_var,
-                   counts = counts,
-                   combined = cbind(cluster_assignments,data))
-  } 
-  else {
-    cdf <- cbind(cluster_assignments,data)
-    df_disc <- cdf %>% select(everything(),-(1:10), (clust_solution+2)) %>% 
-      select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
-    discrim <- MASS::lda(cluster~., data = df_disc)
-    scores <- predict(discrim)$x %>% as_tibble() %>% 
-      cbind(df_disc[1],.) %>% 
-      group_by(cluster) %>%
-      summarise_all(mean)
-    output <- list(vars = colnames(data) %>% enframe(name = NULL) %>% rename(specified_vars = value),
-                   agg_sched = agg_sched %>% select(-rank), 
-                   corr = corr, 
-                   corr_pairs = corr_pairs,
-                   cluster_assignments = cluster_assignments,
-                   hit_ratios = hrs,
-                   pct_of_var = p_var,
-                   counts = counts,
-                   centroids = scores,
-                   combined = cbind(cluster_assignments,data))
-  }
-  print(zsols)
-  print(msols)
-  print(hrs)
-  output
-}
+clustr_assign <- dget("code/functions/clustr_assign.R")
 
 # Base specification and others -------------------------------------------
 #df_00 <- df %>% select(read_csv("data/analysis/specifications/vars_00.csv") %>% pull()) 
@@ -237,10 +32,10 @@ df_03 <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% 
 #df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
 
 #write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
-write_xlsx(clustr_assign(df_03,clust_solution = 5), "data/analysis/results/specify_03.xlsx")
+#write_xlsx(clustr_assign(df_03,clust_solution = 5), "data/analysis/results/specify_03.xlsx")
 #write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx") #superfund var. as raw value
 spss <- clustr_assign(df_03,clust_solution = 5)
-write_csv(spss$combined,"/Users/andrew/SPSS/spss_input.csv")
+#write_csv(spss$combined,"/Users/andrew/SPSS/spss_input.csv")
 
 # Significance of Centroid Scores -----------------------------------------
 tstat <- function(x, na.rm = F) mean(x)/sd(x)#/(sqrt(n()))
@@ -335,3 +130,156 @@ centroids <- scores %>%
          centroid_08,
          centroid_09) %>% 
   write_csv("data/analysis/results/centroids.csv")
+
+# Centroids for K = 18 ----------------------------------------------------
+df_disc18 <- cdf %>% select(everything(),-(1:10), 8) %>% 
+  select(tail(names(.), 1),everything()) %>% rename(cluster = 1)
+discrim18 <- MASS::lda(cluster~., data = df_disc18)
+scores18 <- predict(discrim18)$x %>% as_tibble() %>% 
+  cbind(df_disc18[1],.) %>% 
+  group_by(cluster) %>%
+  summarise_all(mean)
+
+freq18 <- freqTab(df_disc18,"cluster",Inf) %>% 
+  arrange(CLUSTER) %>% 
+  mutate(cluster = as.integer(CLUSTER)) %>% 
+  select(cluster,N)
+
+score_bugs18 <- predict(discrim18)$x %>% as_tibble() %>% 
+  cbind(df_disc18[1],.) %>% 
+  group_by(cluster) %>%
+  summarise_all(tstat) %>% 
+  left_join(.,freq18) %>% 
+  mutate(sig90 = qt(.1,N),
+       sig95 = qt(.05,N),
+       sig99 = qt(.01,N),
+       sig1_01 = if_else(((abs(LD1)>=abs(sig90))&(abs(LD1)<abs(sig95))),"*",""),
+       sig1_02 = if_else(((abs(LD2)>=abs(sig90))&(abs(LD2)<abs(sig95))),"*",""),
+       sig1_03 = if_else(((abs(LD3)>=abs(sig90))&(abs(LD3)<abs(sig95))),"*",""),
+       sig1_04 = if_else(((abs(LD4)>=abs(sig90))&(abs(LD4)<abs(sig95))),"*",""),
+       sig1_05 = if_else(((abs(LD5)>=abs(sig90))&(abs(LD5)<abs(sig95))),"*",""),
+       sig1_06 = if_else(((abs(LD6)>=abs(sig90))&(abs(LD6)<abs(sig95))),"*",""),
+       sig1_07 = if_else(((abs(LD7)>=abs(sig90))&(abs(LD7)<abs(sig95))),"*",""),
+       sig1_08 = if_else(((abs(LD8)>=abs(sig90))&(abs(LD8)<abs(sig95))),"*",""),
+       sig1_09 = if_else(((abs(LD9)>=abs(sig90))&(abs(LD9)<abs(sig95))),"*",""),
+       sig1_10 = if_else(((abs(LD10)>=abs(sig90))&(abs(LD10)<abs(sig95))),"*",""),
+       sig1_11 = if_else(((abs(LD11)>=abs(sig90))&(abs(LD11)<abs(sig95))),"*",""),
+       sig1_12 = if_else(((abs(LD12)>=abs(sig90))&(abs(LD12)<abs(sig95))),"*",""),
+       sig1_13 = if_else(((abs(LD13)>=abs(sig90))&(abs(LD13)<abs(sig95))),"*",""),
+       sig1_14 = if_else(((abs(LD14)>=abs(sig90))&(abs(LD14)<abs(sig95))),"*",""),
+       sig1_15 = if_else(((abs(LD15)>=abs(sig90))&(abs(LD15)<abs(sig95))),"*",""),
+       sig1_16 = if_else(((abs(LD16)>=abs(sig90))&(abs(LD16)<abs(sig95))),"*",""),
+       sig1_17 = if_else(((abs(LD17)>=abs(sig90))&(abs(LD17)<abs(sig95))),"*",""),
+       sig2_01 = if_else(((abs(LD1)>=abs(sig95))&(abs(LD1)<abs(sig99))),"*",""),
+       sig2_02 = if_else(((abs(LD2)>=abs(sig95))&(abs(LD2)<abs(sig99))),"*",""),
+       sig2_03 = if_else(((abs(LD3)>=abs(sig95))&(abs(LD3)<abs(sig99))),"*",""),
+       sig2_04 = if_else(((abs(LD4)>=abs(sig95))&(abs(LD4)<abs(sig99))),"*",""),
+       sig2_05 = if_else(((abs(LD5)>=abs(sig95))&(abs(LD5)<abs(sig99))),"*",""),
+       sig2_06 = if_else(((abs(LD6)>=abs(sig95))&(abs(LD6)<abs(sig99))),"*",""),
+       sig2_07 = if_else(((abs(LD7)>=abs(sig95))&(abs(LD7)<abs(sig99))),"*",""),
+       sig2_08 = if_else(((abs(LD8)>=abs(sig95))&(abs(LD8)<abs(sig99))),"*",""),
+       sig2_09 = if_else(((abs(LD9)>=abs(sig95))&(abs(LD9)<abs(sig99))),"*",""),
+       sig2_10 = if_else(((abs(LD10)>=abs(sig95))&(abs(LD10)<abs(sig99))),"*",""),
+       sig2_11 = if_else(((abs(LD11)>=abs(sig95))&(abs(LD11)<abs(sig99))),"*",""),
+       sig2_12 = if_else(((abs(LD12)>=abs(sig95))&(abs(LD12)<abs(sig99))),"*",""),
+       sig2_13 = if_else(((abs(LD13)>=abs(sig95))&(abs(LD13)<abs(sig99))),"*",""),
+       sig2_14 = if_else(((abs(LD14)>=abs(sig95))&(abs(LD14)<abs(sig99))),"*",""),
+       sig2_15 = if_else(((abs(LD15)>=abs(sig95))&(abs(LD15)<abs(sig99))),"*",""),
+       sig2_16 = if_else(((abs(LD16)>=abs(sig95))&(abs(LD16)<abs(sig99))),"*",""),
+       sig2_17 = if_else(((abs(LD17)>=abs(sig95))&(abs(LD17)<abs(sig99))),"*",""),
+       sig3_01 = if_else(((abs(LD1)>=abs(sig90))),"*",""),
+       sig3_02 = if_else(((abs(LD2)>=abs(sig90))),"*",""),
+       sig3_03 = if_else(((abs(LD3)>=abs(sig90))),"*",""),
+       sig3_04 = if_else(((abs(LD4)>=abs(sig90))),"*",""),
+       sig3_05 = if_else(((abs(LD5)>=abs(sig90))),"*",""),
+       sig3_06 = if_else(((abs(LD6)>=abs(sig90))),"*",""),
+       sig3_07 = if_else(((abs(LD7)>=abs(sig90))),"*",""),
+       sig3_08 = if_else(((abs(LD8)>=abs(sig90))),"*",""),
+       sig3_09 = if_else(((abs(LD9)>=abs(sig90))),"*",""),
+       sig3_10 = if_else(((abs(LD10)>=abs(sig90))),"*",""),
+       sig3_11 = if_else(((abs(LD11)>=abs(sig90))),"*",""),
+       sig3_12 = if_else(((abs(LD12)>=abs(sig90))),"*",""),
+       sig3_13 = if_else(((abs(LD13)>=abs(sig90))),"*",""),
+       sig3_14 = if_else(((abs(LD14)>=abs(sig90))),"*",""),
+       sig3_15 = if_else(((abs(LD15)>=abs(sig90))),"*",""),
+       sig3_16 = if_else(((abs(LD16)>=abs(sig90))),"*",""),
+       sig3_17 = if_else(((abs(LD17)>=abs(sig90))),"*",""),
+       bug1 = paste0(sig1_01,sig2_01,sig3_01),
+       bug2 = paste0(sig1_02,sig2_02,sig3_02),
+       bug3 = paste0(sig1_03,sig2_03,sig3_03),
+       bug4 = paste0(sig1_04,sig2_04,sig3_04),
+       bug5 = paste0(sig1_05,sig2_05,sig3_05),
+       bug6 = paste0(sig1_06,sig2_06,sig3_06),
+       bug7 = paste0(sig1_07,sig2_07,sig3_07),
+       bug8 = paste0(sig1_08,sig2_08,sig3_08),
+       bug9 = paste0(sig1_09,sig2_09,sig3_09),
+       bug10 = paste0(sig1_10,sig2_10,sig3_10),
+       bug11 = paste0(sig1_11,sig2_11,sig3_11),
+       bug12 = paste0(sig1_12,sig2_12,sig3_12),
+       bug13 = paste0(sig1_13,sig2_13,sig3_13),
+       bug14 = paste0(sig1_14,sig2_14,sig3_14),
+       bug15 = paste0(sig1_15,sig2_15,sig3_15),
+       bug16 = paste0(sig1_16,sig2_16,sig3_16),
+       bug17 = paste0(sig1_17,sig2_17,sig3_17)
+) %>% 
+  select(bug1,
+         bug2,
+         bug3,
+         bug4,
+         bug5,
+         bug6,
+         bug7,
+         bug8,
+         bug9,
+         bug10,
+         bug11,
+         bug12,
+         bug13,
+         bug14,
+         bug15,
+         bug16,
+         bug17
+  )
+
+centroids18 <- scores18 %>% 
+  mutate_at(vars(-cluster), list(~ round(., 3))) %>% 
+  cbind(.,score_bugs18) %>% 
+  mutate(centroid_01 = paste0(LD1,bug1),
+         centroid_02 = paste0(LD2,bug2),
+         centroid_03 = paste0(LD3,bug3),
+         centroid_04 = paste0(LD4,bug4),
+         centroid_05 = paste0(LD5,bug5),
+         centroid_06 = paste0(LD6,bug6),
+         centroid_07 = paste0(LD7,bug7),
+         centroid_08 = paste0(LD8,bug8),
+         centroid_09 = paste0(LD9,bug9),
+         centroid_10 = paste0(LD10,bug10),
+         centroid_11 = paste0(LD11,bug11),
+         centroid_12 = paste0(LD12,bug12),
+         centroid_13 = paste0(LD13,bug13),
+         centroid_14 = paste0(LD14,bug14),
+         centroid_15 = paste0(LD15,bug15),
+         centroid_16 = paste0(LD16,bug16),
+         centroid_17 = paste0(LD17,bug17)
+  ) %>% 
+  select(cluster,
+         centroid_01,
+         centroid_02,
+         centroid_03,
+         centroid_04,
+         centroid_05,
+         centroid_06,
+         centroid_07,
+         centroid_08,
+         centroid_09,
+         centroid_10,
+         centroid_11,
+         centroid_12,
+         centroid_13,
+         centroid_14,
+         centroid_15,
+         centroid_16,
+         centroid_17
+  ) %>% 
+  mutate_all(list(~str_replace(., "NANANA", ""))) %>% 
+  write_csv("data/analysis/results/centroids18.csv")

@@ -99,28 +99,44 @@ bc <- clusters$combined %>%
          value = 3)
 
 # Generate Sankey Plot ----------------------------------------------------
+node_names <- read_csv("data/viz/node_names.csv")
 
-links <- data.frame(
+links_fresh <- data.frame(
   rbind(a,ab,bc) %>% 
-    arrange(target) %>% rename(source = 2, target = 1) # This reverses the flow (flips it horizontally)
+    arrange(target) #%>% rename(source = 2, target = 1) # This reverses the flow (flips it horizontally)
 )
 
-nodes <- data.frame(
-  name=c(as.character(links$source), 
-         as.character(links$target)) %>% unique() 
-)
+links <- links_fresh %>% 
+  left_join(node_names, by = c("target" = "name")) %>% 
+  rename(target2 = long_name) %>% 
+  left_join(node_names, by = c("source" = "name")) %>% 
+  rename(source2 = long_name) %>% 
+  select(-source,-target) %>% 
+  rename(target = target2,
+         source = source2) %>% 
+  select(3,2,1)
 
-col_nodes <- nodes %>% 
+nodes <- data.frame(name=c(as.character(links$source), 
+         as.character(links$target)) %>% unique())
+
+node_cols <- data.frame(name=c(as.character(links_fresh$source),
+             as.character(links_fresh$target)) %>% unique()) %>% 
   mutate(group1 = if_else(str_detect(name, "Universe"),1,0),
          group2 = if_else(str_detect(name, "C03"),2,0),
          group3 = if_else(str_detect(name, "C10"),3,0),
          group4 = if_else(str_detect(name, "C18"),4,0),
          group = as.factor(group1+group2+group3+group4)) %>% 
   select(name,group) %>% 
-  as.data.frame()
+  as.data.frame() %>% 
+  left_join(node_names) %>% 
+  select(3,2) %>% 
+  rename(name = long_name) 
+
+col_nodes <- nodes %>% 
+  as.data.frame() %>% 
+  left_join(node_cols) 
 
 my_color <- 'd3.scaleOrdinal() .domain([1,2,3,4]) .range(["blue","green","red","yellow"])'
-
 
 # With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
 links$IDsource <- match(links$source, nodes$name)-1 

@@ -1,32 +1,32 @@
 sankeymatic
-Cluster 1 [245] Universe
-Cluster 2 [75] Universe
-Cluster 3 [31] Universe
-Cluster-01 [96] Cluster 1
-Cluster-02 [53] Cluster 2
-Cluster-03 [25] Cluster 1
-Cluster-04 [9] Cluster 2
-Cluster-05 [84] Cluster 1
-Cluster-06 [31] Cluster 3
-Cluster-07 [16] Cluster 1
-Cluster-08 [13] Cluster 2
-Cluster-09 [15] Cluster 1
-Cluster-10 [9] Cluster 1
-Cluster 01 [66] Cluster-01
-Cluster 02 [21] Cluster-02
-Cluster 03 [25] Cluster-03
-Cluster 04 [9] Cluster-04
-Cluster 05 [31] Cluster-02
-Cluster 06 [38] Cluster-05
-Cluster 07 [6] Cluster-06
-Cluster 08 [5] Cluster-06
-Cluster 09 [46] Cluster-05
-Cluster 10 [20] Cluster-06
-Cluster 11 [16] Cluster-07
-Cluster 12 [9] Cluster-08
-Cluster 13 [14] Cluster-09
-Cluster 14 [30] Cluster-01
-Cluster 15 [4] Cluster-08
-Cluster 16 [9] Cluster-10
-Cluster 17 [1] Cluster-02
-Cluster 18 [1] Cluster-09
+Universe [245] Modal Metros
+Universe [75] Legacy Metros
+Universe [31] College Town Metros
+Modal Metros [96] Median: Southeast
+"Legacy Metros [53] Legacy: Walkable Downtowns, Weak Housing Market"
+"Modal Metros [25] Well-Connected, with Strong Assets"
+Legacy Metros [9] Legacy: Manufacturing Base; Weak Assets
+Modal Metros [84] Median: Lower Deficits
+College Town Metros [31] College-Town Metros
+"Modal Metros [16] Low Skilled, Low Nativity Metros"
+"Legacy Metros [13] Legacy: High Skill, High Density"
+Modal Metros [15] Retirement and/or Resort Metros
+"Modal Metros [9] California Tech, Ag, and Wine Metros"
+Median: Southeast [66] Southeast Median: Weaker Economy
+"Legacy: Walkable Downtowns, Weak Housing Market [21] Legacy: Declining, with Strong Assets"
+"Well-Connected, with Strong Assets [25] Well-Connected; Strong Assets"
+Legacy: Manufacturing Base; Weak Assets [9] Legacy: Manufacturing Base with Weak Assets
+"Legacy: Walkable Downtowns, Weak Housing Market [31] Legacy: Declining, with Weak Assets"
+Median: Lower Deficits [38] Low Liability Median: Growing
+College-Town Metros [6] College Town Metros: Very High Intensity
+College-Town Metros [5] College Town Metros: Normal Intensity
+Median: Lower Deficits [46] Low Liability Median: Declining
+College-Town Metros [20] College Town Metros: High Intensity
+"Low Skilled, Low Nativity Metros [16] Low Skilled and Low Nativity Metros"
+"Legacy: High Skill, High Density [9] Legacy: Strong Urbanization Economies"
+Retirement and/or Resort Metros [14] Retirement/Resort Metros
+Median: Southeast [30] Southeast Median: Stronger Economy
+"Legacy: High Skill, High Density [4] Legacy: Port Cities with Strong Urbanization Economies"
+"California Tech, Ag, and Wine Metros [9] California Tech, Ag, & Wine Metros"
+"Legacy: Walkable Downtowns, Weak Housing Market [1] New Orleans, LA"
+"Retirement and/or Resort Metros [1] Ocean City, NJ"

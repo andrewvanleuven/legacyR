@@ -150,8 +150,8 @@ sankeyNetwork(Links = links,
               Value = "value", 
               NodeID = "name", 
               NodeGroup="group",
-              colourScale=my_color, 
-              sinksRight=TRUE,
+              #colourScale=my_color, 
+              #sinksRight=TRUE,
               fontFamily = "Roboto Condensed",
               nodeWidth = 20,
               fontSize = 18)
@@ -163,10 +163,10 @@ sankeyNetwork(Links = links,
 sankey <- links %>% 
   mutate(sankeymatic = paste0(source," [",value,"] ",target)) %>% 
   select(6) %>%
-  mutate_all(list(~str_replace(., "C03-0", "Cluster "))) %>% 
-  mutate_all(list(~str_replace(., "C10-", "Cluster-"))) %>% 
-  mutate_all(list(~str_replace(., "C18-", "Cluster "))) %>% 
-  mutate_all(list(~str_replace(., "Universe", "Universe"))) %>% 
+  #mutate_all(list(~str_replace(., "C03-0", "Cluster "))) %>% 
+  #mutate_all(list(~str_replace(., "C10-", "Cluster-"))) %>% 
+  #mutate_all(list(~str_replace(., "C18-", "Cluster "))) %>% 
+  #mutate_all(list(~str_replace(., "Universe", "Universe"))) %>% 
   write_csv("plot/sankeymatic.csv")
 
 

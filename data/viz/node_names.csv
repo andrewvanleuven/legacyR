@@ -1,33 +1,33 @@
 ﻿name,long_name
-C03-01,C03-01
-C03-02,C03-02
-C03-03,C03-03
-C10-01,Median: Southeast Metros
-C10-02,Legacy Metros
+C03-01,Modal Metros
+C03-02,Legacy Metros
+C03-03,College Town Metros
+C10-01,Median: Southeast
+C10-02,"Legacy: Walkable Downtowns, Weak Housing Market"
 C10-03,"Well-Connected, with Strong Assets"
-C10-04,Manufacturing Metros with Weak Assets
-C10-05,Median Metros with Lower Deficits
-C10-06,College Town Metros (dominated by large public rsch. univs)
-C10-07,Low Skilled Immigrant Metros
-C10-08,"Legacy: Older, High Skill, High Density Metros"
+C10-04,Legacy: Manufacturing Base; Weak Assets
+C10-05,Median: Lower Deficits
+C10-06,College-Town Metros
+C10-07,"Low Skilled, Low Nativity Metros"
+C10-08,"Legacy: High Skill, High Density"
 C10-09,Retirement and/or Resort Metros
-C10-10,California Tech & Wine Metros
-C18-01,"Low density metros with weak higher ed, low housing values, and poor health"
-C18-02,Declining metro with strong higher ed
-C18-03,"Growing, connected, dense metros with high housing values"
-C18-04,"Dense metro with less healthy, older population, high housing values, & a mfg base"
-C18-05,Low density declining metros with weak higher ed and low housing values
-C18-06,Growing metros with weak higher ed and young housing stock
-C18-07,"Growing, low density metros with extremely strong higher ed, low housing values, weak air connectivity"
-C18-08,"Metros with strong higher ed, high LFPR, low inequality, older central city (some capitals)"
-C18-09,"Declining, older metros with weak higher ed and low deficits"
-C18-10,"Growing, low density, low housing value, with very strong higher ed"
-C18-11,Growing dense metros with weak higher ed and housing market and large population under age 18
-C18-12,"Dense, declining metros with strong higher ed, older population, and high housing values"
-C18-13,"Growing metros with weak higher ed, low density and housing values, low LFPR, and high inequality"
-C18-14,Metros with relatively unhealthy residents and a weak MFG base
-C18-15,"Very dense metros with strong higher ed, high property values, high vacany and freight connectivity"
-C18-16,"Dense, declining metros with low enplanements, low vacancy, high housing values, and smaller youth population"
-C18-17,New Orleans
+C10-10,"California Tech, Ag, and Wine Metros"
+C18-01,Southeast Median: Weaker Economy
+C18-02,"Legacy: Declining, with Strong Assets"
+C18-03,Well-Connected; Strong Assets
+C18-04,Legacy: Manufacturing Base with Weak Assets
+C18-05,"Legacy: Declining, with Weak Assets"
+C18-06,Low Liability Median: Growing
+C18-07,College Town Metros: Very High Intensity
+C18-08,College Town Metros: Normal Intensity
+C18-09,Low Liability Median: Declining
+C18-10,College Town Metros: High Intensity
+C18-11,Low Skilled and Low Nativity Metros
+C18-12,Legacy: Strong Urbanization Economies
+C18-13,Retirement/Resort Metros
+C18-14,Southeast Median: Stronger Economy
+C18-15,Legacy: Port Cities with Strong Urbanization Economies
+C18-16,"California Tech, Ag, & Wine Metros"
+C18-17,"New Orleans, LA"
 C18-18,"Ocean City, NJ"
 Universe,Universe

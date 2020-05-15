@@ -32,7 +32,7 @@ pop90 <- df %>% filter(year == 1990) %>%
   group_by(cbsa_fips) %>% 
   summarize(population_1990 = sum(pop)) %>% 
   inner_join(.,msaxw) %>% 
-  select(1,3,2) 
+  select(1,2) 
 pop95 <- df %>% filter(year == 1995) %>% 
   mutate(cty_fips = paste0(st_fips,cty_fips),
          population = as.numeric(population)) %>% 
@@ -70,7 +70,8 @@ pop10 <- df %>% filter(year == 2010) %>%
   group_by(cbsa_fips) %>% 
   summarize(population_2010 = sum(pop)) %>% 
   inner_join(.,msaxw) %>% 
-  select(1,2) 
+  select(1,2) %>% 
+  write_csv("data/base/generated/pop10.csv")
 pop15 <- df %>% filter(year == 2015) %>% 
   mutate(cty_fips = paste0(st_fips,cty_fips),
          population = as.numeric(population)) %>% 
@@ -80,7 +81,8 @@ pop15 <- df %>% filter(year == 2015) %>%
   group_by(cbsa_fips) %>% 
   summarize(population_2015 = sum(pop)) %>% 
   inner_join(.,msaxw) %>% 
-  select(1,2) 
+  select(1,2) %>% 
+  write_csv("data/base/generated/pop15.csv")
 
 populations <- pop00 %>% 
   #inner_join(.,pop00) %>% 

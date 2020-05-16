@@ -1,0 +1,386 @@
+cbsa_fips,cbsa,inc_2005,inc_2015
+998,United States (Metropolitan Portion),37381,50747
+10180,"Abilene, TX (Metropolitan Statistical Area)",28319,40822
+10420,"Akron, OH (Metropolitan Statistical Area)",33773,44994
+10500,"Albany, GA (Metropolitan Statistical Area)",26580,34848
+10540,"Albany-Lebanon, OR (Metropolitan Statistical Area)",28013,38055
+10580,"Albany-Schenectady-Troy, NY (Metropolitan Statistical Area)",37076,52591
+10740,"Albuquerque, NM (Metropolitan Statistical Area) *",31392,38863
+10780,"Alexandria, LA (Metropolitan Statistical Area)",30603,40653
+10900,"Allentown-Bethlehem-Easton, PA-NJ (Metropolitan Statistical Area)",37208,48554
+11020,"Altoona, PA (Metropolitan Statistical Area)",29828,41996
+11100,"Amarillo, TX (Metropolitan Statistical Area)",29036,43296
+11180,"Ames, IA (Metropolitan Statistical Area)",31415,40064
+11260,"Anchorage, AK (Metropolitan Statistical Area)",41859,59602
+11460,"Ann Arbor, MI (Metropolitan Statistical Area)",40147,52348
+11500,"Anniston-Oxford, AL (Metropolitan Statistical Area)",27460,34182
+11540,"Appleton, WI (Metropolitan Statistical Area)",34473,46241
+11700,"Asheville, NC (Metropolitan Statistical Area)",30419,40618
+12020,"Athens-Clarke County, GA (Metropolitan Statistical Area)",27796,36750
+12060,"Atlanta-Sandy Springs-Alpharetta, GA (Metropolitan Statistical Area)",38488,46757
+12100,"Atlantic City-Hammonton, NJ (Metropolitan Statistical Area)",33764,44345
+12220,"Auburn-Opelika, AL (Metropolitan Statistical Area)",25721,34188
+12260,"Augusta-Richmond County, GA-SC (Metropolitan Statistical Area)",29162,38354
+12420,"Austin-Round Rock-Georgetown, TX (Metropolitan Statistical Area)",36016,51555
+12540,"Bakersfield, CA (Metropolitan Statistical Area)",26522,38015
+12580,"Baltimore-Columbia-Towson, MD (Metropolitan Statistical Area)",42413,56362
+12620,"Bangor, ME (Metropolitan Statistical Area)",29325,37914
+12700,"Barnstable Town, MA (Metropolitan Statistical Area)",45135,65472
+12940,"Baton Rouge, LA (Metropolitan Statistical Area)",31681,43806
+12980,"Battle Creek, MI (Metropolitan Statistical Area)",28488,37171
+13020,"Bay City, MI (Metropolitan Statistical Area)",28733,38421
+13140,"Beaumont-Port Arthur, TX (Metropolitan Statistical Area)",28041,41975
+13220,"Beckley, WV (Metropolitan Statistical Area)",25262,34987
+13380,"Bellingham, WA (Metropolitan Statistical Area)",30752,43991
+13460,"Bend, OR (Metropolitan Statistical Area)",33218,47523
+13740,"Billings, MT (Metropolitan Statistical Area)",32294,47812
+13780,"Binghamton, NY (Metropolitan Statistical Area)",28516,40158
+13820,"Birmingham-Hoover, AL (Metropolitan Statistical Area)",35983,46071
+13900,"Bismarck, ND (Metropolitan Statistical Area)",33138,55829
+13980,"Blacksburg-Christiansburg, VA (Metropolitan Statistical Area) *",25802,35123
+14010,"Bloomington, IL (Metropolitan Statistical Area)",34296,45818
+14020,"Bloomington, IN (Metropolitan Statistical Area)",27459,36615
+14100,"Bloomsburg-Berwick, PA (Metropolitan Statistical Area)",28905,40723
+14260,"Boise City, ID (Metropolitan Statistical Area)",32238,41457
+14460,"Boston-Cambridge-Newton, MA-NH (Metropolitan Statistical Area)",48735,69396
+14500,"Boulder, CO (Metropolitan Statistical Area) *",46245,63953
+14540,"Bowling Green, KY (Metropolitan Statistical Area)",26890,34533
+14740,"Bremerton-Silverdale-Port Orchard, WA (Metropolitan Statistical Area)",37818,48816
+14860,"Bridgeport-Stamford-Norwalk, CT (Metropolitan Statistical Area)",74436,104396
+15180,"Brownsville-Harlingen, TX (Metropolitan Statistical Area)",18700,26604
+15260,"Brunswick, GA (Metropolitan Statistical Area)",32375,37076
+15380,"Buffalo-Cheektowaga, NY (Metropolitan Statistical Area)",31791,45370
+15500,"Burlington, NC (Metropolitan Statistical Area)",28741,36830
+15540,"Burlington-South Burlington, VT (Metropolitan Statistical Area)",37431,52905
+15680,"California-Lexington Park, MD (Metropolitan Statistical Area)",37793,52337
+15940,"Canton-Massillon, OH (Metropolitan Statistical Area)",30426,41291
+15980,"Cape Coral-Fort Myers, FL (Metropolitan Statistical Area)",37483,46476
+16020,"Cape Girardeau, MO-IL (Metropolitan Statistical Area)",29089,39468
+16060,"Carbondale-Marion, IL (Metropolitan Statistical Area)",27059,37389
+16180,"Carson City, NV (Metropolitan Statistical Area)",24548,45452
+16220,"Casper, WY (Metropolitan Statistical Area)",39274,73239
+16300,"Cedar Rapids, IA (Metropolitan Statistical Area)",34024,48143
+16540,"Chambersburg-Waynesboro, PA (Metropolitan Statistical Area)",32843,42012
+16580,"Champaign-Urbana, IL (Metropolitan Statistical Area)",30947,43919
+16620,"Charleston, WV (Metropolitan Statistical Area)",29880,40152
+16700,"Charleston-North Charleston, SC (Metropolitan Statistical Area)",32422,45213
+16740,"Charlotte-Concord-Gastonia, NC-SC (Metropolitan Statistical Area)",36100,46603
+16820,"Charlottesville, VA (Metropolitan Statistical Area) *",40117,57019
+16860,"Chattanooga, TN-GA (Metropolitan Statistical Area)",31211,41996
+16940,"Cheyenne, WY (Metropolitan Statistical Area)",36591,49731
+16980,"Chicago-Naperville-Elgin, IL-IN-WI (Metropolitan Statistical Area)",40731,55275
+17020,"Chico, CA (Metropolitan Statistical Area)",28703,40755
+17140,"Cincinnati, OH-KY-IN (Metropolitan Statistical Area)",36409,48498
+17300,"Clarksville, TN-KY (Metropolitan Statistical Area)",30802,38757
+17420,"Cleveland, TN (Metropolitan Statistical Area)",26880,36308
+17460,"Cleveland-Elyria, OH (Metropolitan Statistical Area)",35563,48522
+17660,"Coeur d'Alene, ID (Metropolitan Statistical Area)",29237,40453
+17780,"College Station-Bryan, TX (Metropolitan Statistical Area)",24649,36197
+17820,"Colorado Springs, CO (Metropolitan Statistical Area)",34303,44704
+17860,"Columbia, MO (Metropolitan Statistical Area)",31546,42521
+17900,"Columbia, SC (Metropolitan Statistical Area)",31493,41374
+17980,"Columbus, GA-AL (Metropolitan Statistical Area)",30146,37276
+18020,"Columbus, IN (Metropolitan Statistical Area)",33314,45961
+18140,"Columbus, OH (Metropolitan Statistical Area)",34592,47251
+18580,"Corpus Christi, TX (Metropolitan Statistical Area)",30040,42397
+18700,"Corvallis, OR (Metropolitan Statistical Area)",33135,42077
+18880,"Crestview-Fort Walton Beach-Destin, FL (Metropolitan Statistical Area)",36617,46809
+19060,"Cumberland, MD-WV (Metropolitan Statistical Area)",27570,36672
+19100,"Dallas-Fort Worth-Arlington, TX (Metropolitan Statistical Area)",37170,50743
+19140,"Dalton, GA (Metropolitan Statistical Area)",26581,33182
+19180,"Danville, IL (Metropolitan Statistical Area)",26601,36124
+19300,"Daphne-Fairhope-Foley, AL (Metropolitan Statistical Area)",32329,41449
+19340,"Davenport-Moline-Rock Island, IA-IL (Metropolitan Statistical Area)",34069,44986
+19430,"Dayton-Kettering, OH (Metropolitan Statistical Area)",32563,43082
+19460,"Decatur, AL (Metropolitan Statistical Area)",28189,35491
+19500,"Decatur, IL (Metropolitan Statistical Area)",32753,44493
+19660,"Deltona-Daytona Beach-Ormond Beach, FL (Metropolitan Statistical Area)",30671,38497
+19740,"Denver-Aurora-Lakewood, CO (Metropolitan Statistical Area) *",41586,56601
+19780,"Des Moines-West Des Moines, IA (Metropolitan Statistical Area)",37648,49700
+19820,"Detroit-Warren-Dearborn, MI (Metropolitan Statistical Area)",36868,47836
+20020,"Dothan, AL (Metropolitan Statistical Area)",29750,37246
+20100,"Dover, DE (Metropolitan Statistical Area)",31144,37957
+20220,"Dubuque, IA (Metropolitan Statistical Area)",30008,44645
+20260,"Duluth, MN-WI (Metropolitan Statistical Area)",29563,42268
+20500,"Durham-Chapel Hill, NC (Metropolitan Statistical Area)",35842,47810
+20700,"East Stroudsburg, PA (Metropolitan Statistical Area)",29497,38247
+20740,"Eau Claire, WI (Metropolitan Statistical Area)",30680,43088
+20940,"El Centro, CA (Metropolitan Statistical Area)",24622,35494
+21060,"Elizabethtown-Fort Knox, KY (Metropolitan Statistical Area)",28337,38811
+21140,"Elkhart-Goshen, IN (Metropolitan Statistical Area)",30651,40195
+21300,"Elmira, NY (Metropolitan Statistical Area)",28438,40170
+21340,"El Paso, TX (Metropolitan Statistical Area)",22900,32811
+21420,"Enid, OK (Metropolitan Statistical Area)",31339,44103
+21500,"Erie, PA (Metropolitan Statistical Area)",29360,40665
+21660,"Eugene-Springfield, OR (Metropolitan Statistical Area)",30748,41181
+21780,"Evansville, IN-KY (Metropolitan Statistical Area)",32778,43407
+21820,"Fairbanks, AK (Metropolitan Statistical Area) *",36772,53781
+22020,"Fargo, ND-MN (Metropolitan Statistical Area)",33076,50419
+22140,"Farmington, NM (Metropolitan Statistical Area)",24872,34290
+22180,"Fayetteville, NC (Metropolitan Statistical Area)",28791,34365
+22220,"Fayetteville-Springdale-Rogers, AR (Metropolitan Statistical Area)",34429,58205
+22380,"Flagstaff, AZ (Metropolitan Statistical Area)",29480,42726
+22420,"Flint, MI (Metropolitan Statistical Area)",28391,37179
+22500,"Florence, SC (Metropolitan Statistical Area)",27799,36497
+22520,"Florence-Muscle Shoals, AL (Metropolitan Statistical Area)",27023,35271
+22540,"Fond du Lac, WI (Metropolitan Statistical Area)",32214,43787
+22660,"Fort Collins, CO (Metropolitan Statistical Area)",34106,46943
+22900,"Fort Smith, AR-OK (Metropolitan Statistical Area)",26253,35500
+23060,"Fort Wayne, IN (Metropolitan Statistical Area)",31660,42212
+23420,"Fresno, CA (Metropolitan Statistical Area)",28185,39725
+23460,"Gadsden, AL (Metropolitan Statistical Area)",25995,34077
+23540,"Gainesville, FL (Metropolitan Statistical Area)",30582,38489
+23580,"Gainesville, GA (Metropolitan Statistical Area)",30717,38864
+23900,"Gettysburg, PA (Metropolitan Statistical Area)",32298,44844
+24020,"Glens Falls, NY (Metropolitan Statistical Area)",29395,41433
+24140,"Goldsboro, NC (Metropolitan Statistical Area)",27546,35704
+24220,"Grand Forks, ND-MN (Metropolitan Statistical Area)",29766,46258
+24260,"Grand Island, NE (Metropolitan Statistical Area)",29789,41296
+24300,"Grand Junction, CO (Metropolitan Statistical Area)",30532,40293
+24340,"Grand Rapids-Kentwood, MI (Metropolitan Statistical Area)",33051,45912
+24420,"Grants Pass, OR (Metropolitan Statistical Area)",27196,36728
+24500,"Great Falls, MT (Metropolitan Statistical Area)",30780,43223
+24540,"Greeley, CO (Metropolitan Statistical Area) *",28569,43807
+24580,"Green Bay, WI (Metropolitan Statistical Area)",34226,47001
+24660,"Greensboro-High Point, NC (Metropolitan Statistical Area)",31970,40407
+24780,"Greenville, NC (Metropolitan Statistical Area)",28905,38003
+24860,"Greenville-Anderson, SC (Metropolitan Statistical Area)",29334,40328
+25060,"Gulfport-Biloxi, MS (Metropolitan Statistical Area)",28321,34867
+25180,"Hagerstown-Martinsburg, MD-WV (Metropolitan Statistical Area)",30912,40190
+25220,"Hammond, LA (Metropolitan Statistical Area)",26266,36045
+25260,"Hanford-Corcoran, CA (Metropolitan Statistical Area)",23980,32605
+25420,"Harrisburg-Carlisle, PA (Metropolitan Statistical Area)",36592,47895
+25500,"Harrisonburg, VA (Metropolitan Statistical Area) *",27652,36833
+25540,"Hartford-East Hartford-Middletown, CT (Metropolitan Statistical Area)",43365,58981
+25620,"Hattiesburg, MS (Metropolitan Statistical Area)",26018,35774
+25860,"Hickory-Lenoir-Morganton, NC (Metropolitan Statistical Area)",28142,35772
+25940,"Hilton Head Island-Bluffton, SC (Metropolitan Statistical Area)",38268,47801
+25980,"Hinesville, GA (Metropolitan Statistical Area)",23020,31696
+26140,"Homosassa Springs, FL (Metropolitan Statistical Area)",27046,35605
+26300,"Hot Springs, AR (Metropolitan Statistical Area)",28327,36630
+26380,"Houma-Thibodaux, LA (Metropolitan Statistical Area)",29014,43824
+26420,"Houston-The Woodlands-Sugar Land, TX (Metropolitan Statistical Area)",38431,54158
+26580,"Huntington-Ashland, WV-KY-OH (Metropolitan Statistical Area)",25991,36432
+26620,"Huntsville, AL (Metropolitan Statistical Area)",34007,45110
+26820,"Idaho Falls, ID (Metropolitan Statistical Area)",30419,40152
+26900,"Indianapolis-Carmel-Anderson, IN (Metropolitan Statistical Area)",35987,49306
+26980,"Iowa City, IA (Metropolitan Statistical Area)",34365,48092
+27060,"Ithaca, NY (Metropolitan Statistical Area)",28769,41060
+27100,"Jackson, MI (Metropolitan Statistical Area)",27462,35789
+27140,"Jackson, MS (Metropolitan Statistical Area)",31207,41257
+27180,"Jackson, TN (Metropolitan Statistical Area)",27644,36958
+27260,"Jacksonville, FL (Metropolitan Statistical Area)",36438,45045
+27340,"Jacksonville, NC (Metropolitan Statistical Area)",32236,43017
+27500,"Janesville-Beloit, WI (Metropolitan Statistical Area)",30649,40098
+27620,"Jefferson City, MO (Metropolitan Statistical Area)",30385,39900
+27740,"Johnson City, TN (Metropolitan Statistical Area)",26814,37022
+27780,"Johnstown, PA (Metropolitan Statistical Area)",28169,39182
+27860,"Jonesboro, AR (Metropolitan Statistical Area)",25606,34084
+27900,"Joplin, MO (Metropolitan Statistical Area)",26864,36749
+27980,"Kahului-Wailuku-Lahaina, HI (Metropolitan Statistical Area)",32794,43633
+28020,"Kalamazoo-Portage, MI (Metropolitan Statistical Area)",32377,44184
+28100,"Kankakee, IL (Metropolitan Statistical Area)",28916,37106
+28140,"Kansas City, MO-KS (Metropolitan Statistical Area)",34742,49647
+28420,"Kennewick-Richland, WA (Metropolitan Statistical Area)",30201,41563
+28660,"Killeen-Temple, TX (Metropolitan Statistical Area)",30421,39731
+28700,"Kingsport-Bristol, TN-VA (Metropolitan Statistical Area) *",27691,36811
+28740,"Kingston, NY (Metropolitan Statistical Area)",31939,44632
+28940,"Knoxville, TN (Metropolitan Statistical Area)",30789,41673
+29020,"Kokomo, IN (Metropolitan Statistical Area)",30441,38063
+29100,"La Crosse-Onalaska, WI-MN (Metropolitan Statistical Area)",32199,45300
+29180,"Lafayette, LA (Metropolitan Statistical Area)",29978,43354
+29200,"Lafayette-West Lafayette, IN (Metropolitan Statistical Area)",27616,35660
+29340,"Lake Charles, LA (Metropolitan Statistical Area)",28089,43779
+29420,"Lake Havasu City-Kingman, AZ (Metropolitan Statistical Area)",23884,29366
+29460,"Lakeland-Winter Haven, FL (Metropolitan Statistical Area)",29372,33508
+29540,"Lancaster, PA (Metropolitan Statistical Area)",34699,46543
+29620,"Lansing-East Lansing, MI (Metropolitan Statistical Area)",29337,37788
+29700,"Laredo, TX (Metropolitan Statistical Area)",21367,29496
+29740,"Las Cruces, NM (Metropolitan Statistical Area)",24900,33529
+29820,"Las Vegas-Henderson-Paradise, NV (Metropolitan Statistical Area)",37838,42771
+29940,"Lawrence, KS (Metropolitan Statistical Area)",28822,39680
+30020,"Lawton, OK (Metropolitan Statistical Area)",28366,39123
+30140,"Lebanon, PA (Metropolitan Statistical Area)",33066,42938
+30300,"Lewiston, ID-WA (Metropolitan Statistical Area)",29095,40693
+30340,"Lewiston-Auburn, ME (Metropolitan Statistical Area)",29720,37821
+30460,"Lexington-Fayette, KY (Metropolitan Statistical Area)",34200,44328
+30620,"Lima, OH (Metropolitan Statistical Area)",28162,38360
+30700,"Lincoln, NE (Metropolitan Statistical Area)",34436,45192
+30780,"Little Rock-North Little Rock-Conway, AR (Metropolitan Statistical Area)",33794,42314
+30860,"Logan, UT-ID (Metropolitan Statistical Area)",23146,34409
+30980,"Longview, TX (Metropolitan Statistical Area)",28982,40710
+31020,"Longview, WA (Metropolitan Statistical Area)",28493,41128
+31080,"Los Angeles-Long Beach-Anaheim, CA (Metropolitan Statistical Area)",39596,56839
+31140,"Louisville/Jefferson County, KY-IN (Metropolitan Statistical Area)",34325,45457
+31180,"Lubbock, TX (Metropolitan Statistical Area)",27928,39331
+31340,"Lynchburg, VA (Metropolitan Statistical Area) *",28950,37719
+31420,"Macon-Bibb County, GA (Metropolitan Statistical Area)",29679,37661
+31460,"Madera, CA (Metropolitan Statistical Area)",24639,36357
+31540,"Madison, WI (Metropolitan Statistical Area)",39722,53312
+31700,"Manchester-Nashua, NH (Metropolitan Statistical Area)",42264,55020
+31740,"Manhattan, KS (Metropolitan Statistical Area)",29262,42331
+31860,"Mankato, MN (Metropolitan Statistical Area)",32419,43930
+31900,"Mansfield, OH (Metropolitan Statistical Area)",27679,36240
+32580,"McAllen-Edinburg-Mission, TX (Metropolitan Statistical Area)",17885,24909
+32780,"Medford, OR (Metropolitan Statistical Area)",30674,41609
+32820,"Memphis, TN-MS-AR (Metropolitan Statistical Area)",34267,42472
+32900,"Merced, CA (Metropolitan Statistical Area)",25300,36028
+33100,"Miami-Fort Lauderdale-Pompano Beach, FL (Metropolitan Statistical Area)",40142,51078
+33140,"Michigan City-La Porte, IN (Metropolitan Statistical Area)",28749,37803
+33220,"Midland, MI (Metropolitan Statistical Area)",37199,40527
+33260,"Midland, TX (Metropolitan Statistical Area)",59231,88480
+33340,"Milwaukee-Waukesha, WI (Metropolitan Statistical Area)",38948,51390
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI (Metropolitan Statistical Area)",42764,56963
+33540,"Missoula, MT (Metropolitan Statistical Area)",29993,44841
+33660,"Mobile, AL (Metropolitan Statistical Area)",27076,35847
+33700,"Modesto, CA (Metropolitan Statistical Area)",28786,41011
+33740,"Monroe, LA (Metropolitan Statistical Area)",26864,36955
+33780,"Monroe, MI (Metropolitan Statistical Area)",32767,42255
+33860,"Montgomery, AL (Metropolitan Statistical Area)",31852,39794
+34060,"Morgantown, WV (Metropolitan Statistical Area)",28301,39181
+34100,"Morristown, TN (Metropolitan Statistical Area)",24925,33198
+34580,"Mount Vernon-Anacortes, WA (Metropolitan Statistical Area)",32624,46344
+34620,"Muncie, IN (Metropolitan Statistical Area)",27012,33873
+34740,"Muskegon, MI (Metropolitan Statistical Area)",26020,35176
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (Metropolitan Statistical Area)",28512,35567
+34900,"Napa, CA (Metropolitan Statistical Area)",44178,63995
+34940,"Naples-Marco Island, FL (Metropolitan Statistical Area)",58799,83236
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN (Metropolitan Statistical Area)",36364,51805
+35100,"New Bern, NC (Metropolitan Statistical Area)",31837,40425
+35300,"New Haven-Milford, CT (Metropolitan Statistical Area)",39921,51817
+35380,"New Orleans-Metairie, LA (Metropolitan Statistical Area)",31482,48350
+35620,"New York-Newark-Jersey City, NY-NJ-PA (Metropolitan Statistical Area)",46445,66126
+35660,"Niles, MI (Metropolitan Statistical Area)",30876,42486
+35840,"North Port-Sarasota-Bradenton, FL (Metropolitan Statistical Area)",42391,51528
+35980,"Norwich-New London, CT (Metropolitan Statistical Area)",40844,53686
+36100,"Ocala, FL (Metropolitan Statistical Area)",27996,33582
+36140,"Ocean City, NJ (Metropolitan Statistical Area)",41123,54102
+36220,"Odessa, TX (Metropolitan Statistical Area)",26490,41988
+36260,"Ogden-Clearfield, UT (Metropolitan Statistical Area)",28881,38876
+36420,"Oklahoma City, OK (Metropolitan Statistical Area)",33987,45401
+36500,"Olympia-Lacey-Tumwater, WA (Metropolitan Statistical Area)",35740,45782
+36540,"Omaha-Council Bluffs, NE-IA (Metropolitan Statistical Area)",38250,53857
+36740,"Orlando-Kissimmee-Sanford, FL (Metropolitan Statistical Area)",31742,39324
+36780,"Oshkosh-Neenah, WI (Metropolitan Statistical Area)",33729,43470
+36980,"Owensboro, KY (Metropolitan Statistical Area)",29297,39487
+37100,"Oxnard-Thousand Oaks-Ventura, CA (Metropolitan Statistical Area)",41731,55711
+37340,"Palm Bay-Melbourne-Titusville, FL (Metropolitan Statistical Area)",33288,41018
+37460,"Panama City, FL (Metropolitan Statistical Area)",32631,40404
+37620,"Parkersburg-Vienna, WV (Metropolitan Statistical Area)",27090,38058
+37860,"Pensacola-Ferry Pass-Brent, FL (Metropolitan Statistical Area)",30398,39692
+37900,"Peoria, IL (Metropolitan Statistical Area)",32756,45090
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (Metropolitan Statistical Area)",41981,58161
+38060,"Phoenix-Mesa-Chandler, AZ (Metropolitan Statistical Area)",34752,41483
+38220,"Pine Bluff, AR (Metropolitan Statistical Area)",24165,31423
+38300,"Pittsburgh, PA (Metropolitan Statistical Area)",35902,51198
+38340,"Pittsfield, MA (Metropolitan Statistical Area)",35819,51203
+38540,"Pocatello, ID (Metropolitan Statistical Area)",26258,34750
+38860,"Portland-South Portland, ME (Metropolitan Statistical Area)",37701,50618
+38900,"Portland-Vancouver-Hillsboro, OR-WA (Metropolitan Statistical Area)",36188,50184
+38940,"Port St. Lucie, FL (Metropolitan Statistical Area)",38880,48604
+39100,"Poughkeepsie-Newburgh-Middletown, NY (Metropolitan Statistical Area)",35342,48294
+39150,"Prescott Valley-Prescott, AZ (Metropolitan Statistical Area)",27236,35500
+39300,"Providence-Warwick, RI-MA (Metropolitan Statistical Area)",36383,49480
+39340,"Provo-Orem, UT (Metropolitan Statistical Area)",23958,35627
+39380,"Pueblo, CO (Metropolitan Statistical Area)",26755,35534
+39460,"Punta Gorda, FL (Metropolitan Statistical Area)",30888,38464
+39540,"Racine, WI (Metropolitan Statistical Area)",34231,44758
+39580,"Raleigh-Cary, NC (Metropolitan Statistical Area)",38782,50099
+39660,"Rapid City, SD (Metropolitan Statistical Area)",34535,45999
+39740,"Reading, PA (Metropolitan Statistical Area)",33703,44935
+39820,"Redding, CA (Metropolitan Statistical Area)",29928,42298
+39900,"Reno, NV (Metropolitan Statistical Area)",43958,50463
+40060,"Richmond, VA (Metropolitan Statistical Area) *",39562,52267
+40140,"Riverside-San Bernardino-Ontario, CA (Metropolitan Statistical Area)",28684,36485
+40220,"Roanoke, VA (Metropolitan Statistical Area) *",33372,44342
+40340,"Rochester, MN (Metropolitan Statistical Area)",35914,49081
+40380,"Rochester, NY (Metropolitan Statistical Area)",33056,46325
+40420,"Rockford, IL (Metropolitan Statistical Area)",30327,40158
+40580,"Rocky Mount, NC (Metropolitan Statistical Area)",28067,36276
+40660,"Rome, GA (Metropolitan Statistical Area)",27930,35472
+40900,"Sacramento-Roseville-Folsom, CA (Metropolitan Statistical Area)",37694,51072
+40980,"Saginaw, MI (Metropolitan Statistical Area)",27064,35828
+41060,"St. Cloud, MN (Metropolitan Statistical Area)",30574,42656
+41100,"St. George, UT (Metropolitan Statistical Area)",23936,33039
+41140,"St. Joseph, MO-KS (Metropolitan Statistical Area)",27546,36184
+41180,"St. Louis, MO-IL (Metropolitan Statistical Area)",37314,49668
+41420,"Salem, OR (Metropolitan Statistical Area)",27682,38369
+41500,"Salinas, CA (Metropolitan Statistical Area)",36328,51672
+41540,"Salisbury, MD-DE (Metropolitan Statistical Area)",33441,45514
+41620,"Salt Lake City, UT (Metropolitan Statistical Area)",32428,45805
+41660,"San Angelo, TX (Metropolitan Statistical Area)",30368,43165
+41700,"San Antonio-New Braunfels, TX (Metropolitan Statistical Area)",31285,43410
+41740,"San Diego-Chula Vista-Carlsbad, CA (Metropolitan Statistical Area)",41838,54801
+41860,"San Francisco-Oakland-Berkeley, CA (Metropolitan Statistical Area)",55702,82608
+41940,"San Jose-Sunnyvale-Santa Clara, CA (Metropolitan Statistical Area)",52754,85011
+42020,"San Luis Obispo-Paso Robles, CA (Metropolitan Statistical Area)",35687,51714
+42100,"Santa Cruz-Watsonville, CA (Metropolitan Statistical Area)",41886,59727
+42140,"Santa Fe, NM (Metropolitan Statistical Area)",38833,51894
+42200,"Santa Maria-Santa Barbara, CA (Metropolitan Statistical Area)",41795,57307
+42220,"Santa Rosa-Petaluma, CA (Metropolitan Statistical Area)",40531,55515
+42340,"Savannah, GA (Metropolitan Statistical Area)",33203,43065
+42540,"Scranton--Wilkes-Barre, PA (Metropolitan Statistical Area)",31348,41701
+42660,"Seattle-Tacoma-Bellevue, WA (Metropolitan Statistical Area)",44318,63610
+42680,"Sebastian-Vero Beach, FL (Metropolitan Statistical Area)",53777,68429
+42700,"Sebring-Avon Park, FL (Metropolitan Statistical Area)",24779,32236
+43100,"Sheboygan, WI (Metropolitan Statistical Area)",34249,47022
+43300,"Sherman-Denison, TX (Metropolitan Statistical Area)",27310,38926
+43340,"Shreveport-Bossier City, LA (Metropolitan Statistical Area)",31753,44716
+43420,"Sierra Vista-Douglas, AZ (Metropolitan Statistical Area)",28067,36818
+43580,"Sioux City, IA-NE-SD (Metropolitan Statistical Area)",34099,46502
+43620,"Sioux Falls, SD (Metropolitan Statistical Area)",37780,55479
+43780,"South Bend-Mishawaka, IN-MI (Metropolitan Statistical Area)",31891,43115
+43900,"Spartanburg, SC (Metropolitan Statistical Area)",29260,39772
+44060,"Spokane-Spokane Valley, WA (Metropolitan Statistical Area)",29484,41196
+44100,"Springfield, IL (Metropolitan Statistical Area)",33364,44011
+44140,"Springfield, MA (Metropolitan Statistical Area)",33594,47747
+44180,"Springfield, MO (Metropolitan Statistical Area)",30009,37736
+44220,"Springfield, OH (Metropolitan Statistical Area)",28631,37064
+44300,"State College, PA (Metropolitan Statistical Area)",31011,41609
+44420,"Staunton, VA (Metropolitan Statistical Area) *",30130,40876
+44700,"Stockton, CA (Metropolitan Statistical Area)",30054,39955
+44940,"Sumter, SC (Metropolitan Statistical Area)",25107,34250
+45060,"Syracuse, NY (Metropolitan Statistical Area)",31865,44540
+45220,"Tallahassee, FL (Metropolitan Statistical Area)",31874,38249
+45300,"Tampa-St. Petersburg-Clearwater, FL (Metropolitan Statistical Area)",34740,43407
+45460,"Terre Haute, IN (Metropolitan Statistical Area)",26341,34476
+45500,"Texarkana, TX-AR (Metropolitan Statistical Area)",26996,35193
+45540,"The Villages, FL (Metropolitan Statistical Area)",24300,40210
+45780,"Toledo, OH (Metropolitan Statistical Area)",31690,42847
+45820,"Topeka, KS (Metropolitan Statistical Area)",31168,41763
+45940,"Trenton-Princeton, NJ (Metropolitan Statistical Area)",48648,63470
+46060,"Tucson, AZ (Metropolitan Statistical Area)",30859,39025
+46140,"Tulsa, OK (Metropolitan Statistical Area)",35832,54327
+46220,"Tuscaloosa, AL (Metropolitan Statistical Area)",28463,35161
+46300,"Twin Falls, ID (Metropolitan Statistical Area)",26836,36920
+46340,"Tyler, TX (Metropolitan Statistical Area)",33870,47364
+46520,"Urban Honolulu, HI (Metropolitan Statistical Area)",38912,53208
+46540,"Utica-Rome, NY (Metropolitan Statistical Area)",28410,39546
+46660,"Valdosta, GA (Metropolitan Statistical Area)",26412,33091
+46700,"Vallejo, CA (Metropolitan Statistical Area)",34310,45146
+47020,"Victoria, TX (Metropolitan Statistical Area)",31571,44676
+47220,"Vineland-Bridgeton, NJ (Metropolitan Statistical Area)",28429,36891
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC (Metropolitan Statistical Area) *",35643,46641
+47300,"Visalia, CA (Metropolitan Statistical Area)",26131,37366
+47380,"Waco, TX (Metropolitan Statistical Area)",26883,37183
+47460,"Walla Walla, WA (Metropolitan Statistical Area)",27954,41663
+47580,"Warner Robins, GA (Metropolitan Statistical Area)",30641,38984
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (Metropolitan Statistical Area) *",51631,66050
+47940,"Waterloo-Cedar Falls, IA (Metropolitan Statistical Area)",30566,41933
+48060,"Watertown-Fort Drum, NY (Metropolitan Statistical Area)",30910,43179
+48140,"Wausau-Weston, WI (Metropolitan Statistical Area)",32792,44418
+48260,"Weirton-Steubenville, WV-OH (Metropolitan Statistical Area)",26456,36578
+48300,"Wenatchee, WA (Metropolitan Statistical Area)",28503,43991
+48540,"Wheeling, WV-OH (Metropolitan Statistical Area)",29626,40290
+48620,"Wichita, KS (Metropolitan Statistical Area)",32979,47384
+48660,"Wichita Falls, TX (Metropolitan Statistical Area)",30281,40878
+48700,"Williamsport, PA (Metropolitan Statistical Area)",28403,40489
+48900,"Wilmington, NC (Metropolitan Statistical Area)",32723,40521
+49020,"Winchester, VA-WV (Metropolitan Statistical Area) *",33181,43333
+49180,"Winston-Salem, NC (Metropolitan Statistical Area)",32882,41170
+49340,"Worcester, MA-CT (Metropolitan Statistical Area)",36799,50445
+49420,"Yakima, WA (Metropolitan Statistical Area)",25890,39322
+49620,"York-Hanover, PA (Metropolitan Statistical Area)",36096,44790
+49660,"Youngstown-Warren-Boardman, OH-PA (Metropolitan Statistical Area)",29432,38906
+49700,"Yuba City, CA (Metropolitan Statistical Area)",28419,39833
+49740,"Yuma, AZ (Metropolitan Statistical Area) *",23943,31602

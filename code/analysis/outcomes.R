@@ -14,31 +14,103 @@ df <- read_csv("data/master.csv") %>%
 id <- df %>% select(1:2)
 df_spec <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
 clusters <- (clustr_assign(df_spec))$combined %>% 
-  select(1,2,7,8)
+  select(1,2,7)
 rm(df_spec,id,df,clustr_assign)
 
 # Outcome 1: Population Growth --------------------------------------------
-p15 <- read_csv("data/base/generated/pop15.csv")
-p10 <- read_csv("data/base/generated/pop10.csv")
-pop <- read_csv("data/base/generated/populations.csv") %>% 
-  select(-pctchg_00_05,-name) %>% 
-  left_join(p10, by = "cbsa_fips") %>% 
-  left_join(p15, by = "cbsa_fips")
+#Population (Number of persons)
+pop <- read_csv("data/base/source/bea_pop.csv") %>%
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "19430", "19380"))) %>% # bad FIPS for Dayton, OH
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "39150", "39140"))) %>% # bad FIPS for Prescott, AZ
+  select(-cbsa) %>% 
+  inner_join(clusters,., by = "cbsa_fips") 
 
-cluster_pop <- clusters %>% select(-clusterm_18) %>% 
-  left_join(pop, by = "cbsa_fips")
+clustr_pop_avg <- pop %>% 
+  mutate(pop_chg_msa = (pop_2015-pop_2005)/pop_2005) %>% 
+  group_by(clusterm_10) %>% 
+  summarise(pop_chg_avg = mean(pop_chg_msa)) 
+
+clustr_pop <- pop %>% 
+  group_by(clusterm_10) %>% 
+  summarise(cpop_05 = sum(pop_2005),
+            cpop_15 = sum(pop_2015)) %>% 
+  mutate(pop_chg_gross = (cpop_15-cpop_05)/cpop_05) %>% 
+  left_join(clustr_pop_avg, by = "clusterm_10") %>% 
+  select(1,4,5)
 
 # Outcome 2: Employment Growth --------------------------------------------
-emp <- read_csv("hidden/confidential/emp_moodys.csv") %>% 
-  select(cbsa_fips:emp2014,-metro_name) %>% 
-  filter(cbsa_fips < 99999)
+#Total employment (Number of jobs) 
+emp <- read_csv("data/base/source/bea_emp.csv") %>% 
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "19430", "19380"))) %>% # bad FIPS for Dayton, OH
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "39150", "39140"))) %>% # bad FIPS for Prescott, AZ
+  select(-cbsa) %>% 
+  inner_join(clusters,., by = "cbsa_fips") 
 
-cluster_emp <- clusters %>% select(-clusterm_18) %>% 
-  left_join(emp, by = "cbsa_fips")
+clustr_emp_avg <- emp %>% 
+  mutate(emp_chg_msa = (emp_2015-emp_2005)/emp_2005) %>% 
+  group_by(clusterm_10) %>% 
+  summarise(emp_chg_avg = mean(emp_chg_msa)) 
+
+clustr_emp <- emp %>% 
+  group_by(clusterm_10) %>% 
+  summarise(cemp_05 = sum(emp_2005),
+            cemp_15 = sum(emp_2015)) %>% 
+  mutate(emp_chg_gross = (cemp_15-cemp_05)/cemp_05) %>% 
+  left_join(clustr_emp_avg, by = "clusterm_10") %>% 
+  select(1,4,5)
 
 # Outcome 3: GDP Per-Capita -----------------------------------------------
+#Real GDP: All industry total (Thousands of chained 2012 dollars) 
+gdp <- read_csv("data/base/source/bea_gdp.csv") %>% 
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "19430", "19380"))) %>% # bad FIPS for Dayton, OH
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "39150", "39140"))) %>% # bad FIPS for Prescott, AZ
+  select(-cbsa) %>% 
+  inner_join(pop %>% select(1,4,5), by = "cbsa_fips") %>% 
+  mutate(gdppk_2005 = gdp_2005/pop_2005,
+         gdppk_2015 = gdp_2015/pop_2015) %>% 
+  select(-(2:5)) %>% 
+  inner_join(clusters,., by = "cbsa_fips")
 
+clustr_gdp_avg <- gdp %>% 
+  mutate(gdppk_chg_msa = (gdppk_2015-gdppk_2005)/gdppk_2005) %>% 
+  group_by(clusterm_10) %>% 
+  summarise(gdppk_chg_avg = mean(gdppk_chg_msa)) 
+
+clustr_gdp <- gdp %>% 
+  group_by(clusterm_10) %>% 
+  summarise(cgdppk_05 = sum(gdppk_2005),
+            cgdppk_15 = sum(gdppk_2015)) %>% 
+  mutate(gdppk_chg_gross = (cgdppk_15-cgdppk_05)/cgdppk_05) %>% 
+  left_join(clustr_gdp_avg, by = "clusterm_10") %>% 
+  select(1,4,5)
 
 # Outcome 4: Income Per-Capita --------------------------------------------
+#Per capita personal income (Dollars)
+inc <- read_csv("data/base/source/bea_inc.csv") %>% 
+  mutate(inc_2005 = inc_2005*1.2, # https://www.bls.gov/data/inflation_calculator.htm
+         cbsa_fips = as.numeric(str_replace(cbsa_fips, "19430", "19380"))) %>% # bad FIPS for Dayton, OH
+  mutate(cbsa_fips = as.numeric(str_replace(cbsa_fips, "39150", "39140"))) %>% # bad FIPS for Prescott, AZ
+  select(-cbsa) %>% 
+  inner_join(clusters,., by = "cbsa_fips") 
 
+clustr_inc_avg <- inc %>% 
+  mutate(inc_chg_msa = (inc_2015-inc_2005)/inc_2005) %>% 
+  group_by(clusterm_10) %>% 
+  summarise(inc_chg_avg = mean(inc_chg_msa)) 
 
+clustr_inc <- inc %>% 
+  group_by(clusterm_10) %>% 
+  summarise(cinc_05 = sum(inc_2005),
+            cinc_15 = sum(inc_2015)) %>% 
+  mutate(inc_chg_gross = (cinc_15-cinc_05)/cinc_05) %>% 
+  left_join(clustr_inc_avg, by = "clusterm_10") %>% 
+  select(1,4,5)
+
+# Merge All ---------------------------------------------------------------
+
+merged <- clustr_pop %>% 
+  left_join(clustr_emp, by = "clusterm_10") %>% 
+  left_join(clustr_gdp, by = "clusterm_10") %>% 
+  left_join(clustr_inc, by = "clusterm_10") %>% 
+  rename(cluster = clusterm_10) %>% 
+  write_csv("data/analysis/outcomes.csv")

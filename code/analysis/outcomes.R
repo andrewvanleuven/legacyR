@@ -28,7 +28,9 @@ pop <- read_csv("data/base/source/bea_pop.csv") %>%
 clustr_pop_avg <- pop %>% 
   mutate(pop_chg_msa = (pop_2015-pop_2005)/pop_2005) %>% 
   group_by(clusterm_10) %>% 
-  summarise(pop_chg_avg = mean(pop_chg_msa)) 
+  summarise(pop_chg_avg = mean(pop_chg_msa), 
+            pop_05_avg = mean(pop_2005),
+            pop_15_avg = mean(pop_2015)) 
 
 clustr_pop <- pop %>% 
   group_by(clusterm_10) %>% 
@@ -49,7 +51,9 @@ emp <- read_csv("data/base/source/bea_emp.csv") %>%
 clustr_emp_avg <- emp %>% 
   mutate(emp_chg_msa = (emp_2015-emp_2005)/emp_2005) %>% 
   group_by(clusterm_10) %>% 
-  summarise(emp_chg_avg = mean(emp_chg_msa)) 
+  summarise(emp_chg_avg = mean(emp_chg_msa), 
+            emp_05_avg = mean(emp_2005),
+            emp_15_avg = mean(emp_2015)) 
 
 clustr_emp <- emp %>% 
   group_by(clusterm_10) %>% 
@@ -74,7 +78,9 @@ gdp <- read_csv("data/base/source/bea_gdp.csv") %>%
 clustr_gdp_avg <- gdp %>% 
   mutate(gdppk_chg_msa = (gdppk_2015-gdppk_2005)/gdppk_2005) %>% 
   group_by(clusterm_10) %>% 
-  summarise(gdppk_chg_avg = mean(gdppk_chg_msa)) 
+  summarise(gdppk_chg_avg = mean(gdppk_chg_msa), 
+            gdppk_05_avg = mean(gdppk_2005),
+            gdppk_15_avg = mean(gdppk_2015)) 
 
 clustr_gdp <- gdp %>% 
   group_by(clusterm_10) %>% 
@@ -96,7 +102,9 @@ inc <- read_csv("data/base/source/bea_inc.csv") %>%
 clustr_inc_avg <- inc %>% 
   mutate(inc_chg_msa = (inc_2015-inc_2005)/inc_2005) %>% 
   group_by(clusterm_10) %>% 
-  summarise(inc_chg_avg = mean(inc_chg_msa)) 
+  summarise(inc_chg_avg = mean(inc_chg_msa), 
+            inc_05_avg = mean(inc_2005),
+            inc_15_avg = mean(inc_2015)) 
 
 clustr_inc <- inc %>% 
   group_by(clusterm_10) %>% 
@@ -113,4 +121,23 @@ merged <- clustr_pop %>%
   left_join(clustr_gdp, by = "clusterm_10") %>% 
   left_join(clustr_inc, by = "clusterm_10") %>% 
   rename(cluster = clusterm_10) %>% 
-  write_csv("data/analysis/outcomes.csv")
+  select(1,2,4,6,8,3,5,7,9) 
+
+merged2 <- clustr_pop_avg %>% 
+  left_join(clustr_emp_avg, by = "clusterm_10") %>% 
+  left_join(clustr_gdp_avg, by = "clusterm_10") %>% 
+  left_join(clustr_inc_avg, by = "clusterm_10") %>% 
+  rename(cluster = clusterm_10) 
+
+popx <- pop %>% 
+  mutate(pop_chg = (pop_2015-pop_2005)/pop_2005)
+empx <- emp %>% 
+  mutate(emp_chg = (emp_2015-emp_2005)/emp_2005)
+gdpx <- gdp %>% 
+  mutate(gdppk_chg = (gdppk_2015-gdppk_2005)/gdppk_2005) 
+incx <- inc %>% 
+  mutate(inc_chg = (inc_2015-inc_2005)/inc_2005)
+
+list_of_datasets <- list("Change_05_15" = merged, "Raw_05_15" = merged2, "Population" = popx, "Employment" = empx,
+                         "GMP Per Capita" = gdpx, "Real Per Capita Income" = incx)
+openxlsx::write.xlsx(list_of_datasets, file = "data/analysis/outcomes_raw.xlsx")

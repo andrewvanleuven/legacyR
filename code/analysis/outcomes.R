@@ -130,14 +130,25 @@ merged2 <- clustr_pop_avg %>%
   rename(cluster = clusterm_10) 
 
 popx <- pop %>% 
+  janitor::adorn_totals("row") %>% 
   mutate(pop_chg = (pop_2015-pop_2005)/pop_2005)
 empx <- emp %>% 
+  janitor::adorn_totals("row") %>% 
   mutate(emp_chg = (emp_2015-emp_2005)/emp_2005)
 gdpx <- gdp %>% 
+  janitor::adorn_totals("row") %>% 
   mutate(gdppk_chg = (gdppk_2015-gdppk_2005)/gdppk_2005) 
 incx <- inc %>% 
+  janitor::adorn_totals("row") %>% 
   mutate(inc_chg = (inc_2015-inc_2005)/inc_2005)
 
-list_of_datasets <- list("Change_05_15" = merged, "Raw_05_15" = merged2, "Population" = popx, "Employment" = empx,
+keep <- merged %>% select(1,6:9) %>% 
+  mutate(pop_chg = pop_chg_avg-popx[352,6],
+         emp_chg = emp_chg_avg-empx[352,6],
+         gdp_chg = gdppk_chg_avg-gdpx[352,6],
+         inc_chg = inc_chg_avg-incx[352,6]) %>% 
+  select(1,6:9)
+
+list_of_datasets <- list("New" = keep, "Change_05_15" = merged, "Raw_05_15" = merged2, "Population" = popx, "Employment" = empx,
                          "GMP Per Capita" = gdpx, "Real Per Capita Income" = incx)
 openxlsx::write.xlsx(list_of_datasets, file = "data/analysis/outcomes_raw.xlsx")

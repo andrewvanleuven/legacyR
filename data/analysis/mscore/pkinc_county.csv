@@ -1,0 +1,3147 @@
+  cty_fips  ,cty,pki15
+"1,001","Autauga, AL",38746
+"1,003","Baldwin, AL",41449
+"1,005","Barbour, AL",31361
+"1,007","Bibb, AL",28907
+"1,009","Blount, AL",32093
+"1,011","Bullock, AL",26359
+"1,013","Butler, AL",33483
+"1,015","Calhoun, AL",34182
+"1,017","Chambers, AL",31506
+"1,019","Cherokee, AL",33132
+"1,021","Chilton, AL",31830
+"1,023","Choctaw, AL",35317
+"1,025","Clarke, AL",33683
+"1,027","Clay, AL",30921
+"1,029","Cleburne, AL",33441
+"1,031","Coffee, AL",39664
+"1,033","Colbert, AL",35716
+"1,035","Conecuh, AL",30102
+"1,037","Coosa, AL",28076
+"1,039","Covington, AL",32468
+"1,041","Crenshaw, AL",36105
+"1,043","Cullman, AL",36856
+"1,045","Dale, AL",34197
+"1,047","Dallas, AL",32124
+"1,049","DeKalb, AL",29844
+"1,051","Elmore, AL",38484
+"1,053","Escambia, AL",30340
+"1,055","Etowah, AL",34077
+"1,057","Fayette, AL",32221
+"1,059","Franklin, AL",31215
+"1,061","Geneva, AL",32363
+"1,063","Greene, AL",30262
+"1,065","Hale, AL",34161
+"1,067","Henry, AL",36182
+"1,069","Houston, AL",38667
+"1,071","Jackson, AL",33719
+"1,073","Jefferson, AL",48969
+"1,075","Lamar, AL",31428
+"1,077","Lauderdale, AL",35009
+"1,079","Lawrence, AL",31573
+"1,081","Lee, AL",34188
+"1,083","Limestone, AL",38076
+"1,085","Lowndes, AL",38711
+"1,087","Macon, AL",29684
+"1,089","Madison, AL",46934
+"1,091","Marengo, AL",36175
+"1,093","Marion, AL",30268
+"1,095","Marshall, AL",33657
+"1,097","Mobile, AL",35924
+"1,099","Monroe, AL",31178
+"1,101","Montgomery, AL",40562
+"1,103","Morgan, AL",36580
+"1,105","Perry, AL",28394
+"1,107","Pickens, AL",30228
+"1,109","Pike, AL",34449
+"1,111","Randolph, AL",30935
+"1,113","Russell, AL",30415
+"1,115","St. Clair, AL",35041
+"1,117","Shelby, AL",50159
+"1,119","Sumter, AL",30443
+"1,121","Talladega, AL",31665
+"1,123","Tallapoosa, AL",37359
+"1,125","Tuscaloosa, AL",35938
+"1,127","Walker, AL",37304
+"1,129","Washington, AL",33956
+"1,131","Wilcox, AL",29550
+"1,133","Winston, AL",31669
+"2,010","Aleutian Islands Census Area, AK*",(NA)
+"2,013","Aleutians East Borough, AK*",49880
+"2,016","Aleutians West Census Area, AK*",52557
+"2,020","Anchorage Municipality, AK",63904
+"2,050","Bethel Census Area, AK*",40615
+"2,060","Bristol Bay Borough, AK",110414
+"2,068","Denali Borough, AK*",78884
+"2,070","Dillingham Census Area, AK*",54935
+"2,090","Fairbanks North Star Borough, AK",53781
+"2,100","Haines Borough, AK",58570
+"2,105","Hoonah-Angoon Census Area, AK*",56599
+"2,110","Juneau City and Borough, AK",63450
+"2,122","Kenai Peninsula Borough, AK",51355
+"2,130","Ketchikan Gateway Borough, AK*",65121
+"2,150","Kodiak Island Borough, AK",61121
+"2,158","Kusilvak Census Area, AK*",28803
+"2,164","Lake and Peninsula Borough, AK*",56325
+"2,170","Matanuska-Susitna Borough, AK",46936
+"2,180","Nome Census Area, AK*",48235
+"2,185","North Slope Borough, AK",99377
+"2,188","Northwest Arctic Borough, AK",43451
+"2,195","Petersburg Borough, AK*",66619
+"2,198","Prince of Wales-Hyder Census Area, AK*",39885
+"2,201","Prince of Wales-Outer Ketchikan Census Area, AK*",(NA)
+"2,220","Sitka City and Borough, AK",68288
+"2,230","Skagway Municipality, AK*",73124
+"2,231","Skagway-Yakutat-Angoon Census Area, AK*",(NA)
+"2,232","Skagway-Hoonah-Angoon Census Area, AK*",(NA)
+"2,240","Southeast Fairbanks Census Area, AK*",47490
+"2,261","Valdez-Cordova Census Area, AK*",58666
+"2,275","Wrangell City and Borough, AK*",47656
+"2,280","Wrangell-Petersburg Census Area, AK*",(NA)
+"2,282","Yakutat City and Borough, AK*",60934
+"2,290","Yukon-Koyukuk Census Area, AK*",50543
+"2,901","Aleutian Islands Division, AK*",(NA)
+"2,903","Angoon Division, AK*",(NA)
+"2,904","Barrow-North Slope Division, AK*",(NA)
+"2,905","Bethel Division, AK*",(NA)
+"2,907","Bristol Bay Division, AK*",(NA)
+"2,908","Cordova-McCarthy Division, AK*",(NA)
+"2,910","Haines Division, AK*",(NA)
+"2,912","Kenai-Cook Inlet Division, AK*",(NA)
+"2,916","Kuskokwim Division, AK*",(NA)
+"2,919","Outer Ketchikan Division, AK*",(NA)
+"2,920","Prince of Wales Division, AK*",(NA)
+"2,921","Seward Division, AK*",(NA)
+"2,922","Sitka Division, AK*",(NA)
+"2,923","Skagway-Yakutat Division, AK*",(NA)
+"2,924","Southeast Fairbanks Division, AK*",(NA)
+"2,925","Upper Yukon Division, AK*",(NA)
+"2,926","Valdez-Chitina-Whittier Division, AK*",(NA)
+"2,928","Wrangell-Petersburg Division, AK*",(NA)
+"2,929","Yukon-Koyukuk Division, AK*",(NA)
+"4,001","Apache, AZ",30821
+"4,003","Cochise, AZ",36818
+"4,005","Coconino, AZ",42726
+"4,007","Gila, AZ",35748
+"4,009","Graham, AZ",29575
+"4,011","Greenlee, AZ",34417
+"4,012","La Paz, AZ*",28205
+"4,013","Maricopa, AZ",42818
+"4,015","Mohave, AZ",29366
+"4,017","Navajo, AZ",28519
+"4,019","Pima, AZ",39025
+"4,021","Pinal, AZ",27761
+"4,023","Santa Cruz, AZ",33600
+"4,025","Yavapai, AZ",35500
+"4,027","Yuma, AZ*",31602
+"5,001","Arkansas, AR",40911
+"5,003","Ashley, AR",31937
+"5,005","Baxter, AR",34301
+"5,007","Benton, AR",78852
+"5,009","Boone, AR",33249
+"5,011","Bradley, AR",35671
+"5,013","Calhoun, AR",31570
+"5,015","Carroll, AR",30635
+"5,017","Chicot, AR",32455
+"5,019","Clark, AR",32658
+"5,021","Clay, AR",29996
+"5,023","Cleburne, AR",35799
+"5,025","Cleveland, AR",36278
+"5,027","Columbia, AR",34671
+"5,029","Conway, AR",36535
+"5,031","Craighead, AR",35271
+"5,033","Crawford, AR",30808
+"5,035","Crittenden, AR",33913
+"5,037","Cross, AR",32283
+"5,039","Dallas, AR",30833
+"5,041","Desha, AR",35219
+"5,043","Drew, AR",33282
+"5,045","Faulkner, AR",34884
+"5,047","Franklin, AR",31823
+"5,049","Fulton, AR",26892
+"5,051","Garland, AR",36630
+"5,053","Grant, AR",35485
+"5,055","Greene, AR",32025
+"5,057","Hempstead, AR",29077
+"5,059","Hot Spring, AR",28351
+"5,061","Howard, AR",32515
+"5,063","Independence, AR",32030
+"5,065","Izard, AR",28711
+"5,067","Jackson, AR",33263
+"5,069","Jefferson, AR",32199
+"5,071","Johnson, AR",27709
+"5,073","Lafayette, AR",33926
+"5,075","Lawrence, AR",30534
+"5,077","Lee, AR",25551
+"5,079","Lincoln, AR",24500
+"5,081","Little River, AR",32883
+"5,083","Logan, AR",32646
+"5,085","Lonoke, AR",36208
+"5,087","Madison, AR",33350
+"5,089","Marion, AR",29811
+"5,091","Miller, AR",31388
+"5,093","Mississippi, AR",28844
+"5,095","Monroe, AR",30169
+"5,097","Montgomery, AR",27587
+"5,099","Nevada, AR",31662
+"5,101","Newton, AR",27227
+"5,103","Ouachita, AR",33954
+"5,105","Perry, AR",32656
+"5,107","Phillips, AR",28987
+"5,109","Pike, AR",30636
+"5,111","Poinsett, AR",28927
+"5,113","Polk, AR",28335
+"5,115","Pope, AR",32833
+"5,117","Prairie, AR",31460
+"5,119","Pulaski, AR",47398
+"5,121","Randolph, AR",28435
+"5,123","St. Francis, AR",25744
+"5,125","Saline, AR",38511
+"5,127","Scott, AR",27973
+"5,129","Searcy, AR",27727
+"5,131","Sebastian, AR",39547
+"5,133","Sevier, AR",28777
+"5,135","Sharp, AR",30804
+"5,137","Stone, AR",29328
+"5,139","Union, AR",41639
+"5,141","Van Buren, AR",30032
+"5,143","Washington, AR",36797
+"5,145","White, AR",32640
+"5,147","Woodruff, AR",31860
+"5,149","Yell, AR",30635
+"6,001","Alameda, CA",63888
+"6,003","Alpine, CA",70220
+"6,005","Amador, CA",41855
+"6,007","Butte, CA",40755
+"6,009","Calaveras, CA",44256
+"6,011","Colusa, CA",47077
+"6,013","Contra Costa, CA",69248
+"6,015","Del Norte, CA",34754
+"6,017","El Dorado, CA",60087
+"6,019","Fresno, CA",39725
+"6,021","Glenn, CA",42710
+"6,023","Humboldt, CA",43734
+"6,025","Imperial, CA",35494
+"6,027","Inyo, CA",53820
+"6,029","Kern, CA",38015
+"6,031","Kings, CA",32605
+"6,033","Lake, CA",38665
+"6,035","Lassen, CA",34941
+"6,037","Los Angeles, CA",55470
+"6,039","Madera, CA",36357
+"6,041","Marin, CA",114592
+"6,043","Mariposa, CA",45165
+"6,045","Mendocino, CA",45203
+"6,047","Merced, CA",36028
+"6,049","Modoc, CA",42888
+"6,051","Mono, CA",45073
+"6,053","Monterey, CA",51672
+"6,055","Napa, CA",63995
+"6,057","Nevada, CA",55662
+"6,059","Orange, CA",61219
+"6,061","Placer, CA",59854
+"6,063","Plumas, CA",48285
+"6,065","Riverside, CA",36642
+"6,067","Sacramento, CA",47853
+"6,069","San Benito, CA",46239
+"6,071","San Bernardino, CA",36311
+"6,073","San Diego, CA",54801
+"6,075","San Francisco, CA",108039
+"6,077","San Joaquin, CA",39955
+"6,079","San Luis Obispo, CA",51714
+"6,081","San Mateo, CA",102606
+"6,083","Santa Barbara, CA",57307
+"6,085","Santa Clara, CA",86188
+"6,087","Santa Cruz, CA",59727
+"6,089","Shasta, CA",42298
+"6,091","Sierra, CA",40798
+"6,093","Siskiyou, CA",41561
+"6,095","Solano, CA",45146
+"6,097","Sonoma, CA",55515
+"6,099","Stanislaus, CA",41011
+"6,101","Sutter, CA",41116
+"6,103","Tehama, CA",37672
+"6,105","Trinity, CA",36262
+"6,107","Tulare, CA",37366
+"6,109","Tuolumne, CA",43555
+"6,111","Ventura, CA",55711
+"6,113","Yolo, CA",50460
+"6,115","Yuba, CA",38180
+"8,001","Adams, CO*",38348
+"8,003","Alamosa, CO",34706
+"8,005","Arapahoe, CO",54358
+"8,007","Archuleta, CO",39455
+"8,009","Baca, CO",36750
+"8,011","Bent, CO",27704
+"8,013","Boulder, CO*",63953
+"8,014","Broomfield, CO*",58698
+"8,015","Chaffee, CO",41141
+"8,017","Cheyenne, CO",52444
+"8,019","Clear Creek, CO",55989
+"8,021","Conejos, CO",33742
+"8,023","Costilla, CO",32754
+"8,025","Crowley, CO",22321
+"8,027","Custer, CO",42277
+"8,029","Delta, CO",33941
+"8,031","Denver, CO",66887
+"8,033","Dolores, CO",35406
+"8,035","Douglas, CO",67531
+"8,037","Eagle, CO",66240
+"8,039","Elbert, CO",51130
+"8,041","El Paso, CO",44661
+"8,043","Fremont, CO",32018
+"8,045","Garfield, CO",56004
+"8,047","Gilpin, CO",43680
+"8,049","Grand, CO",43871
+"8,051","Gunnison, CO",41838
+"8,053","Hinsdale, CO",46169
+"8,055","Huerfano, CO",38682
+"8,057","Jackson, CO",45251
+"8,059","Jefferson, CO*",56921
+"8,061","Kiowa, CO",51030
+"8,063","Kit Carson, CO",33303
+"8,065","Lake, CO",33119
+"8,067","La Plata, CO",54899
+"8,069","Larimer, CO",46943
+"8,071","Las Animas, CO",36762
+"8,073","Lincoln, CO",26260
+"8,075","Logan, CO",51227
+"8,077","Mesa, CO",40293
+"8,079","Mineral, CO",64591
+"8,081","Moffat, CO",40678
+"8,083","Montezuma, CO",40443
+"8,085","Montrose, CO",35652
+"8,087","Morgan, CO",41729
+"8,089","Otero, CO",36240
+"8,091","Ouray, CO",53996
+"8,093","Park, CO",39873
+"8,095","Phillips, CO",41450
+"8,097","Pitkin, CO",131105
+"8,099","Prowers, CO",41574
+"8,101","Pueblo, CO",35534
+"8,103","Rio Blanco, CO",45785
+"8,105","Rio Grande, CO",43268
+"8,107","Routt, CO",69580
+"8,109","Saguache, CO",31317
+"8,111","San Juan, CO",58433
+"8,113","San Miguel, CO",79305
+"8,115","Sedgwick, CO",51153
+"8,117","Summit, CO",59016
+"8,119","Teller, CO",45953
+"8,121","Washington, CO",41288
+"8,123","Weld, CO*",43807
+"8,125","Yuma, CO",54869
+"9,001","Fairfield, CT",104396
+"9,003","Hartford, CT",59438
+"9,005","Litchfield, CT",58658
+"9,007","Middlesex, CT",62853
+"9,009","New Haven, CT",51817
+"9,011","New London, CT",53686
+"9,013","Tolland, CT",52107
+"9,015","Windham, CT",42732
+"10,001","Kent, DE",37957
+"10,003","New Castle, DE",51163
+"10,005","Sussex, DE",47768
+"11,001","District of Columbia, DC",75439
+"12,001","Alachua, FL",39951
+"12,003","Baker, FL",28950
+"12,005","Bay, FL",40404
+"12,007","Bradford, FL",31271
+"12,009","Brevard, FL",41018
+"12,011","Broward, FL",46097
+"12,013","Calhoun, FL",24674
+"12,015","Charlotte, FL",38464
+"12,017","Citrus, FL",35605
+"12,019","Clay, FL",39821
+"12,021","Collier, FL",83236
+"12,023","Columbia, FL",32387
+"12,027","DeSoto, FL",23586
+"12,029","Dixie, FL",25447
+"12,031","Duval, FL",42081
+"12,033","Escambia, FL",39229
+"12,035","Flagler, FL",40195
+"12,037","Franklin, FL",32691
+"12,039","Gadsden, FL",31381
+"12,041","Gilchrist, FL",30569
+"12,043","Glades, FL",23981
+"12,045","Gulf, FL",30410
+"12,047","Hamilton, FL",23710
+"12,049","Hardee, FL",27814
+"12,051","Hendry, FL",30084
+"12,053","Hernando, FL",33908
+"12,055","Highlands, FL",32236
+"12,057","Hillsborough, FL",43591
+"12,059","Holmes, FL",28184
+"12,061","Indian River, FL",68429
+"12,063","Jackson, FL",28993
+"12,065","Jefferson, FL",37604
+"12,067","Lafayette, FL",25577
+"12,069","Lake, FL",37817
+"12,071","Lee, FL",46476
+"12,073","Leon, FL",40065
+"12,075","Levy, FL",32399
+"12,077","Liberty, FL",21902
+"12,079","Madison, FL",29868
+"12,081","Manatee, FL",44099
+"12,083","Marion, FL",33582
+"12,085","Martin, FL",72878
+"12,086","Miami-Dade, FL",44430
+"12,087","Monroe, FL",73453
+"12,089","Nassau, FL",52007
+"12,091","Okaloosa, FL",45140
+"12,093","Okeechobee, FL",30259
+"12,095","Orange, FL",40379
+"12,097","Osceola, FL",30363
+"12,099","Palm Beach, FL",70213
+"12,101","Pasco, FL",36972
+"12,103","Pinellas, FL",48290
+"12,105","Polk, FL",33508
+"12,107","Putnam, FL",28803
+"12,109","St. Johns, FL",61183
+"12,111","St. Lucie, FL",35903
+"12,113","Santa Rosa, FL",40554
+"12,115","Sarasota, FL",58181
+"12,117","Seminole, FL",43846
+"12,119","Sumter, FL",40210
+"12,121","Suwannee, FL",31463
+"12,123","Taylor, FL",27663
+"12,125","Union, FL",19647
+"12,127","Volusia, FL",38154
+"12,129","Wakulla, FL",32091
+"12,131","Walton, FL",52046
+"12,133","Washington, FL",26762
+"13,001","Appling, GA",30711
+"13,003","Atkinson, GA",26634
+"13,005","Bacon, GA",30049
+"13,007","Baker, GA",34231
+"13,009","Baldwin, GA",30196
+"13,011","Banks, GA",32295
+"13,013","Barrow, GA",33525
+"13,015","Bartow, GA",35065
+"13,017","Ben Hill, GA",30039
+"13,019","Berrien, GA",28509
+"13,021","Bibb, GA",38280
+"13,023","Bleckley, GA",31896
+"13,025","Brantley, GA",25047
+"13,027","Brooks, GA",32429
+"13,029","Bryan, GA",48649
+"13,031","Bulloch, GA",29848
+"13,033","Burke, GA",33317
+"13,035","Butts, GA",30696
+"13,037","Calhoun, GA",22104
+"13,039","Camden, GA",32671
+"13,043","Candler, GA",27414
+"13,045","Carroll, GA",34677
+"13,047","Catoosa, GA",32575
+"13,049","Charlton, GA",22570
+"13,051","Chatham, GA",43460
+"13,053","Chattahoochee, GA",29498
+"13,055","Chattooga, GA",28173
+"13,057","Cherokee, GA",45616
+"13,059","Clarke, GA",30947
+"13,061","Clay, GA",27993
+"13,063","Clayton, GA",26357
+"13,065","Clinch, GA",34249
+"13,067","Cobb, GA",50224
+"13,069","Coffee, GA",28906
+"13,071","Colquitt, GA",29536
+"13,073","Columbia, GA",45981
+"13,075","Cook, GA",29593
+"13,077","Coweta, GA",41277
+"13,079","Crawford, GA",31349
+"13,081","Crisp, GA",28935
+"13,083","Dade, GA",32245
+"13,085","Dawson, GA",39685
+"13,087","Decatur, GA",33658
+"13,089","DeKalb, GA",44540
+"13,091","Dodge, GA",27826
+"13,093","Dooly, GA",24379
+"13,095","Dougherty, GA",33286
+"13,097","Douglas, GA",32310
+"13,099","Early, GA",36032
+"13,101","Echols, GA",25298
+"13,103","Effingham, GA",37682
+"13,105","Elbert, GA",32286
+"13,107","Emanuel, GA",29474
+"13,109","Evans, GA",33010
+"13,111","Fannin, GA",31595
+"13,113","Fayette, GA",55736
+"13,115","Floyd, GA",35472
+"13,117","Forsyth, GA",57840
+"13,119","Franklin, GA",34638
+"13,121","Fulton, GA",73677
+"13,123","Gilmer, GA",32656
+"13,125","Glascock, GA",31647
+"13,127","Glynn, GA",41444
+"13,129","Gordon, GA",32101
+"13,131","Grady, GA",31721
+"13,133","Greene, GA",48552
+"13,135","Gwinnett, GA",38154
+"13,137","Habersham, GA",31261
+"13,139","Hall, GA",38864
+"13,141","Hancock, GA",26412
+"13,143","Haralson, GA",32902
+"13,145","Harris, GA",43294
+"13,147","Hart, GA",34161
+"13,149","Heard, GA",28472
+"13,151","Henry, GA",35468
+"13,153","Houston, GA",39719
+"13,155","Irwin, GA",29798
+"13,157","Jackson, GA",36425
+"13,159","Jasper, GA",33772
+"13,161","Jeff Davis, GA",29056
+"13,163","Jefferson, GA",29920
+"13,165","Jenkins, GA",27286
+"13,167","Johnson, GA",23501
+"13,169","Jones, GA",34631
+"13,171","Lamar, GA",30740
+"13,173","Lanier, GA",24886
+"13,175","Laurens, GA",33293
+"13,177","Lee, GA",42674
+"13,179","Liberty, GA",33016
+"13,181","Lincoln, GA",33999
+"13,183","Long, GA",27086
+"13,185","Lowndes, GA",34203
+"13,187","Lumpkin, GA",33838
+"13,189","McDuffie, GA",33309
+"13,191","McIntosh, GA",26909
+"13,193","Macon, GA",28712
+"13,195","Madison, GA",33479
+"13,197","Marion, GA",26468
+"13,199","Meriwether, GA",31563
+"13,201","Miller, GA",36194
+"13,205","Mitchell, GA",32603
+"13,207","Monroe, GA",41217
+"13,209","Montgomery, GA",28251
+"13,211","Morgan, GA",44218
+"13,213","Murray, GA",27270
+"13,215","Muscogee, GA",39920
+"13,217","Newton, GA",30935
+"13,219","Oconee, GA",60004
+"13,221","Oglethorpe, GA",35115
+"13,223","Paulding, GA",33821
+"13,225","Peach, GA",34897
+"13,227","Pickens, GA",42050
+"13,229","Pierce, GA",32012
+"13,231","Pike, GA",35303
+"13,233","Polk, GA",29849
+"13,235","Pulaski, GA",27339
+"13,237","Putnam, GA",37333
+"13,239","Quitman, GA",27857
+"13,241","Rabun, GA",36544
+"13,243","Randolph, GA",28850
+"13,245","Richmond, GA",34780
+"13,247","Rockdale, GA",32945
+"13,249","Schley, GA",28986
+"13,251","Screven, GA",30920
+"13,253","Seminole, GA",37640
+"13,255","Spalding, GA",32012
+"13,257","Stephens, GA",37278
+"13,259","Stewart, GA",20755
+"13,261","Sumter, GA",32267
+"13,263","Talbot, GA",30417
+"13,265","Taliaferro, GA",32515
+"13,267","Tattnall, GA",26870
+"13,269","Taylor, GA",27414
+"13,271","Telfair, GA",19177
+"13,273","Terrell, GA",36142
+"13,275","Thomas, GA",40553
+"13,277","Tift, GA",36633
+"13,279","Toombs, GA",33483
+"13,281","Towns, GA",33792
+"13,283","Treutlen, GA",27510
+"13,285","Troup, GA",34278
+"13,287","Turner, GA",33132
+"13,289","Twiggs, GA",34550
+"13,291","Union, GA",33639
+"13,293","Upson, GA",32443
+"13,295","Walker, GA",30100
+"13,297","Walton, GA",36107
+"13,299","Ware, GA",31038
+"13,301","Warren, GA",32190
+"13,303","Washington, GA",31975
+"13,305","Wayne, GA",29741
+"13,307","Webster, GA",29371
+"13,309","Wheeler, GA",18302
+"13,311","White, GA",31959
+"13,313","Whitfield, GA",35431
+"13,315","Wilcox, GA",24449
+"13,317","Wilkes, GA",36271
+"13,319","Wilkinson, GA",33467
+"13,321","Worth, GA",30151
+"15,001","Hawaii, HI",37783
+"15,003","Honolulu, HI",53208
+"15,007","Kauai, HI",43229
+"15,901","Maui + Kalawao, HI*",43633
+"16,001","Ada, ID",47775
+"16,003","Adams, ID",36034
+"16,005","Bannock, ID",34685
+"16,007","Bear Lake, ID",36333
+"16,009","Benewah, ID",35344
+"16,011","Bingham, ID",33117
+"16,013","Blaine, ID",95926
+"16,015","Boise, ID",37680
+"16,017","Bonner, ID",36918
+"16,019","Bonneville, ID",42384
+"16,021","Boundary, ID",34377
+"16,023","Butte, ID",38142
+"16,025","Camas, ID",42218
+"16,027","Canyon, ID",29340
+"16,029","Caribou, ID",37896
+"16,031","Cassia, ID",44341
+"16,033","Clark, ID",36048
+"16,035","Clearwater, ID",33057
+"16,037","Custer, ID",41889
+"16,039","Elmore, ID",35823
+"16,041","Franklin, ID",33976
+"16,043","Fremont (includes Yellowstone Park), ID",34269
+"16,045","Gem, ID",34378
+"16,047","Gooding, ID",52688
+"16,049","Idaho, ID",32232
+"16,051","Jefferson, ID",31296
+"16,053","Jerome, ID",37130
+"16,055","Kootenai, ID",40453
+"16,057","Latah, ID",37583
+"16,059","Lemhi, ID",38807
+"16,061","Lewis, ID",47187
+"16,063","Lincoln, ID",35727
+"16,065","Madison, ID",23966
+"16,067","Minidoka, ID",37155
+"16,069","Nez Perce, ID",40002
+"16,071","Oneida, ID",33637
+"16,073","Owyhee, ID",33948
+"16,075","Payette, ID",37420
+"16,077","Power, ID",35462
+"16,079","Shoshone, ID",35852
+"16,081","Teton, ID",33077
+"16,083","Twin Falls, ID",36861
+"16,085","Valley, ID",45332
+"16,087","Washington, ID",35055
+"17,001","Adams, IL",42061
+"17,003","Alexander, IL",30888
+"17,005","Bond, IL",33484
+"17,007","Boone, IL",42144
+"17,009","Brown, IL",30209
+"17,011","Bureau, IL",39493
+"17,013","Calhoun, IL",36469
+"17,015","Carroll, IL",40709
+"17,017","Cass, IL",38077
+"17,019","Champaign, IL",43642
+"17,021","Christian, IL",37422
+"17,023","Clark, IL",37195
+"17,025","Clay, IL",35135
+"17,027","Clinton, IL",42140
+"17,029","Coles, IL",37443
+"17,031","Cook, IL",56270
+"17,033","Crawford, IL",44568
+"17,035","Cumberland, IL",39767
+"17,037","DeKalb, IL",37072
+"17,039","De Witt, IL",43791
+"17,041","Douglas, IL",45869
+"17,043","DuPage, IL",65800
+"17,045","Edgar, IL",36259
+"17,047","Edwards, IL",37471
+"17,049","Effingham, IL",43084
+"17,051","Fayette, IL",31619
+"17,053","Ford, IL",49197
+"17,055","Franklin, IL",34643
+"17,057","Fulton, IL",34347
+"17,059","Gallatin, IL",40895
+"17,061","Greene, IL",31730
+"17,063","Grundy, IL",48556
+"17,065","Hamilton, IL",40570
+"17,067","Hancock, IL",40906
+"17,069","Hardin, IL",34561
+"17,071","Henderson, IL",38495
+"17,073","Henry, IL",42726
+"17,075","Iroquois, IL",38922
+"17,077","Jackson, IL",34338
+"17,079","Jasper, IL",38561
+"17,081","Jefferson, IL",36027
+"17,083","Jersey, IL",36992
+"17,085","Jo Daviess, IL",44617
+"17,087","Johnson, IL",32231
+"17,089","Kane, IL",46022
+"17,091","Kankakee, IL",37106
+"17,093","Kendall, IL",44729
+"17,095","Knox, IL",37178
+"17,097","Lake, IL",72070
+"17,099","LaSalle, IL",40166
+"17,101","Lawrence, IL",29171
+"17,103","Lee, IL",38320
+"17,105","Livingston, IL",40710
+"17,107","Logan, IL",33858
+"17,109","McDonough, IL",35373
+"17,111","McHenry, IL",49909
+"17,113","McLean, IL",45818
+"17,115","Macon, IL",44493
+"17,117","Macoupin, IL",36810
+"17,119","Madison, IL",42523
+"17,121","Marion, IL",38791
+"17,123","Marshall, IL",42088
+"17,125","Mason, IL",36635
+"17,127","Massac, IL",35438
+"17,129","Menard, IL",41005
+"17,131","Mercer, IL",41158
+"17,133","Monroe, IL",52836
+"17,135","Montgomery, IL",32297
+"17,137","Morgan, IL",36795
+"17,139","Moultrie, IL",51552
+"17,141","Ogle, IL",41001
+"17,143","Peoria, IL",47645
+"17,145","Perry, IL",34745
+"17,147","Piatt, IL",47469
+"17,149","Pike, IL",37840
+"17,151","Pope, IL",28256
+"17,153","Pulaski, IL",33378
+"17,155","Putnam, IL",54849
+"17,157","Randolph, IL",33187
+"17,159","Richland, IL",38296
+"17,161","Rock Island, IL",41127
+"17,163","St. Clair, IL",41431
+"17,165","Saline, IL",36736
+"17,167","Sangamon, IL",44198
+"17,169","Schuyler, IL",39688
+"17,171","Scott, IL",34940
+"17,173","Shelby, IL",35829
+"17,175","Stark, IL",38386
+"17,177","Stephenson, IL",39598
+"17,179","Tazewell, IL",43875
+"17,181","Union, IL",38804
+"17,183","Vermilion, IL",36124
+"17,185","Wabash, IL",39898
+"17,187","Warren, IL",35927
+"17,189","Washington, IL",42950
+"17,191","Wayne, IL",38524
+"17,193","White, IL",43330
+"17,195","Whiteside, IL",39728
+"17,197","Will, IL",47838
+"17,199","Williamson, IL",41046
+"17,201","Winnebago, IL",39787
+"17,203","Woodford, IL",48762
+"18,001","Adams, IN",34713
+"18,003","Allen, IN",42432
+"18,005","Bartholomew, IN",45961
+"18,007","Benton, IN",36360
+"18,009","Blackford, IN",34625
+"18,011","Boone, IN",65670
+"18,013","Brown, IN",42324
+"18,015","Carroll, IN",38671
+"18,017","Cass, IN",35085
+"18,019","Clark, IN",41224
+"18,021","Clay, IN",34488
+"18,023","Clinton, IN",34808
+"18,025","Crawford, IN",30933
+"18,027","Daviess, IN",38300
+"18,029","Dearborn, IN",43329
+"18,031","Decatur, IN",38337
+"18,033","DeKalb, IN",39378
+"18,035","Delaware, IN",33873
+"18,037","Dubois, IN",52405
+"18,039","Elkhart, IN",40195
+"18,041","Fayette, IN",36055
+"18,043","Floyd, IN",49907
+"18,045","Fountain, IN",35420
+"18,047","Franklin, IN",42248
+"18,049","Fulton, IN",37329
+"18,051","Gibson, IN",41064
+"18,053","Grant, IN",36909
+"18,055","Greene, IN",35539
+"18,057","Hamilton, IN",66867
+"18,059","Hancock, IN",45375
+"18,061","Harrison, IN",38352
+"18,063","Hendricks, IN",44542
+"18,065","Henry, IN",34024
+"18,067","Howard, IN",38063
+"18,069","Huntington, IN",37836
+"18,071","Jackson, IN",40009
+"18,073","Jasper, IN",40661
+"18,075","Jay, IN",37335
+"18,077","Jefferson, IN",38682
+"18,079","Jennings, IN",35149
+"18,081","Johnson, IN",44102
+"18,083","Knox, IN",40496
+"18,085","Kosciusko, IN",46504
+"18,087","Lagrange, IN",36435
+"18,089","Lake, IN",40302
+"18,091","LaPorte, IN",37803
+"18,093","Lawrence, IN",36320
+"18,095","Madison, IN",35141
+"18,097","Marion, IN",48272
+"18,099","Marshall, IN",37058
+"18,101","Martin, IN",36096
+"18,103","Miami, IN",31540
+"18,105","Monroe, IN",36735
+"18,107","Montgomery, IN",38228
+"18,109","Morgan, IN",39619
+"18,111","Newton, IN",36950
+"18,113","Noble, IN",35740
+"18,115","Ohio, IN",37057
+"18,117","Orange, IN",32847
+"18,119","Owen, IN",35786
+"18,121","Parke, IN",32154
+"18,123","Perry, IN",34395
+"18,125","Pike, IN",37297
+"18,127","Porter, IN",46609
+"18,129","Posey, IN",45333
+"18,131","Pulaski, IN",38987
+"18,133","Putnam, IN",33380
+"18,135","Randolph, IN",36417
+"18,137","Ripley, IN",37328
+"18,139","Rush, IN",40386
+"18,141","St. Joseph, IN",43861
+"18,143","Scott, IN",34161
+"18,145","Shelby, IN",39018
+"18,147","Spencer, IN",40115
+"18,149","Starke, IN",32133
+"18,151","Steuben, IN",37361
+"18,153","Sullivan, IN",31715
+"18,155","Switzerland, IN",28032
+"18,157","Tippecanoe, IN",35154
+"18,159","Tipton, IN",41093
+"18,161","Union, IN",34035
+"18,163","Vanderburgh, IN",42359
+"18,165","Vermillion, IN",34876
+"18,167","Vigo, IN",35318
+"18,169","Wabash, IN",39559
+"18,171","Warren, IN",39108
+"18,173","Warrick, IN",50622
+"18,175","Washington, IN",35157
+"18,177","Wayne, IN",37355
+"18,179","Wells, IN",38748
+"18,181","White, IN",38875
+"18,183","Whitley, IN",39792
+"19,001","Adair, IA",47506
+"19,003","Adams, IA",70429
+"19,005","Allamakee, IA",43992
+"19,007","Appanoose, IA",35088
+"19,009","Audubon, IA",44184
+"19,011","Benton, IA",48291
+"19,013","Black Hawk, IA",40664
+"19,015","Boone, IA",44916
+"19,017","Bremer, IA",45587
+"19,019","Buchanan, IA",43048
+"19,021","Buena Vista, IA",47434
+"19,023","Butler, IA",44492
+"19,025","Calhoun, IA",45950
+"19,027","Carroll, IA",49615
+"19,029","Cass, IA",45006
+"19,031","Cedar, IA",49111
+"19,033","Cerro Gordo, IA",52669
+"19,035","Cherokee, IA",58725
+"19,037","Chickasaw, IA",57655
+"19,039","Clarke, IA",38222
+"19,041","Clay, IA",50138
+"19,043","Clayton, IA",46189
+"19,045","Clinton, IA",40740
+"19,047","Crawford, IA",39188
+"19,049","Dallas, IA",61536
+"19,051","Davis, IA",33980
+"19,053","Decatur, IA",30599
+"19,055","Delaware, IA",46660
+"19,057","Des Moines, IA",47738
+"19,059","Dickinson, IA",56474
+"19,061","Dubuque, IA",44645
+"19,063","Emmet, IA",43449
+"19,065","Fayette, IA",39640
+"19,067","Floyd, IA",44917
+"19,069","Franklin, IA",50076
+"19,071","Fremont, IA",42076
+"19,073","Greene, IA",45393
+"19,075","Grundy, IA",48318
+"19,077","Guthrie, IA",50446
+"19,079","Hamilton, IA",49925
+"19,081","Hancock, IA",51743
+"19,083","Hardin, IA",47832
+"19,085","Harrison, IA",43698
+"19,087","Henry, IA",38638
+"19,089","Howard, IA",47343
+"19,091","Humboldt, IA",48390
+"19,093","Ida, IA",46865
+"19,095","Iowa, IA",49224
+"19,097","Jackson, IA",41873
+"19,099","Jasper, IA",38841
+"19,101","Jefferson, IA",37734
+"19,103","Johnson, IA",47664
+"19,105","Jones, IA",40355
+"19,107","Keokuk, IA",42467
+"19,109","Kossuth, IA",50168
+"19,111","Lee, IA",38978
+"19,113","Linn, IA",48849
+"19,115","Louisa, IA",37362
+"19,117","Lucas, IA",38811
+"19,119","Lyon, IA",58282
+"19,121","Madison, IA",44525
+"19,123","Mahaska, IA",38698
+"19,125","Marion, IA",42612
+"19,127","Marshall, IA",39884
+"19,129","Mills, IA",50666
+"19,131","Mitchell, IA",61474
+"19,133","Monona, IA",45377
+"19,135","Monroe, IA",38660
+"19,137","Montgomery, IA",39701
+"19,139","Muscatine, IA",43224
+"19,141","O'Brien, IA",55629
+"19,143","Osceola, IA",59190
+"19,145","Page, IA",37741
+"19,147","Palo Alto, IA",55408
+"19,149","Plymouth, IA",53976
+"19,151","Pocahontas, IA",58550
+"19,153","Polk, IA",49119
+"19,155","Pottawattamie, IA",42523
+"19,157","Poweshiek, IA",43648
+"19,159","Ringgold, IA",41144
+"19,161","Sac, IA",52634
+"19,163","Scott, IA",49272
+"19,165","Shelby, IA",49382
+"19,167","Sioux, IA",52209
+"19,169","Story, IA",38735
+"19,171","Tama, IA",41337
+"19,173","Taylor, IA",41179
+"19,175","Union, IA",38220
+"19,177","Van Buren, IA",36085
+"19,179","Wapello, IA",35439
+"19,181","Warren, IA",45359
+"19,183","Washington, IA",50892
+"19,185","Wayne, IA",39533
+"19,187","Webster, IA",43303
+"19,189","Winnebago, IA",43948
+"19,191","Winneshiek, IA",46981
+"19,193","Woodbury, IA",40867
+"19,195","Worth, IA",47037
+"19,197","Wright, IA",55531
+"20,001","Allen, KS",37115
+"20,003","Anderson, KS",38539
+"20,005","Atchison, KS",33877
+"20,007","Barber, KS",39107
+"20,009","Barton, KS",46285
+"20,011","Bourbon, KS",38644
+"20,013","Brown, KS",40628
+"20,015","Butler, KS",43033
+"20,017","Chase, KS",42295
+"20,019","Chautauqua, KS",39285
+"20,021","Cherokee, KS",34098
+"20,023","Cheyenne, KS",42119
+"20,025","Clark, KS",54713
+"20,027","Clay, KS",39332
+"20,029","Cloud, KS",34567
+"20,031","Coffey, KS",53688
+"20,033","Comanche, KS",42166
+"20,035","Cowley, KS",38045
+"20,037","Crawford, KS",34069
+"20,039","Decatur, KS",47394
+"20,041","Dickinson, KS",37408
+"20,043","Doniphan, KS",35105
+"20,045","Douglas, KS",39680
+"20,047","Edwards, KS",53106
+"20,049","Elk, KS",40829
+"20,051","Ellis, KS",44743
+"20,053","Ellsworth, KS",35676
+"20,055","Finney, KS",38334
+"20,057","Ford, KS",33349
+"20,059","Franklin, KS",38508
+"20,061","Geary, KS",43929
+"20,063","Gove, KS",63364
+"20,065","Graham, KS",47771
+"20,067","Grant, KS",46480
+"20,069","Gray, KS",70254
+"20,071","Greeley, KS",41572
+"20,073","Greenwood, KS",38698
+"20,075","Hamilton, KS",56108
+"20,077","Harper, KS",43242
+"20,079","Harvey, KS",38570
+"20,081","Haskell, KS",55943
+"20,083","Hodgeman, KS",44863
+"20,085","Jackson, KS",37854
+"20,087","Jefferson, KS",39422
+"20,089","Jewell, KS",46672
+"20,091","Johnson, KS",66653
+"20,093","Kearny, KS",51918
+"20,095","Kingman, KS",43173
+"20,097","Kiowa, KS",34470
+"20,099","Labette, KS",38359
+"20,101","Lane, KS",83723
+"20,103","Leavenworth, KS",39901
+"20,105","Lincoln, KS",34799
+"20,107","Linn, KS",33189
+"20,109","Logan, KS",44670
+"20,111","Lyon, KS",34507
+"20,113","McPherson, KS",48914
+"20,115","Marion, KS",39451
+"20,117","Marshall, KS",43893
+"20,119","Meade, KS",54277
+"20,121","Miami, KS",43652
+"20,123","Mitchell, KS",49193
+"20,125","Montgomery, KS",35063
+"20,127","Morris, KS",40453
+"20,129","Morton, KS",38287
+"20,131","Nemaha, KS",48946
+"20,133","Neosho, KS",35354
+"20,135","Ness, KS",47823
+"20,137","Norton, KS",37655
+"20,139","Osage, KS",37500
+"20,141","Osborne, KS",43285
+"20,143","Ottawa, KS",38349
+"20,145","Pawnee, KS",38806
+"20,147","Phillips, KS",53588
+"20,149","Pottawatomie, KS",50108
+"20,151","Pratt, KS",43826
+"20,153","Rawlins, KS",48114
+"20,155","Reno, KS",37031
+"20,157","Republic, KS",44621
+"20,159","Rice, KS",46313
+"20,161","Riley, KS",39240
+"20,163","Rooks, KS",37769
+"20,165","Rush, KS",45815
+"20,167","Russell, KS",45486
+"20,169","Saline, KS",44542
+"20,171","Scott, KS",63316
+"20,173","Sedgwick, KS",49053
+"20,175","Seward, KS",36887
+"20,177","Shawnee, KS",42497
+"20,179","Sheridan, KS",48487
+"20,181","Sherman, KS",37915
+"20,183","Smith, KS",42960
+"20,185","Stafford, KS",44982
+"20,187","Stanton, KS",55685
+"20,189","Stevens, KS",37706
+"20,191","Sumner, KS",36352
+"20,193","Thomas, KS",38913
+"20,195","Trego, KS",47331
+"20,197","Wabaunsee, KS",46497
+"20,199","Wallace, KS",43918
+"20,201","Washington, KS",42577
+"20,203","Wichita, KS",68006
+"20,205","Wilson, KS",41175
+"20,207","Woodson, KS",34991
+"20,209","Wyandotte, KS",40126
+"21,001","Adair, KY",28878
+"21,003","Allen, KY",30068
+"21,005","Anderson, KY",37033
+"21,007","Ballard, KY",35481
+"21,009","Barren, KY",34986
+"21,011","Bath, KY",29205
+"21,013","Bell, KY",27448
+"21,015","Boone, KY",43064
+"21,017","Bourbon, KY",41810
+"21,019","Boyd, KY",36133
+"21,021","Boyle, KY",35549
+"21,023","Bracken, KY",32773
+"21,025","Breathitt, KY",31417
+"21,027","Breckinridge, KY",32572
+"21,029","Bullitt, KY",37110
+"21,031","Butler, KY",31879
+"21,033","Caldwell, KY",32313
+"21,035","Calloway, KY",33641
+"21,037","Campbell, KY",43812
+"21,039","Carlisle, KY",41747
+"21,041","Carroll, KY",39326
+"21,043","Carter, KY",29104
+"21,045","Casey, KY",29629
+"21,047","Christian, KY",36574
+"21,049","Clark, KY",37411
+"21,051","Clay, KY",28453
+"21,053","Clinton, KY",30483
+"21,055","Crittenden, KY",32943
+"21,057","Cumberland, KY",32142
+"21,059","Daviess, KY",40015
+"21,061","Edmonson, KY",29800
+"21,063","Elliott, KY",21228
+"21,065","Estill, KY",30044
+"21,067","Fayette, KY",46522
+"21,069","Fleming, KY",31860
+"21,071","Floyd, KY",33309
+"21,073","Franklin, KY",40276
+"21,075","Fulton, KY",32642
+"21,077","Gallatin, KY",29524
+"21,079","Garrard, KY",32538
+"21,081","Grant, KY",32189
+"21,083","Graves, KY",35736
+"21,085","Grayson, KY",31272
+"21,087","Green, KY",32291
+"21,089","Greenup, KY",37464
+"21,091","Hancock, KY",35963
+"21,093","Hardin, KY",40030
+"21,095","Harlan, KY",28474
+"21,097","Harrison, KY",32308
+"21,099","Hart, KY",30439
+"21,101","Henderson, KY",36874
+"21,103","Henry, KY",35700
+"21,105","Hickman, KY",40875
+"21,107","Hopkins, KY",37390
+"21,109","Jackson, KY",27222
+"21,111","Jefferson, KY",46977
+"21,113","Jessamine, KY",39752
+"21,115","Johnson, KY",31502
+"21,117","Kenton, KY",50926
+"21,119","Knott, KY",28775
+"21,121","Knox, KY",28442
+"21,123","Larue, KY",33509
+"21,125","Laurel, KY",31091
+"21,127","Lawrence, KY",30490
+"21,129","Lee, KY",30635
+"21,131","Leslie, KY",30315
+"21,133","Letcher, KY",29475
+"21,135","Lewis, KY",27048
+"21,137","Lincoln, KY",29758
+"21,139","Livingston, KY",34926
+"21,141","Logan, KY",33449
+"21,143","Lyon, KY",32121
+"21,145","McCracken, KY",47456
+"21,147","McCreary, KY",23784
+"21,149","McLean, KY",37142
+"21,151","Madison, KY",33575
+"21,153","Magoffin, KY",28635
+"21,155","Marion, KY",32779
+"21,157","Marshall, KY",38826
+"21,159","Martin, KY",25467
+"21,161","Mason, KY",37325
+"21,163","Meade, KY",36841
+"21,165","Menifee, KY",29015
+"21,167","Mercer, KY",35082
+"21,169","Metcalfe, KY",29444
+"21,171","Monroe, KY",34635
+"21,173","Montgomery, KY",33284
+"21,175","Morgan, KY",25311
+"21,177","Muhlenberg, KY",33056
+"21,179","Nelson, KY",38281
+"21,181","Nicholas, KY",32839
+"21,183","Ohio, KY",30984
+"21,185","Oldham, KY",55922
+"21,187","Owen, KY",32058
+"21,189","Owsley, KY",30180
+"21,191","Pendleton, KY",45104
+"21,193","Perry, KY",35755
+"21,195","Pike, KY",32928
+"21,197","Powell, KY",29562
+"21,199","Pulaski, KY",34379
+"21,201","Robertson, KY",31824
+"21,203","Rockcastle, KY",28967
+"21,205","Rowan, KY",28971
+"21,207","Russell, KY",31595
+"21,209","Scott, KY",39454
+"21,211","Shelby, KY",40655
+"21,213","Simpson, KY",36061
+"21,215","Spencer, KY",40087
+"21,217","Taylor, KY",32268
+"21,219","Todd, KY",37071
+"21,221","Trigg, KY",36336
+"21,223","Trimble, KY",33209
+"21,225","Union, KY",31127
+"21,227","Warren, KY",36007
+"21,229","Washington, KY",34532
+"21,231","Wayne, KY",26874
+"21,233","Webster, KY",37860
+"21,235","Whitley, KY",31197
+"21,237","Wolfe, KY",29455
+"21,239","Woodford, KY",48027
+"22,001","Acadia, LA",35814
+"22,003","Allen, LA",29583
+"22,005","Ascension, LA",46727
+"22,007","Assumption, LA",41724
+"22,009","Avoyelles, LA",34728
+"22,011","Beauregard, LA",39651
+"22,013","Bienville, LA",33195
+"22,015","Bossier, LA",41516
+"22,017","Caddo, LA",47032
+"22,019","Calcasieu, LA",43806
+"22,021","Caldwell, LA",31124
+"22,023","Cameron, LA",42997
+"22,025","Catahoula, LA",30934
+"22,027","Claiborne, LA",34013
+"22,029","Concordia, LA",28834
+"22,031","De Soto, LA",38063
+"22,033","East Baton Rouge, LA",46085
+"22,035","East Carroll, LA",31420
+"22,037","East Feliciana, LA",38042
+"22,039","Evangeline, LA",31647
+"22,041","Franklin, LA",29303
+"22,043","Grant, LA",29732
+"22,045","Iberia, LA",37606
+"22,047","Iberville, LA",36829
+"22,049","Jackson, LA",32589
+"22,051","Jefferson, LA",47956
+"22,053","Jefferson Davis, LA",37656
+"22,055","Lafayette, LA",49306
+"22,057","Lafourche, LA",45546
+"22,059","LaSalle, LA",30534
+"22,061","Lincoln, LA",36878
+"22,063","Livingston, LA",38512
+"22,065","Madison, LA",29274
+"22,067","Morehouse, LA",34866
+"22,069","Natchitoches, LA",35538
+"22,071","Orleans, LA",47782
+"22,073","Ouachita, LA",37472
+"22,075","Plaquemines, LA",46799
+"22,077","Pointe Coupee, LA",40855
+"22,079","Rapides, LA",42501
+"22,081","Red River, LA",35754
+"22,083","Richland, LA",34627
+"22,085","Sabine, LA",32136
+"22,087","St. Bernard, LA",29809
+"22,089","St. Charles, LA",46295
+"22,091","St. Helena, LA",38500
+"22,093","St. James, LA",43512
+"22,095","St. John the Baptist, LA",39033
+"22,097","St. Landry, LA",39364
+"22,099","St. Martin, LA",38031
+"22,101","St. Mary, LA",39872
+"22,103","St. Tammany, LA",55940
+"22,105","Tangipahoa, LA",36045
+"22,107","Tensas, LA",30773
+"22,109","Terrebonne, LA",42336
+"22,111","Union, LA",35792
+"22,113","Vermilion, LA",39336
+"22,115","Vernon, LA",37989
+"22,117","Washington, LA",31600
+"22,119","Webster, LA",36161
+"22,121","West Baton Rouge, LA",44685
+"22,123","West Carroll, LA",30606
+"22,125","West Feliciana, LA",34369
+"22,127","Winn, LA",34592
+"23,001","Androscoggin, ME",37821
+"23,003","Aroostook, ME",36847
+"23,005","Cumberland, ME",54217
+"23,007","Franklin, ME",35726
+"23,009","Hancock, ME",46898
+"23,011","Kennebec, ME",41094
+"23,013","Knox, ME",45358
+"23,015","Lincoln, ME",46211
+"23,017","Oxford, ME",34349
+"23,019","Penobscot, ME",37914
+"23,021","Piscataquis, ME",35210
+"23,023","Sagadahoc, ME",46168
+"23,025","Somerset, ME",35664
+"23,027","Waldo, ME",37001
+"23,029","Washington, ME",37859
+"23,031","York, ME",46216
+"24,001","Allegany, MD",36945
+"24,003","Anne Arundel, MD",61541
+"24,005","Baltimore, MD",55591
+"24,009","Calvert, MD",56868
+"24,011","Caroline, MD",41864
+"24,013","Carroll, MD",56956
+"24,015","Cecil, MD",43492
+"24,017","Charles, MD",52475
+"24,019","Dorchester, MD",42130
+"24,021","Frederick, MD",55473
+"24,023","Garrett, MD",41690
+"24,025","Harford, MD",53168
+"24,027","Howard, MD",71422
+"24,029","Kent, MD",54370
+"24,031","Montgomery, MD",79913
+"24,033","Prince George's, MD",44911
+"24,035","Queen Anne's, MD",57463
+"24,037","St. Mary's, MD",52337
+"24,039","Somerset, MD",30042
+"24,041","Talbot, MD",67213
+"24,043","Washington, MD",43247
+"24,045","Wicomico, MD",39448
+"24,047","Worcester, MD",55841
+"24,510","Baltimore (Independent City), MD",46192
+"25,001","Barnstable, MA",65472
+"25,003","Berkshire, MA",51203
+"25,005","Bristol, MA",48392
+"25,007","Dukes, MA",80340
+"25,009","Essex, MA",60617
+"25,011","Franklin, MA",50166
+"25,013","Hampden, MA",47185
+"25,015","Hampshire, MA",48321
+"25,017","Middlesex, MA",75122
+"25,019","Nantucket, MA",111409
+"25,021","Norfolk, MA",81927
+"25,023","Plymouth, MA",59994
+"25,025","Suffolk, MA",67245
+"25,027","Worcester, MA",51543
+"26,001","Alcona, MI",34462
+"26,003","Alger, MI",30840
+"26,005","Allegan, MI",40291
+"26,007","Alpena, MI",37385
+"26,009","Antrim, MI",42132
+"26,011","Arenac, MI",33196
+"26,013","Baraga, MI",30450
+"26,015","Barry, MI",40683
+"26,017","Bay, MI",38421
+"26,019","Benzie, MI",38468
+"26,021","Berrien, MI",42486
+"26,023","Branch, MI",33083
+"26,025","Calhoun, MI",37171
+"26,027","Cass, MI",39221
+"26,029","Charlevoix, MI",46314
+"26,031","Cheboygan, MI",35561
+"26,033","Chippewa, MI",31161
+"26,035","Clare, MI",31013
+"26,037","Clinton, MI",41284
+"26,039","Crawford, MI",30560
+"26,041","Delta, MI",36532
+"26,043","Dickinson, MI",42659
+"26,045","Eaton, MI",38646
+"26,047","Emmet, MI",50210
+"26,049","Genesee, MI",37179
+"26,051","Gladwin, MI",32580
+"26,053","Gogebic, MI",36550
+"26,055","Grand Traverse, MI",44716
+"26,057","Gratiot, MI",33901
+"26,059","Hillsdale, MI",32896
+"26,061","Houghton, MI",34225
+"26,063","Huron, MI",42199
+"26,065","Ingham, MI",36989
+"26,067","Ionia, MI",31678
+"26,069","Iosco, MI",33807
+"26,071","Iron, MI",40363
+"26,073","Isabella, MI",32257
+"26,075","Jackson, MI",35789
+"26,077","Kalamazoo, MI",44184
+"26,079","Kalkaska, MI",32625
+"26,081","Kent, MI",49732
+"26,083","Keweenaw, MI",41890
+"26,085","Lake, MI",28376
+"26,087","Lapeer, MI",38700
+"26,089","Leelanau, MI",60253
+"26,091","Lenawee, MI",36287
+"26,093","Livingston, MI",50988
+"26,095","Luce, MI",28866
+"26,097","Mackinac, MI",39587
+"26,099","Macomb, MI",42562
+"26,101","Manistee, MI",35374
+"26,103","Marquette, MI",36601
+"26,105","Mason, MI",37455
+"26,107","Mecosta, MI",29991
+"26,109","Menominee, MI",38979
+"26,111","Midland, MI",40527
+"26,113","Missaukee, MI",31468
+"26,115","Monroe, MI",42255
+"26,117","Montcalm, MI",31598
+"26,119","Montmorency, MI",33710
+"26,121","Muskegon, MI",35176
+"26,123","Newaygo, MI",33905
+"26,125","Oakland, MI",64851
+"26,127","Oceana, MI",34351
+"26,129","Ogemaw, MI",31907
+"26,131","Ontonagon, MI",35618
+"26,133","Osceola, MI",33027
+"26,135","Oscoda, MI",31054
+"26,137","Otsego, MI",37433
+"26,139","Ottawa, MI",43688
+"26,141","Presque Isle, MI",35417
+"26,143","Roscommon, MI",33777
+"26,145","Saginaw, MI",35828
+"26,147","St. Clair, MI",39602
+"26,149","St. Joseph, MI",34489
+"26,151","Sanilac, MI",34575
+"26,153","Schoolcraft, MI",35716
+"26,155","Shiawassee, MI",35849
+"26,157","Tuscola, MI",35621
+"26,159","Van Buren, MI",37628
+"26,161","Washtenaw, MI",52348
+"26,163","Wayne, MI",39288
+"26,165","Wexford, MI",32938
+"27,001","Aitkin, MN",35473
+"27,003","Anoka, MN",46493
+"27,005","Becker, MN",43609
+"27,007","Beltrami, MN",37943
+"27,009","Benton, MN",40058
+"27,011","Big Stone, MN",51664
+"27,013","Blue Earth, MN",42785
+"27,015","Brown, MN",48318
+"27,017","Carlton, MN",38840
+"27,019","Carver, MN",64916
+"27,021","Cass, MN",42544
+"27,023","Chippewa, MN",45575
+"27,025","Chisago, MN",44086
+"27,027","Clay, MN",40558
+"27,029","Clearwater, MN",39675
+"27,031","Cook, MN",49503
+"27,033","Cottonwood, MN",45714
+"27,035","Crow Wing, MN",41266
+"27,037","Dakota, MN",54570
+"27,039","Dodge, MN",42353
+"27,041","Douglas, MN",50793
+"27,043","Faribault, MN",39557
+"27,045","Fillmore, MN",43197
+"27,047","Freeborn, MN",40583
+"27,049","Goodhue, MN",49175
+"27,051","Grant, MN",52905
+"27,053","Hennepin, MN",67898
+"27,055","Houston, MN",46384
+"27,057","Hubbard, MN",38723
+"27,059","Isanti, MN",40198
+"27,061","Itasca, MN",40057
+"27,063","Jackson, MN",50656
+"27,065","Kanabec, MN",38497
+"27,067","Kandiyohi, MN",49931
+"27,069","Kittson, MN",50427
+"27,071","Koochiching, MN",37474
+"27,073","Lac qui Parle, MN",49806
+"27,075","Lake, MN",44868
+"27,077","Lake of the Woods, MN",51419
+"27,079","Le Sueur, MN",44281
+"27,081","Lincoln, MN",47113
+"27,083","Lyon, MN",47397
+"27,085","McLeod, MN",46253
+"27,087","Mahnomen, MN",35978
+"27,089","Marshall, MN",45758
+"27,091","Martin, MN",49515
+"27,093","Meeker, MN",40815
+"27,095","Mille Lacs, MN",38824
+"27,097","Morrison, MN",39836
+"27,099","Mower, MN",44068
+"27,101","Murray, MN",59551
+"27,103","Nicollet, MN",46171
+"27,105","Nobles, MN",45638
+"27,107","Norman, MN",39717
+"27,109","Olmsted, MN",51524
+"27,111","Otter Tail, MN",44534
+"27,113","Pennington, MN",49813
+"27,115","Pine, MN",33959
+"27,117","Pipestone, MN",53487
+"27,119","Polk, MN",43213
+"27,121","Pope, MN",46016
+"27,123","Ramsey, MN",50017
+"27,125","Red Lake, MN",47211
+"27,127","Redwood, MN",54074
+"27,129","Renville, MN",52520
+"27,131","Rice, MN",40033
+"27,133","Rock, MN",52074
+"27,135","Roseau, MN",45660
+"27,137","St. Louis, MN",43402
+"27,139","Scott, MN",53538
+"27,141","Sherburne, MN",42799
+"27,143","Sibley, MN",45825
+"27,145","Stearns, MN",43313
+"27,147","Steele, MN",41607
+"27,149","Stevens, MN",48278
+"27,151","Swift, MN",51741
+"27,153","Todd, MN",38391
+"27,155","Traverse, MN",58213
+"27,157","Wabasha, MN",43918
+"27,159","Wadena, MN",37018
+"27,161","Waseca, MN",46683
+"27,163","Washington, MN",60162
+"27,165","Watonwan, MN",40211
+"27,167","Wilkin, MN",50625
+"27,169","Winona, MN",45290
+"27,171","Wright, MN",45572
+"27,173","Yellow Medicine, MN",59918
+"28,001","Adams, MS",32545
+"28,003","Alcorn, MS",32501
+"28,005","Amite, MS",29985
+"28,007","Attala, MS",31621
+"28,009","Benton, MS",28160
+"28,011","Bolivar, MS",33759
+"28,013","Calhoun, MS",29474
+"28,015","Carroll, MS",33618
+"28,017","Chickasaw, MS",31016
+"28,019","Choctaw, MS",30355
+"28,021","Claiborne, MS",29289
+"28,023","Clarke, MS",34633
+"28,025","Clay, MS",35325
+"28,027","Coahoma, MS",31375
+"28,029","Copiah, MS",31231
+"28,031","Covington, MS",32078
+"28,033","DeSoto, MS",36842
+"28,035","Forrest, MS",36294
+"28,037","Franklin, MS",33477
+"28,039","George, MS",31956
+"28,041","Greene, MS",28507
+"28,043","Grenada, MS",32587
+"28,045","Hancock, MS",33114
+"28,047","Harrison, MS",35364
+"28,049","Hinds, MS",37942
+"28,051","Holmes, MS",25608
+"28,053","Humphreys, MS",26991
+"28,055","Issaquena, MS",13125
+"28,057","Itawamba, MS",31635
+"28,059","Jackson, MS",35368
+"28,061","Jasper, MS",34249
+"28,063","Jefferson, MS",30150
+"28,065","Jefferson Davis, MS",27314
+"28,067","Jones, MS",36468
+"28,069","Kemper, MS",27281
+"28,071","Lafayette, MS",37165
+"28,073","Lamar, MS",37597
+"28,075","Lauderdale, MS",35144
+"28,077","Lawrence, MS",32030
+"28,079","Leake, MS",28204
+"28,081","Lee, MS",37597
+"28,083","Leflore, MS",31869
+"28,085","Lincoln, MS",35965
+"28,087","Lowndes, MS",35254
+"28,089","Madison, MS",58859
+"28,091","Marion, MS",30159
+"28,093","Marshall, MS",29833
+"28,095","Monroe, MS",32035
+"28,097","Montgomery, MS",31376
+"28,099","Neshoba, MS",33482
+"28,101","Newton, MS",32535
+"28,103","Noxubee, MS",29619
+"28,105","Oktibbeha, MS",31286
+"28,107","Panola, MS",30791
+"28,109","Pearl River, MS",34274
+"28,111","Perry, MS",29212
+"28,113","Pike, MS",29936
+"28,115","Pontotoc, MS",30595
+"28,117","Prentiss, MS",28547
+"28,119","Quitman, MS",24535
+"28,121","Rankin, MS",42537
+"28,123","Scott, MS",28517
+"28,125","Sharkey, MS",27265
+"28,127","Simpson, MS",33567
+"28,129","Smith, MS",32311
+"28,131","Stone, MS",29970
+"28,133","Sunflower, MS",26494
+"28,135","Tallahatchie, MS",25053
+"28,137","Tate, MS",32221
+"28,139","Tippah, MS",30688
+"28,141","Tishomingo, MS",30245
+"28,143","Tunica, MS",30001
+"28,145","Union, MS",30029
+"28,147","Walthall, MS",30288
+"28,149","Warren, MS",36249
+"28,151","Washington, MS",33752
+"28,153","Wayne, MS",31952
+"28,155","Webster, MS",34664
+"28,157","Wilkinson, MS",27604
+"28,159","Winston, MS",32098
+"28,161","Yalobusha, MS",33783
+"28,163","Yazoo, MS",26690
+"29,001","Adair, MO",31318
+"29,003","Andrew, MO",41320
+"29,005","Atchison, MO",42283
+"29,007","Audrain, MO",38154
+"29,009","Barry, MO",33035
+"29,011","Barton, MO",33187
+"29,013","Bates, MO",34587
+"29,015","Benton, MO",34304
+"29,017","Bollinger, MO",29398
+"29,019","Boone, MO",43751
+"29,021","Buchanan, MO",36819
+"29,023","Butler, MO",33388
+"29,025","Caldwell, MO",32703
+"29,027","Callaway, MO",34968
+"29,029","Camden, MO",34586
+"29,031","Cape Girardeau, MO",41795
+"29,033","Carroll, MO",41313
+"29,035","Carter, MO",29827
+"29,037","Cass, MO",42502
+"29,039","Cedar, MO",29973
+"29,041","Chariton, MO",37243
+"29,043","Christian, MO",36408
+"29,045","Clark, MO",33448
+"29,047","Clay, MO",45232
+"29,049","Clinton, MO",38699
+"29,051","Cole, MO",43093
+"29,053","Cooper, MO",34517
+"29,055","Crawford, MO",32321
+"29,057","Dade, MO",32688
+"29,059","Dallas, MO",30504
+"29,061","Daviess, MO",31270
+"29,063","DeKalb, MO",25248
+"29,065","Dent, MO",30368
+"29,067","Douglas, MO",25693
+"29,069","Dunklin, MO",32316
+"29,071","Franklin, MO",40023
+"29,073","Gasconade, MO",35899
+"29,075","Gentry, MO",39180
+"29,077","Greene, MO",40213
+"29,079","Grundy, MO",32051
+"29,081","Harrison, MO",32898
+"29,083","Henry, MO",39220
+"29,085","Hickory, MO",26589
+"29,087","Holt, MO",40976
+"29,089","Howard, MO",35232
+"29,091","Howell, MO",31562
+"29,093","Iron, MO",31972
+"29,095","Jackson, MO",42981
+"29,097","Jasper, MO",36982
+"29,099","Jefferson, MO",38405
+"29,101","Johnson, MO",33706
+"29,103","Knox, MO",31908
+"29,105","Laclede, MO",32369
+"29,107","Lafayette, MO",37465
+"29,109","Lawrence, MO",31982
+"29,111","Lewis, MO",30484
+"29,113","Lincoln, MO",36092
+"29,115","Linn, MO",36035
+"29,117","Livingston, MO",36073
+"29,119","McDonald, MO",26937
+"29,121","Macon, MO",38651
+"29,123","Madison, MO",34701
+"29,125","Maries, MO",31137
+"29,127","Marion, MO",36976
+"29,129","Mercer, MO",32041
+"29,131","Miller, MO",33588
+"29,133","Mississippi, MO",28160
+"29,135","Moniteau, MO",34326
+"29,137","Monroe, MO",38493
+"29,139","Montgomery, MO",36763
+"29,141","Morgan, MO",38355
+"29,143","New Madrid, MO",29763
+"29,145","Newton, MO",36275
+"29,147","Nodaway, MO",27342
+"29,149","Oregon, MO",27589
+"29,151","Osage, MO",44599
+"29,153","Ozark, MO",28161
+"29,155","Pemiscot, MO",31271
+"29,157","Perry, MO",37312
+"29,159","Pettis, MO",35379
+"29,161","Phelps, MO",35260
+"29,163","Pike, MO",31708
+"29,165","Platte, MO",54264
+"29,167","Polk, MO",31039
+"29,169","Pulaski, MO",38059
+"29,171","Putnam, MO",34568
+"29,173","Ralls, MO",36168
+"29,175","Randolph, MO",35381
+"29,177","Ray, MO",38358
+"29,179","Reynolds, MO",31760
+"29,181","Ripley, MO",29112
+"29,183","St. Charles, MO",48043
+"29,185","St. Clair, MO",28197
+"29,186","Ste. Genevieve, MO",35919
+"29,187","St. Francois, MO",31032
+"29,189","St. Louis, MO",62710
+"29,195","Saline, MO",36894
+"29,197","Schuyler, MO",26847
+"29,199","Scotland, MO",31740
+"29,201","Scott, MO",37314
+"29,203","Shannon, MO",27215
+"29,205","Shelby, MO",38051
+"29,207","Stoddard, MO",35989
+"29,209","Stone, MO",34284
+"29,211","Sullivan, MO",36823
+"29,213","Taney, MO",33783
+"29,215","Texas, MO",26308
+"29,217","Vernon, MO",34368
+"29,219","Warren, MO",37194
+"29,221","Washington, MO",27552
+"29,223","Wayne, MO",27644
+"29,225","Webster, MO",30446
+"29,227","Worth, MO",35169
+"29,229","Wright, MO",30516
+"29,510","St. Louis (Independent City), MO",42353
+"30,001","Beaverhead, MT",44657
+"30,003","Big Horn, MT",27071
+"30,005","Blaine, MT",29650
+"30,007","Broadwater, MT",36433
+"30,009","Carbon, MT",44142
+"30,011","Carter, MT",61602
+"30,013","Cascade, MT",43223
+"30,015","Chouteau, MT",32612
+"30,017","Custer, MT",43045
+"30,019","Daniels, MT",41839
+"30,021","Dawson, MT",41768
+"30,023","Deer Lodge, MT",35546
+"30,025","Fallon, MT",51549
+"30,027","Fergus, MT",40921
+"30,029","Flathead, MT",42676
+"30,031","Gallatin, MT",49046
+"30,033","Garfield, MT",45939
+"30,035","Glacier, MT",30979
+"30,037","Golden Valley, MT",55175
+"30,039","Granite, MT",41329
+"30,041","Hill, MT",41371
+"30,043","Jefferson, MT",44510
+"30,045","Judith Basin, MT",56809
+"30,047","Lake, MT",33990
+"30,049","Lewis and Clark, MT",44766
+"30,051","Liberty, MT",38711
+"30,053","Lincoln, MT",32480
+"30,055","McCone, MT",45631
+"30,057","Madison, MT",44070
+"30,059","Meagher, MT",47302
+"30,061","Mineral, MT",35156
+"30,063","Missoula, MT",44841
+"30,065","Musselshell, MT",39576
+"30,067","Park, MT",43207
+"30,069","Petroleum, MT",55603
+"30,071","Phillips, MT",39122
+"30,073","Pondera, MT",39247
+"30,075","Powder River, MT",39268
+"30,077","Powell, MT",39005
+"30,079","Prairie, MT",45243
+"30,081","Ravalli, MT",39291
+"30,083","Richland, MT",62337
+"30,085","Roosevelt, MT",31338
+"30,087","Rosebud, MT",39612
+"30,089","Sanders, MT",32143
+"30,091","Sheridan, MT",55190
+"30,093","Silver Bow, MT",44601
+"30,095","Stillwater, MT",46358
+"30,097","Sweet Grass, MT",41772
+"30,099","Teton, MT",45787
+"30,101","Toole, MT",41275
+"30,103","Treasure, MT",52466
+"30,105","Valley, MT",42280
+"30,107","Wheatland, MT",38547
+"30,109","Wibaux, MT",46004
+"30,111","Yellowstone, MT",48144
+"31,001","Adams, NE",46939
+"31,003","Antelope, NE",52312
+"31,005","Arthur, NE",55685
+"31,007","Banner, NE",72352
+"31,009","Blaine, NE",83004
+"31,011","Boone, NE",60924
+"31,013","Box Butte, NE",43524
+"31,015","Boyd, NE",51245
+"31,017","Brown, NE",60149
+"31,019","Buffalo, NE",49670
+"31,021","Burt, NE",51461
+"31,023","Butler, NE",49141
+"31,025","Cass, NE",47755
+"31,027","Cedar, NE",55541
+"31,029","Chase, NE",49546
+"31,031","Cherry, NE",58617
+"31,033","Cheyenne, NE",48173
+"31,035","Clay, NE",43165
+"31,037","Colfax, NE",41786
+"31,039","Cuming, NE",80030
+"31,041","Custer, NE",54929
+"31,043","Dakota, NE",39198
+"31,045","Dawes, NE",37255
+"31,047","Dawson, NE",41431
+"31,049","Deuel, NE",43663
+"31,051","Dixon, NE",46970
+"31,053","Dodge, NE",45502
+"31,055","Douglas, NE",59130
+"31,057","Dundy, NE",62451
+"31,059","Fillmore, NE",57360
+"31,061","Franklin, NE",44827
+"31,063","Frontier, NE",48753
+"31,065","Furnas, NE",49749
+"31,067","Gage, NE",48316
+"31,069","Garden, NE",44003
+"31,071","Garfield, NE",56965
+"31,073","Gosper, NE",50091
+"31,075","Grant, NE",70523
+"31,077","Greeley, NE",49039
+"31,079","Hall, NE",39613
+"31,081","Hamilton, NE",50174
+"31,083","Harlan, NE",48271
+"31,085","Hayes, NE",69364
+"31,087","Hitchcock, NE",41183
+"31,089","Holt, NE",57994
+"31,091","Hooker, NE",68959
+"31,093","Howard, NE",44550
+"31,095","Jefferson, NE",46872
+"31,097","Johnson, NE",35304
+"31,099","Kearney, NE",99621
+"31,101","Keith, NE",43360
+"31,103","Keya Paha, NE",78619
+"31,105","Kimball, NE",41579
+"31,107","Knox, NE",48710
+"31,109","Lancaster, NE",45165
+"31,111","Lincoln, NE",48235
+"31,113","Logan, NE",61691
+"31,115","Loup, NE",75256
+"31,117","McPherson, NE",71732
+"31,119","Madison, NE",45963
+"31,121","Merrick, NE",51831
+"31,123","Morrill, NE",53465
+"31,125","Nance, NE",38846
+"31,127","Nemaha, NE",45893
+"31,129","Nuckolls, NE",47480
+"31,131","Otoe, NE",47177
+"31,133","Pawnee, NE",45014
+"31,135","Perkins, NE",50958
+"31,137","Phelps, NE",62967
+"31,139","Pierce, NE",62940
+"31,141","Platte, NE",46720
+"31,143","Polk, NE",54978
+"31,145","Red Willow, NE",44154
+"31,147","Richardson, NE",46097
+"31,149","Rock, NE",66512
+"31,151","Saline, NE",40022
+"31,153","Sarpy, NE",46222
+"31,155","Saunders, NE",47384
+"31,157","Scotts Bluff, NE",41743
+"31,159","Seward, NE",45664
+"31,161","Sheridan, NE",47594
+"31,163","Sherman, NE",43470
+"31,165","Sioux, NE",65861
+"31,167","Stanton, NE",48033
+"31,169","Thayer, NE",53844
+"31,171","Thomas, NE",80419
+"31,173","Thurston, NE",46549
+"31,175","Valley, NE",45069
+"31,177","Washington, NE",53139
+"31,179","Wayne, NE",43253
+"31,181","Webster, NE",51830
+"31,183","Wheeler, NE",127709
+"31,185","York, NE",47343
+"32,001","Churchill, NV",39319
+"32,003","Clark, NV",42771
+"32,005","Douglas, NV",65820
+"32,007","Elko, NV",42731
+"32,009","Esmeralda, NV",44977
+"32,011","Eureka, NV",34804
+"32,013","Humboldt, NV",44733
+"32,015","Lander, NV",56143
+"32,017","Lincoln, NV",33691
+"32,019","Lyon, NV",33783
+"32,021","Mineral, NV",34891
+"32,023","Nye, NV",35320
+"32,027","Pershing, NV",31489
+"32,029","Storey, NV",43029
+"32,031","Washoe, NV",50528
+"32,033","White Pine, NV",39793
+"32,510","Carson City (Independent City), NV",45452
+"33,001","Belknap, NH",54853
+"33,003","Carroll, NH",52328
+"33,005","Cheshire, NH",47897
+"33,007","Coos, NH",38823
+"33,009","Grafton, NH",55342
+"33,011","Hillsborough, NH",55020
+"33,013","Merrimack, NH",51927
+"33,015","Rockingham, NH",64557
+"33,017","Strafford, NH",45566
+"33,019","Sullivan, NH",46600
+"34,001","Atlantic, NJ",44345
+"34,003","Bergen, NJ",77666
+"34,005","Burlington, NJ",56262
+"34,007","Camden, NJ",48891
+"34,009","Cape May, NJ",54102
+"34,011","Cumberland, NJ",36891
+"34,013","Essex, NJ",60836
+"34,015","Gloucester, NJ",49665
+"34,017","Hudson, NJ",56540
+"34,019","Hunterdon, NJ",81057
+"34,021","Mercer, NJ",63470
+"34,023","Middlesex, NJ",54971
+"34,025","Monmouth, NJ",70610
+"34,027","Morris, NJ",88219
+"34,029","Ocean, NJ",47082
+"34,031","Passaic, NJ",47155
+"34,033","Salem, NJ",45098
+"34,035","Somerset, NJ",88350
+"34,037","Sussex, NJ",55677
+"34,039","Union, NJ",61270
+"34,041","Warren, NJ",51010
+"35,001","Bernalillo, NM",40062
+"35,003","Catron, NM",31137
+"35,005","Chaves, NM",36446
+"35,006","Cibola, NM*",26865
+"35,007","Colfax, NM",38041
+"35,009","Curry, NM",42069
+"35,011","De Baca, NM",38296
+"35,013","Doña Ana, NM",33529
+"35,015","Eddy, NM",49968
+"35,017","Grant, NM",37218
+"35,019","Guadalupe, NM",32800
+"35,021","Harding, NM",43620
+"35,023","Hidalgo, NM",39248
+"35,025","Lea, NM",40967
+"35,027","Lincoln, NM",40807
+"35,028","Los Alamos, NM",65077
+"35,029","Luna, NM",30018
+"35,031","McKinley, NM",25748
+"35,033","Mora, NM",45588
+"35,035","Otero, NM",32722
+"35,037","Quay, NM",34863
+"35,039","Rio Arriba, NM",32582
+"35,041","Roosevelt, NM",36545
+"35,043","Sandoval, NM",38424
+"35,045","San Juan, NM",34290
+"35,047","San Miguel, NM",32707
+"35,049","Santa Fe, NM",51894
+"35,051","Sierra, NM",36604
+"35,053","Socorro, NM",32605
+"35,055","Taos, NM",35127
+"35,057","Torrance, NM",29068
+"35,059","Union, NM",31974
+"35,061","Valencia, NM*",30969
+"36,001","Albany, NY",55674
+"36,003","Allegany, NY",32368
+"36,005","Bronx, NY",33104
+"36,007","Broome, NY",39886
+"36,009","Cattaraugus, NY",36724
+"36,011","Cayuga, NY",38348
+"36,013","Chautauqua, NY",37323
+"36,015","Chemung, NY",40170
+"36,017","Chenango, NY",37776
+"36,019","Clinton, NY",40697
+"36,021","Columbia, NY",50487
+"36,023","Cortland, NY",37367
+"36,025","Delaware, NY",35044
+"36,027","Dutchess, NY",49885
+"36,029","Erie, NY",46416
+"36,031","Essex, NY",40220
+"36,033","Franklin, NY",34279
+"36,035","Fulton, NY",38723
+"36,037","Genesee, NY",40331
+"36,039","Greene, NY",43351
+"36,041","Hamilton, NY",46828
+"36,043","Herkimer, NY",37502
+"36,045","Jefferson, NY",43179
+"36,047","Kings, NY",44255
+"36,049","Lewis, NY",40629
+"36,051","Livingston, NY",37705
+"36,053","Madison, NY",39476
+"36,055","Monroe, NY",48221
+"36,057","Montgomery, NY",37978
+"36,059","Nassau, NY",78573
+"36,061","New York, NY",154784
+"36,063","Niagara, NY",40835
+"36,065","Oneida, NY",40100
+"36,067","Onondaga, NY",47471
+"36,069","Ontario, NY",49376
+"36,071","Orange, NY",47049
+"36,073","Orleans, NY",35556
+"36,075","Oswego, NY",36154
+"36,077","Otsego, NY",39080
+"36,079","Putnam, NY",59255
+"36,081","Queens, NY",43768
+"36,083","Rensselaer, NY",44531
+"36,085","Richmond, NY",50965
+"36,087","Rockland, NY",55314
+"36,089","St. Lawrence, NY",33787
+"36,091","Saratoga, NY",60889
+"36,093","Schenectady, NY",46076
+"36,095","Schoharie, NY",35710
+"36,097","Schuyler, NY",39288
+"36,099","Seneca, NY",34853
+"36,101","Steuben, NY",40885
+"36,103","Suffolk, NY",60324
+"36,105","Sullivan, NY",41286
+"36,107","Tioga, NY",41235
+"36,109","Tompkins, NY",41060
+"36,111","Ulster, NY",44632
+"36,113","Warren, NY",46817
+"36,115","Washington, NY",35859
+"36,117","Wayne, NY",41181
+"36,119","Westchester, NY",93666
+"36,121","Wyoming, NY",36488
+"36,123","Yates, NY",35309
+"37,001","Alamance, NC",36830
+"37,003","Alexander, NC",34216
+"37,005","Alleghany, NC",36179
+"37,007","Anson, NC",31760
+"37,009","Ashe, NC",33459
+"37,011","Avery, NC",32678
+"37,013","Beaufort, NC",38554
+"37,015","Bertie, NC",31685
+"37,017","Bladen, NC",31914
+"37,019","Brunswick, NC",38418
+"37,021","Buncombe, NC",43164
+"37,023","Burke, NC",31772
+"37,025","Cabarrus, NC",41208
+"37,027","Caldwell, NC",31773
+"37,029","Camden, NC",42424
+"37,031","Carteret, NC",45004
+"37,033","Caswell, NC",32791
+"37,035","Catawba, NC",40533
+"37,037","Chatham, NC",55720
+"37,039","Cherokee, NC",30443
+"37,041","Chowan, NC",36197
+"37,043","Clay, NC",31752
+"37,045","Cleveland, NC",34342
+"37,047","Columbus, NC",29569
+"37,049","Craven, NC",40989
+"37,051","Cumberland, NC",36178
+"37,053","Currituck, NC",42137
+"37,055","Dare, NC",49321
+"37,057","Davidson, NC",35682
+"37,059","Davie, NC",43247
+"37,061","Duplin, NC",32588
+"37,063","Durham, NC",45375
+"37,065","Edgecombe, NC",31986
+"37,067","Forsyth, NC",45014
+"37,069","Franklin, NC",32463
+"37,071","Gaston, NC",37744
+"37,073","Gates, NC",33229
+"37,075","Graham, NC",30002
+"37,077","Granville, NC",34506
+"37,079","Greene, NC",30578
+"37,081","Guilford, NC",43256
+"37,083","Halifax, NC",32997
+"37,085","Harnett, NC",31976
+"37,087","Haywood, NC",36424
+"37,089","Henderson, NC",38966
+"37,091","Hertford, NC",30041
+"37,093","Hoke, NC",28779
+"37,095","Hyde, NC",42359
+"37,097","Iredell, NC",46202
+"37,099","Jackson, NC",30288
+"37,101","Johnston, NC",36244
+"37,103","Jones, NC",36411
+"37,105","Lee, NC",36874
+"37,107","Lenoir, NC",36485
+"37,109","Lincoln, NC",40779
+"37,111","McDowell, NC",30738
+"37,113","Macon, NC",36395
+"37,115","Madison, NC",30839
+"37,117","Martin, NC",31530
+"37,119","Mecklenburg, NC",54124
+"37,121","Mitchell, NC",33041
+"37,123","Montgomery, NC",32240
+"37,125","Moore, NC",48030
+"37,127","Nash, NC",38734
+"37,129","New Hanover, NC",42261
+"37,131","Northampton, NC",30341
+"37,133","Onslow, NC",43017
+"37,135","Orange, NC",58216
+"37,137","Pamlico, NC",38956
+"37,139","Pasquotank, NC",36199
+"37,141","Pender, NC",33877
+"37,143","Perquimans, NC",36360
+"37,145","Person, NC",34940
+"37,147","Pitt, NC",38003
+"37,149","Polk, NC",41334
+"37,151","Randolph, NC",34114
+"37,153","Richmond, NC",32936
+"37,155","Robeson, NC",27174
+"37,157","Rockingham, NC",34117
+"37,159","Rowan, NC",35037
+"37,161","Rutherford, NC",30057
+"37,163","Sampson, NC",35178
+"37,165","Scotland, NC",30500
+"37,167","Stanly, NC",34641
+"37,169","Stokes, NC",33554
+"37,171","Surry, NC",35803
+"37,173","Swain, NC",34694
+"37,175","Transylvania, NC",37375
+"37,177","Tyrrell, NC",28521
+"37,179","Union, NC",46588
+"37,181","Vance, NC",32442
+"37,183","Wake, NC",53706
+"37,185","Warren, NC",28329
+"37,187","Washington, NC",33137
+"37,189","Watauga, NC",33453
+"37,191","Wayne, NC",35704
+"37,193","Wilkes, NC",33579
+"37,195","Wilson, NC",37455
+"37,197","Yadkin, NC",34547
+"37,199","Yancey, NC",32595
+"38,001","Adams, ND",50128
+"38,003","Barnes, ND",48211
+"38,005","Benson, ND",29519
+"38,007","Billings, ND",79778
+"38,009","Bottineau, ND",52531
+"38,011","Bowman, ND",59401
+"38,013","Burke, ND",70975
+"38,015","Burleigh, ND",57386
+"38,017","Cass, ND",54008
+"38,019","Cavalier, ND",54186
+"38,021","Dickey, ND",46782
+"38,023","Divide, ND",57118
+"38,025","Dunn, ND",65351
+"38,027","Eddy, ND",44034
+"38,029","Emmons, ND",42600
+"38,031","Foster, ND",54626
+"38,033","Golden Valley, ND",46354
+"38,035","Grand Forks, ND",47622
+"38,037","Grant, ND",37397
+"38,039","Griggs, ND",51527
+"38,041","Hettinger, ND",42367
+"38,043","Kidder, ND",46714
+"38,045","LaMoure, ND",44317
+"38,047","Logan, ND",48703
+"38,049","McHenry, ND",48955
+"38,051","McIntosh, ND",47255
+"38,053","McKenzie, ND",64835
+"38,055","McLean, ND",48459
+"38,057","Mercer, ND",55542
+"38,059","Morton, ND",51654
+"38,061","Mountrail, ND",61937
+"38,063","Nelson, ND",52590
+"38,065","Oliver, ND",45728
+"38,067","Pembina, ND",51864
+"38,069","Pierce, ND",40620
+"38,071","Ramsey, ND",42989
+"38,073","Ransom, ND",45290
+"38,075","Renville, ND",51798
+"38,077","Richland, ND",45138
+"38,079","Rolette, ND",33931
+"38,081","Sargent, ND",52795
+"38,083","Sheridan, ND",39068
+"38,085","Sioux, ND",28129
+"38,087","Slope, ND",57962
+"38,089","Stark, ND",71780
+"38,091","Steele, ND",52255
+"38,093","Stutsman, ND",47728
+"38,095","Towner, ND",43118
+"38,097","Traill, ND",46630
+"38,099","Walsh, ND",42686
+"38,101","Ward, ND",54608
+"38,103","Wells, ND",45392
+"38,105","Williams, ND",80375
+"39,001","Adams, OH",31673
+"39,003","Allen, OH",38360
+"39,005","Ashland, OH",35431
+"39,007","Ashtabula, OH",35326
+"39,009","Athens, OH",30984
+"39,011","Auglaize, OH",42912
+"39,013","Belmont, OH",37129
+"39,015","Brown, OH",33029
+"39,017","Butler, OH",42305
+"39,019","Carroll, OH",35694
+"39,021","Champaign, OH",37106
+"39,023","Clark, OH",37064
+"39,025","Clermont, OH",48625
+"39,027","Clinton, OH",41055
+"39,029","Columbiana, OH",35373
+"39,031","Coshocton, OH",34505
+"39,033","Crawford, OH",35440
+"39,035","Cuyahoga, OH",49415
+"39,037","Darke, OH",38006
+"39,039","Defiance, OH",37378
+"39,041","Delaware, OH",66075
+"39,043","Erie, OH",56812
+"39,045","Fairfield, OH",41780
+"39,047","Fayette, OH",34803
+"39,049","Franklin, OH",47630
+"39,051","Fulton, OH",41091
+"39,053","Gallia, OH",35732
+"39,055","Geauga, OH",62290
+"39,057","Greene, OH",45449
+"39,059","Guernsey, OH",36566
+"39,061","Hamilton, OH",53485
+"39,063","Hancock, OH",60318
+"39,065","Hardin, OH",29857
+"39,067","Harrison, OH",34743
+"39,069","Henry, OH",41037
+"39,071","Highland, OH",32523
+"39,073","Hocking, OH",34283
+"39,075","Holmes, OH",39077
+"39,077","Huron, OH",37453
+"39,079","Jackson, OH",33698
+"39,081","Jefferson, OH",35397
+"39,083","Knox, OH",39032
+"39,085","Lake, OH",45986
+"39,087","Lawrence, OH",34851
+"39,089","Licking, OH",41962
+"39,091","Logan, OH",38442
+"39,093","Lorain, OH",41657
+"39,095","Lucas, OH",42609
+"39,097","Madison, OH",37005
+"39,099","Mahoning, OH",40387
+"39,101","Marion, OH",33464
+"39,103","Medina, OH",50009
+"39,105","Meigs, OH",31692
+"39,107","Mercer, OH",45615
+"39,109","Miami, OH",42392
+"39,111","Monroe, OH",30295
+"39,113","Montgomery, OH",42486
+"39,115","Morgan, OH",30567
+"39,117","Morrow, OH",34627
+"39,119","Muskingum, OH",37744
+"39,121","Noble, OH",25011
+"39,123","Ottawa, OH",45923
+"39,125","Paulding, OH",36018
+"39,127","Perry, OH",33618
+"39,129","Pickaway, OH",36817
+"39,131","Pike, OH",34472
+"39,133","Portage, OH",40436
+"39,135","Preble, OH",36401
+"39,137","Putnam, OH",43933
+"39,139","Richland, OH",36240
+"39,141","Ross, OH",33955
+"39,143","Sandusky, OH",38054
+"39,145","Scioto, OH",36019
+"39,147","Seneca, OH",36916
+"39,149","Shelby, OH",41469
+"39,151","Stark, OH",41705
+"39,153","Summit, OH",46362
+"39,155","Trumbull, OH",37477
+"39,157","Tuscarawas, OH",40166
+"39,159","Union, OH",46581
+"39,161","Van Wert, OH",37110
+"39,163","Vinton, OH",30428
+"39,165","Warren, OH",52891
+"39,167","Washington, OH",39234
+"39,169","Wayne, OH",39652
+"39,171","Williams, OH",38031
+"39,173","Wood, OH",43250
+"39,175","Wyandot, OH",39680
+"40,001","Adair, OK",27844
+"40,003","Alfalfa, OK",43464
+"40,005","Atoka, OK",30124
+"40,007","Beaver, OK",51198
+"40,009","Beckham, OK",37793
+"40,011","Blaine, OK",37673
+"40,013","Bryan, OK",31267
+"40,015","Caddo, OK",33047
+"40,017","Canadian, OK",43102
+"40,019","Carter, OK",40801
+"40,021","Cherokee, OK",30508
+"40,023","Choctaw, OK",30974
+"40,025","Cimarron, OK",68869
+"40,027","Cleveland, OK",42982
+"40,029","Coal, OK",32410
+"40,031","Comanche, OK",39022
+"40,033","Cotton, OK",41220
+"40,035","Craig, OK",34850
+"40,037","Creek, OK",38573
+"40,039","Custer, OK",38356
+"40,041","Delaware, OK",30649
+"40,043","Dewey, OK",41837
+"40,045","Ellis, OK",56370
+"40,047","Garfield, OK",44103
+"40,049","Garvin, OK",36613
+"40,051","Grady, OK",37781
+"40,053","Grant, OK",48522
+"40,055","Greer, OK",28146
+"40,057","Harmon, OK",44928
+"40,059","Harper, OK",51770
+"40,061","Haskell, OK",34891
+"40,063","Hughes, OK",30605
+"40,065","Jackson, OK",37556
+"40,067","Jefferson, OK",34645
+"40,069","Johnston, OK",32687
+"40,071","Kay, OK",39254
+"40,073","Kingfisher, OK",44514
+"40,075","Kiowa, OK",34816
+"40,077","Latimer, OK",33271
+"40,079","Le Flore, OK",31155
+"40,081","Lincoln, OK",33855
+"40,083","Logan, OK",38966
+"40,085","Love, OK",35582
+"40,087","McClain, OK",42032
+"40,089","McCurtain, OK",30933
+"40,091","McIntosh, OK",32753
+"40,093","Major, OK",41316
+"40,095","Marshall, OK",30537
+"40,097","Mayes, OK",33539
+"40,099","Murray, OK",42161
+"40,101","Muskogee, OK",34933
+"40,103","Noble, OK",40817
+"40,105","Nowata, OK",34774
+"40,107","Okfuskee, OK",29138
+"40,109","Oklahoma, OK",48240
+"40,111","Okmulgee, OK",32350
+"40,113","Osage, OK",33561
+"40,115","Ottawa, OK",34424
+"40,117","Pawnee, OK",33649
+"40,119","Payne, OK",35455
+"40,121","Pittsburg, OK",35443
+"40,123","Pontotoc, OK",39094
+"40,125","Pottawatomie, OK",36176
+"40,127","Pushmataha, OK",31464
+"40,129","Roger Mills, OK",48286
+"40,131","Rogers, OK",42351
+"40,133","Seminole, OK",32336
+"40,135","Sequoyah, OK",31634
+"40,137","Stephens, OK",42187
+"40,139","Texas, OK",48172
+"40,141","Tillman, OK",38779
+"40,143","Tulsa, OK",63239
+"40,145","Wagoner, OK",36929
+"40,147","Washington, OK",52988
+"40,149","Washita, OK",33268
+"40,151","Woods, OK",45844
+"40,153","Woodward, OK",45771
+"41,001","Baker, OR",37648
+"41,003","Benton, OR",42077
+"41,005","Clackamas, OR",51187
+"41,007","Clatsop, OR",39796
+"41,009","Columbia, OR",40059
+"41,011","Coos, OR",39741
+"41,013","Crook, OR",37204
+"41,015","Curry, OR",39180
+"41,017","Deschutes, OR",47523
+"41,019","Douglas, OR",36866
+"41,021","Gilliam, OR",44701
+"41,023","Grant, OR",39640
+"41,025","Harney, OR",37941
+"41,027","Hood River, OR",47117
+"41,029","Jackson, OR",41609
+"41,031","Jefferson, OR",31104
+"41,033","Josephine, OR",36728
+"41,035","Klamath, OR",35984
+"41,037","Lake, OR",37208
+"41,039","Lane, OR",41181
+"41,041","Lincoln, OR",39969
+"41,043","Linn, OR",38055
+"41,045","Malheur, OR",29977
+"41,047","Marion, OR",38474
+"41,049","Morrow, OR",41982
+"41,051","Multnomah, OR",50997
+"41,053","Polk, OR",37931
+"41,055","Sherman, OR",50660
+"41,057","Tillamook, OR",39365
+"41,059","Umatilla, OR",35598
+"41,061","Union, OR",37110
+"41,063","Wallowa, OR",43124
+"41,065","Wasco, OR",40245
+"41,067","Washington, OR",53899
+"41,069","Wheeler, OR",36118
+"41,071","Yamhill, OR",40762
+"42,001","Adams, PA",44844
+"42,003","Allegheny, PA",54974
+"42,005","Armstrong, PA",39884
+"42,007","Beaver, PA",43563
+"42,009","Bedford, PA",38246
+"42,011","Berks, PA",44935
+"42,013","Blair, PA",41996
+"42,015","Bradford, PA",38083
+"42,017","Bucks, PA",65194
+"42,019","Butler, PA",52688
+"42,021","Cambria, PA",39182
+"42,023","Cameron, PA",44287
+"42,025","Carbon, PA",44804
+"42,027","Centre, PA",41609
+"42,029","Chester, PA",75350
+"42,031","Clarion, PA",38241
+"42,033","Clearfield, PA",39978
+"42,035","Clinton, PA",36734
+"42,037","Columbia, PA",37838
+"42,039","Crawford, PA",37338
+"42,041","Cumberland, PA",50725
+"42,043","Dauphin, PA",46658
+"42,045","Delaware, PA",58745
+"42,047","Elk, PA",43292
+"42,049","Erie, PA",40665
+"42,051","Fayette, PA",38641
+"42,053","Forest, PA",20891
+"42,055","Franklin, PA",42012
+"42,057","Fulton, PA",39153
+"42,059","Greene, PA",39891
+"42,061","Huntingdon, PA",34116
+"42,063","Indiana, PA",35527
+"42,065","Jefferson, PA",39745
+"42,067","Juniata, PA",39006
+"42,069","Lackawanna, PA",42962
+"42,071","Lancaster, PA",46543
+"42,073","Lawrence, PA",39780
+"42,075","Lebanon, PA",42938
+"42,077","Lehigh, PA",48768
+"42,079","Luzerne, PA",40872
+"42,081","Lycoming, PA",40489
+"42,083","McKean, PA",40889
+"42,085","Mercer, PA",38441
+"42,087","Mifflin, PA",35454
+"42,089","Monroe, PA",38247
+"42,091","Montgomery, PA",73142
+"42,093","Montour, PA",51243
+"42,095","Northampton, PA",48221
+"42,097","Northumberland, PA",38196
+"42,099","Perry, PA",40099
+"42,101","Philadelphia, PA",50784
+"42,103","Pike, PA",41885
+"42,105","Potter, PA",35865
+"42,107","Schuylkill, PA",38485
+"42,109","Snyder, PA",38537
+"42,111","Somerset, PA",37997
+"42,113","Sullivan, PA",42086
+"42,115","Susquehanna, PA",40042
+"42,117","Tioga, PA",38021
+"42,119","Union, PA",36128
+"42,121","Venango, PA",38006
+"42,123","Warren, PA",38689
+"42,125","Washington, PA",52787
+"42,127","Wayne, PA",38409
+"42,129","Westmoreland, PA",46900
+"42,131","Wyoming, PA",41574
+"42,133","York, PA",44790
+"44,001","Bristol, RI",69831
+"44,003","Kent, RI",54167
+"44,005","Newport, RI",60518
+"44,007","Providence, RI",44469
+"44,009","Washington, RI",58165
+"45,001","Abbeville, SC",31135
+"45,003","Aiken, SC",38675
+"45,005","Allendale, SC",27637
+"45,007","Anderson, SC",36161
+"45,009","Bamberg, SC",30204
+"45,011","Barnwell, SC",30709
+"45,013","Beaufort, SC",51025
+"45,015","Berkeley, SC",35568
+"45,017","Calhoun, SC",34275
+"45,019","Charleston, SC",53946
+"45,021","Cherokee, SC",30059
+"45,023","Chester, SC",30999
+"45,025","Chesterfield, SC",27747
+"45,027","Clarendon, SC",30363
+"45,029","Colleton, SC",31874
+"45,031","Darlington, SC",33808
+"45,033","Dillon, SC",25445
+"45,035","Dorchester, SC",35783
+"45,037","Edgefield, SC",31792
+"45,039","Fairfield, SC",33910
+"45,041","Florence, SC",37806
+"45,043","Georgetown, SC",42338
+"45,045","Greenville, SC",44529
+"45,047","Greenwood, SC",34366
+"45,049","Hampton, SC",28430
+"45,051","Horry, SC",34439
+"45,053","Jasper, SC",26663
+"45,055","Kershaw, SC",38052
+"45,057","Lancaster, SC",41230
+"45,059","Laurens, SC",31718
+"45,061","Lee, SC",27901
+"45,063","Lexington, SC",42807
+"45,065","McCormick, SC",32546
+"45,067","Marion, SC",28346
+"45,069","Marlboro, SC",27306
+"45,071","Newberry, SC",35766
+"45,073","Oconee, SC",38742
+"45,075","Orangeburg, SC",30932
+"45,077","Pickens, SC",34713
+"45,079","Richland, SC",42007
+"45,081","Saluda, SC",32763
+"45,083","Spartanburg, SC",39772
+"45,085","Sumter, SC",35482
+"45,087","Union, SC",30507
+"45,089","Williamsburg, SC",29046
+"45,091","York, SC",41282
+"46,003","Aurora, SD",43246
+"46,005","Beadle, SD",49619
+"46,007","Bennett, SD",28981
+"46,009","Bon Homme, SD",36968
+"46,011","Brookings, SD",43837
+"46,013","Brown, SD",50484
+"46,015","Brule, SD",43832
+"46,017","Buffalo, SD",22191
+"46,019","Butte, SD",35435
+"46,021","Campbell, SD",45534
+"46,023","Charles Mix, SD",41806
+"46,025","Clark, SD",44498
+"46,027","Clay, SD",37709
+"46,029","Codington, SD",43861
+"46,031","Corson, SD",28596
+"46,033","Custer, SD",44388
+"46,035","Davison, SD",48778
+"46,037","Day, SD",40433
+"46,039","Deuel, SD",49843
+"46,041","Dewey, SD",38690
+"46,043","Douglas, SD",57188
+"46,045","Edmunds, SD",45115
+"46,047","Fall River, SD",44192
+"46,049","Faulk, SD",42602
+"46,051","Grant, SD",62250
+"46,053","Gregory, SD",41383
+"46,055","Haakon, SD",52832
+"46,057","Hamlin, SD",38702
+"46,059","Hand, SD",49730
+"46,061","Hanson, SD",61820
+"46,063","Harding, SD",57470
+"46,065","Hughes, SD",48823
+"46,067","Hutchinson, SD",50055
+"46,069","Hyde, SD",49022
+"46,071","Jackson, SD",24666
+"46,073","Jerauld, SD",49367
+"46,075","Jones, SD",52660
+"46,077","Kingsbury, SD",45542
+"46,079","Lake, SD",53672
+"46,081","Lawrence, SD",45734
+"46,083","Lincoln, SD",63400
+"46,085","Lyman, SD",46919
+"46,087","McCook, SD",46957
+"46,089","McPherson, SD",36090
+"46,091","Marshall, SD",44203
+"46,093","Meade, SD",40624
+"46,095","Mellette, SD",27686
+"46,097","Miner, SD",40896
+"46,099","Minnehaha, SD",52916
+"46,101","Moody, SD",48740
+"46,102","Oglala Lakota, SD*",22984
+"46,103","Pennington, SD",47331
+"46,105","Perkins, SD",38752
+"46,107","Potter, SD",86672
+"46,109","Roberts, SD",33335
+"46,111","Sanborn, SD",47014
+"46,115","Spink, SD",49626
+"46,117","Stanley, SD",66876
+"46,119","Sully, SD",54374
+"46,121","Todd, SD",24245
+"46,123","Tripp, SD",47099
+"46,125","Turner, SD",67459
+"46,127","Union, SD",95103
+"46,129","Walworth, SD",42608
+"46,135","Yankton, SD",45090
+"46,137","Ziebach, SD",22335
+"47,001","Anderson, TN",38486
+"47,003","Bedford, TN",34123
+"47,005","Benton, TN",30883
+"47,007","Bledsoe, TN",24619
+"47,009","Blount, TN",38791
+"47,011","Bradley, TN",37088
+"47,013","Campbell, TN",31559
+"47,015","Cannon, TN",33579
+"47,017","Carroll, TN",33821
+"47,019","Carter, TN",31504
+"47,021","Cheatham, TN",38974
+"47,023","Chester, TN",30748
+"47,025","Claiborne, TN",32689
+"47,027","Clay, TN",28976
+"47,029","Cocke, TN",29587
+"47,031","Coffee, TN",36437
+"47,033","Crockett, TN",34196
+"47,035","Cumberland, TN",33940
+"47,037","Davidson, TN",55966
+"47,039","Decatur, TN",40630
+"47,041","DeKalb, TN",36813
+"47,043","Dickson, TN",36027
+"47,045","Dyer, TN",37472
+"47,047","Fayette, TN",49719
+"47,049","Fentress, TN",29975
+"47,051","Franklin, TN",35511
+"47,053","Gibson, TN",36104
+"47,055","Giles, TN",35818
+"47,057","Grainger, TN",30480
+"47,059","Greene, TN",37107
+"47,061","Grundy, TN",28672
+"47,063","Hamblen, TN",34804
+"47,065","Hamilton, TN",47408
+"47,067","Hancock, TN",25345
+"47,069","Hardeman, TN",27391
+"47,071","Hardin, TN",35565
+"47,073","Hawkins, TN",31857
+"47,075","Haywood, TN",29584
+"47,077","Henderson, TN",32703
+"47,079","Henry, TN",38779
+"47,081","Hickman, TN",29387
+"47,083","Houston, TN",30750
+"47,085","Humphreys, TN",36823
+"47,087","Jackson, TN",28093
+"47,089","Jefferson, TN",32449
+"47,091","Johnson, TN",29805
+"47,093","Knox, TN",45464
+"47,095","Lake, TN",21988
+"47,097","Lauderdale, TN",26095
+"47,099","Lawrence, TN",31916
+"47,101","Lewis, TN",30939
+"47,103","Lincoln, TN",37908
+"47,105","Loudon, TN",43274
+"47,107","McMinn, TN",33135
+"47,109","McNairy, TN",29992
+"47,111","Macon, TN",31174
+"47,113","Madison, TN",38890
+"47,115","Marion, TN",34582
+"47,117","Marshall, TN",33991
+"47,119","Maury, TN",38056
+"47,121","Meigs, TN",31395
+"47,123","Monroe, TN",30539
+"47,125","Montgomery, TN",39812
+"47,127","Moore, TN",38883
+"47,129","Morgan, TN",27575
+"47,131","Obion, TN",37523
+"47,133","Overton, TN",30418
+"47,135","Perry, TN",31633
+"47,137","Pickett, TN",36493
+"47,139","Polk, TN",31485
+"47,141","Putnam, TN",36928
+"47,143","Rhea, TN",32698
+"47,145","Roane, TN",37212
+"47,147","Robertson, TN",37874
+"47,149","Rutherford, TN",37776
+"47,151","Scott, TN",27731
+"47,153","Sequatchie, TN",34408
+"47,155","Sevier, TN",35932
+"47,157","Shelby, TN",45075
+"47,159","Smith, TN",34803
+"47,161","Stewart, TN",38079
+"47,163","Sullivan, TN",38938
+"47,165","Sumner, TN",43580
+"47,167","Tipton, TN",35045
+"47,169","Trousdale, TN",35390
+"47,171","Unicoi, TN",34938
+"47,173","Union, TN",28830
+"47,175","Van Buren, TN",30125
+"47,177","Warren, TN",32077
+"47,179","Washington, TN",39782
+"47,181","Wayne, TN",26582
+"47,183","Weakley, TN",34132
+"47,185","White, TN",30603
+"47,187","Williamson, TN",91767
+"47,189","Wilson, TN",43977
+"48,001","Anderson, TX",32030
+"48,003","Andrews, TX",45423
+"48,005","Angelina, TX",38050
+"48,007","Aransas, TX",47071
+"48,009","Archer, TX",46219
+"48,011","Armstrong, TX",44344
+"48,013","Atascosa, TX",35517
+"48,015","Austin, TX",50840
+"48,017","Bailey, TX",44705
+"48,019","Bandera, TX",41408
+"48,021","Bastrop, TX",33548
+"48,023","Baylor, TX",38982
+"48,025","Bee, TX",27560
+"48,027","Bell, TX",41108
+"48,029","Bexar, TX",42554
+"48,031","Blanco, TX",47537
+"48,033","Borden, TX",59510
+"48,035","Bosque, TX",39854
+"48,037","Bowie, TX",37286
+"48,039","Brazoria, TX",45606
+"48,041","Brazos, TX",35554
+"48,043","Brewster, TX",41781
+"48,045","Briscoe, TX",34640
+"48,047","Brooks, TX",35403
+"48,049","Brown, TX",35714
+"48,051","Burleson, TX",40745
+"48,053","Burnet, TX",44032
+"48,055","Caldwell, TX",31330
+"48,057","Calhoun, TX",36724
+"48,059","Callahan, TX",38002
+"48,061","Cameron, TX",26604
+"48,063","Camp, TX",39227
+"48,065","Carson, TX",44630
+"48,067","Cass, TX",34742
+"48,069","Castro, TX",67218
+"48,071","Chambers, TX",51055
+"48,073","Cherokee, TX",33208
+"48,075","Childress, TX",27481
+"48,077","Clay, TX",40947
+"48,079","Cochran, TX",37052
+"48,081","Coke, TX",41498
+"48,083","Coleman, TX",39430
+"48,085","Collin, TX",60461
+"48,087","Collingsworth, TX",33945
+"48,089","Colorado, TX",43439
+"48,091","Comal, TX",53687
+"48,093","Comanche, TX",37963
+"48,095","Concho, TX",22156
+"48,097","Cooke, TX",49069
+"48,099","Coryell, TX",31629
+"48,101","Cottle, TX",52999
+"48,103","Crane, TX",40345
+"48,105","Crockett, TX",38107
+"48,107","Crosby, TX",27817
+"48,109","Culberson, TX",42006
+"48,111","Dallam, TX",63309
+"48,113","Dallas, TX",52388
+"48,115","Dawson, TX",32228
+"48,117","Deaf Smith, TX",51839
+"48,119","Delta, TX",34697
+"48,121","Denton, TX",51084
+"48,123","DeWitt, TX",56715
+"48,125","Dickens, TX",31822
+"48,127","Dimmit, TX",35444
+"48,129","Donley, TX",44186
+"48,131","Duval, TX",36813
+"48,133","Eastland, TX",49332
+"48,135","Ector, TX",41988
+"48,137","Edwards, TX",39089
+"48,139","Ellis, TX",39989
+"48,141","El Paso, TX",32804
+"48,143","Erath, TX",34848
+"48,145","Falls, TX",31264
+"48,147","Fannin, TX",34657
+"48,149","Fayette, TX",48970
+"48,151","Fisher, TX",40885
+"48,153","Floyd, TX",40576
+"48,155","Foard, TX",39128
+"48,157","Fort Bend, TX",61598
+"48,159","Franklin, TX",35705
+"48,161","Freestone, TX",36824
+"48,163","Frio, TX",28289
+"48,165","Gaines, TX",35607
+"48,167","Galveston, TX",50017
+"48,169","Garza, TX",30233
+"48,171","Gillespie, TX",54488
+"48,173","Glasscock, TX",72924
+"48,175","Goliad, TX",41928
+"48,177","Gonzales, TX",44324
+"48,179","Gray, TX",43281
+"48,181","Grayson, TX",38926
+"48,183","Gregg, TX",44690
+"48,185","Grimes, TX",34652
+"48,187","Guadalupe, TX",41695
+"48,189","Hale, TX",30571
+"48,191","Hall, TX",29815
+"48,193","Hamilton, TX",55588
+"48,195","Hansford, TX",77511
+"48,197","Hardeman, TX",39232
+"48,199","Hardin, TX",42854
+"48,201","Harris, TX",53874
+"48,203","Harrison, TX",40575
+"48,205","Hartley, TX",81234
+"48,207","Haskell, TX",33547
+"48,209","Hays, TX",39528
+"48,211","Hemphill, TX",72994
+"48,213","Henderson, TX",36673
+"48,215","Hidalgo, TX",24909
+"48,217","Hill, TX",36352
+"48,219","Hockley, TX",39144
+"48,221","Hood, TX",46155
+"48,223","Hopkins, TX",36798
+"48,225","Houston, TX",35016
+"48,227","Howard, TX",34671
+"48,229","Hudspeth, TX",34591
+"48,231","Hunt, TX",35011
+"48,233","Hutchinson, TX",40409
+"48,235","Irion, TX",64549
+"48,237","Jack, TX",40753
+"48,239","Jackson, TX",39174
+"48,241","Jasper, TX",37656
+"48,243","Jeff Davis, TX",40023
+"48,245","Jefferson, TX",41848
+"48,247","Jim Hogg, TX",30991
+"48,249","Jim Wells, TX",39222
+"48,251","Johnson, TX",38064
+"48,253","Jones, TX",29608
+"48,255","Karnes, TX",41377
+"48,257","Kaufman, TX",38894
+"48,259","Kendall, TX",78705
+"48,261","Kenedy, TX",66502
+"48,263","Kent, TX",44277
+"48,265","Kerr, TX",45836
+"48,267","Kimble, TX",45308
+"48,269","King, TX",61544
+"48,271","Kinney, TX",30226
+"48,273","Kleberg, TX",36991
+"48,275","Knox, TX",37896
+"48,277","Lamar, TX",37536
+"48,279","Lamb, TX",39995
+"48,281","Lampasas, TX",47302
+"48,283","La Salle, TX",39697
+"48,285","Lavaca, TX",49592
+"48,287","Lee, TX",43085
+"48,289","Leon, TX",40693
+"48,291","Liberty, TX",35208
+"48,293","Limestone, TX",32911
+"48,295","Lipscomb, TX",50217
+"48,297","Live Oak, TX",36429
+"48,299","Llano, TX",45126
+"48,301","Loving, TX",31479
+"48,303","Lubbock, TX",39633
+"48,305","Lynn, TX",35503
+"48,307","McCulloch, TX",36351
+"48,309","McLennan, TX",37599
+"48,311","McMullen, TX",100483
+"48,313","Madison, TX",30488
+"48,315","Marion, TX",35131
+"48,317","Martin, TX",49242
+"48,319","Mason, TX",42213
+"48,321","Matagorda, TX",40038
+"48,323","Maverick, TX",27735
+"48,325","Medina, TX",36572
+"48,327","Menard, TX",37976
+"48,329","Midland, TX",89846
+"48,331","Milam, TX",36949
+"48,333","Mills, TX",38129
+"48,335","Mitchell, TX",30536
+"48,337","Montague, TX",41580
+"48,339","Montgomery, TX",59454
+"48,341","Moore, TX",41471
+"48,343","Morris, TX",42336
+"48,345","Motley, TX",31697
+"48,347","Nacogdoches, TX",35137
+"48,349","Navarro, TX",35339
+"48,351","Newton, TX",30152
+"48,353","Nolan, TX",38636
+"48,355","Nueces, TX",42515
+"48,357","Ochiltree, TX",65463
+"48,359","Oldham, TX",58735
+"48,361","Orange, TX",41777
+"48,363","Palo Pinto, TX",36622
+"48,365","Panola, TX",41467
+"48,367","Parker, TX",49303
+"48,369","Parmer, TX",59594
+"48,371","Pecos, TX",32944
+"48,373","Polk, TX",37792
+"48,375","Potter, TX",40405
+"48,377","Presidio, TX",39099
+"48,379","Rains, TX",31761
+"48,381","Randall, TX",45666
+"48,383","Reagan, TX",43089
+"48,385","Real, TX",34892
+"48,387","Red River, TX",36856
+"48,389","Reeves, TX",31026
+"48,391","Refugio, TX",43224
+"48,393","Roberts, TX",43980
+"48,395","Robertson, TX",39733
+"48,397","Rockwall, TX",54801
+"48,399","Runnels, TX",38562
+"48,401","Rusk, TX",35466
+"48,403","Sabine, TX",33591
+"48,405","San Augustine, TX",35988
+"48,407","San Jacinto, TX",32196
+"48,409","San Patricio, TX",41760
+"48,411","San Saba, TX",33974
+"48,413","Schleicher, TX",42831
+"48,415","Scurry, TX",44529
+"48,417","Shackelford, TX",107002
+"48,419","Shelby, TX",39768
+"48,421","Sherman, TX",83502
+"48,423","Smith, TX",47364
+"48,425","Somervell, TX",41887
+"48,427","Starr, TX",24653
+"48,429","Stephens, TX",43172
+"48,431","Sterling, TX",53507
+"48,433","Stonewall, TX",53151
+"48,435","Sutton, TX",64439
+"48,437","Swisher, TX",47091
+"48,439","Tarrant, TX",47522
+"48,441","Taylor, TX",42749
+"48,443","Terrell, TX",49223
+"48,445","Terry, TX",30960
+"48,447","Throckmorton, TX",42953
+"48,449","Titus, TX",33156
+"48,451","Tom Green, TX",42767
+"48,453","Travis, TX",58239
+"48,455","Trinity, TX",32659
+"48,457","Tyler, TX",31051
+"48,459","Upshur, TX",35599
+"48,461","Upton, TX",45719
+"48,463","Uvalde, TX",38183
+"48,465","Val Verde, TX",34136
+"48,467","Van Zandt, TX",34971
+"48,469","Victoria, TX",44900
+"48,471","Walker, TX",26379
+"48,473","Waller, TX",36582
+"48,475","Ward, TX",41306
+"48,477","Washington, TX",49152
+"48,479","Webb, TX",29496
+"48,481","Wharton, TX",41117
+"48,483","Wheeler, TX",42061
+"48,485","Wichita, TX",40516
+"48,487","Wilbarger, TX",37663
+"48,489","Willacy, TX",25932
+"48,491","Williamson, TX",45079
+"48,493","Wilson, TX",41342
+"48,495","Winkler, TX",40149
+"48,497","Wise, TX",40869
+"48,499","Wood, TX",36586
+"48,501","Yoakum, TX",39511
+"48,503","Young, TX",48926
+"48,505","Zapata, TX",29213
+"48,507","Zavala, TX",26814
+"49,001","Beaver, UT",30850
+"49,003","Box Elder, UT",33718
+"49,005","Cache, UT",34456
+"49,007","Carbon, UT",35202
+"49,009","Daggett, UT",38793
+"49,011","Davis, UT",40789
+"49,013","Duchesne, UT",35676
+"49,015","Emery, UT",29463
+"49,017","Garfield, UT",34189
+"49,019","Grand, UT",42997
+"49,021","Iron, UT",29063
+"49,023","Juab, UT",32557
+"49,025","Kane, UT",37427
+"49,027","Millard, UT",35372
+"49,029","Morgan, UT",45747
+"49,031","Piute, UT",29323
+"49,033","Rich, UT",39110
+"49,035","Salt Lake, UT",46538
+"49,037","San Juan, UT",23727
+"49,039","Sanpete, UT",28512
+"49,041","Sevier, UT",29927
+"49,043","Summit, UT",112627
+"49,045","Tooele, UT",32903
+"49,047","Uintah, UT",30715
+"49,049","Utah, UT",35683
+"49,051","Wasatch, UT",42985
+"49,053","Washington, UT",33039
+"49,055","Wayne, UT",32761
+"49,057","Weber, UT",37029
+"50,001","Addison, VT",46301
+"50,003","Bennington, VT",49010
+"50,005","Caledonia, VT",38287
+"50,007","Chittenden, VT",56172
+"50,009","Essex, VT",33794
+"50,011","Franklin, VT",42006
+"50,013","Grand Isle, VT",53899
+"50,015","Lamoille, VT",49094
+"50,017","Orange, VT",43358
+"50,019","Orleans, VT",40607
+"50,021","Rutland, VT",47995
+"50,023","Washington, VT",54654
+"50,025","Windham, VT",47831
+"50,027","Windsor, VT",52679
+" 51,001 ","Accomack, VA",38946
+" 51,007 ","Amelia, VA",42174
+" 51,009 ","Amherst, VA",34336
+" 51,011 ","Appomattox, VA",35570
+" 51,013 ","Arlington, VA",86829
+" 51,017 ","Bath, VA",54710
+" 51,019 ","Bedford, VA*",42688
+" 51,021 ","Bland, VA",33242
+" 51,023 ","Botetourt, VA",46959
+" 51,025 ","Brunswick, VA",30374
+" 51,027 ","Buchanan, VA",32002
+" 51,029 ","Buckingham, VA",28278
+" 51,033 ","Caroline, VA",41613
+" 51,036 ","Charles City, VA",41204
+" 51,037 ","Charlotte, VA",33225
+" 51,041 ","Chesterfield, VA",49559
+" 51,043 ","Clarke, VA",59329
+" 51,045 ","Craig, VA",36189
+" 51,047 ","Culpeper, VA",42353
+" 51,049 ","Cumberland, VA",35441
+" 51,051 ","Dickenson, VA",30003
+" 51,057 ","Essex, VA",38635
+" 51,061 ","Fauquier, VA",64057
+" 51,063 ","Floyd, VA",35577
+" 51,065 ","Fluvanna, VA",40605
+" 51,067 ","Franklin, VA",37713
+" 51,071 ","Giles, VA",36943
+" 51,073 ","Gloucester, VA",45568
+" 51,075 ","Goochland, VA",89509
+" 51,077 ","Grayson, VA",29901
+" 51,079 ","Greene, VA",40398
+" 51,083 ","Halifax, VA",33720
+" 51,085 ","Hanover, VA",55434
+" 51,087 ","Henrico, VA",59999
+" 51,091 ","Highland, VA",43698
+" 51,093 ","Isle of Wight, VA",50998
+" 51,097 ","King and Queen, VA",38640
+" 51,099 ","King George, VA",52657
+" 51,101 ","King William, VA",41170
+" 51,103 ","Lancaster, VA",52560
+" 51,105 ","Lee, VA",27713
+" 51,107 ","Loudoun, VA",70750
+" 51,109 ","Louisa, VA",39171
+" 51,111 ","Lunenburg, VA",30786
+" 51,113 ","Madison, VA",47588
+" 51,115 ","Mathews, VA",51446
+" 51,117 ","Mecklenburg, VA",34297
+" 51,119 ","Middlesex, VA",45545
+" 51,125 ","Nelson, VA",46055
+" 51,127 ","New Kent, VA",67577
+" 51,131 ","Northampton, VA",42862
+" 51,133 ","Northumberland, VA",46228
+" 51,135 ","Nottoway, VA",32459
+" 51,137 ","Orange, VA",45080
+" 51,139 ","Page, VA",35844
+" 51,141 ","Patrick, VA",31611
+" 51,145 ","Powhatan, VA",50375
+" 51,147 ","Prince Edward, VA",28687
+" 51,155 ","Pulaski, VA",37398
+" 51,157 ","Rappahannock, VA",57858
+" 51,159 ","Richmond, VA",33897
+" 51,167 ","Russell, VA",30976
+" 51,169 ","Scott, VA",31046
+" 51,171 ","Shenandoah, VA",41291
+" 51,173 ","Smyth, VA",34869
+" 51,179 ","Stafford, VA",50850
+" 51,181 ","Surry, VA",41149
+" 51,183 ","Sussex, VA",28622
+" 51,185 ","Tazewell, VA",34763
+" 51,187 ","Warren, VA",42457
+" 51,193 ","Westmoreland, VA",39189
+" 51,197 ","Wythe, VA",32979
+" 51,510 ","Alexandria (Independent City), VA",82860
+" 51,550 ","Chesapeake (Independent City), VA",47166
+" 51,650 ","Hampton (Independent City), VA",40736
+" 51,700 ","Newport News (Independent City), VA",40765
+" 51,710 ","Norfolk (Independent City), VA",38669
+" 51,740 ","Portsmouth (Independent City), VA",38447
+" 51,760 ","Richmond (Independent City), VA",51502
+" 51,770 ","Roanoke (Independent City), VA",41885
+" 51,800 ","Suffolk (Independent City), VA",48214
+" 51,810 ","Virginia Beach (Independent City), VA",53130
+" 51,901 ","Albemarle + Charlottesville, VA*",63019
+" 51,903 ","Alleghany + Covington, VA*",36601
+" 51,907 ","Augusta, Staunton + Waynesboro, VA*",40876
+" 51,911 ","Campbell + Lynchburg, VA*",35902
+" 51,913 ","Carroll + Galax, VA*",33227
+" 51,918 ","Dinwiddie, Colonial Heights + Petersburg, VA*",38158
+" 51,600 ","Fairfax, Fairfax City + Falls Church, VA*",76185
+" 51,610 ","Fairfax, Fairfax City + Falls Church, VA*",76185
+" 51,059 ","Fairfax, Fairfax City + Falls Church, VA*",76185
+" 51,921 ","Frederick + Winchester, VA*",45785
+" 51,923 ","Greensville + Emporia, VA*",28847
+" 51,929 ","Henry + Martinsville, VA*",36198
+" 51,095 ","James City + Williamsburg, VA*",60571
+" 51,830 ","James City + Williamsburg, VA*",60571
+" 51,933 ","Montgomery + Radford, VA*",34176
+" 51,939 ","Pittsylvania + Danville, VA*",35101
+" 51,153 ","Prince William, Manassas + Manassas Park, VA*",50355
+" 51,941 ","Prince George + Hopewell, VA*",35939
+" 51,683 ","Prince William, Manassas + Manassas Park, VA*",50355
+" 51,685 ","Prince William, Manassas + Manassas Park, VA*",50355
+" 51,944 ","Roanoke + Salem, VA*",49161
+" 51,945 ","Rockbridge, Buena Vista + Lexington, VA*",37735
+" 51,947 ","Rockingham + Harrisonburg, VA*",36833
+" 51,630 ","Spotsylvania + Fredericksburg, VA*",46446
+" 51,620 ","Southampton + Franklin, VA*",37258
+" 51,175 ","Southampton + Franklin, VA*",37258
+" 51,177 ","Spotsylvania + Fredericksburg, VA*",46446
+" 51,953 ","Washington + Bristol, VA*",37853
+" 51,199 ","York + Poquoson, VA*",54349
+" 51,955 ","Wise + Norton, VA*",30984
+" 51,735 ","York + Poquoson, VA*",54349
+"53,001","Adams, WA",44010
+"53,003","Asotin, WA",41942
+"53,005","Benton, WA",44546
+"53,007","Chelan, WA",47723
+"53,009","Clallam, WA",41515
+"53,011","Clark, WA",46686
+"53,013","Columbia, WA",48470
+"53,015","Cowlitz, WA",41128
+"53,017","Douglas, WA",37077
+"53,019","Ferry, WA",34843
+"53,021","Franklin, WA",35167
+"53,023","Garfield, WA",43426
+"53,025","Grant, WA",38290
+"53,027","Grays Harbor, WA",35949
+"53,029","Island, WA",49707
+"53,031","Jefferson, WA",46261
+"53,033","King, WA",76122
+"53,035","Kitsap, WA",48816
+"53,037","Kittitas, WA",38562
+"53,039","Klickitat, WA",42617
+"53,041","Lewis, WA",38855
+"53,043","Lincoln, WA",47047
+"53,045","Mason, WA",37777
+"53,047","Okanogan, WA",39017
+"53,049","Pacific, WA",38248
+"53,051","Pend Oreille, WA",36680
+"53,053","Pierce, WA",45774
+"53,055","San Juan, WA",70394
+"53,057","Skagit, WA",46344
+"53,059","Skamania, WA",40071
+"53,061","Snohomish, WA",48552
+"53,063","Spokane, WA",41681
+"53,065","Stevens, WA",35761
+"53,067","Thurston, WA",45782
+"53,069","Wahkiakum, WA",39180
+"53,071","Walla Walla, WA",41663
+"53,073","Whatcom, WA",43991
+"53,075","Whitman, WA",36473
+"53,077","Yakima, WA",39322
+"54,001","Barbour, WV",28838
+"54,003","Berkeley, WV",37414
+"54,005","Boone, WV",30849
+"54,007","Braxton, WV",30412
+"54,009","Brooke, WV",37986
+"54,011","Cabell, WV",38497
+"54,013","Calhoun, WV",27862
+"54,015","Clay, WV",29032
+"54,017","Doddridge, WV",24860
+"54,019","Fayette, WV",31852
+"54,021","Gilmer, WV",27588
+"54,023","Grant, WV",33618
+"54,025","Greenbrier, WV",35879
+"54,027","Hampshire, WV",31657
+"54,029","Hancock, WV",38147
+"54,031","Hardy, WV",30453
+"54,033","Harrison, WV",43472
+"54,035","Jackson, WV",34394
+"54,037","Jefferson, WV",45133
+"54,039","Kanawha, WV",44127
+"54,041","Lewis, WV",36816
+"54,043","Lincoln, WV",27673
+"54,045","Logan, WV",32961
+"54,047","McDowell, WV",27801
+"54,049","Marion, WV",38716
+"54,051","Marshall, WV",35776
+"54,053","Mason, WV",30036
+"54,055","Mercer, WV",34539
+"54,057","Mineral, WV",35950
+"54,059","Mingo, WV",29612
+"54,061","Monongalia, WV",41091
+"54,063","Monroe, WV",28717
+"54,065","Morgan, WV",31849
+"54,067","Nicholas, WV",32137
+"54,069","Ohio, WV",48740
+"54,071","Pendleton, WV",33211
+"54,073","Pleasants, WV",39817
+"54,075","Pocahontas, WV",35114
+"54,077","Preston, WV",33272
+"54,079","Putnam, WV",42537
+"54,081","Raleigh, WV",36799
+"54,083","Randolph, WV",33832
+"54,085","Ritchie, WV",32692
+"54,087","Roane, WV",30682
+"54,089","Summers, WV",30417
+"54,091","Taylor, WV",35225
+"54,093","Tucker, WV",37291
+"54,095","Tyler, WV",32514
+"54,097","Upshur, WV",31302
+"54,099","Wayne, WV",29874
+"54,101","Webster, WV",27166
+"54,103","Wetzel, WV",31115
+"54,105","Wirt, WV",29598
+"54,107","Wood, WV",38627
+"54,109","Wyoming, WV",28553
+"55,001","Adams, WI",36293
+"55,003","Ashland, WI",36834
+"55,005","Barron, WI",44757
+"55,007","Bayfield, WI",42415
+"55,009","Brown, WI",47923
+"55,011","Buffalo, WI",42527
+"55,013","Burnett, WI",39674
+"55,015","Calumet, WI",45282
+"55,017","Chippewa, WI",41973
+"55,019","Clark, WI",37675
+"55,021","Columbia, WI",46116
+"55,023","Crawford, WI",38321
+"55,025","Dane, WI",54947
+"55,027","Dodge, WI",41257
+"55,029","Door, WI",56008
+"55,031","Douglas, WI",39205
+"55,033","Dunn, WI",36747
+"55,035","Eau Claire, WI",43781
+"55,037","Florence, WI",53699
+"55,039","Fond du Lac, WI",43787
+"55,041","Forest, WI",37658
+"55,043","Grant, WI",39759
+"55,045","Green, WI",46807
+"55,047","Green Lake, WI",44047
+"55,049","Iowa, WI",44555
+"55,051","Iron, WI",44836
+"55,053","Jackson, WI",41374
+"55,055","Jefferson, WI",41650
+"55,057","Juneau, WI",35076
+"55,059","Kenosha, WI",42148
+"55,061","Kewaunee, WI",44523
+"55,063","La Crosse, WI",45128
+"55,065","Lafayette, WI",42335
+"55,067","Langlade, WI",41037
+"55,069","Lincoln, WI",41208
+"55,071","Manitowoc, WI",44575
+"55,073","Marathon, WI",45079
+"55,075","Marinette, WI",40430
+"55,077","Marquette, WI",37650
+"55,078","Menominee, WI*",29621
+"55,079","Milwaukee, WI",43435
+"55,081","Monroe, WI",37720
+"55,083","Oconto, WI",41996
+"55,085","Oneida, WI",46159
+"55,087","Outagamie, WI",46502
+"55,089","Ozaukee, WI",74610
+"55,091","Pepin, WI",44561
+"55,093","Pierce, WI",43610
+"55,095","Polk, WI",42800
+"55,097","Portage, WI",41355
+"55,099","Price, WI",42622
+"55,101","Racine, WI",44758
+"55,103","Richland, WI",39604
+"55,105","Rock, WI",40098
+"55,107","Rusk, WI",40886
+"55,109","St. Croix, WI",49398
+"55,111","Sauk, WI",44225
+"55,113","Sawyer, WI",41749
+"55,115","Shawano, WI*",38464
+"55,117","Sheboygan, WI",47022
+"55,119","Taylor, WI",37957
+"55,121","Trempealeau, WI",41847
+"55,123","Vernon, WI",37601
+"55,125","Vilas, WI",48101
+"55,127","Walworth, WI",44023
+"55,129","Washburn, WI",43626
+"55,131","Washington, WI",52010
+"55,133","Waukesha, WI",65272
+"55,135","Waupaca, WI",42454
+"55,137","Waushara, WI",38544
+"55,139","Winnebago, WI",43470
+"55,141","Wood, WI",42767
+"55,901","Shawano (includes Menominee), WI*",(NA)
+"56,001","Albany, WY",39954
+"56,003","Big Horn, WY",37165
+"56,005","Campbell, WY",52952
+"56,007","Carbon, WY",51617
+"56,009","Converse, WY",52136
+"56,011","Crook, WY",44747
+"56,013","Fremont, WY",42239
+"56,015","Goshen, WY",41606
+"56,017","Hot Springs, WY",53734
+"56,019","Johnson, WY",50031
+"56,021","Laramie, WY",49731
+"56,023","Lincoln, WY",37385
+"56,025","Natrona, WY",73239
+"56,027","Niobrara, WY",44942
+"56,029","Park, WY",52334
+"56,031","Platte, WY",47312
+"56,033","Sheridan, WY",52098
+"56,035","Sublette, WY",50896
+"56,037","Sweetwater, WY",49291
+"56,039","Teton, WY",202833
+"56,041","Uinta, WY",38887
+"56,043","Washakie, WY",44356
+"56,045","Weston, WY",47535

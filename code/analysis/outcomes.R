@@ -3,6 +3,8 @@ library(tidycensus)
 library(sf)
 library(tigris)
 library(rleuven)
+library(scales)
+library(ggpubr)
 options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 options(scipen = 999,"digits"=3)
@@ -149,6 +151,185 @@ keep <- merged %>% select(1,6:9) %>%
          inc_chg = inc_chg_avg-incx[352,6]) %>% 
   select(1,6:9)
 
-list_of_datasets <- list("New" = keep, "Change_05_15" = merged, "Raw_05_15" = merged2, "Population" = popx, "Employment" = empx,
-                         "GMP Per Capita" = gdpx, "Real Per Capita Income" = incx)
-openxlsx::write.xlsx(list_of_datasets, file = "data/analysis/outcomes_raw.xlsx")
+list_of_datasets <- list("New" = keep, 
+                         "Change_05_15" = merged, 
+                         "Raw_05_15" = merged2, 
+                         "Population" = popx, 
+                         "Employment" = empx,
+                         "GMP Per Capita" = gdpx, 
+                         "Real Per Capita Income" = incx)
+
+df <- popx %>% 
+  left_join(empx %>% select(-2,-3), by = "cbsa_fips") %>% 
+  left_join(gdpx %>% select(-2,-3), by = "cbsa_fips") %>% 
+  left_join(incx %>% select(-2,-3), by = "cbsa_fips") %>% 
+  mutate(cluster = as.factor(clusterm_10)) %>% 
+  select(1:2,cluster,everything(),-clusterm_10)
+
+#openxlsx::write.xlsx(list_of_datasets, file = "data/analysis/outcomes_raw.xlsx")
+rm(pop,emp,inc,gdp,merged,merged2,keep,list_of_datasets,clusters,
+   clustr_emp,clustr_pop,clustr_emp_avg,clustr_gdp,clustr_gdp_avg,
+   clustr_inc,clustr_inc_avg,clustr_pop_avg,popx,empx,gdpx,incx)
+clr_cons()
+
+# Visualization of Distribution -------------------------------------------
+zscore <- function(x, na.rm = F) (x - mean(x, na.rm = na.rm)) / sd(x, na.rm = na.rm)
+mscore <- function(x, na.rm = F) (x-median(x, na.rm = na.rm))/(IQR(x, na.rm = na.rm)/1.349)
+df_cbsa <- df %>% filter(cbsa_fips < 50000)
+df_legacy <- df %>% filter(cluster %in% c(2,8))
+fillcols <- rev(c('red','green','blue','yellow'))
+df_fake2 = data.frame(p = as.numeric(c(NA, NA)),v = c("variable1", "variable2"),
+                      l = as.numeric(c(NA, NA)))
+
+ggplot() +
+  geom_density(data = df, aes(x = pop_chg), adjust = 1L,   fill = fillcols[1], alpha = .3) +
+  geom_density(data = df, aes(x = emp_chg), adjust = 1L,   fill = fillcols[2], alpha = .3) +
+  geom_density(data = df, aes(x = gdppk_chg), adjust = 1L, fill = fillcols[3], alpha = .3) +
+  geom_density(data = df, aes(x = inc_chg), adjust = 1L,   fill = fillcols[4], alpha = .3) +
+  theme_minimal() +
+  scale_x_continuous(limits = c(-.5, 1)) 
+
+ggplot() +
+ geom_density(data = df_cbsa, aes(x = gdppk_2015, fill = cluster)) +
+ scale_fill_brewer(palette = "Set3") +
+ labs(x = "Gross Metropolitan Product Per-Capita, 2015", y = "") +
+ theme_minimal() +
+ theme(legend.position = "none") +
+ facet_wrap(vars(cluster))
+
+(plot_empl <- ggplot() +
+    geom_density(data = df_legacy, aes(x = emp_2015, fill = cluster), 
+                 alpha = .4, show.legend = FALSE) +
+    geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+    labs(x = "Employment, 2015", 
+         y = "", 
+         color = "Cluster") +
+    scale_color_manual(values = c('red','blue'),
+                       labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                  'High Skill, High Density')) +
+    scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+    theme_minimal(base_size = 16) +
+    theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+          plot.subtitle = element_text(hjust = 0.5),
+          text=element_text(family="Futura Medium"),
+          axis.text.y=element_blank(),
+          legend.key = element_rect(size = 6, fill = NA, color = NA),
+          legend.key.height = unit(2, "cm"),
+          legend.key.width = unit(1, "cm")))
+
+(plot_popl <- ggplot() +
+    geom_density(data = df_legacy, aes(x = pop_2015, fill = cluster), 
+                 alpha = .4, show.legend = FALSE) +
+    geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+    labs(x = "Population, 2015", 
+         y = "", 
+         color = "Cluster") +
+    scale_color_manual(values = c('red','blue'),
+                       labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                  'High Skill, High Density')) +
+    scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+    theme_minimal(base_size = 16) +
+    theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+          plot.subtitle = element_text(hjust = 0.5),
+          text=element_text(family="Futura Medium"),
+          axis.text.y=element_blank(),
+          legend.key = element_rect(size = 6, fill = NA, color = NA),
+          legend.key.height = unit(2, "cm"),
+          legend.key.width = unit(1, "cm")))
+
+(plot_pop <- ggplot() +
+  geom_density(data = df_legacy, aes(x = pop_chg, fill = cluster), 
+               alpha = .4, show.legend = FALSE) +
+  geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+  labs(x = "Percent Change in Population, 2005-15", 
+       y = "", 
+       color = "Cluster") +
+  scale_x_continuous(labels = percent, limits = c(-.125, .2)) +
+  scale_color_manual(values = c('red','blue'),
+                     labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                'High Skill, High Density')) +
+  scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+  theme_minimal(base_size = 16) +
+  theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+        plot.subtitle = element_text(hjust = 0.5),
+        text=element_text(family="Futura Medium"),
+        axis.text.y=element_blank(),
+        legend.position = "none",
+        legend.key = element_rect(size = 6, fill = NA, color = NA),
+        legend.key.height = unit(2, "cm"),
+        legend.key.width = unit(1, "cm"))) 
+
+(plot_emp <- ggplot() +
+    geom_density(data = df_legacy, aes(x = emp_chg, fill = cluster), 
+                 alpha = .4, show.legend = FALSE) +
+    geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+    labs(x = "Percent Change in Employment, 2005-15", 
+         y = "", 
+         color = "Cluster") +
+    scale_x_continuous(labels = percent, limits = c(-.175, .3)) +
+    scale_color_manual(values = c('red','blue'),
+                       labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                  'High Skill, High Density')) +
+    scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+    theme_minimal(base_size = 16) +
+    theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+          plot.subtitle = element_text(hjust = 0.5),
+          text=element_text(family="Futura Medium"),
+          axis.text.y=element_blank(),
+          legend.position = "none",
+          legend.key = element_rect(size = 6, fill = NA, color = NA),
+          legend.key.height = unit(2, "cm"),
+          legend.key.width = unit(1, "cm")))
+
+(plot_gdp <- ggplot() +
+    geom_density(data = df_legacy, aes(x = gdppk_chg, fill = cluster), 
+                 alpha = .4, show.legend = FALSE) +
+    geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+    labs(x = "Percent Change in GDP Per-Capita, 2005-15", 
+         y = "", 
+         color = "Cluster") +
+    scale_x_continuous(labels = percent, limits = c(-.25, .7)) +
+    scale_color_manual(values = c('red','blue'),
+                       labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                  'High Skill, High Density')) +
+    scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+    theme_minimal(base_size = 16) +
+    theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+          plot.subtitle = element_text(hjust = 0.5),
+          text=element_text(family="Futura Medium"),
+          axis.text.y=element_blank(),
+          legend.position = "none",
+          legend.key = element_rect(size = 6, fill = NA, color = NA),
+          legend.key.height = unit(2, "cm"),
+          legend.key.width = unit(1, "cm")))
+
+
+(plot_inc <- ggplot() +
+    geom_density(data = df_legacy, aes(x = inc_chg, fill = cluster), 
+                 alpha = .4, show.legend = FALSE) +
+    geom_point(data = df_fake2, aes(x = p, y = l, color = v),size=8, alpha = .4) +
+    labs(x = "Percent Change in Personal Income Per-Capita, 2005-15", 
+         y = "", 
+         color = "Cluster") +
+    scale_x_continuous(labels = percent, limits = c(-.125, .35)) +
+    scale_color_manual(values = c('red','blue'),
+                       labels = c('Strong Transit & Walkability,\nWeak Housing Market',
+                                  'High Skill, High Density')) +
+    scale_fill_manual(values = c('red','blue'),labels = c('red','blue')) +
+    theme_minimal(base_size = 16) +
+    theme(plot.title = element_text(hjust = 0.5, family="Futura Bold"),
+          plot.subtitle = element_text(hjust = 0.5),
+          text=element_text(family="Futura Medium"),
+          legend.title = element_text(family="Futura Bold"),
+          axis.text.y=element_blank(),
+          legend.key = element_rect(size = 6, fill = NA, color = NA),
+          legend.key.height = unit(2, "cm"),
+          legend.key.width = unit(1, "cm")))
+
+(p <- ggarrange(plot_pop,plot_emp,plot_gdp,plot_inc,#plot_popl,plot_empl, 
+          common.legend = T, legend="bottom"))
+
+annotate_figure(p,top = text_grob("Visualizing Ten-Year Changes in Outcome Variables for Two Clusters of Legacy Regions", 
+                                family="Futura Bold", face = "bold", size = 24)) +
+  ggsave("plot/mscore/array.png", width = 20, height = 12)
+

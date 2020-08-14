@@ -1,6 +1,6 @@
 # Legacy Regions Research
 
-This repository contains code, data, and analysis related to our research (conducted by myself &amp; [Dr. Ned Hill](http://glenn.osu.edu/faculty/glenn-faculty/hill/)) on legacy cities and what we call "legacy regions."
+This repository contains code, data, and analysis related to our research (conducted by myself &amp; [Dr. Ned Hill](http://glenn.osu.edu/faculty/glenn-faculty/hill/)) on legacy cities and what we call "legacy regions." A working paper can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3672696).
 
 <p align="center">
   <img width="750" src="plot/cluster_map.png">

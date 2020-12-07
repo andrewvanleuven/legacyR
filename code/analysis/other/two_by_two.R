@@ -87,9 +87,10 @@ cbsa_city <- cbsaxw %>%
   filter(cty_pop_10 == max(cty_pop_10)) %>% 
   arrange(cbsa) %>% 
   mutate(city = paste0(cbsa_main_city,", ",state)) %>% 
-  select(cbsa_fips,city)
+  select(cbsa_fips,city) %>% 
+  mutate(city = str_replace(city,"NA","The Villages"))
 
-lab_repel <- read_csv("data/labs.csv") %>% 
+lab_repel <- read_csv("data/viz/labs.csv") %>% 
   left_join(.,cbsa_city)
 
 ggplot() + 
@@ -98,13 +99,13 @@ ggplot() +
   geom_point(data = lab_repel, (aes(x = pop, y = gmp, fill = as.factor(quadrant))),
              size = 2, shape = 21, color = "black", alpha = .4) +
   geom_text_repel(data = subset(lab_repel, label > 0), 
-                  aes(pop, gmp, label = city), family="Roboto Condensed") +
+                  aes(pop, gmp, label = city), family="IBM Plex Mono", size = 3.1) +
   scale_fill_manual(values = clrs) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 5L)) +
   scale_x_continuous(labels = scales::percent_format(accuracy = 5L)) +
   ggtitle("Growth & Decline in an MSA's Population and Productivity",
           subtitle = "2000 to 2010 (in the continental U.S.)") +
-  labs(x ="% Change in Population", y = "% Change in Productivity") +
+  labs(x ="% Change in MSA Population", y = "% Change in Gross Metropolitan Product") +
   theme_bw() +
   theme(plot.title = element_text(size=26, face="bold", hjust = 0.5),
         plot.subtitle = element_text(size=18, hjust = 0.5),
@@ -112,8 +113,8 @@ ggplot() +
         axis.title.y = element_text(size=20, face="bold", margin = margin(r = 12)),
         axis.text.x = element_text(size=16),
         axis.text.y = element_text(size=16),
-        legend.position = "none",
-        text=element_text(family="Roboto Condensed")) +
+        text=element_text(family="IBM Plex Mono"),
+        legend.position = "none") +
   ggsave("plot/2x2.png", height = 8)
 
   

@@ -15,31 +15,65 @@ cbus_sf <- st_read("data/shp/cbus.kml") %>%
 sfcolumbus <- cbus_sf %>% filter(name != "Bexley") %>% st_polygonize()
 sfbexley <- cbus_sf %>% filter(name == "Bexley") %>% st_polygonize()
 cbus1950 <- st_difference(sfcolumbus,sfbexley) %>% st_transform(4269)
-franklin_rds <- roads("OH","Franklin")
-franklin_rds2 <- st_intersection(((counties("OH", cb = T)) %>% filter(NAME == "Franklin")),
-                                (primary_secondary_roads(state = "OH")))
+franklin <- counties("OH", cb = T) %>% filter(NAME == "Franklin")
+cuyahoga <- counties("OH", cb = T) %>% filter(NAME == "Cuyahoga")
+franklin_rds <- st_intersection(franklin, (primary_secondary_roads(state = "OH"))) %>% 
+  st_collection_extract(type = "LINESTRING")
+cuyahoga_rds <- st_intersection(cuyahoga, (primary_secondary_roads(state = "OH"))) %>% 
+  st_collection_extract(type = "LINESTRING")
 franklin_h2o <- area_water("OH","Franklin")
+cuyahoga_h2o <- area_water("OH","Cuyahoga")
 cbus2010 <- places("OH", cb = T) %>% filter(NAME == "Columbus")
 clev2010 <- places("OH", cb = T) %>% filter(NAME == "Cleveland")
+ohio <- counties("39", cb = T)
+oh <- states(cb = T, resolution = "20m") %>% filter(STUSPS == "OH")
+franken_franklin = st_union(franklin,cbus2010)
+franken_cbus = st_intersection(franklin,cbus2010)
 
 ggplot() + 
-  geom_sf(data = cbus2010, fill = "black", alpha = .2, color = "black") +
-  geom_sf(data = cbus1950, fill = "black", alpha = .6, color = "black") +
-  geom_sf(data = franklin_rds2, color = "white") + 
+  geom_sf(data = franklin, fill = "black", alpha = .05, color = "black", size = .2) +
+  geom_sf(data = franken_cbus, fill = "black", alpha = .3, color = NA) +
+  geom_sf(data = cbus1950, fill = "#BB0000", alpha = .6, color = "black") +
+  geom_sf(data = franklin_rds, color = "black") + 
   theme_void() + 
-  theme(panel.background = element_rect(fill = "gray80")) +
+  theme(panel.background = element_rect(fill = "white", color = NA)) +
   ggsave("plot/columbus_comp.png", height = 10, width = 10)
+ggplot() + 
+  geom_sf(data = cuyahoga, fill = "black", alpha = .05, color = "black", size = .2) +
+  geom_sf(data = clev2010, fill = "#BB0000", alpha = .6, color = "black") +
+  geom_sf(data = cuyahoga_rds, color = "black") + 
+  theme_void() + 
+  theme(panel.background = element_rect(fill = "white", color = NA)) +
+  ggsave("plot/clev_comp.png", height = 10, width = 10)
+
+cle_col <- st_union(cbus2010,clev2010)
 
 ggplot() + 
-  geom_sf(data = cbus1950, fill = "#FFBF89", color = "black") +
-  geom_sf(data = franklin_h2o, color = "navy", fill = "#9CCCEA", lwd = 0.05) + 
-  geom_sf(data = franklin_rds, color = "#C6C6C6") + 
-  geom_sf(data = franklin_rds2, color = "white") + 
-  geom_sf(data = cbus1950, fill = NA, color = "black") +
-  coord_sf(xlim = c(-83.11, -82.9), ylim = c(39.915, 40.07), expand = FALSE) +
+  geom_sf(data = ohio, fill = "black", alpha = 0, color = "gray50", size = .2) +
+  geom_sf(data = cuyahoga, fill = "black", alpha = .2, color = "gray50") +
+  geom_sf(data = clev2010, fill = "#BB0000", alpha = .6, color = "black") +
+  geom_sf(data = cuyahoga_rds, color = "black", size = .3) + 
+  geom_sf(data = franklin, fill = "black", alpha = .2, color = "gray50") +
+  geom_sf(data = franken_cbus, fill = "black", alpha = .4, color = NA) +
+  geom_sf(data = cbus1950, fill = "#BB0000", alpha = .7, color = "black") +
+  geom_sf(data = franklin_rds, color = "black", size = .3) + 
   theme_void() + 
-  theme(panel.background = element_rect(fill = "#D2D2D2")) +
-  ggsave("plot/columbus_1950.png", height = 10, width = 15)
+  coord_sf(xlim = c(-84, -81), ylim = c(39.7, 41.7), expand = FALSE) +
+  theme(panel.background = element_rect(fill = "white", color = NA)) +
+  ggsave("plot/columbus_cle.png")
+
+
+
+#ggplot() + 
+#  geom_sf(data = cbus1950, fill = "#FFBF89", color = "black") +
+#  geom_sf(data = franklin_h2o, color = "navy", fill = "#9CCCEA", lwd = 0.05) + 
+#  geom_sf(data = franklin_rds, color = "#C6C6C6") + 
+#  geom_sf(data = franklin_rds2, color = "white") + 
+#  geom_sf(data = cbus1950, fill = NA, color = "black") +
+#  coord_sf(xlim = c(-83.11, -82.9), ylim = c(39.915, 40.07), expand = FALSE) +
+#  theme_void() + 
+#  theme(panel.background = element_rect(fill = "#D2D2D2")) +
+#  ggsave("plot/columbus_1950.png", height = 10, width = 15)
 
 c50 <- cbus1950 %>% st_transform(crs = 2163)
 rm(cbus_sf,cbus1950,franklin_h2o,franklin_rds,franklin_rds2,sfbexley,sfcolumbus)

@@ -25,16 +25,20 @@ clustr_assign <- dget("code/functions/clustr_assign.R")
 # Subset data to be only lower 48 -----------------------------------------
 df <- read_csv("data/master.csv") %>% 
   filter(!cbsa_fips %in% c(11260,21820,46520)) 
+df_rnr <- read_csv("data/master_rnr.csv") %>% 
+  filter(!cbsa_fips %in% c(11260,21820,46520)) 
 id <- df %>% select(1:2)
 
 #df_02 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
 df_03 <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
+df_03 <- df_rnr %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
 #df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
 
 #write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
 #write_xlsx(clustr_assign(df_03,clust_solution = 5), "data/analysis/results/specify_03.xlsx")
 #write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx") #superfund var. as raw value
 spss <- clustr_assign(df_03,clust_solution = 5)
+spss_rnr <- clustr_assign(df_03,clust_solution = 5)
 #write_csv(spss$combined,"/Users/andrew/SPSS/spss_input.csv")
 
 # Significance of Centroid Scores -----------------------------------------

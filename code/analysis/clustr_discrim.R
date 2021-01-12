@@ -31,15 +31,17 @@ id <- df %>% select(1:2)
 
 #df_02 <- df %>% select(read_csv("data/analysis/specifications/vars_01.csv") %>% pull())  
 df_03 <- df %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
-df_03 <- df_rnr %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
+df_03r <- df_rnr %>% select(read_csv("data/analysis/specifications/vars_02.csv") %>% pull())  
 #df_04 <- df %>% select(read_csv("data/analysis/specifications/vars_03.csv") %>% pull())  
 
 #write_xlsx(clustr_assign(df_02), "data/analysis/results/specify_02.xlsx")
 #write_xlsx(clustr_assign(df_03,clust_solution = 5), "data/analysis/results/specify_03.xlsx")
 #write_xlsx(clustr_assign(df_04), "data/analysis/results/specify_04.xlsx") #superfund var. as raw value
 spss <- clustr_assign(df_03,clust_solution = 5)
-spss_rnr <- clustr_assign(df_03,clust_solution = 5)
+spss_rnr <- clustr_assign(df_03r,clust_solution = 5)
 #write_csv(spss$combined,"/Users/andrew/SPSS/spss_input.csv")
+#haven::write_sav(spss_rnr$combined, "data/spss.sav")
+
 
 # Significance of Centroid Scores -----------------------------------------
 tstat <- function(x, na.rm = F) mean(x)/sd(x)#/(sqrt(n()))
